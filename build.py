@@ -7,6 +7,8 @@ Sources
   placedesarts  placedesarts.com/en/programming listing
   centaur       centaurtheatre.com WordPress REST API + show pages
   rideauvert    rideauvert.qc.ca/programmation
+  rocket        AHL schedule feed (HockeyTech) behind theahl.com (home games only)
+  cinemamoderne cinemamoderne.com screenings
 
 Each source is independent. If one fails, its events from the previous
 karenda.ics are kept so the feed never loses a venue because of one bad day.
@@ -252,6 +254,9 @@ def slug(s: str) -> str:
 
 def text_of(el) -> str:
     return re.sub(r"\s+", " ", el.get_text(" ", strip=True)) if el else ""
+
+
+MTL = ZoneInfo("America/Toronto")
 
 
 # --------------------------------------------------------------------------- sources
@@ -589,14 +594,228 @@ def src_rideauvert() -> list[Event]:
     return list(events.values())
 
 
+AHL_FEED = "https://lscluster.hockeytech.com/feed/index.php"
+AHL_KEYS = ("ccb91f29d6744675", "50c2cd9b5e18e390")
+
+
+def _ahl(view: str, name: str, **params) -> dict:
+    """HockeyTech 'modulekit' JSON behind theahl.com stats. Returns the SiteKit payload."""
+    err: Exception = RuntimeError("no AHL key accepted")
+    for key in AHL_KEYS:
+        q = {"feed": "modulekit", "view": view, "key": key, "client_code": "ahl", "lang": "en", "fmt": "json", **params}
+        try:
+            text = get(AHL_FEED, name, params=q).text.strip()
+            data = json.loads(text[1:-1] if text.startswith("(") else text)
+            kit = data.get("SiteKit") if isinstance(data, dict) else None
+            if isinstance(kit, dict) and not kit.get("Error"):
+                return kit
+            err = RuntimeError(f"{view}: unexpected payload {text[:160]!r}")
+        except Exception as e:  # noqa: BLE001
+            err = e
+    raise err
+
+
+def _ahl_start(g: dict) -> datetime | None:
+    iso = g.get("GameDateISO8601") or g.get("date_time_played")
+    if isinstance(iso, str):
+        try:
+            d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+            return d if d.tzinfo else d.replace(tzinfo=MTL)
+        except ValueError:
+            pass
+    try:
+        d = datetime.strptime(f"{g.get('date_played')} {g.get('schedule_time') or '19:00:00'}"[:19], "%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return None
+    try:
+        tz = ZoneInfo(g.get("timezone") or "America/Toronto")
+    except Exception:  # noqa: BLE001
+        tz = MTL
+    return d.replace(tzinfo=tz)
+
+
+def src_rocket() -> list[Event]:
+    for u, n in (("https://www.rocketlaval.com/en/schedule/", "rocket_schedule.html"),
+                 ("https://theahl.com/stats/schedule", "ahl_schedule_page.html")):
+        try:
+            get(u, n)
+        except Exception as e:  # noqa: BLE001
+            print("  rocket: probe failed", u, e)
+    seasons = _ahl("seasons", "ahl_seasons.json").get("Seasons") or []
+    y = TODAY.year if TODAY.month >= 7 else TODAY.year - 1
+    label = f"{y}-{(y + 1) % 100:02d}"                                  # "2026-27"
+    cur = [s for s in seasons if label in s.get("season_name", "") and "all-star" not in s.get("season_name", "").lower()]
+    if not cur:
+        cur = sorted(seasons, key=lambda s: int(s.get("season_id") or 0))[-2:]
+    if not cur:
+        raise RuntimeError("no AHL seasons listed")
+    team_id, names = "415", {}
+    for s in cur:
+        try:
+            teams = _ahl("teamsbyseason", "ahl_teams.json", season_id=s["season_id"]).get("Teamsbyseason") or []
+        except Exception as e:  # noqa: BLE001
+            print("  rocket: teams lookup failed", e)
+            continue
+        names = {str(t.get("id")): t.get("name") or f"{t.get('city', '')} {t.get('nickname', '')}".strip() for t in teams}
+        hit = next((t for t in teams if "laval" in " ".join(str(v) for v in t.values()).lower()), None)
+        if hit:
+            team_id = str(hit["id"])
+            break
+    events: list[Event] = []
+    for s in cur:
+        sname = s.get("season_name", "").lower()
+        tag = " (playoffs)" if s.get("playoff") == "1" or "playoff" in sname else (" (preseason)" if "pre" in sname else "")
+        sched = _ahl("schedule", f"ahl_schedule_{s['season_id']}.json", season_id=s["season_id"], team_id=team_id).get("Schedule") or []
+        for g in sched:
+            if str(g.get("home_team")) != team_id:
+                continue
+            start = _ahl_start(g)
+            if not start:
+                continue
+            vid = str(g.get("visiting_team"))
+            opp = g.get("visiting_team_name") or names.get(vid) or f"{g.get('visiting_team_city', '')} {g.get('visiting_team_nickname', '')}".strip() or "TBD"
+            venue = g.get("venue_name") or "Place Bell"
+            city = g.get("venue_location") or ("Laval" if "bell" in venue.lower() and "centre" not in venue.lower() else "Montréal")
+            events.append(Event(
+                source="rocket", uid=f"ahl-{g.get('game_id') or g.get('id')}@karenda", summary=f"Rocket vs {opp}{tag}",
+                start=start, end=start + timedelta(hours=3), location=f"{venue}, {city}",
+                url="https://www.rocketlaval.com/en/schedule/", categories=["Sports", "AHL"],
+            ))
+    if not events:
+        raise RuntimeError("no home games parsed")
+    return events
+
+
+MODERNE = "https://www.cinemamoderne.com"
+MODERNE_LOC = "Cinéma Moderne, 5150 boul. Saint-Laurent, Montréal"
+FR_DATE_RE = re.compile(
+    r"(?:(?:lun|mar|mer|jeu|ven|sam|dim|mon|tue|wed|thu|fri|sat|sun)[a-zé]*\.?,?\s+)?"
+    r"(\d{1,2})(?:er|st|nd|rd|th)?\s+(janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|"
+    r"octobre|novembre|décembre|decembre|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|january|february|"
+    r"march|april|june|july|august|september|october|november|december)\.?(?:\s+(\d{4}))?", re.I)
+TIME_RE = re.compile(r"\b(\d{1,2})\s*(?:h|:)\s*(\d{2})?\s*(am|pm|AM|PM)?\b")
+
+
+def _near_date(text: str) -> date | None:
+    m = FR_DATE_RE.search(text)
+    if not m:
+        return None
+    mo = month_num(m[2])
+    if not mo:
+        return None
+    y = int(m[3]) if m[3] else TODAY.year
+    try:
+        d = date(y, mo, int(m[1]))
+    except ValueError:
+        return None
+    if not m[3] and d < TODAY - timedelta(days=45):
+        d = d.replace(year=y + 1)
+    return d
+
+
+def _walk_ld(obj, out: list) -> None:
+    if isinstance(obj, dict):
+        t = obj.get("@type")
+        if (isinstance(t, str) and t in ("Event", "ScreeningEvent", "Movie")) or (isinstance(t, list) and "Event" in t):
+            out.append(obj)
+        for v in obj.values():
+            _walk_ld(v, out)
+    elif isinstance(obj, list):
+        for v in obj:
+            _walk_ld(v, out)
+
+
+def src_cinemamoderne() -> list[Event]:
+    pages: dict[str, str] = {}
+    for path, name in (("/", "moderne_home.html"), ("/en/", "moderne_home_en.html"),
+                       ("/programmation/", "moderne_programmation.html"), ("/en/programming/", "moderne_programming.html"),
+                       ("/horaire/", "moderne_horaire.html"), ("/en/schedule/", "moderne_schedule.html"),
+                       ("/films/", "moderne_films.html"), ("/en/films/", "moderne_films_en.html"),
+                       ("/wp-json/wp/v2/types", "moderne_types.json"), ("/wp-json/", "moderne_wpjson.json"),
+                       ("/sitemap.xml", "moderne_sitemap.xml"), ("/wp-sitemap.xml", "moderne_wp_sitemap.xml")):
+        try:
+            pages[path] = get(MODERNE + path, name).text
+        except Exception as e:  # noqa: BLE001
+            print("  moderne: probe failed", path, e)
+    events: dict[str, Event] = {}
+    for path, page_html in pages.items():
+        if not path.endswith("/"):
+            continue
+        soup = BeautifulSoup(page_html, "html.parser")
+        ld: list = []
+        for s in soup.find_all("script", type="application/ld+json"):
+            try:
+                _walk_ld(json.loads(s.string or ""), ld)
+            except Exception:  # noqa: BLE001
+                pass
+        for o in ld:
+            sd, title = o.get("startDate"), o.get("name")
+            if not (isinstance(sd, str) and isinstance(title, str)):
+                continue
+            try:
+                start = datetime.fromisoformat(sd.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            if start.tzinfo is None:
+                start = start.replace(tzinfo=MTL)
+            url = o.get("url") if isinstance(o.get("url"), str) else ""
+            key = f"{title}|{start.isoformat()}"
+            events[key] = Event(
+                source="cinemamoderne", uid=f"moderne-{slug(title)}-{start:%Y%m%d%H%M}@karenda",
+                summary=f"{html.unescape(title)} · Moderne", start=start, end=start + timedelta(hours=2),
+                location=MODERNE_LOC, url=url or MODERNE, categories=["Cinema", "Cinéma Moderne"],
+            )
+        for a in soup.select('a[href*="/film"], a[href*="/projection"], a[href*="/event"], a[href*="/evenement"], a[href*="/seance"]'):
+            href = a.get("href", "").split("?")[0]
+            if not href or href.rstrip("/") == MODERNE.rstrip("/"):
+                continue
+            node, txt, d = a, "", None
+            for _ in range(4):
+                txt = text_of(node)
+                d = _near_date(txt)
+                if d or node.parent is None:
+                    break
+                node = node.parent
+            if not d:
+                continue
+            tm = TIME_RE.search(txt)
+            if not tm:
+                continue
+            hh, mm = int(tm[1]), int(tm[2] or 0)
+            if tm[3] and tm[3].lower() == "pm" and hh < 12:
+                hh += 12
+            if not (0 <= hh < 24 and 0 <= mm < 60):
+                continue
+            title = ""
+            for sel in ("h1", "h2", "h3", "h4", "[class*=title]"):
+                h = a.select_one(sel) or node.select_one(sel)
+                if h and text_of(h):
+                    title = text_of(h)
+                    break
+            title = title or text_of(a) or href.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title()
+            title = FR_DATE_RE.sub("", TIME_RE.sub("", title)).strip(" -|·,")
+            if not title:
+                continue
+            start = datetime(d.year, d.month, d.day, hh, mm, tzinfo=MTL)
+            key = f"{title}|{start.isoformat()}"
+            full = href if href.startswith("http") else MODERNE + href
+            events.setdefault(key, Event(
+                source="cinemamoderne", uid=f"moderne-{slug(title)}-{start:%Y%m%d%H%M}@karenda",
+                summary=f"{title} · Moderne", start=start, end=start + timedelta(hours=2),
+                location=MODERNE_LOC, url=full, categories=["Cinema", "Cinéma Moderne"],
+            ))
+    if not events:
+        raise RuntimeError("no screenings parsed")
+    return list(events.values())
+
+
 # --------------------------------------------------------------------------- html page
-MTL = ZoneInfo("America/Toronto")
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
 def plain_title(e: Event) -> str:
-    return re.sub(r"\s*·\s*(PdA|Centaur|Rideau Vert)$", "", e.summary)
+    return re.sub(r"\s*·\s*(PdA|Centaur|Rideau Vert|Moderne)$", "", e.summary)
 
 
 def venue_of(e: Event) -> str:
@@ -708,11 +927,14 @@ SOURCES = {
     "placedesarts": src_placedesarts,
     "centaur": src_centaur,
     "rideauvert": src_rideauvert,
+    "rocket": src_rocket,
+    "cinemamoderne": src_cinemamoderne,
 }
 GROUPS = {
     "karenda": list(SOURCES),
-    "karenda-sports": ["victoire", "cfmontreal"],
+    "karenda-sports": ["victoire", "cfmontreal", "rocket"],
     "karenda-theatre": ["placedesarts", "centaur", "rideauvert"],
+    "karenda-cinema": ["cinemamoderne"],
 }
 
 
@@ -739,7 +961,7 @@ def main() -> int:
     for fname, srcs in GROUPS.items():
         evs = [e for s in srcs for e in by_source.get(s, [])]
         write_ics(OUT / f"{fname}.ics", {"karenda": "Karenda", "karenda-sports": "Karenda · Sports",
-                                          "karenda-theatre": "Karenda · Théâtre"}[fname], evs)
+                                          "karenda-theatre": "Karenda · Théâtre", "karenda-cinema": "Karenda · Cinéma"}[fname], evs)
         status[fname] = len(evs)
     (OUT / "index.html").write_text(render_html([e for l in by_source.values() for e in l]), encoding="utf-8")
     (OUT / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n")
