@@ -1,9 +1,9 @@
 {
-  "built_at": "2026-10-08T14:32:34+00:00",
+  "built_at": "2026-10-08T14:47:27+00:00",
   "sources": {
     "victoire": {
       "ok": true,
-      "events": 16
+      "events": 15
     },
     "cfmontreal": {
       "ok": true,
@@ -16,9 +16,23 @@
     "rideauvert": {
       "ok": true,
       "events": 6
+    },
+    "rocket": {
+      "ok": true,
+      "events": 34
+    },
+    "cinemamoderne": {
+      "ok": true,
+      "events": 223
+    },
+    "mbam": {
+      "ok": true,
+      "events": 9
     }
   },
-  "karenda": 120,
-  "karenda-sports": 19,
-  "karenda-theatre": 101
+  "karenda": 385,
+  "karenda-sports": 52,
+  "karenda-theatre": 101,
+  "karenda-cinema": 223,
+  "karenda-museums": 9
 }
