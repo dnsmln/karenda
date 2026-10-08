@@ -26,8 +26,8 @@ Set auto-refresh to "Every day". On iPhone: Settings → Calendar → Accounts �
 | Laval Rocket (AHL) | home games, timed | AHL schedule feed (HockeyTech) behind theahl.com |
 | Place des Arts | each show as an all-day span over its run, hall in location | `/en/programming` listing |
 | Théâtre du Rideau Vert | each show as an all-day span over its run | `/programmation` |
-| Cinéma Moderne | each screening, timed | cinemamoderne.com programme |
-| Musée des beaux-arts (MBAM) | each exhibition as an all-day span over its run | `/en/exhibitions` listing + exhibition pages |
+| Cinéma Moderne | each screening, timed, runtime from the listing | `/en/schedule` month calendar, this month and the next two |
+| Musée des beaux-arts (MBAM) | current and coming exhibitions, each as an all-day span over its run | `/en/exhibitions` listing |
 
 If a source fails on a given day, its events from the previous build are kept.
 `docs/status.json` shows per-source counts and errors from the last run.

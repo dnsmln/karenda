@@ -7,8 +7,8 @@ Sources
   placedesarts  placedesarts.com/en/programming listing
   rideauvert    rideauvert.qc.ca/programmation
   rocket        AHL schedule feed (HockeyTech) behind theahl.com (home games only)
-  cinemamoderne cinemamoderne.com screenings
-  mbam          mbam.qc.ca exhibitions (each as an all-day span over its run)
+  cinemamoderne cinemamoderne.com/en/schedule month calendar (each screening, timed)
+  mbam          mbam.qc.ca/en/exhibitions listing (current and coming exhibitions as all-day spans)
 
 Each source is independent. If one fails, its events from the previous
 karenda.ics are kept so the feed never loses a venue because of one bad day.
@@ -208,8 +208,7 @@ MONTH_RE = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 
 def month_num(s: str) -> int | None:
     s = s.lower().rstrip(".")
-    return (MONTHS.get(s) or MONTHS.get(s[:3]) or MONTHS_FR.get(s)
-            or (next((v for k, v in MONTHS_FR.items() if k.startswith(s)), None) if len(s) >= 3 else None))
+    return MONTHS.get(s) or MONTHS.get(s[:3]) or MONTHS_FR.get(s)
 
 
 def parse_en_range(text: str) -> tuple[date, date] | None:
@@ -569,35 +568,26 @@ def _ahl(view: str, name: str, **params) -> dict:
 
 
 def _ahl_start(g: dict) -> datetime | None:
-    iso = g.get("GameDateISO8601") or g.get("date_time_played")
+    iso = g.get("GameDateISO8601")                      # local time with offset, e.g. 2026-10-02T19:00:00-04:00
     if isinstance(iso, str):
         try:
-            d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+            d = datetime.fromisoformat(iso)
             return d if d.tzinfo else d.replace(tzinfo=MTL)
         except ValueError:
             pass
     try:
         d = datetime.strptime(f"{g.get('date_played')} {g.get('schedule_time') or '19:00:00'}"[:19], "%Y-%m-%d %H:%M:%S")
-    except ValueError:
+        return d.replace(tzinfo=ZoneInfo(g.get("timezone") or "America/Toronto"))
+    except (ValueError, KeyError):
         return None
-    try:
-        tz = ZoneInfo(g.get("timezone") or "America/Toronto")
-    except Exception:  # noqa: BLE001
-        tz = MTL
-    return d.replace(tzinfo=tz)
 
 
 def src_rocket() -> list[Event]:
-    for u, n in (("https://www.rocketlaval.com/en/schedule/", "rocket_schedule.html"),
-                 ("https://theahl.com/stats/schedule", "ahl_schedule_page.html")):
-        try:
-            get(u, n)
-        except Exception as e:  # noqa: BLE001
-            print("  rocket: probe failed", u, e)
     seasons = _ahl("seasons", "ahl_seasons.json").get("Seasons") or []
     y = TODAY.year if TODAY.month >= 7 else TODAY.year - 1
-    label = f"{y}-{(y + 1) % 100:02d}"                                  # "2026-27"
-    cur = [s for s in seasons if label in s.get("season_name", "") and "all-star" not in s.get("season_name", "").lower()]
+    label = f"{y}-{(y + 1) % 100:02d}"                                  # "2026-27": regular season and its playoffs
+    cur = [s for s in seasons if (label in s.get("season_name", "") or (s.get("playoff") == "1" and str(y + 1) in s.get("season_name", "")))
+           and "all-star" not in s.get("season_name", "").lower()]
     if not cur:
         cur = sorted(seasons, key=lambda s: int(s.get("season_id") or 0))[-2:]
     if not cur:
@@ -628,11 +618,11 @@ def src_rocket() -> list[Event]:
             vid = str(g.get("visiting_team"))
             opp = g.get("visiting_team_name") or names.get(vid) or f"{g.get('visiting_team_city', '')} {g.get('visiting_team_nickname', '')}".strip() or "TBD"
             venue = g.get("venue_name") or "Place Bell"
-            city = g.get("venue_location") or ("Laval" if "bell" in venue.lower() and "centre" not in venue.lower() else "Montréal")
+            city = re.sub(r",\s*QC$", "", g.get("venue_location") or "").replace("Montreal", "Montréal") or "Laval"
             events.append(Event(
                 source="rocket", uid=f"ahl-{g.get('game_id') or g.get('id')}@karenda", summary=f"Rocket vs {opp}{tag}",
                 start=start, end=start + timedelta(hours=3), location=f"{venue}, {city}",
-                url="https://www.rocketlaval.com/en/schedule/", categories=["Sports", "AHL"],
+                url="https://www.rocketlaval.com/", categories=["Sports", "AHL"],
             ))
     if not events:
         raise RuntimeError("no home games parsed")
@@ -641,122 +631,64 @@ def src_rocket() -> list[Event]:
 
 MODERNE = "https://www.cinemamoderne.com"
 MODERNE_LOC = "Cinéma Moderne, 5150 boul. Saint-Laurent, Montréal"
-FR_DATE_RE = re.compile(
-    r"(?:(?:lun|mar|mer|jeu|ven|sam|dim|mon|tue|wed|thu|fri|sat|sun)[a-zé]*\.?,?\s+)?"
-    r"(\d{1,2})(?:er|st|nd|rd|th)?\s+(janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|"
-    r"octobre|novembre|décembre|decembre|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|january|february|"
-    r"march|april|june|july|august|september|october|november|december)\.?(?:\s+(\d{4}))?", re.I)
-TIME_RE = re.compile(r"\b(\d{1,2})\s*(?:h|:)\s*(\d{2})?\s*(am|pm|AM|PM)?\b")
 
 
-def _near_date(text: str) -> date | None:
-    m = FR_DATE_RE.search(text)
-    if not m:
-        return None
-    mo = month_num(m[2])
-    if not mo:
-        return None
-    y = int(m[3]) if m[3] else TODAY.year
-    try:
-        d = date(y, mo, int(m[1]))
-    except ValueError:
-        return None
-    if not m[3] and d < TODAY - timedelta(days=45):
-        d = d.replace(year=y + 1)
-    return d
-
-
-def _walk_ld(obj, out: list) -> None:
-    if isinstance(obj, dict):
-        t = obj.get("@type")
-        if (isinstance(t, str) and t in ("Event", "ScreeningEvent", "Movie")) or (isinstance(t, list) and "Event" in t):
-            out.append(obj)
-        for v in obj.values():
-            _walk_ld(v, out)
-    elif isinstance(obj, list):
-        for v in obj:
-            _walk_ld(v, out)
+def _moderne_month(page_html: str, events: dict[str, Event]) -> str:
+    """Parse one month of the schedule calendar into `events`; returns the next-month URL (or "")."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    for day in soup.select(".cm-Cal__day[data-day]"):
+        try:
+            d = date.fromisoformat(day["data-day"])
+        except ValueError:
+            continue
+        for ev in day.select(".cm-Cal__day__event"):
+            a = ev.select_one(".cm-Cal__day__event__title a[href]")
+            m = re.match(r"(\d{1,2}):(\d{2})", text_of(ev.select_one(".cm-Fat")))
+            if not a or not m:
+                continue
+            href = a["href"].split("?")[0]
+            title_el = ev.select_one(".cm-Card__title")
+            version = ""
+            if title_el:
+                sub = title_el.select_one(".cm-Card__subtitles")       # (VOSTA), (VF), ...
+                if sub:
+                    version = text_of(sub)
+                    sub.decompose()
+                title = text_of(title_el)
+            else:
+                title = re.sub(r"^\d{1,2}:\d{2}\s*", "", text_of(a))
+            if not title:
+                continue
+            film = slug(href.rstrip("/").rsplit("/", 1)[-1]) if "/details/" in href else slug(title)
+            items = [text_of(x) for x in ev.select(".cm-List__item")]      # director, country, year, runtime, languages, format
+            mins = next((int(x.split()[0]) for x in items if re.match(r"\d+ min", x)), 120)
+            start = datetime(d.year, d.month, d.day, int(m[1]), int(m[2]), tzinfo=MTL)
+            uid = f"moderne-{film}-{start:%Y%m%dT%H%M}@karenda"
+            events.setdefault(uid, Event(
+                source="cinemamoderne", uid=uid, summary=f"{title}{' ' + version if version else ''} · Moderne",
+                start=start, end=start + timedelta(minutes=mins), location=MODERNE_LOC, url=href,
+                description=" · ".join(x for x in items if x), categories=["Cinema", "Cinéma Moderne"],
+            ))
+    nxt = soup.select_one(".cm-MonthNav__arrow--right[href]")
+    return nxt["href"] if nxt else ""
 
 
 def src_cinemamoderne() -> list[Event]:
-    pages: dict[str, str] = {}
-    for path, name in (("/", "moderne_home.html"), ("/en/", "moderne_home_en.html"),
-                       ("/programmation/", "moderne_programmation.html"), ("/en/programming/", "moderne_programming.html"),
-                       ("/horaire/", "moderne_horaire.html"), ("/en/schedule/", "moderne_schedule.html"),
-                       ("/films/", "moderne_films.html"), ("/en/films/", "moderne_films_en.html"),
-                       ("/wp-json/wp/v2/types", "moderne_types.json"), ("/wp-json/", "moderne_wpjson.json"),
-                       ("/sitemap.xml", "moderne_sitemap.xml"), ("/wp-sitemap.xml", "moderne_wp_sitemap.xml")):
-        try:
-            pages[path] = get(MODERNE + path, name).text
-        except Exception as e:  # noqa: BLE001
-            print("  moderne: probe failed", path, e)
     events: dict[str, Event] = {}
-    for path, page_html in pages.items():
-        if not path.endswith("/"):
-            continue
-        soup = BeautifulSoup(page_html, "html.parser")
-        ld: list = []
-        for s in soup.find_all("script", type="application/ld+json"):
-            try:
-                _walk_ld(json.loads(s.string or ""), ld)
-            except Exception:  # noqa: BLE001
-                pass
-        for o in ld:
-            sd, title = o.get("startDate"), o.get("name")
-            if not (isinstance(sd, str) and isinstance(title, str)):
-                continue
-            try:
-                start = datetime.fromisoformat(sd.replace("Z", "+00:00"))
-            except ValueError:
-                continue
-            if start.tzinfo is None:
-                start = start.replace(tzinfo=MTL)
-            url = o.get("url") if isinstance(o.get("url"), str) else ""
-            key = f"{title}|{start.isoformat()}"
-            events[key] = Event(
-                source="cinemamoderne", uid=f"moderne-{slug(title)}-{start:%Y%m%d%H%M}@karenda",
-                summary=f"{html.unescape(title)} · Moderne", start=start, end=start + timedelta(hours=2),
-                location=MODERNE_LOC, url=url or MODERNE, categories=["Cinema", "Cinéma Moderne"],
-            )
-        for a in soup.select('a[href*="/film"], a[href*="/projection"], a[href*="/event"], a[href*="/evenement"], a[href*="/seance"]'):
-            href = a.get("href", "").split("?")[0]
-            if not href or href.rstrip("/") == MODERNE.rstrip("/"):
-                continue
-            node, txt, d = a, "", None
-            for _ in range(4):
-                txt = text_of(node)
-                d = _near_date(txt)
-                if d or node.parent is None:
-                    break
-                node = node.parent
-            if not d:
-                continue
-            tm = TIME_RE.search(txt)
-            if not tm:
-                continue
-            hh, mm = int(tm[1]), int(tm[2] or 0)
-            if tm[3] and tm[3].lower() == "pm" and hh < 12:
-                hh += 12
-            if not (0 <= hh < 24 and 0 <= mm < 60):
-                continue
-            title = ""
-            for sel in ("h1", "h2", "h3", "h4", "[class*=title]"):
-                h = a.select_one(sel) or node.select_one(sel)
-                if h and text_of(h):
-                    title = text_of(h)
-                    break
-            title = title or text_of(a) or href.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title()
-            title = FR_DATE_RE.sub("", TIME_RE.sub("", title)).strip(" -|·,")
-            if not title:
-                continue
-            start = datetime(d.year, d.month, d.day, hh, mm, tzinfo=MTL)
-            key = f"{title}|{start.isoformat()}"
-            full = href if href.startswith("http") else MODERNE + href
-            events.setdefault(key, Event(
-                source="cinemamoderne", uid=f"moderne-{slug(title)}-{start:%Y%m%d%H%M}@karenda",
-                summary=f"{title} · Moderne", start=start, end=start + timedelta(hours=2),
-                location=MODERNE_LOC, url=full, categories=["Cinema", "Cinéma Moderne"],
-            ))
+    url = MODERNE + "/en/schedule/"
+    for i in range(3):                                   # this month and the next two
+        before = len(events)
+        try:
+            page_html = get(url, f"moderne_schedule_{i}.html").text
+        except Exception as e:  # noqa: BLE001
+            if not i:
+                raise
+            print("  moderne: next month failed", url, e)
+            break
+        url = _moderne_month(page_html, events)
+        if not url or (i and len(events) == before):     # a month with nothing listed yet: stop
+            break
+        time.sleep(1)
     if not events:
         raise RuntimeError("no screenings parsed")
     return list(events.values())
@@ -764,110 +696,46 @@ def src_cinemamoderne() -> list[Event]:
 
 MBAM = "https://www.mbam.qc.ca"
 MBAM_LOC = "Musée des beaux-arts de Montréal, 1380 rue Sherbrooke Ouest, Montréal"
-FR_MONTH = (r"(?:janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|octobre|novembre|décembre|"
-            r"decembre|janv|févr|fevr|avr|juil|sept|oct|nov|déc|dec)\.?")
-
-
-def parse_fr_range(text: str) -> tuple[date, date] | None:
-    """'Du 2 octobre 2026 au 7 février 2027', 'Du 12 mars au 7 juin 2027', 'Du 12 au 28 mars 2027',
-    "Jusqu'au 7 février 2027" (from today). Returns (first_day, last_day) inclusive."""
-    t = html.unescape(text).replace("–", "-").replace("—", "-").replace("\xa0", " ").replace("’", "'")
-    t = re.sub(r"\s+", " ", t).strip()
-    D, M, Y = r"(\d{1,2})(?:er)?", rf"({FR_MONTH})", r"(\d{4})"
-    sep = r"\s*(?:au|à|a|-|et)\s*"
-    m = re.search(rf"{D} {M} {Y}{sep}{D} {M} {Y}", t, re.I)
-    if m:
-        a = date(int(m[3]), month_num(m[2]), int(m[1])); b = date(int(m[6]), month_num(m[5]), int(m[4]))
-        return (a, b) if b >= a else None
-    m = re.search(rf"{D} {M}{sep}{D} {M} {Y}", t, re.I)
-    if m:
-        y = int(m[5]); a = date(y, month_num(m[2]), int(m[1])); b = date(y, month_num(m[4]), int(m[3]))
-        if b < a:
-            a = a.replace(year=y - 1)
-        return a, b
-    m = re.search(rf"{D}{sep}{D} {M} {Y}", t, re.I)
-    if m:
-        y = int(m[4]); mo = month_num(m[3])
-        return date(y, mo, int(m[1])), date(y, mo, int(m[2]))
-    m = re.search(rf"jusqu'au {D} {M} {Y}", t, re.I)
-    if m:
-        b = date(int(m[3]), month_num(m[2]), int(m[1]))
-        return min(TODAY, b), b
-    return None
-
-
-def _mbam_range(txt: str) -> tuple[date, date] | None:
-    rng = parse_fr_range(txt)
-    if rng:
-        return rng
-    rng = parse_en_range(txt)
-    if rng and rng[0] == rng[1] and re.search(r"\b(until|through|jusqu)", txt, re.I):
-        return min(TODAY, rng[1]), rng[1]
-    if rng and rng[0] == rng[1] and re.search(r"\b(from|starting|dès|des)\b", txt, re.I):
-        return None                                         # open-ended: no end date to span
-    return rng
 
 
 def src_mbam() -> list[Event]:
-    pages: dict[str, str] = {}
-    for path, name in (("/en/exhibitions/", "mbam_exhibitions.html"), ("/fr/expositions/", "mbam_expositions.html"),
-                       ("/en/", "mbam_home_en.html"), ("/sitemap.xml", "mbam_sitemap.xml")):
-        try:
-            pages[path] = get(MBAM + path, name).text
-        except Exception as e:  # noqa: BLE001
-            print("  mbam: probe failed", path, e)
-    links: dict[str, tuple[str, str]] = {}          # href -> (title, nearby text)
-    for path, page_html in pages.items():
-        if not path.endswith("/"):
-            continue
-        soup = BeautifulSoup(page_html, "html.parser")
-        for a in soup.select('a[href*="/exhibitions/"], a[href*="/expositions/"]'):
-            href = a.get("href", "").split("?")[0].split("#")[0]
-            full = href if href.startswith("http") else MBAM + href
-            tail = full.rstrip("/").rsplit("/", 1)[-1]
-            if tail in ("exhibitions", "expositions", "en", "fr") or full in links or "mbam.qc.ca" not in full:
-                continue
-            node, txt = a, text_of(a)
-            for _ in range(4):
-                txt = text_of(node)
-                if _mbam_range(txt) or node.parent is None:
-                    break
-                node = node.parent
-            title = ""
-            for sel in ("h1", "h2", "h3", "h4", "[class*=title]"):
-                h = a.select_one(sel) or node.select_one(sel)
-                if h and text_of(h):
-                    title = text_of(h)
-                    break
-            links[full] = (title or text_of(a) or tail.replace("-", " ").title(), txt)
+    soup = BeautifulSoup(get(MBAM + "/en/exhibitions/", "mbam_exhibitions.html").text, "html.parser")
+    previous = {e.uid: e for e in read_previous(OUT / "karenda.ics").get("mbam", [])}
     events: dict[str, Event] = {}
-    fetched = 0
-    for full, (title, txt) in links.items():
-        rng = _mbam_range(txt)
-        if not rng and fetched < 30:
-            fetched += 1
-            time.sleep(1)
-            try:
-                page = BeautifulSoup(get(full, f"mbam_{slug(full.rstrip('/').rsplit('/', 1)[-1])}.html").text, "html.parser")
-            except Exception as e:  # noqa: BLE001
-                print("  mbam: page fetch failed", full, e)
+    for sec in soup.select("section[id]"):
+        if not sec["id"].startswith(("temporary-exhibitions", "coming-soon")):
+            continue                                     # permanent collection, past exhibitions
+        for a in sec.select('a[href*="/en/exhibitions/"]'):
+            href = a["href"].split("?")[0]
+            tail = href.rstrip("/").rsplit("/", 1)[-1]
+            if tail == "exhibitions":
                 continue
-            for s in page(["script", "style", "nav", "footer", "header"]):
-                s.decompose()
-            title = text_of(page.select_one("h1")) or title
-            main = page.select_one("main, article, .entry-content, #content") or page
-            rng = _mbam_range(text_of(main))
-        if not rng:
-            print("  mbam: no dates for", title, full)
-            continue
-        first, last = rng
-        if last < KEEP_FROM or (last - first).days > 400:
-            continue
-        key = slug(full.rstrip("/").rsplit("/", 1)[-1])
-        events.setdefault(key, span_event(
-            "mbam", f"mbam-{key}@karenda", f"{title} · MBAM", first, last,
-            location=MBAM_LOC, url=full, categories=["Museum", "MBAM"],
-        ))
+            card = a.find_parent(class_="transition-gallery-icon-ctn") or a.parent
+            p = next((p for p in card.select("p") if p.select_one("strong")), None)   # skip image credits
+            if not p:
+                continue
+            title = text_of(p.select_one("strong"))
+            dates = text_of(p).replace(title, "", 1).strip()  # "Until February 14, 2027" / "October 9, 2026 – March 14, 2027"
+            rng = parse_en_range(dates)
+            if not rng:                                       # month-only: "November 2026 – April 2027"
+                m = re.search(rf"({MONTH_RE}) (\d{{4}})\s*(?:-|–|to)\s*({MONTH_RE}) (\d{{4}})", dates, re.I)
+                if m and month_num(m[1]) and month_num(m[3]):
+                    y2, mo2 = int(m[4]), month_num(m[3])
+                    rng = (date(int(m[2]), month_num(m[1]), 1), date(y2 + mo2 // 12, mo2 % 12 + 1, 1) - timedelta(days=1))
+            if not rng:
+                print("  mbam: no dates for", title, repr(dates))
+                continue
+            first, last = rng
+            uid = f"mbam-{slug(tail)}@karenda"
+            if re.match(r"(?i)(until|through)\b", dates):   # already open: keep the start we first saw
+                old = previous.get(uid)
+                first = old.start if old and old.start_date() <= TODAY else min(TODAY, last)
+            if last < KEEP_FROM or (last - first).days > 400:
+                continue
+            events.setdefault(uid, span_event(
+                "mbam", uid, f"{title} · MBAM", first, last, location=MBAM_LOC,
+                url=href if href.startswith("http") else MBAM + href, categories=["Museum", "MBAM"],
+            ))
     if not events:
         raise RuntimeError("no exhibitions parsed")
     return list(events.values())
