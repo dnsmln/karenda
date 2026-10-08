@@ -8,3066 +8,1309 @@ X-WR-TIMEZONE:America/Toronto
 X-PUBLISHED-TTL:PT12H
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
-UID:moderne-clue-voa-202610071815@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-clue-20261007T1815@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261007T221500Z
-DTEND:20261008T001500Z
+DTEND:20261007T234200Z
 SUMMARY:Clue (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/clue/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/clue/
+URL:https://www.cinemamoderne.com/en/films/details/clue/
+DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/clue/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-q-a-202610072015
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261008T001500Z
-DTEND:20261008T021500Z
-SUMMARY:La meilleure façon\, c'est par accident (VOSTA + Q&A) · Modern
- e
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-q-a-202610072015
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261008T001500Z
-DTEND:20261008T021500Z
-SUMMARY:La meilleure façon\, c’est par accident (VOSTA + Q&A) · Mode
- rne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-late-fame-voa-202610071400@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-late-fame-20261007T1400@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261007T180000Z
-DTEND:20261007T200000Z
+DTEND:20261007T193700Z
 SUMMARY:Late Fame (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/late-fame/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/late-fame/
+URL:https://www.cinemamoderne.com/en/films/details/late-fame/
+DESCRIPTION:Kent Jones · United States\, France · 2025 · 97 minutes 
+ · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/late-
+ fame/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-les-h-ritiers-vosta-202610071615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261007T201500Z
-DTEND:20261007T221500Z
-SUMMARY:Les héritiers (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/les-heritiers/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/les-heritiers/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-best-way-is-by-accident-vosta-q-a-202610072015@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-la-meilleure-facon-cest-par-accident-20261007T2015@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261008T001500Z
-DTEND:20261008T021500Z
+DTEND:20261008T020600Z
 SUMMARY:The Best Way is By Accident (VOSTA + Q&A) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
  st-par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/la-meilleure-
- facon-cest-par-accident/
+DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
+ s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
+ etails/la-meilleure-facon-cest-par-accident/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-inheritors-vosta-202610071615@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-les-heritiers-20261007T1615@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261007T201500Z
-DTEND:20261007T221500Z
+DTEND:20261007T213400Z
 SUMMARY:The Inheritors (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/les-heritiers/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/les-heritiers
- /
+DESCRIPTION:Serge-Olivier Rondeau · Canada (Quebec) · 2023 · 79 minut
+ es · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/les-heritiers/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-anglais-202610082130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T013000Z
-DTEND:20261009T033000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-fran-ais-202610081400@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261008T180000Z
-DTEND:20261008T200000Z
-SUMMARY:Français · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-bridges-of-madison-c
- ounty/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-bridges-of-m
- adison-county/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-voa-202610081700@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-lawrence-of-arabia-20261008T1700@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261008T210000Z
-DTEND:20261008T230000Z
+DTEND:20261009T004700Z
 SUMMARY:Lawrence of Arabia (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/lawrence-of-arabia/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/lawrence-of-arab
- ia/
+URL:https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/
+DESCRIPTION:David Lean · United Kingdom · 1962 · 227 minutes · Engli
+ sh · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/deta
+ ils/lawrence-of-arabia/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-202610081700@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261008T210000Z
-DTEND:20261008T230000Z
-SUMMARY:Lawrence of Arabia · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/lawrence-of-arabia/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/lawrence-of-arab
- ia/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-bridges-of-madison-county-derni-re-s-ance-vostf-20261008
- 1400@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-bridges-of-madison-county-20261008T1400@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261008T180000Z
-DTEND:20261008T200000Z
-SUMMARY:The Bridges of Madison County [DERNIÈRE SÉANCE] (VOSTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-bridges-of-madison-c
- ounty/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-bridges-of-m
- adison-county/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-bridges-of-madison-county-derni-re-s-ance-202610081400@k
- arenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261008T180000Z
-DTEND:20261008T200000Z
-SUMMARY:The Bridges of Madison County [DERNIÈRE SÉANCE] · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-bridges-of-madison-c
- ounty/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-bridges-of-m
- adison-county/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-bridges-of-madison-county-last-screening-vostf-202610081
- 400@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261008T180000Z
-DTEND:20261008T200000Z
+DTEND:20261008T201500Z
 SUMMARY:The Bridges of Madison County [LAST SCREENING] (VOSTF) · Modern
  e
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-bridges-of-madiso
  n-county/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-bridges-o
- f-madison-county/
+DESCRIPTION:Clint Eastwood · United States · 1995 · 135 minutes · En
+ glish · French · DCP\nhttps://www.cinemamoderne.com/en/films/details/
+ the-bridges-of-madison-county/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-vosta-20
- 2610082130@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-lequipe-20261008
+ T2130@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261009T013000Z
-DTEND:20261009T033000Z
-SUMMARY:The Color of Pomegranates - Coups de coeur de l'équipe (VOSTA) 
- · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-staff-picks-vosta-202610082130@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T013000Z
-DTEND:20261009T033000Z
-SUMMARY:The Color of Pomegranates - Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-color-of-pomegran
- ates-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-color-of-
- pomegranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-vosta-20
- 2610082130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T013000Z
-DTEND:20261009T033000Z
-SUMMARY:The Color of Pomegranates – Coups de coeur de l’équipe (VOS
- TA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-20261008
- 2130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T013000Z
-DTEND:20261009T033000Z
-SUMMARY:The Color of Pomegranates – Coups de coeur de l’équipe · M
- oderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-staff-picks-vosta-202610082130@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T013000Z
-DTEND:20261009T033000Z
+DTEND:20261009T024800Z
 SUMMARY:The Color of Pomegranates – Staff Picks (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-color-of-pomegran
  ates-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-color-of-
- pomegranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610091615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T201500Z
-DTEND:20261009T221500Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jacquot-de-nantes-coups-
+DESCRIPTION:Sergueï Paradjanov · USSR · 1969 · 78 minutes · Armenia
+ n\, Azerbaijani\, Georgian · English · DCP - 4K Restoration\nhttps://
+ www.cinemamoderne.com/en/films/details/the-color-of-pomegranates-coups-
  de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jacquot-de-nante
- s-coups-de-coeur-de-lequipe/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jacquot-de-nantes-coups-de-coeur-de-l-quipe-vosta-2026100916
- 15@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T201500Z
-DTEND:20261009T221500Z
-SUMMARY:Jacquot de Nantes - Coups de coeur de l'équipe (VOSTA) · Moder
- ne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jacquot-de-nantes-coups-
- de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jacquot-de-nante
- s-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jacquot-de-nantes-staff-picks-vosta-202610091615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T201500Z
-DTEND:20261009T221500Z
-SUMMARY:Jacquot de Nantes - Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jacquot-de-nantes-cou
- ps-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/jacquot-de-na
- ntes-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jacquot-de-nantes-coups-de-coeur-de-l-quipe-vosta-2026100916
- 15@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T201500Z
-DTEND:20261009T221500Z
-SUMMARY:Jacquot de Nantes – Coups de coeur de l’équipe (VOSTA) · M
- oderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jacquot-de-nantes-coups-
- de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jacquot-de-nante
- s-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jacquot-de-nantes-coups-de-coeur-de-l-quipe-202610091615@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T201500Z
-DTEND:20261009T221500Z
-SUMMARY:Jacquot de Nantes – Coups de coeur de l’équipe · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jacquot-de-nantes-coups-
- de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jacquot-de-nante
- s-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jacquot-de-nantes-staff-picks-vosta-202610091615@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-jacquot-de-nantes-coups-de-coeur-de-lequipe-20261009T1615@ka
+ renda
+DTSTAMP:20261008T145508Z
 DTSTART:20261009T201500Z
 DTEND:20261009T221500Z
 SUMMARY:Jacquot de Nantes – Staff Picks (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/jacquot-de-nantes-cou
  ps-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/jacquot-de-na
- ntes-coups-de-coeur-de-lequipe/
+DESCRIPTION:Agnès Varda · France · 1991 · 118 · French · English 
+ · DCP\nhttps://www.cinemamoderne.com/en/films/details/jacquot-de-nante
+ s-coups-de-coeur-de-lequipe/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610091845@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-jim-queen-20261009T1845@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261009T224500Z
-DTEND:20261010T004500Z
+DTEND:20261010T001000Z
 SUMMARY:Jim Queen (VOF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
+URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jim-queen-202610091845@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T224500Z
-DTEND:20261010T004500Z
-SUMMARY:Jim Queen · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-vastf-2026100
- 92045@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261009T2045
+ @karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261010T004500Z
-DTEND:20261010T024500Z
-SUMMARY:The Good\, The Bad and The Ugly: 60e anniversaire (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-good-the-bad-and-the
- -ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-good-the-bad
- -and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-202610092045@
- karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T004500Z
-DTEND:20261010T024500Z
-SUMMARY:The Good\, The Bad and The Ugly: 60e anniversaire · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-good-the-bad-and-the
- -ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-good-the-bad
- -and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60th-anniversary-vastf-2026100
- 92045@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T004500Z
-DTEND:20261010T024500Z
+DTEND:20261010T034400Z
 SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
  erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
  the-ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-good-the-
- bad-and-the-ugly-60e-anniversaire/
+DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
+ minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
+ om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-trainspotting-30e-anniversaire-derni-res-s-ances-vostf-20261
- 0091400@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-trainspotting-30e-anniversaire-20261009T1400@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261009T180000Z
-DTEND:20261009T200000Z
-SUMMARY:Trainspotting: 30e anniversaire [DERNIÈRES SÉANCES] (VOSTF) ·
-  Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/trainspotting-30e-annive
- rsaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/trainspotting-30
- e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-trainspotting-30th-anniversary-last-screenings-vostf-2026100
- 91400@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261009T180000Z
-DTEND:20261009T200000Z
+DTEND:20261009T193400Z
 SUMMARY:Trainspotting: 30th Anniversary [LAST SCREENINGS] (VOSTF) · Mod
  erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/trainspotting-30e-ann
  iversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/trainspotting
- -30e-anniversaire/
+DESCRIPTION:Danny Boyle · United Kingdom · 1996 · 94 minutes · Engli
+ sh · French · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
+ films/details/trainspotting-30e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-anglais-202610101815@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-ha-chan-shake-your-booty-20261010T1815@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261010T221500Z
-DTEND:20261011T001500Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/ha-chan-shake-your-booty
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/ha-chan-shake-yo
- ur-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610102100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T010000Z
-DTEND:20261011T030000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/hope/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-vosta-202610101815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T221500Z
-DTEND:20261011T001500Z
-SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/ha-chan-shake-your-booty
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/ha-chan-shake-yo
- ur-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-202610101815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T221500Z
-DTEND:20261011T001500Z
-SUMMARY:Ha-Chan\, Shake Your Booty! · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/ha-chan-shake-your-booty
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/ha-chan-shake-yo
- ur-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-hope-vosta-202610102100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T010000Z
-DTEND:20261011T030000Z
-SUMMARY:Hope (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/hope/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-hope-202610102100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T010000Z
-DTEND:20261011T030000Z
-SUMMARY:Hope · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/hope/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jardin-d-enfants-vof-q-a-202610101345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T174500Z
-DTEND:20261010T194500Z
-SUMMARY:Jardin d'enfants (VOF + Q&A) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jardin-denfants-cine-ren
- contre/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jardin-denfants-
- cine-rencontre/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jardin-d-enfants-vof-q-a-202610101345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T174500Z
-DTEND:20261010T194500Z
-SUMMARY:Jardin d’enfants (VOF + Q&A) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jardin-denfants-cine-ren
- contre/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jardin-denfants-
- cine-rencontre/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jardin-d-enfants-202610101345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T174500Z
-DTEND:20261010T194500Z
-SUMMARY:Jardin d’enfants · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jardin-denfants-cine-ren
- contre/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jardin-denfants-
- cine-rencontre/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610101615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T201500Z
-DTEND:20261010T221500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-kindergarten-vof-q-a-202610101345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T174500Z
-DTEND:20261010T194500Z
-SUMMARY:Kindergarten (VOF + Q&A) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jardin-denfants-cine-
- rencontre/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/jardin-denfan
- ts-cine-rencontre/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-le-mouton-la-b-te-de-la-ferme-petits-modernes-vf-20261
- 0100930@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T133000Z
-DTEND:20261010T153000Z
-SUMMARY:Shaun le mouton : La bêêête de la ferme [PETITS MODERNES] (VF
- ) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/shaun-le-mouton-la-beeet
- e-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/shaun-le-mouton-
- la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-le-mouton-la-b-te-de-la-ferme-petits-modernes-20261010
- 0930@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T133000Z
-DTEND:20261010T153000Z
-SUMMARY:Shaun le mouton : La bêêête de la ferme [PETITS MODERNES] · 
- Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/shaun-le-mouton-la-beeet
- e-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/shaun-le-mouton-
- la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-the-sheep-the-beast-of-mossy-bottom-petits-modernes-vf
- -202610100930@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T133000Z
-DTEND:20261010T153000Z
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
- ) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
- eete-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/shaun-le-mout
- on-la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-virgin-suicides-voa-202610101130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T153000Z
-DTEND:20261010T173000Z
-SUMMARY:The Virgin Suicides (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-virgin-suicide/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-virgin-suici
- de/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-virgin-suicides-202610101130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261010T153000Z
-DTEND:20261010T173000Z
-SUMMARY:The Virgin Suicides · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-virgin-suicide/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-virgin-suici
- de/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610111345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194500Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610111830@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T223000Z
-DTEND:20261012T003000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-vosta-202610111345
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194500Z
-SUMMARY:Cinema Paradiso - Coups de coeur de l'équipe (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-staff-picks-vosta-202610111345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194500Z
-SUMMARY:Cinema Paradiso - Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cinema-paradi
- so-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-vosta-202610111345
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194500Z
-SUMMARY:Cinema Paradiso – Coups de coeur de l’équipe (VOSTA) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-202610111345@karen
- da
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194500Z
-SUMMARY:Cinema Paradiso – Coups de coeur de l’équipe · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-staff-picks-vosta-202610111345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194500Z
-SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cinema-paradi
- so-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-clue-voa-202610111130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T153000Z
-DTEND:20261011T173000Z
-SUMMARY:Clue (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/clue/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-clue-202610111130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T153000Z
-DTEND:20261011T173000Z
-SUMMARY:Clue · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/clue/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-fran-ais-202610112100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261012T010000Z
-DTEND:20261012T030000Z
-SUMMARY:Français · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-invite/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-invite/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610111630@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T203000Z
-DTEND:20261011T223000Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202610111830@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T223000Z
-DTEND:20261012T003000Z
-SUMMARY:La meilleure façon\, c'est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202610111830@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T223000Z
-DTEND:20261012T003000Z
-SUMMARY:La meilleure façon\, c’est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-202610111830@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T223000Z
-DTEND:20261012T003000Z
-SUMMARY:La meilleure façon\, c’est par accident · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-le-mouton-la-b-te-de-la-ferme-petits-modernes-vf-20261
- 0110930@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T133000Z
-DTEND:20261011T153000Z
-SUMMARY:Shaun le mouton : La bêêête de la ferme [PETITS MODERNES] (VF
- ) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/shaun-le-mouton-la-beeet
- e-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/shaun-le-mouton-
- la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-the-sheep-the-beast-of-mossy-bottom-petits-modernes-vf
- -202610110930@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T133000Z
-DTEND:20261011T153000Z
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
- ) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
- eete-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/shaun-le-mout
- on-la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-best-way-is-by-accident-vosta-202610111830@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261011T223000Z
-DTEND:20261012T003000Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/la-meilleure-
- facon-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-invite-derni-re-s-ance-vostf-202610112100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261012T010000Z
-DTEND:20261012T030000Z
-SUMMARY:The Invite [DERNIÈRE SÉANCE] (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-invite/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-invite/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-invite-derni-re-s-ance-202610112100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261012T010000Z
-DTEND:20261012T030000Z
-SUMMARY:The Invite [DERNIÈRE SÉANCE] · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-invite/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-invite/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-invite-last-screening-vostf-202610112100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261012T010000Z
-DTEND:20261012T030000Z
-SUMMARY:The Invite [LAST SCREENING] (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-invite/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-invite/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-hope-vosta-202610121800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261012T220000Z
-DTEND:20261013T000000Z
-SUMMARY:Hope (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/hope/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-voa-202610121330@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261012T173000Z
-DTEND:20261012T193000Z
-SUMMARY:Lawrence of Arabia (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/lawrence-of-arabia/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/lawrence-of-arab
- ia/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-my-brother-s-wedding-voa-202610122115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261013T011500Z
-DTEND:20261013T031500Z
-SUMMARY:My Brother's Wedding (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/my-brothers-wedding/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/my-brothers-wedd
- ing/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-my-brother-s-wedding-voa-202610122115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261013T011500Z
-DTEND:20261013T031500Z
-SUMMARY:My Brother’s Wedding (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/my-brothers-wedding/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/my-brothers-wedd
- ing/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-my-brother-s-wedding-202610122115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261013T011500Z
-DTEND:20261013T031500Z
-SUMMARY:My Brother’s Wedding · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/my-brothers-wedding/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/my-brothers-wedd
- ing/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-vosta-202610131330@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261013T173000Z
-DTEND:20261013T193000Z
+DTEND:20261011T001700Z
 SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
  oty/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/ha-chan-shake
- -your-booty/
+DESCRIPTION:Josef Kubota Wladyka · United States\, Japan · 2026 · 122
+  minutes · Japanese \, English \, Spain · English · DCP\nhttps://www
+ .cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610131700@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261013T210000Z
-DTEND:20261013T230000Z
+UID:moderne-hope-20261010T2100@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261011T010000Z
+DTEND:20261011T033700Z
+SUMMARY:Hope (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/hope/
+DESCRIPTION:Na Hong-jin · South Korea · 2026 · 157 minutes · Korean 
+ · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/hope/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-jim-queen-20261010T1615@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261010T201500Z
+DTEND:20261010T214000Z
 SUMMARY:Jim Queen (VOF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-best-way-is-by-accident-vosta-202610132030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T003000Z
-DTEND:20261014T023000Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
+UID:moderne-jardin-denfants-cine-rencontre-20261010T1345@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261010T174500Z
+DTEND:20261010T190900Z
+SUMMARY:Kindergarten (VOF + Q&A) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/la-meilleure-
- facon-cest-par-accident/
+URL:https://www.cinemamoderne.com/en/films/details/jardin-denfants-cine-
+ rencontre/
+DESCRIPTION:Jean-François Caissy · Canada (Quebec) · 2025 · 84 minut
+ es · French · DCP\nhttps://www.cinemamoderne.com/en/films/details/jar
+ din-denfants-cine-rencontre/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-a-tale-of-autumn-vosta-202610141530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T193000Z
-DTEND:20261014T213000Z
-SUMMARY:A Tale of Autumn (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/conte-dautomne-2/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/conte-dautomn
- e-2/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610142030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261015T003000Z
-DTEND:20261015T023000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/bashu-the-little-strange
- r/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/bashu-the-little
- -stranger/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610141530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T193000Z
-DTEND:20261014T213000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/conte-dautomne-2/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/conte-dautomne-2
- /
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-bashu-the-little-stranger-vosta-202610142030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261015T003000Z
-DTEND:20261015T023000Z
-SUMMARY:Bashu: The Little Stranger (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/bashu-the-little-strange
- r/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/bashu-the-little
- -stranger/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-bashu-the-little-stranger-202610142030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261015T003000Z
-DTEND:20261015T023000Z
-SUMMARY:Bashu: The Little Stranger · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/bashu-the-little-strange
- r/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/bashu-the-little
- -stranger/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-vosta-202610141800
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T220000Z
-DTEND:20261015T000000Z
-SUMMARY:Cinema Paradiso - Coups de coeur de l'équipe (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-staff-picks-vosta-202610141800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T220000Z
-DTEND:20261015T000000Z
-SUMMARY:Cinema Paradiso - Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cinema-paradi
- so-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-vosta-202610141800
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T220000Z
-DTEND:20261015T000000Z
-SUMMARY:Cinema Paradiso – Coups de coeur de l’équipe (VOSTA) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-staff-picks-vosta-202610141800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T220000Z
-DTEND:20261015T000000Z
-SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cinema-paradi
- so-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-conte-d-automne-vosta-202610141530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T193000Z
-DTEND:20261014T213000Z
-SUMMARY:Conte d'automne (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/conte-dautomne-2/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/conte-dautomne-2
- /
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-conte-d-automne-vosta-202610141530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T193000Z
-DTEND:20261014T213000Z
-SUMMARY:Conte d’automne (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/conte-dautomne-2/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/conte-dautomne-2
- /
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-conte-d-automne-202610141530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261014T193000Z
-DTEND:20261014T213000Z
-SUMMARY:Conte d’automne · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/conte-dautomne-2/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/conte-dautomne-2
- /
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-hope-vosta-202610151345@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261015T174500Z
-DTEND:20261015T194500Z
-SUMMARY:Hope (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/hope/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610152130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261016T013000Z
-DTEND:20261016T033000Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-voa-202610151700@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261015T210000Z
-DTEND:20261015T230000Z
-SUMMARY:Lawrence of Arabia (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/lawrence-of-arabia/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/lawrence-of-arab
- ia/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-clue-voa-202610162130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T013000Z
-DTEND:20261017T033000Z
-SUMMARY:Clue (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/clue/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-late-fame-voa-202610161330@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261016T173000Z
-DTEND:20261016T193000Z
-SUMMARY:Late Fame (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/late-fame/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/late-fame/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-late-fame-202610161330@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261016T173000Z
-DTEND:20261016T193000Z
-SUMMARY:Late Fame · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/late-fame/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/late-fame/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-vastf-2026101
- 61800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261016T220000Z
-DTEND:20261017T000000Z
-SUMMARY:The Good\, The Bad and The Ugly: 60e anniversaire (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-good-the-bad-and-the
- -ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-good-the-bad
- -and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60th-anniversary-vastf-2026101
- 61800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261016T220000Z
-DTEND:20261017T000000Z
-SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
- the-ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-good-the-
- bad-and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-virgin-suicides-voa-202610161545@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261016T194500Z
-DTEND:20261016T214500Z
-SUMMARY:The Virgin Suicides (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-virgin-suicide/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-virgin-suici
- de/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610172130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T013000Z
-DTEND:20261018T033000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/train-to-busan-10e-anniv
- ersaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/train-to-busan-1
- 0e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-fran-ais-ou-anglais-202610171615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T201500Z
-DTEND:20261017T221500Z
-SUMMARY:Français ou Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/naza/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202610171400@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T180000Z
-DTEND:20261017T200000Z
-SUMMARY:La meilleure façon\, c'est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202610171400@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T180000Z
-DTEND:20261017T200000Z
-SUMMARY:La meilleure façon\, c’est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-mariages-coups-de-coeur-de-l-quipe-vof-202610171200@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T160000Z
-DTEND:20261017T180000Z
-SUMMARY:Mariages – Coups de coeur de l’équipe (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/mariages-coups-de-coeur-
- de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/mariages-coups-d
- e-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-mariages-coups-de-coeur-de-l-quipe-202610171200@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T160000Z
-DTEND:20261017T180000Z
-SUMMARY:Mariages – Coups de coeur de l’équipe · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/mariages-coups-de-coeur-
- de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/mariages-coups-d
- e-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-marriages-coups-de-coeur-de-l-quipe-vof-202610171200@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T160000Z
-DTEND:20261017T180000Z
-SUMMARY:Marriages – Coups de coeur de l’équipe (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/mariages-coups-de-coe
- ur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/mariages-coup
- s-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-naza-vosta-202610171615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T201500Z
-DTEND:20261017T221500Z
-SUMMARY:Naza (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/naza/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-naza-202610171615@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T201500Z
-DTEND:20261017T221500Z
-SUMMARY:Naza · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/naza/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-le-mouton-la-b-te-de-la-ferme-petits-modernes-vf-20261
- 0171000@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T140000Z
-DTEND:20261017T160000Z
-SUMMARY:Shaun le mouton : La bêêête de la ferme [PETITS MODERNES] (VF
- ) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/shaun-le-mouton-la-beeet
- e-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/shaun-le-mouton-
- la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-the-sheep-the-beast-of-mossy-bottom-petits-modernes-vf
- -202610171000@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T140000Z
-DTEND:20261017T160000Z
+UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
+ 10T0930@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261010T133000Z
+DTEND:20261010T145000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
  ) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
  eete-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/shaun-le-mout
- on-la-beeete-de-la-ferme-petits-modernes/
+DESCRIPTION:Steve Cox\, Matthew Walker · France\, United Kingdom\, Unit
+ ed States · 2026 · 80 minutes · French · DCP\nhttps://www.cinemamod
+ erne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-
+ modernes/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-best-way-is-by-accident-vosta-202610171400@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T180000Z
-DTEND:20261017T200000Z
+UID:moderne-the-virgin-suicide-20261010T1130@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261010T153000Z
+DTEND:20261010T170700Z
+SUMMARY:The Virgin Suicides (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
+DESCRIPTION:Sofia Coppola · United States · 1999 · 97 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/the-virgin-suicide/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-cinema-paradiso-coups-de-coeur-de-lequipe-20261011T1345@kare
+ nda
+DTSTAMP:20261008T145508Z
+DTSTART:20261011T174500Z
+DTEND:20261011T194900Z
+SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
+ -de-coeur-de-lequipe/
+DESCRIPTION:Giuseppe Tornatore · Italy\, France · 1988 · 124 minutes 
+ · Italian · English · DCP\nhttps://www.cinemamoderne.com/en/films/de
+ tails/cinema-paradiso-coups-de-coeur-de-lequipe/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-clue-20261011T1130@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261011T153000Z
+DTEND:20261011T165700Z
+SUMMARY:Clue (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/clue/
+DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/clue/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-jim-queen-20261011T1630@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261011T203000Z
+DTEND:20261011T215500Z
+SUMMARY:Jim Queen (VOF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
+ 11T0930@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261011T133000Z
+DTEND:20261011T145000Z
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
+ ) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
+ eete-de-la-ferme-petits-modernes/
+DESCRIPTION:Steve Cox\, Matthew Walker · France\, United Kingdom\, Unit
+ ed States · 2026 · 80 minutes · French · DCP\nhttps://www.cinemamod
+ erne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-
+ modernes/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-la-meilleure-facon-cest-par-accident-20261011T1830@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261011T223000Z
+DTEND:20261012T002100Z
 SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
  st-par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/la-meilleure-
- facon-cest-par-accident/
+DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
+ s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
+ etails/la-meilleure-facon-cest-par-accident/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-vastf-2026101
- 71800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T220000Z
-DTEND:20261018T000000Z
-SUMMARY:The Good\, The Bad and The Ugly: 60e anniversaire (VASTF) · Mod
- erne
+UID:moderne-the-invite-20261011T2100@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261012T010000Z
+DTEND:20261012T024700Z
+SUMMARY:The Invite [LAST SCREENING] (VOSTF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-good-the-bad-and-the
- -ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-good-the-bad
- -and-the-ugly-60e-anniversaire/
+URL:https://www.cinemamoderne.com/en/films/details/the-invite/
+DESCRIPTION:Olivia Wilde · United States · 2026 · 107 minutes · Engl
+ ish · French · DCP\nhttps://www.cinemamoderne.com/en/films/details/th
+ e-invite/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60th-anniversary-vastf-2026101
- 71800@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261017T220000Z
-DTEND:20261018T000000Z
+UID:moderne-hope-20261012T1800@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261012T220000Z
+DTEND:20261013T003700Z
+SUMMARY:Hope (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/hope/
+DESCRIPTION:Na Hong-jin · South Korea · 2026 · 157 minutes · Korean 
+ · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/hope/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-lawrence-of-arabia-20261012T1330@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261012T173000Z
+DTEND:20261012T211700Z
+SUMMARY:Lawrence of Arabia (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/
+DESCRIPTION:David Lean · United Kingdom · 1962 · 227 minutes · Engli
+ sh · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/deta
+ ils/lawrence-of-arabia/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-my-brothers-wedding-20261012T2115@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261013T011500Z
+DTEND:20261013T023600Z
+SUMMARY:My Brother’s Wedding (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/my-brothers-wedding/
+DESCRIPTION:Charles Burnett · United States · 1983 · 81 minutes · En
+ glish · DCP - Restoration 4K\nhttps://www.cinemamoderne.com/en/films/d
+ etails/my-brothers-wedding/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-ha-chan-shake-your-booty-20261013T1330@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261013T173000Z
+DTEND:20261013T193200Z
+SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
+ oty/
+DESCRIPTION:Josef Kubota Wladyka · United States\, Japan · 2026 · 122
+  minutes · Japanese \, English \, Spain · English · DCP\nhttps://www
+ .cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-jim-queen-20261013T1700@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261013T210000Z
+DTEND:20261013T222500Z
+SUMMARY:Jim Queen (VOF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-la-meilleure-facon-cest-par-accident-20261013T2030@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261014T003000Z
+DTEND:20261014T022100Z
+SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
+ st-par-accident/
+DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
+ s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
+ etails/la-meilleure-facon-cest-par-accident/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-conte-dautomne-2-20261014T1530@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261014T193000Z
+DTEND:20261014T212100Z
+SUMMARY:A Tale of Autumn (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/conte-dautomne-2/
+DESCRIPTION:Éric Rohmer · France · 1998 · 111 minutes · French · E
+ nglish · DCP - 2K Restoration\nhttps://www.cinemamoderne.com/en/films/
+ details/conte-dautomne-2/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-bashu-the-little-stranger-20261014T2030@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261015T003000Z
+DTEND:20261015T023100Z
+SUMMARY:Bashu: The Little Stranger (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/bashu-the-little-stra
+ nger/
+DESCRIPTION:Bahram Beyzaie · Iran · 1989 · 121 minutes · Persian \, 
+ Arabic · English · DCP - Restauration 4K\nhttps://www.cinemamoderne.c
+ om/en/films/details/bashu-the-little-stranger/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-cinema-paradiso-coups-de-coeur-de-lequipe-20261014T1800@kare
+ nda
+DTSTAMP:20261008T145508Z
+DTSTART:20261014T220000Z
+DTEND:20261015T000400Z
+SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
+ -de-coeur-de-lequipe/
+DESCRIPTION:Giuseppe Tornatore · Italy\, France · 1988 · 124 minutes 
+ · Italian · English · DCP\nhttps://www.cinemamoderne.com/en/films/de
+ tails/cinema-paradiso-coups-de-coeur-de-lequipe/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-hope-20261015T1345@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261015T174500Z
+DTEND:20261015T202200Z
+SUMMARY:Hope (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/hope/
+DESCRIPTION:Na Hong-jin · South Korea · 2026 · 157 minutes · Korean 
+ · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/hope/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-jim-queen-20261015T2130@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261016T013000Z
+DTEND:20261016T025500Z
+SUMMARY:Jim Queen (VOF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-lawrence-of-arabia-20261015T1700@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261015T210000Z
+DTEND:20261016T004700Z
+SUMMARY:Lawrence of Arabia (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/
+DESCRIPTION:David Lean · United Kingdom · 1962 · 227 minutes · Engli
+ sh · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/deta
+ ils/lawrence-of-arabia/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-clue-20261016T2130@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261017T013000Z
+DTEND:20261017T025700Z
+SUMMARY:Clue (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/clue/
+DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/clue/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-late-fame-20261016T1330@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261016T173000Z
+DTEND:20261016T190700Z
+SUMMARY:Late Fame (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/late-fame/
+DESCRIPTION:Kent Jones · United States\, France · 2025 · 97 minutes 
+ · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/late-
+ fame/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261016T1800
+ @karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261016T220000Z
+DTEND:20261017T005900Z
 SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
  erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
  the-ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-good-the-
- bad-and-the-ugly-60e-anniversaire/
+DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
+ minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
+ om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-train-to-busan-10e-anniversaire-derni-re-s-ance-vosta-202610
- 172130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T013000Z
-DTEND:20261018T033000Z
-SUMMARY:Train to Busan: 10e anniversaire [DERNIÈRE SÉANCE] (VOSTA) · 
- Moderne
+UID:moderne-the-virgin-suicide-20261016T1545@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261016T194500Z
+DTEND:20261016T212200Z
+SUMMARY:The Virgin Suicides (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/train-to-busan-10e-anniv
- ersaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/train-to-busan-1
- 0e-anniversaire/
+URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
+DESCRIPTION:Sofia Coppola · United States · 1999 · 97 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/the-virgin-suicide/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-train-to-busan-10e-anniversaire-derni-re-s-ance-202610172130
+UID:moderne-mariages-coups-de-coeur-de-lequipe-20261017T1200@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261017T160000Z
+DTEND:20261017T173500Z
+SUMMARY:Marriages – Coups de coeur de l’équipe (VOF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/mariages-coups-de-coe
+ ur-de-lequipe/
+DESCRIPTION:Catherine Martin · Canada (Quebec) · 2001 · 95 minutes ·
+  French · Digital\nhttps://www.cinemamoderne.com/en/films/details/mari
+ ages-coups-de-coeur-de-lequipe/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-naza-20261017T1615@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261017T201500Z
+DTEND:20261017T213200Z
+SUMMARY:Naza (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/naza/
+DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
+ es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
+ lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
+ 17T1000@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261017T140000Z
+DTEND:20261017T152000Z
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
+ ) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
+ eete-de-la-ferme-petits-modernes/
+DESCRIPTION:Steve Cox\, Matthew Walker · France\, United Kingdom\, Unit
+ ed States · 2026 · 80 minutes · French · DCP\nhttps://www.cinemamod
+ erne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-
+ modernes/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-la-meilleure-facon-cest-par-accident-20261017T1400@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261017T180000Z
+DTEND:20261017T195100Z
+SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
+ st-par-accident/
+DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
+ s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
+ etails/la-meilleure-facon-cest-par-accident/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261017T1800
  @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T013000Z
-DTEND:20261018T033000Z
-SUMMARY:Train to Busan: 10e anniversaire [DERNIÈRE SÉANCE] · Moderne
+DTSTAMP:20261008T145508Z
+DTSTART:20261017T220000Z
+DTEND:20261018T005900Z
+SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
+ erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/train-to-busan-10e-anniv
- ersaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/train-to-busan-1
- 0e-anniversaire/
+URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
+ the-ugly-60e-anniversaire/
+DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
+ minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
+ om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-train-to-busan-10th-anniversary-last-screening-vosta-2026101
- 72130@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-train-to-busan-10e-anniversaire-20261017T2130@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261018T013000Z
-DTEND:20261018T033000Z
+DTEND:20261018T032800Z
 SUMMARY:Train to Busan: 10th Anniversary [LAST SCREENING] (VOSTA) · Mod
  erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/train-to-busan-10e-an
  niversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/train-to-busa
- n-10e-anniversaire/
+DESCRIPTION:Yeon Sang-ho · South Korea · 2016 · 118 minutes · Korean
+  · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/trai
+ n-to-busan-10e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-chronovisor-voa-202610181600@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-chronovisor-20261018T1600@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261018T200000Z
-DTEND:20261018T220000Z
+DTEND:20261018T214000Z
 SUMMARY:Chronovisor (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/chronovisor/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/chronovisor/
+URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
+DESCRIPTION:Jack Auen\, Kevin Walker · United States · 2026 · 100 min
+ utes · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/
+ chronovisor/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-chronovisor-202610181600@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T200000Z
-DTEND:20261018T220000Z
-SUMMARY:Chronovisor · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/chronovisor/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/chronovisor/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-vosta-202610181130
- @karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-cinema-paradiso-coups-de-coeur-de-lequipe-20261018T1130@kare
+ nda
+DTSTAMP:20261008T145508Z
 DTSTART:20261018T153000Z
-DTEND:20261018T173000Z
-SUMMARY:Cinema Paradiso - Coups de coeur de l'équipe (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-staff-picks-vosta-202610181130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T153000Z
-DTEND:20261018T173000Z
-SUMMARY:Cinema Paradiso - Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cinema-paradi
- so-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-l-quipe-vosta-202610181130
- @karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T153000Z
-DTEND:20261018T173000Z
-SUMMARY:Cinema Paradiso – Coups de coeur de l’équipe (VOSTA) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cinema-paradiso-coups-de
- -coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cinema-paradiso-
- coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-staff-picks-vosta-202610181130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T153000Z
-DTEND:20261018T173000Z
+DTEND:20261018T173400Z
 SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
  -de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cinema-paradi
- so-coups-de-coeur-de-lequipe/
+DESCRIPTION:Giuseppe Tornatore · Italy\, France · 1988 · 124 minutes 
+ · Italian · English · DCP\nhttps://www.cinemamoderne.com/en/films/de
+ tails/cinema-paradiso-coups-de-coeur-de-lequipe/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-fran-ais-202610182100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261019T010000Z
-DTEND:20261019T030000Z
-SUMMARY:Français · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/trainspotting-30e-annive
- rsaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/trainspotting-30
- e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-vosta-202610181815@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-ha-chan-shake-your-booty-20261018T1815@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261018T221500Z
-DTEND:20261019T001500Z
+DTEND:20261019T001700Z
 SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/ha-chan-shake-your-booty
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/ha-chan-shake-yo
- ur-booty/
+URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
+ oty/
+DESCRIPTION:Josef Kubota Wladyka · United States\, Japan · 2026 · 122
+  minutes · Japanese \, English \, Spain · English · DCP\nhttps://www
+ .cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610181400@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-jim-queen-20261018T1400@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261018T180000Z
-DTEND:20261018T200000Z
+DTEND:20261018T192500Z
 SUMMARY:Jim Queen (VOF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
+URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-trainspotting-30e-anniversaire-derni-res-s-ances-vostf-20261
- 0182100@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-trainspotting-30e-anniversaire-20261018T2100@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261019T010000Z
-DTEND:20261019T030000Z
-SUMMARY:Trainspotting: 30e anniversaire [DERNIÈRES SÉANCES] (VOSTF) ·
-  Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/trainspotting-30e-annive
- rsaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/trainspotting-30
- e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-trainspotting-30e-anniversaire-derni-res-s-ances-20261018210
- 0@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261019T010000Z
-DTEND:20261019T030000Z
-SUMMARY:Trainspotting: 30e anniversaire [DERNIÈRES SÉANCES] · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/trainspotting-30e-annive
- rsaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/trainspotting-30
- e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-trainspotting-30th-anniversary-last-screenings-vostf-2026101
- 82100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261019T010000Z
-DTEND:20261019T030000Z
+DTEND:20261019T023400Z
 SUMMARY:Trainspotting: 30th Anniversary [LAST SCREENINGS] (VOSTF) · Mod
  erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/trainspotting-30e-ann
  iversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/trainspotting
- -30e-anniversaire/
+DESCRIPTION:Danny Boyle · United Kingdom · 1996 · 94 minutes · Engli
+ sh · French · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
+ films/details/trainspotting-30e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-wallace-and-gromit-the-curse-of-the-were-rabbit-vf-202610180
- 930@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-wallace-et-gromit-le-mystere-du-lapin-garou-20261018T0930@ka
+ renda
+DTSTAMP:20261008T145508Z
 DTSTART:20261018T133000Z
-DTEND:20261018T153000Z
+DTEND:20261018T145500Z
 SUMMARY:Wallace and Gromit: The Curse of the Were-Rabbit (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/wallace-et-gromit-le-
  mystere-du-lapin-garou/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/wallace-et-gr
- omit-le-mystere-du-lapin-garou/
+DESCRIPTION:Steve Box\, Nick Park · United Kingdoms\, United States · 
+ 2005 · 85 minutes · French · Blu-Ray\nhttps://www.cinemamoderne.com/
+ en/films/details/wallace-et-gromit-le-mystere-du-lapin-garou/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-wallace-et-gromit-le-myst-re-du-lapin-garou-vf-202610180930@
- karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T133000Z
-DTEND:20261018T153000Z
-SUMMARY:Wallace et Gromit: Le mystère du lapin-garou (VF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/wallace-et-gromit-le-mys
- tere-du-lapin-garou/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/wallace-et-gromi
- t-le-mystere-du-lapin-garou/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-wallace-et-gromit-le-myst-re-du-lapin-garou-202610180930@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261018T133000Z
-DTEND:20261018T153000Z
-SUMMARY:Wallace et Gromit: Le mystère du lapin-garou · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/wallace-et-gromit-le-mys
- tere-du-lapin-garou/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/wallace-et-gromi
- t-le-mystere-du-lapin-garou/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610191730@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-jim-queen-20261019T1730@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261019T213000Z
-DTEND:20261019T233000Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-naza-vosta-202610192100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261020T010000Z
-DTEND:20261020T030000Z
-SUMMARY:Naza (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/naza/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-fran-ais-202610201900@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261020T230000Z
-DTEND:20261021T010000Z
-SUMMARY:Français · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/video-club-spectateur-en
- nemi/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/video-club-spect
- ateur-ennemi/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-vof-202610202100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261021T010000Z
-DTEND:20261021T030000Z
+DTEND:20261019T225500Z
 SUMMARY:Jim Queen (VOF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60th-anniversary-vastf-2026102
- 01530@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-naza-20261019T2100@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261020T010000Z
+DTEND:20261020T021700Z
+SUMMARY:Naza (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/naza/
+DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
+ es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
+ lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-jim-queen-20261020T2100@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261021T010000Z
+DTEND:20261021T022500Z
+SUMMARY:Jim Queen (VOF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
+DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
+ · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
+ details/jim-queen/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261020T1530
+ @karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261020T193000Z
-DTEND:20261020T213000Z
+DTEND:20261020T222900Z
 SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
  erne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
  the-ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-good-the-
- bad-and-the-ugly-60e-anniversaire/
+DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
+ minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
+ om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-vid-o-club-spectateur-ennemi-vostf-202610201900@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-video-club-spectateur-ennemi-20261020T1900@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261020T230000Z
 DTEND:20261021T010000Z
 SUMMARY:vidéo-club – Spectateur\, Ennemi (VOSTF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/video-club-spectateur
  -ennemi/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/video-club-sp
- ectateur-ennemi/
+DESCRIPTION:Multiple · 47 · English · French · DCP\nhttps://www.cine
+ mamoderne.com/en/films/details/video-club-spectateur-ennemi/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-vid-o-club-spectateur-ennemi-202610201900@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261020T230000Z
-DTEND:20261021T010000Z
-SUMMARY:vidéo-club – Spectateur\, Ennemi · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/video-club-spectateur-en
- nemi/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/video-club-spect
- ateur-ennemi/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-chronovisor-voa-202610211900@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-chronovisor-20261021T1900@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261021T230000Z
-DTEND:20261022T010000Z
+DTEND:20261022T004000Z
 SUMMARY:Chronovisor (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/chronovisor/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/chronovisor/
+URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
+DESCRIPTION:Jack Auen\, Kevin Walker · United States · 2026 · 100 min
+ utes · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/
+ chronovisor/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-naza-vostf-202610211720@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-naza-20261021T1720@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261021T212000Z
-DTEND:20261021T232000Z
+DTEND:20261021T223700Z
 SUMMARY:Naza (VOSTF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/naza/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/naza/
+URL:https://www.cinemamoderne.com/en/films/details/naza/
+DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
+ es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
+ lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-vosta-20
- 2610212115@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-lequipe-20261021
+ T2115@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261022T011500Z
-DTEND:20261022T031500Z
-SUMMARY:The Color of Pomegranates - Coups de coeur de l'équipe (VOSTA) 
- · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-staff-picks-vosta-202610212115@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261022T011500Z
-DTEND:20261022T031500Z
-SUMMARY:The Color of Pomegranates - Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-color-of-pomegran
- ates-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-color-of-
- pomegranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-vosta-20
- 2610212115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261022T011500Z
-DTEND:20261022T031500Z
-SUMMARY:The Color of Pomegranates – Coups de coeur de l’équipe (VOS
- TA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-staff-picks-vosta-202610212115@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261022T011500Z
-DTEND:20261022T031500Z
+DTEND:20261022T023300Z
 SUMMARY:The Color of Pomegranates – Staff Picks (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-color-of-pomegran
  ates-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-color-of-
- pomegranates-coups-de-coeur-de-lequipe/
+DESCRIPTION:Sergueï Paradjanov · USSR · 1969 · 78 minutes · Armenia
+ n\, Azerbaijani\, Georgian · English · DCP - 4K Restoration\nhttps://
+ www.cinemamoderne.com/en/films/details/the-color-of-pomegranates-coups-
+ de-coeur-de-lequipe/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-anglais-202610231815@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-possible-love-20261023T1815@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261023T221500Z
-DTEND:20261024T001500Z
-SUMMARY:Anglais · Moderne
+DTEND:20261024T005900Z
+SUMMARY:Possible Love (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/possible-love/
+URL:https://www.cinemamoderne.com/en/films/details/possible-love/
+DESCRIPTION:Lee Chang-dong · South Korea\, United States · 2026 · 164
+  minutes · Korean · English · DCP\nhttps://www.cinemamoderne.com/en/
+ films/details/possible-love/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-bahram-beyzaie-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:Bahram Beyzaie · Moderne
+UID:moderne-scream-30th-anniversary-20261023T2130@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261024T013000Z
+DTEND:20261024T032100Z
+SUMMARY:Scream: 30th Anniversary (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/bashu-the-little-stra
- nger/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/bashu-the-lit
- tle-stranger/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:Wes Craven · United States · 1996 · 111 minutes · Englis
+ h · DCP\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jack-auen-kevin-walker-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:Jack Auen\, Kevin Walker · Moderne
+UID:moderne-clue-20261024T1215@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261024T161500Z
+DTEND:20261024T174200Z
+SUMMARY:Clue (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/chronovisor/
+URL:https://www.cinemamoderne.com/en/films/details/clue/
+DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/clue/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-john-wilson-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:John Wilson · Moderne
+UID:moderne-faust-100e-anniversaire-20261024T1630@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261024T203000Z
+DTEND:20261024T221600Z
+SUMMARY:Faust: 100th Anniversary (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/faust-100e-anniversai
+ re/
+DESCRIPTION:F.W. Murnau · Germany · 1926 · 106 minutes · - · Englis
+ h · DCP\nhttps://www.cinemamoderne.com/en/films/details/faust-100e-ann
+ iversaire/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-sleepaway-camp-20261024T2130@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261025T013000Z
+DTEND:20261025T025800Z
+SUMMARY:Sleepaway Camp (VOA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:Robert Hiltzik · United States · 1983 · 88 minutes · Eng
+ lish · DCP\nhttps://www.cinemamoderne.com/en/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-teenage-sex-and-death-at-camp-miasma-20261024T1900@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261024T230000Z
+DTEND:20261025T004600Z
+SUMMARY:Teenage Sex and Death at Camp Miasma (VOSTF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/teenage-sex-and-death
+ -at-camp-miasma/
+DESCRIPTION:Jane Schoenbrun · United States\, Canada · 2026 · 106 min
+ utes · English · French · DCP\nhttps://www.cinemamoderne.com/en/film
+ s/details/teenage-sex-and-death-at-camp-miasma/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-la-meilleure-facon-cest-par-accident-20261024T1000@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261024T140000Z
+DTEND:20261024T155100Z
+SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
+ st-par-accident/
+DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
+ s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
+ etails/la-meilleure-facon-cest-par-accident/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-the-history-of-concrete-20261024T1415@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261024T181500Z
+DTEND:20261024T195700Z
+SUMMARY:The History of Concrete (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
  te/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-history-o
+DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
+ sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
  f-concrete/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-josef-kubota-wladyka-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:Josef Kubota Wladyka · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
- oty/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/ha-chan-shake
- -your-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lee-chang-dong-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:Lee Chang-dong · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/possible-love
- /
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-nicolas-athan-margo-nguyen-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:Nicolas Athané\, Margo Nguyen · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-possible-love-vosta-202610231815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261023T221500Z
-DTEND:20261024T001500Z
-SUMMARY:Possible Love (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/possible-love/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-possible-love-202610231815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261023T221500Z
-DTEND:20261024T001500Z
-SUMMARY:Possible Love · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/possible-love/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-scream-30e-anniversaire-voa-202610232130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T013000Z
-DTEND:20261024T033000Z
-SUMMARY:Scream: 30e anniversaire (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/scream-30e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/scream-30e-anniv
- ersaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-scream-30e-anniversaire-202610232130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T013000Z
-DTEND:20261024T033000Z
-SUMMARY:Scream: 30e anniversaire · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/scream-30e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/scream-30e-anniv
- ersaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-sofia-coppola-202610232030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T003000Z
-DTEND:20261024T023000Z
-SUMMARY:Sofia Coppola · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/the-virgin-su
- icide/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610241630@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T203000Z
-DTEND:20261024T223000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/faust-100e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/faust-100e-anniv
- ersaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-clue-voa-202610241215@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T161500Z
-DTEND:20261024T181500Z
-SUMMARY:Clue (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/clue/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-faust-100e-anniversaire-vosta-202610241630@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T203000Z
-DTEND:20261024T223000Z
-SUMMARY:Faust: 100e anniversaire (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/faust-100e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/faust-100e-anniv
- ersaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-faust-100e-anniversaire-202610241630@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T203000Z
-DTEND:20261024T223000Z
-SUMMARY:Faust: 100e anniversaire · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/faust-100e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/faust-100e-anniv
- ersaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-faust-100th-anniversary-vosta-202610241630@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T203000Z
-DTEND:20261024T223000Z
-SUMMARY:Faust: 100th Anniversary (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/faust-100e-anniversai
- re/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/faust-100e-an
- niversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-fran-ais-202610241900@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T230000Z
-DTEND:20261025T010000Z
-SUMMARY:Français · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/teenage-sex-and-death-at
- -camp-miasma/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/teenage-sex-and-
- death-at-camp-miasma/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202610241000@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T140000Z
-DTEND:20261024T160000Z
-SUMMARY:La meilleure façon\, c'est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202610241000@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T140000Z
-DTEND:20261024T160000Z
-SUMMARY:La meilleure façon\, c’est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-sleepaway-camp-voa-202610242130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T013000Z
-DTEND:20261025T033000Z
-SUMMARY:Sleepaway Camp (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/sleepaway-camp/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/sleepaway-camp/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-sleepaway-camp-202610242130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T013000Z
-DTEND:20261025T033000Z
-SUMMARY:Sleepaway Camp · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/sleepaway-camp/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/sleepaway-camp/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-teenage-sex-and-death-at-camp-miasma-vostf-202610241900@kare
- nda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T230000Z
-DTEND:20261025T010000Z
-SUMMARY:Teenage Sex and Death at Camp Miasma (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/teenage-sex-and-death-at
- -camp-miasma/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/teenage-sex-and-
- death-at-camp-miasma/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-teenage-sex-and-death-at-camp-miasma-202610241900@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T230000Z
-DTEND:20261025T010000Z
-SUMMARY:Teenage Sex and Death at Camp Miasma · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/teenage-sex-and-death-at
- -camp-miasma/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/teenage-sex-and-
- death-at-camp-miasma/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-best-way-is-by-accident-vosta-202610241000@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T140000Z
-DTEND:20261024T160000Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/la-meilleure-
- facon-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-voa-202610241415@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T181500Z
-DTEND:20261024T201500Z
-SUMMARY:The History of Concrete (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-history-of-concrete/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-history-of-c
- oncrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-202610241415@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261024T181500Z
-DTEND:20261024T201500Z
-SUMMARY:The History of Concrete · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-history-of-concrete/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-history-of-c
- oncrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-a-bay-of-blood-voa-202610252030@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-a-bay-of-blood-20261025T2030@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
+DTEND:20261026T015500Z
 SUMMARY:A Bay of Blood (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/a-bay-of-blood/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/a-bay-of-blood/
+URL:https://www.cinemamoderne.com/en/films/details/a-bay-of-blood/
+DESCRIPTION:Mario Bava · Italy · 1971 · 85 minutes · English · DCP 
+ - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/details/a-bay-
+ of-blood/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-a-bay-of-blood-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:A Bay of Blood · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/a-bay-of-blood/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/a-bay-of-blood/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/les-heritiers/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/les-heritiers/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-bahram-beyzaie-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Bahram Beyzaie · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/bashu-the-little-strange
- r/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/bashu-the-little
- -stranger/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cube-coups-de-coeur-de-l-quipe-voa-202610251815@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-cube-staff-picks-20261025T1815@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261025T221500Z
-DTEND:20261026T001500Z
-SUMMARY:Cube - Coups de coeur de l'équipe (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cube-coups-de-coeur-de-l
- equipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cube-coups-de-co
- eur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cube-staff-picks-voa-202610251815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T221500Z
-DTEND:20261026T001500Z
-SUMMARY:Cube - Staff picks (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cube-staff-picks/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cube-staff-pi
- cks/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cube-coups-de-coeur-de-l-quipe-voa-202610251815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T221500Z
-DTEND:20261026T001500Z
-SUMMARY:Cube – Coups de coeur de l’équipe (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cube-coups-de-coeur-de-l
- equipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cube-coups-de-co
- eur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cube-coups-de-coeur-de-l-quipe-202610251815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T221500Z
-DTEND:20261026T001500Z
-SUMMARY:Cube – Coups de coeur de l’équipe · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/cube-coups-de-coeur-de-l
- equipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/cube-coups-de-co
- eur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cube-staff-picks-voa-202610251815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T221500Z
-DTEND:20261026T001500Z
+DTEND:20261025T234500Z
 SUMMARY:Cube – Staff picks (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/cube-staff-picks/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/cube-staff-pi
- cks/
+DESCRIPTION:Vincenzo Natali · Canada · 1997 · 90 minutes · English 
+ · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/details
+ /cube-staff-picks/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jack-auen-kevin-walker-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Jack Auen\, Kevin Walker · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/chronovisor/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/chronovisor/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-john-wilson-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:John Wilson · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-history-of-concrete/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-history-of-c
- oncrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-josef-kubota-wladyka-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Josef Kubota Wladyka · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/ha-chan-shake-your-booty
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/ha-chan-shake-yo
- ur-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lee-chang-dong-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Lee Chang-dong · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/possible-love/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-nicolas-athan-margo-nguyen-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Nicolas Athané\, Margo Nguyen · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/jim-queen/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-le-mouton-la-b-te-de-la-ferme-petits-modernes-vf-20261
- 0250930@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
+ 25T0930@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261025T133000Z
-DTEND:20261025T153000Z
-SUMMARY:Shaun le mouton : La bêêête de la ferme [PETITS MODERNES] (VF
- ) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/shaun-le-mouton-la-beeet
- e-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/shaun-le-mouton-
- la-beeete-de-la-ferme-petits-modernes/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-shaun-the-sheep-the-beast-of-mossy-bottom-petits-modernes-vf
- -202610250930@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261025T133000Z
-DTEND:20261025T153000Z
+DTEND:20261025T145000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
  ) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
  eete-de-la-ferme-petits-modernes/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/shaun-le-mout
- on-la-beeete-de-la-ferme-petits-modernes/
+DESCRIPTION:Steve Cox\, Matthew Walker · France\, United Kingdom\, Unit
+ ed States · 2026 · 80 minutes · French · DCP\nhttps://www.cinemamod
+ erne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-
+ modernes/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-sofia-coppola-202610252030@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T003000Z
-DTEND:20261026T023000Z
-SUMMARY:Sofia Coppola · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-virgin-suicide/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-virgin-suici
- de/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-voa-202610251600@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-history-of-concrete-20261025T1600@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261025T200000Z
-DTEND:20261025T220000Z
+DTEND:20261025T214200Z
 SUMMARY:The History of Concrete (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-history-of-concrete/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-history-of-c
- oncrete/
+URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
+ te/
+DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
+ sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
+ f-concrete/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-virgin-suicides-voa-202610251115@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-virgin-suicide-20261025T1115@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261025T151500Z
-DTEND:20261025T171500Z
+DTEND:20261025T165200Z
 SUMMARY:The Virgin Suicides (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-virgin-suicide/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-virgin-suici
- de/
+URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
+DESCRIPTION:Sofia Coppola · United States · 1999 · 97 minutes · Engl
+ ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
+ ails/the-virgin-suicide/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-fly-40e-anniversaire-voa-202610262115@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-fly-40th-anniversary-20261026T2115@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261027T011500Z
-DTEND:20261027T031500Z
-SUMMARY:The Fly: 40e anniversaire (VOA) · Moderne
+DTEND:20261027T025100Z
+SUMMARY:The Fly: 40th Anniversary (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-fly-40e-anniversaire
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-fly-40e-anni
- versaire/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:David Cronenberg · United States\, Canada · 1986 · 96 min
+ utes · English · DCP\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-fly-40e-anniversaire-202610262115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261027T011500Z
-DTEND:20261027T031500Z
-SUMMARY:The Fly: 40e anniversaire · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-fly-40e-anniversaire
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-fly-40e-anni
- versaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-lost-boys-x-drawn-quarterly-voa-202610261815@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-lost-boys-x-drawn-quarterly-20261026T1815@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261026T221500Z
-DTEND:20261027T001500Z
+DTEND:20261026T235200Z
 SUMMARY:The Lost Boys x Drawn & Quarterly (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-qu
- arterly/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-lost-boys-x-
- drawn-quarterly/
+URL:https://www.cinemamoderne.com/en/films/details/the-lost-boys-x-drawn
+ -quarterly/
+DESCRIPTION:Joel Schumacher · United States · 1987 · 97 minutes · En
+ glish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/d
+ etails/the-lost-boys-x-drawn-quarterly/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-lost-boys-x-drawn-quarterly-202610261815@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261026T221500Z
-DTEND:20261027T001500Z
-SUMMARY:The Lost Boys x Drawn & Quarterly · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-qu
- arterly/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-lost-boys-x-
- drawn-quarterly/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610272115@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-begotten-20261027T2115@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261028T011500Z
-DTEND:20261028T031500Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/begotten/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/begotten/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-begotten-voa-202610272115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261028T011500Z
-DTEND:20261028T031500Z
+DTEND:20261028T022700Z
 SUMMARY:Begotten (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/begotten/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/begotten/
+DESCRIPTION:E. Elias Merhige · United States · 1989 · 72 minutes · M
+ uet · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/e
+ n/films/details/begotten/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-begotten-202610272115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261028T011500Z
-DTEND:20261028T031500Z
-SUMMARY:Begotten · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/begotten/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/begotten/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-chronovisor-voa-202610271545@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-chronovisor-20261027T1545@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261027T194500Z
-DTEND:20261027T214500Z
+DTEND:20261027T212500Z
 SUMMARY:Chronovisor (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/chronovisor/
+DESCRIPTION:Jack Auen\, Kevin Walker · United States · 2026 · 100 min
+ utes · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/
+ chronovisor/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-possible-love-vosta-202610271800@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-possible-love-20261027T1800@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261027T220000Z
-DTEND:20261028T000000Z
+DTEND:20261028T004400Z
 SUMMARY:Possible Love (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/possible-love
- /
+DESCRIPTION:Lee Chang-dong · South Korea\, United States · 2026 · 164
+  minutes · Korean · English · DCP\nhttps://www.cinemamoderne.com/en/
+ films/details/possible-love/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-naza-vostf-202610281600@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-naza-20261028T1600@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261028T200000Z
-DTEND:20261028T220000Z
+DTEND:20261028T211700Z
 SUMMARY:Naza (VOSTF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/naza/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/naza/
+URL:https://www.cinemamoderne.com/en/films/details/naza/
+DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
+ es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
+ lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-voa-202610281745@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-history-of-concrete-20261028T1745@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261028T214500Z
-DTEND:20261028T234500Z
+DTEND:20261028T232700Z
 SUMMARY:The History of Concrete (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-history-of-concrete/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-history-of-c
- oncrete/
+URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
+ te/
+DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
+ sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
+ f-concrete/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-henry-portrait-of-a-serial-killer-voa-202610292100@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-henry-portrait-of-a-serial-killer-20261029T2100@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261030T010000Z
-DTEND:20261030T030000Z
+DTEND:20261030T022300Z
 SUMMARY:Henry: Portrait of a Serial Killer (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/henry-portrait-of-a-seri
- al-killer/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/henry-portrait-o
- f-a-serial-killer/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:John McNaughton · United States · 1984 · 83 minutes · En
+ glish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-henry-portrait-of-a-serial-killer-202610292100@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261030T010000Z
-DTEND:20261030T030000Z
-SUMMARY:Henry: Portrait of a Serial Killer · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/henry-portrait-of-a-seri
- al-killer/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/henry-portrait-o
- f-a-serial-killer/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-altered-states-voa-202610302145@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-altered-states-20261030T2145@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261031T014500Z
-DTEND:20261031T034500Z
+DTEND:20261031T032700Z
 SUMMARY:Altered States (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/altered-states/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/altered-states/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:Ken Russell · United States · 1980 · 102 minutes · Engli
+ sh · DCP\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-altered-states-202610302145@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261031T014500Z
-DTEND:20261031T034500Z
-SUMMARY:Altered States · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/altered-states/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/altered-states/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-fly-40e-anniversaire-voa-202610301930@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-fly-40th-anniversary-20261030T1930@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261030T233000Z
-DTEND:20261031T013000Z
-SUMMARY:The Fly: 40e anniversaire (VOA) · Moderne
+DTEND:20261031T010600Z
+SUMMARY:The Fly: 40th Anniversary (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-fly-40e-anniversaire
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-fly-40e-anni
- versaire/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:David Cronenberg · United States\, Canada · 1986 · 96 min
+ utes · English · DCP\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-anglais-202610311900@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-gentle-monster-20261031T1900@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261031T230000Z
-DTEND:20261101T010000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/gentle-monster/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/gentle-monster/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-anglais-202610311530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261031T193000Z
-DTEND:20261031T213000Z
-SUMMARY:Anglais · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/kwaidan/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/kwaidan/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-gentle-monster-vosta-202610311900@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261031T230000Z
-DTEND:20261101T010000Z
+DTEND:20261101T005400Z
 SUMMARY:Gentle Monster (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/gentle-monster/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/gentle-monster/
+URL:https://www.cinemamoderne.com/en/films/details/gentle-monster/
+DESCRIPTION:Marie Kreutzer · Austria\, Germany\, France\, Sweden · 202
+ 6 · 114 minutes · English \, French \, German · English · DCP\nhttp
+ s://www.cinemamoderne.com/en/films/details/gentle-monster/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-gentle-monster-202610311900@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261031T230000Z
-DTEND:20261101T010000Z
-SUMMARY:Gentle Monster · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/gentle-monster/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/gentle-monster/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-kwaidan-vosta-202610311530@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-kwaidan-20261031T1530@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261031T193000Z
-DTEND:20261031T213000Z
+DTEND:20261031T223300Z
 SUMMARY:Kwaidan (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/kwaidan/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/kwaidan/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:Masaki Kobayashi · Japan · 1964 · 183 minutes · Japanese
+  · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-kwaidan-202610311530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261031T193000Z
-DTEND:20261031T213000Z
-SUMMARY:Kwaidan · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/kwaidan/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/kwaidan/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-scream-30e-anniversaire-voa-202610312130@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-scream-30th-anniversary-20261031T2130@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261101T013000Z
-DTEND:20261101T033000Z
-SUMMARY:Scream: 30e anniversaire (VOA) · Moderne
+DTEND:20261101T032100Z
+SUMMARY:Scream: 30th Anniversary (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/scream-30e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/scream-30e-anniv
- ersaire/
+URL:https://www.cinemamoderne.com/en/
+DESCRIPTION:Wes Craven · United States · 1996 · 111 minutes · Englis
+ h · DCP\nhttps://www.cinemamoderne.com/en/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-wallace-and-gromit-the-curse-of-the-were-rabbit-vf-202610310
- 930@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-wallace-et-gromit-le-mystere-du-lapin-garou-20261031T0930@ka
+ renda
+DTSTAMP:20261008T145508Z
 DTSTART:20261031T133000Z
-DTEND:20261031T153000Z
+DTEND:20261031T145500Z
 SUMMARY:Wallace and Gromit: The Curse of the Were-Rabbit (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/wallace-et-gromit-le-
  mystere-du-lapin-garou/
-DESCRIPTION:https://www.cinemamoderne.com/en/films/details/wallace-et-gr
- omit-le-mystere-du-lapin-garou/
+DESCRIPTION:Steve Box\, Nick Park · United Kingdoms\, United States · 
+ 2005 · 85 minutes · French · Blu-Ray\nhttps://www.cinemamoderne.com/
+ en/films/details/wallace-et-gromit-le-mystere-du-lapin-garou/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-wallace-et-gromit-le-myst-re-du-lapin-garou-vf-202610310930@
- karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20261031T133000Z
-DTEND:20261031T153000Z
-SUMMARY:Wallace et Gromit: Le mystère du lapin-garou (VF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/wallace-et-gromit-le-mys
- tere-du-lapin-garou/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/wallace-et-gromi
- t-le-mystere-du-lapin-garou/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-possible-love-vosta-202611011800@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-possible-love-20261101T1800@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261101T230000Z
-DTEND:20261102T010000Z
+DTEND:20261102T014400Z
 SUMMARY:Possible Love (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/possible-love/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/possible-love/
+URL:https://www.cinemamoderne.com/en/films/details/possible-love/
+DESCRIPTION:Lee Chang-dong · South Korea\, United States · 2026 · 164
+  minutes · Korean · English · DCP\nhttps://www.cinemamoderne.com/en/
+ films/details/possible-love/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-voa-202611012115@karenda
-DTSTAMP:20261008T144753Z
+UID:moderne-the-history-of-concrete-20261101T2115@karenda
+DTSTAMP:20261008T145508Z
 DTSTART:20261102T021500Z
-DTEND:20261102T041500Z
+DTEND:20261102T035700Z
 SUMMARY:The History of Concrete (VOA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-history-of-concrete/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-history-of-c
- oncrete/
+URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
+ te/
+DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
+ sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
+ f-concrete/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-begotten-voa-202703152115@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20270316T011500Z
-DTEND:20270316T031500Z
-SUMMARY:Begotten (VOA) · Moderne
+UID:moderne-gentle-monster-20261102T1600@karenda
+DTSTAMP:20261008T145508Z
+DTSTART:20261102T210000Z
+DTEND:20261102T225400Z
+SUMMARY:Gentle Monster (VOSTA) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/begotten/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/begotten/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-vosta-202703301330@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20270330T173000Z
-DTEND:20270330T193000Z
-SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/ha-chan-shake-your-booty
- /
-DESCRIPTION:https://www.cinemamoderne.com/films/details/ha-chan-shake-yo
- ur-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202703302030@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20270331T003000Z
-DTEND:20270331T023000Z
-SUMMARY:La meilleure façon\, c'est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-fa-on-c-est-par-accident-vosta-202703302030@kar
- enda
-DTSTAMP:20261008T144753Z
-DTSTART:20270331T003000Z
-DTEND:20270331T023000Z
-SUMMARY:La meilleure façon\, c’est par accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/la-meilleure-facon-cest-
- par-accident/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/la-meilleure-fac
- on-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-rose-of-nevada-voa-202703301630@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20270330T203000Z
-DTEND:20270330T223000Z
-SUMMARY:Rose of Nevada (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/rose-of-nevada/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/rose-of-nevada/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-vosta-20
- 2703302130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20270331T013000Z
-DTEND:20270331T033000Z
-SUMMARY:The Color of Pomegranates - Coups de coeur de l'équipe (VOSTA) 
- · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-l-quipe-vosta-20
- 2703302130@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20270331T013000Z
-DTEND:20270331T033000Z
-SUMMARY:The Color of Pomegranates – Coups de coeur de l’équipe (VOS
- TA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-color-of-pomegranate
- s-coups-de-coeur-de-lequipe/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-color-of-pom
- egranates-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-vastf-2027033
- 01530@karenda
-DTSTAMP:20261008T144753Z
-DTSTART:20270330T193000Z
-DTEND:20270330T213000Z
-SUMMARY:The Good\, The Bad and The Ugly: 60e anniversaire (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/films/details/the-good-the-bad-and-the
- -ugly-60e-anniversaire/
-DESCRIPTION:https://www.cinemamoderne.com/films/details/the-good-the-bad
- -and-the-ugly-60e-anniversaire/
+URL:https://www.cinemamoderne.com/en/films/details/gentle-monster/
+DESCRIPTION:Marie Kreutzer · Austria\, Germany\, France\, Sweden · 202
+ 6 · 114 minutes · English \, French \, German · English · DCP\nhttp
+ s://www.cinemamoderne.com/en/films/details/gentle-monster/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT

@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-08T14:47:27+00:00",
+  "built_at": "2026-10-08T14:54:57+00:00",
   "sources": {
     "victoire": {
       "ok": true,
@@ -23,16 +23,16 @@
     },
     "cinemamoderne": {
       "ok": true,
-      "events": 223
+      "events": 89
     },
     "mbam": {
       "ok": true,
-      "events": 9
+      "events": 7
     }
   },
-  "karenda": 385,
+  "karenda": 249,
   "karenda-sports": 52,
   "karenda-theatre": 101,
-  "karenda-cinema": 223,
-  "karenda-museums": 9
+  "karenda-cinema": 89,
+  "karenda-museums": 7
 }
