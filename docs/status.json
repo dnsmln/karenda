@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-08T13:34:15+00:00",
+  "built_at": "2026-10-08T13:40:18+00:00",
   "sources": {
     "victoire": {
       "ok": true,
@@ -7,23 +7,22 @@
     },
     "cfmontreal": {
       "ok": true,
-      "events": 0
+      "events": 3
     },
     "placedesarts": {
       "ok": true,
       "events": 95
     },
     "centaur": {
-      "ok": false,
-      "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://centaurtheatre.com/wp-json/wp/v2/centaur_event?per_page=100&_fields=id,link,title,content,class_list",
-      "kept_previous": 0
+      "ok": true,
+      "events": 2
     },
     "rideauvert": {
       "ok": true,
       "events": 6
     }
   },
-  "karenda": 117,
-  "karenda-sports": 16,
-  "karenda-theatre": 101
+  "karenda": 122,
+  "karenda-sports": 19,
+  "karenda-theatre": 103
 }
