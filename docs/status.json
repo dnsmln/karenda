@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-08T14:19:52+00:00",
+  "built_at": "2026-10-08T14:33:00+00:00",
   "sources": {
     "victoire": {
       "ok": true,
@@ -14,16 +14,29 @@
       "events": 95
     },
     "centaur": {
-      "ok": false,
-      "error": "RuntimeError: no events parsed",
-      "kept_previous": 2
+      "ok": true,
+      "events": 2
     },
     "rideauvert": {
       "ok": true,
       "events": 6
+    },
+    "rocket": {
+      "ok": true,
+      "events": 34
+    },
+    "cinemamoderne": {
+      "ok": true,
+      "events": 223
+    },
+    "mbam": {
+      "ok": true,
+      "events": 9
     }
   },
-  "karenda": 122,
-  "karenda-sports": 19,
-  "karenda-theatre": 103
+  "karenda": 388,
+  "karenda-sports": 53,
+  "karenda-theatre": 103,
+  "karenda-cinema": 223,
+  "karenda-museums": 9
 }

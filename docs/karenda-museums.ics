@@ -1,0 +1,129 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//karenda//montreal-events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Karenda · Musées
+X-WR-TIMEZONE:America/Toronto
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:mbam-13516@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261012
+SUMMARY:13516 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13516/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13516/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-13640@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20270215
+SUMMARY:13640 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13640/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13640/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14001@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20270308
+SUMMARY:14001 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14001/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14001/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-chiharu-shiota-the-soul-trembles@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261221
+SUMMARY:LEARN MORE · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/chiharu-shiota-the-soul-trembl
+ es/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/chiharu-shiota-the-sou
+ l-trembles/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-13638@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20270315
+SUMMARY:13638 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13638/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13638/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-13639@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20270315
+SUMMARY:13639 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13639/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13639/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-13488@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261121
+SUMMARY:Closure From November 3 to 20\, 2026 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13488/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13488/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14081@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270510
+SUMMARY:14081 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14081/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14081/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14087@karenda
+DTSTAMP:20261008T144712Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270913
+SUMMARY:14087 · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14087/
+DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14087/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+END:VCALENDAR
