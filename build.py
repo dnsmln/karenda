@@ -2,7 +2,7 @@
 """Build karenda.ics: Montreal theatre runs + home games, from public sources.
 
 Sources
-  victoire      PWHL season ICS files linked from thepwhl.com (home games only)
+  victoire      PWHL season ICS files linked from thepwhl.com (home games in the Montréal area only)
   cfmontreal    ESPN public schedule API (home games only)
   placedesarts  placedesarts.com/en/programming listing
   rideauvert    rideauvert.qc.ca/programmation
@@ -254,6 +254,11 @@ def text_of(el) -> str:
 
 
 # --------------------------------------------------------------------------- sources
+# The PWHL lists a "home" team for neutral-site games too (e.g. Montréal "hosting" Boston in
+# Wellesley, MA), so the home team alone is not enough: the venue must be in the Montréal area.
+HOME_AREA = re.compile(r"montr|laval|place bell|centre bell|bell centre", re.I)
+
+
 def src_victoire() -> list[Event]:
     schedule = "https://www.thepwhl.com/en/schedule/"
     known = [
@@ -296,6 +301,9 @@ def src_victoire() -> list[Event]:
             if end <= start:
                 end = start + timedelta(hours=3)
             loc = p.get("LOCATION", "").replace(" | ", ", ")
+            if loc and loc.upper() != "TBD" and not HOME_AREA.search(loc):
+                print("victoire: skipping neutral-site game", summ, "@", loc)
+                continue
             pre = "preseason" in u.lower()
             events.append(Event(
                 source="victoire", uid=f"{uid}@karenda", summary=f"Victoire vs {m[1].strip()}" + (" (preseason)" if pre else ""),
