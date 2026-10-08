@@ -1,0 +1,1339 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//karenda//montreal-events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Karenda · Théâtre
+X-WR-TIMEZONE:America/Toronto
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:trv-cyrano@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261019
+SUMMARY:Cyrano · Rideau Vert
+LOCATION:Théâtre du Rideau Vert\, 4664 rue Saint-Denis\, Montréal
+URL:https://rideauvert.qc.ca/piece/cyrano/
+DESCRIPTION:https://rideauvert.qc.ca/piece/cyrano/
+CATEGORIES:Theatre,Rideau Vert
+X-KARENDA-SOURCE:rideauvert
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-adib-alkhalidey@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20270131
+SUMMARY:Adib Alkhalidey | Comme les Mongols à Baghdad · PdA
+LOCATION:Multiple venues\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/adib-alkhalidey
+DESCRIPTION:10 performances\nhttps://www.placedesarts.com/en/event/adib-
+ alkhalidey
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-7-musicaux-udm@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261011
+SUMMARY:5 à 7 musicaux avec la Faculté de musique de l’UdeM · PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-7-musicaux-udm
+DESCRIPTION:https://www.placedesarts.com/en/event/5-7-musicaux-udm
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-apashe-osm@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261011
+SUMMARY:Apashe x OSM · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/apashe-osm
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/apashe
+ -osm
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-engelbert-humperdinck@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261010
+SUMMARY:Engelbert Humperdinck | The Celebration Tour · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/engelbert-humperdinck
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/engelb
+ ert-humperdinck
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-renaud-symphonique-50-ans-de-carriere@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Renaud symphonique: 50 ans de carrière! · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/renaud-symphonique-50-ans-de-c
+ arriere
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/renaud
+ -symphonique-50-ans-de-carriere
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-edward-scissorhands-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Edward Scissorhands in Concert · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/edward-scissorhands-concert
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/edward
+ -scissorhands-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-relive-the-music-50s-60s-70s-show@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Relive the Music 50s\, 60s & 70s Show · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/relive-the-music-50s-60s-70s-s
+ how
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/relive
+ -the-music-50s-60s-70s-show
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-eclats-du-romantisme@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Éclats du romantisme · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/eclats-du-romantisme
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/eclats
+ -du-romantisme
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-mamma-mia@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261019
+SUMMARY:Mamma Mia! · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/mamma-mia
+DESCRIPTION:8 performances\nhttps://www.placedesarts.com/en/event/mamma-
+ mia
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-pas-perdus-documentaires-sceniques@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261019
+SUMMARY:Pas perdus | documentaires scéniques · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/pas-perdus-documentaires-sceni
+ ques
+DESCRIPTION:5 performances\nhttps://www.placedesarts.com/en/event/pas-pe
+ rdus-documentaires-sceniques
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-azrieli-music-prizes@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:The Azrieli Music Prizes Gala Concert · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/azrieli-music-prizes
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/azriel
+ i-music-prizes
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-ghostly-kisses-orchestre-filmharmonique@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Ghostly Kisses & the FILMharmonique Orchestra · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/ghostly-kisses-orchestre-filmh
+ armonique
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/ghostl
+ y-kisses-orchestre-filmharmonique
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-mossbed@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20270222
+SUMMARY:Mossbed · PdA
+LOCATION:Salle d'exposition\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/mossbed
+DESCRIPTION:https://www.placedesarts.com/en/event/mossbed
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-louis-jean-cormier-filmharmonique-orchestra@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Louis-Jean Cormier and the FILMharmonique Orchestra · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/louis-jean-cormier-filmharmoni
+ que-orchestra
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/louis-
+ jean-cormier-filmharmonique-orchestra
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-golden-piano-sous-les-petales-dor-et-chandelles@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Golden Piano | Sous les pétales d'or et chandelles · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/golden-piano-sous-les-petales-
+ dor-et-chandelles
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/golden
+ -piano-sous-les-petales-dor-et-chandelles
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-guy-nantel@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Guy Nantel | Bienveillant · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/guy-nantel
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/guy-na
+ ntel
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-jimmy-carr@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261022
+SUMMARY:Jimmy Carr | Laughs Funny · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/jimmy-carr
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/jimmy-
+ carr
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-the-world-of-stravinsky@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261023
+SUMMARY:From Tchaikovsky to The Firebird · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/the-world-of-stravinsky
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/the-wo
+ rld-of-stravinsky
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-louis-jose-houde-jusqua-fin-labeaute@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20270108
+SUMMARY:Louis-José Houde | Et jusqu’à la fin la beauté. · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-la
+ beaute
+DESCRIPTION:7 performances\nhttps://www.placedesarts.com/en/event/louis-
+ jose-houde-jusqua-fin-labeaute
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-a-7-musicaux-avec-conservatoire-de-musique-de-montreal@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261025
+SUMMARY:5 à 7 musicaux avec Conservatoire de Musique de Montréal​ ·
+  PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-conservato
+ ire-de-musique-de-montreal
+DESCRIPTION:https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-co
+ nservatoire-de-musique-de-montreal
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-legendes-de-lolympia-en-opera@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Légendes de l’Olympia en opéra · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/legendes-de-lolympia-en-opera
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/legend
+ es-de-lolympia-en-opera
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-pierre-yves-roy-desmarais@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Pierre-Yves Roy-Desmarais | Une année en un an · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/pierre-yves-roy-desmarais
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/pierre
+ -yves-roy-desmarais
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-jardin-alice-et-theo@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Le jardin d’Alice et Théo · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/jardin-alice-et-theo
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/jardin
+ -alice-et-theo
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-jf-otis@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:JF Otis | Avec plaisir! · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/jf-otis
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/jf-oti
+ s
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-christos-papadopoulos@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261101
+SUMMARY:Christos Papadopoulos | My Fierce Ignorant Step · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/christos-papadopoulos
+DESCRIPTION:4 performances\nhttps://www.placedesarts.com/en/event/christ
+ os-papadopoulos
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-le-fantome-dans-la-machine@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261129
+SUMMARY:Le fantôme dans la machine · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/le-fantome-dans-la-machine
+DESCRIPTION:23 performances\nhttps://www.placedesarts.com/en/event/le-fa
+ ntome-dans-la-machine
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-midsummer-night-dreams@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261102
+SUMMARY:Midsummer Night Dreams · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/midsummer-night-dreams
+DESCRIPTION:5 performances\nhttps://www.placedesarts.com/en/event/midsum
+ mer-night-dreams
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-nosferatu-the-vampire-in-cine-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Nosferatu the Vampire in Cine-Concert · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/nosferatu-the-vampire-in-cine-
+ concert
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/nosfer
+ atu-the-vampire-in-cine-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-entre-chiens-et-louves@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261116
+SUMMARY:Entre chiens et louves · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/entre-chiens-et-louves
+DESCRIPTION:10 performances\nhttps://www.placedesarts.com/en/event/entre
+ -chiens-et-louves
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-europe-la-bataille-des-sieges-cine-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Europe : La Bataille des sièges in ciné-concert · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/europe-la-bataille-des-sieges-
+ cine-concert
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/europe
+ -la-bataille-des-sieges-cine-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:trv-soiree-maude-guerin@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261109
+SUMMARY:Soirée Maude Guérin · Rideau Vert
+LOCATION:Théâtre du Rideau Vert\, 4664 rue Saint-Denis\, Montréal
+URL:https://rideauvert.qc.ca/piece/soiree-maude-guerin/
+DESCRIPTION:https://rideauvert.qc.ca/piece/soiree-maude-guerin/
+CATEGORIES:Theatre,Rideau Vert
+X-KARENDA-SOURCE:rideauvert
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-mokatek-etoile-disparue@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Mokatek et l’étoile disparue · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/mokatek-etoile-disparue
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/mokate
+ k-etoile-disparue
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-comico-show@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Comico Show · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/comico-show
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/comico
+ -show
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-nataly-aukar@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Nataly Aukar · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/nataly-aukar
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/nataly
+ -aukar
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-le-duplex@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Le Duplex · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/le-duplex
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/le-dup
+ lex
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-werther-jules-massenet@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261130
+SUMMARY:Werther | Jules Massenet · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/werther-jules-massenet
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/werthe
+ r-jules-massenet
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-dans-nos-maisons@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Dans nos maisons · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/dans-nos-maisons
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/dans-n
+ os-maisons
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:trv-2026-revue-et-corrigee@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20270103
+SUMMARY:2026 revue et corrigée · Rideau Vert
+LOCATION:Théâtre du Rideau Vert\, 4664 rue Saint-Denis\, Montréal
+URL:https://rideauvert.qc.ca/piece/2026-revue-et-corrigee/
+DESCRIPTION:https://rideauvert.qc.ca/piece/2026-revue-et-corrigee/
+CATEGORIES:Theatre,Rideau Vert
+X-KARENDA-SOURCE:rideauvert
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-ballets-jazz-montreal@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261130
+SUMMARY:Ballets Jazz Montréal | Dance Me – Music by Leonard Cohen · 
+ PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/ballets-jazz-montreal
+DESCRIPTION:7 performances\nhttps://www.placedesarts.com/en/event/ballet
+ s-jazz-montreal
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-the-nightmare-before-christmas-in-cine-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261128
+SUMMARY:Disney Tim Burton’s The Nightmare Before Christmas in Concert 
+ Live-to-Film · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/the-nightmare-before-christmas
+ -in-cine-concert
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/the-ni
+ ghtmare-before-christmas-in-cine-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-pierre-verville@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261128
+SUMMARY:Pierre Verville | Pour une dernière voix · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/pierre-verville
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/pierre
+ -verville
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-arthur-aventurier-africanimaux@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20270404
+SUMMARY:Arthur L’aventurier | Africanimaux · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/arthur-aventurier-africanimaux
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/arthur
+ -aventurier-africanimaux
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-arthur-aventurier@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Arthur L’aventurier | Africanimaux · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/arthur-aventurier
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/arthur
+ -aventurier
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-heredis-spectacle-assassins-creed@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261221
+SUMMARY:HEREDIS spectacle Assassin's Creed · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/heredis-spectacle-assassins-cr
+ eed
+DESCRIPTION:18 performances\nhttps://www.placedesarts.com/en/event/hered
+ is-spectacle-assassins-creed
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-janette@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261218
+SUMMARY:Janette · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/janette
+DESCRIPTION:14 performances\nhttps://www.placedesarts.com/en/event/janet
+ te
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-nutcracker-grands-ballets@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261231
+SUMMARY:The Nutcracker · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/nutcracker-grands-ballets
+DESCRIPTION:21 performances\nhttps://www.placedesarts.com/en/event/nutcr
+ acker-grands-ballets
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-grand-bal-de-noel@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Le Grand Bal de Noël · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/grand-bal-de-noel
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/grand-
+ bal-de-noel
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-marie-chouinard-henri-michaux@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261220
+SUMMARY:Marie Chouinard | Henri Michaux : Mouvements + Selected solos an
+ d duets · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/marie-chouinard-henri-michaux
+DESCRIPTION:4 performances\nhttps://www.placedesarts.com/en/event/marie-
+ chouinard-henri-michaux
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-tadam-les-lutins-magnifiques@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261221
+SUMMARY:Tadam et les lutins magnifiques · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/tadam-les-lutins-magnifiques
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/tadam-
+ les-lutins-magnifiques
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-gaelle-bien-aime-les-meetings-de-madame-appolon@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Gaëlle Bien-Aimé | Les meetings de Madame Appolon · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/gaelle-bien-aime-les-meetings-
+ de-madame-appolon
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/gaelle
+ -bien-aime-les-meetings-de-madame-appolon
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-le-petit-prince-antoine-de-saint-exupery@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261229
+SUMMARY:Le Petit Prince d’Antoine de Saint-Exupéry · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/le-petit-prince-antoine-de-sai
+ nt-exupery
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/le-pet
+ it-prince-antoine-de-saint-exupery
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-nicolas-noel-entre-deux-mondes@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261229
+SUMMARY:Nicolas Noël | Entre deux mondes · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/nicolas-noel-entre-deux-mondes
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/nicola
+ s-noel-entre-deux-mondes
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-o-christmas-tea-a-british-comedy@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:O Christmas Tea: A British Comedy · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/o-christmas-tea-a-british-come
+ dy
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/o-chri
+ stmas-tea-a-british-comedy
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-avatar-last-airbender-en-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:Avatar: The Last Airbender in Concert · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/avatar-last-airbender-en-conce
+ rt
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/avatar
+ -last-airbender-en-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-mehdi-bousaidan@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Mehdi Bousaidan | Le garçon et la fenêtre · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/mehdi-bousaidan
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/mehdi-
+ bousaidan
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-lord-rings-return-king-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270111
+SUMMARY:The Lord of the Rings: The Return of the King – In Concert · 
+ PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/lord-rings-return-king-concert
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/lord-r
+ ings-return-king-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-architectures-de-la-joie@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Architectures de la joie · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/architectures-de-la-joie
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/archit
+ ectures-de-la-joie
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-un-tramway-nomme-desir@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270214
+SUMMARY:Un tramway nommé Désir · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/un-tramway-nomme-desir
+DESCRIPTION:23 performances\nhttps://www.placedesarts.com/en/event/un-tr
+ amway-nomme-desir
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-simon-delisle@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Simon Delisle | Tache · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/simon-delisle
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/simon-
+ delisle
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-metropolis-in-cine-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:Metropolis in Cine-Concert · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/metropolis-in-cine-concert
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/metrop
+ olis-in-cine-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:trv-hedda-gabler-2@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270215
+SUMMARY:Hedda Gabler · Rideau Vert
+LOCATION:Théâtre du Rideau Vert\, 4664 rue Saint-Denis\, Montréal
+URL:https://rideauvert.qc.ca/piece/hedda-gabler-2/
+DESCRIPTION:https://rideauvert.qc.ca/piece/hedda-gabler-2/
+CATEGORIES:Theatre,Rideau Vert
+X-KARENDA-SOURCE:rideauvert
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-feng-hua-xue-yue@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Feng Hua Xue Yue · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/feng-hua-xue-yue
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/feng-h
+ ua-xue-yue
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-michel-faubert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270130
+SUMMARY:30 ans de contes avec Michel Faubert | La nuit des temps · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/michel-faubert
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/michel
+ -faubert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-7-musicaux-vision-diversite@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270131
+SUMMARY:5 à 7 musicaux avec Vision Diversité · PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-7-musicaux-vision-diversite
+DESCRIPTION:https://www.placedesarts.com/en/event/5-7-musicaux-vision-di
+ versite
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-der-rosenkavalier@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270201
+SUMMARY:Der Rosenkavalier I Richard Strauss · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/der-rosenkavalier
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/der-ro
+ senkavalier
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-how-train-your-dragon-2-in-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270131
+SUMMARY:How to Train Your Dragon 2 in Concert · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/how-train-your-dragon-2-in-con
+ cert
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/how-tr
+ ain-your-dragon-2-in-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-verdi-traviata-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270131
+SUMMARY:Verdi: La Traviata in Concert · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/verdi-traviata-concert
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/verdi-
+ traviata-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-chinese-new-year-canada-gala-phoenix@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Canadian Chinese New Year Gala · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/chinese-new-year-canada-gala-p
+ hoenix
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/chines
+ e-new-year-canada-gala-phoenix
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-les-ptites-polisses@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Les p’tites polisses · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/les-ptites-polisses
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/les-pt
+ ites-polisses
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-morin-leroux-arts-vivants@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270207
+SUMMARY:Morin/Leroux · Arts vivants | Euphoric Thresholds · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/morin-leroux-arts-vivants
+DESCRIPTION:5 performances\nhttps://www.placedesarts.com/en/event/morin-
+ leroux-arts-vivants
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-7-musicaux-with-udm@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270207
+SUMMARY:5 à 7 musicaux avec la Faculté de musique de l’UdeM · PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-7-musicaux-with-udm
+DESCRIPTION:https://www.placedesarts.com/en/event/5-7-musicaux-with-udm
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-riverdance@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270208
+SUMMARY:Riverdance · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/riverdance
+DESCRIPTION:6 performances\nhttps://www.placedesarts.com/en/event/riverd
+ ance
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-pietragalla-barbara@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270207
+SUMMARY:Barbara par Pietragalla · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/pietragalla-barbara
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/pietra
+ galla-barbara
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-twilight-saga-new-moon-in-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:The Twilight Saga: New Moon in Concert · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/twilight-saga-new-moon-in-conc
+ ert
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/twilig
+ ht-saga-new-moon-in-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-bugs-bunny-at-the-symphony@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270214
+SUMMARY:Bugs Bunny at the Symphony · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/bugs-bunny-at-the-symphony
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/bugs-b
+ unny-at-the-symphony
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-fred-pellerin@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270509
+SUMMARY:Fred Pellerin | Au nom du père · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/fred-pellerin
+DESCRIPTION:7 performances\nhttps://www.placedesarts.com/en/event/fred-p
+ ellerin
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-7-musicaux-nuits-afrique@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270221
+SUMMARY:5 à 7 musicaux avec Nuits d'Afrique · PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-7-musicaux-nuits-afrique
+DESCRIPTION:https://www.placedesarts.com/en/event/5-7-musicaux-nuits-afr
+ ique
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-la-florida@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:La Florida · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/la-florida
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/la-flo
+ rida
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-step-afrika-evolution@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Step Afrika! | The Evolution Tour · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/step-afrika-evolution
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/step-a
+ frika-evolution
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-drolement-debrouillards@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Drôlement débrouillards · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/drolement-debrouillards
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/drolem
+ ent-debrouillards
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-la-recreation-de-mozart@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:La récréation de Mozart · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/la-recreation-de-mozart
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/la-rec
+ reation-de-mozart
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-danza-contemporanea-de-cuba@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270228
+SUMMARY:Danza Contemporánea de Cuba · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/danza-contemporanea-de-cuba
+DESCRIPTION:5 performances\nhttps://www.placedesarts.com/en/event/danza-
+ contemporanea-de-cuba
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-cendrillon-grands-ballets@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270301
+SUMMARY:Cinderella · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/cendrillon-grands-ballets
+DESCRIPTION:6 performances\nhttps://www.placedesarts.com/en/event/cendri
+ llon-grands-ballets
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-peter-and-the-wolf-on-the-organ@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Peter and the Wolf on the Organ · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/peter-and-the-wolf-on-the-orga
+ n
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/peter-
+ and-the-wolf-on-the-organ
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-semaine-relache@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270307
+SUMMARY:School Break · PdA
+LOCATION:Multiple venues\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/semaine-relache
+DESCRIPTION:https://www.placedesarts.com/en/event/semaine-relache
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-the-book-of-mormon@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270308
+SUMMARY:The Book of Mormon · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/the-book-of-mormon
+DESCRIPTION:8 performances\nhttps://www.placedesarts.com/en/event/the-bo
+ ok-of-mormon
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-nous-dans-les-plaines-immenses@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270404
+SUMMARY:Nous\, dans les plaines immenses · PdA
+LOCATION:Théâtre Jean-Duceppe\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/nous-dans-les-plaines-immenses
+DESCRIPTION:23 performances\nhttps://www.placedesarts.com/en/event/nous-
+ dans-les-plaines-immenses
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:trv-le-dieu-du-carnage@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270405
+SUMMARY:Le dieu du carnage · Rideau Vert
+LOCATION:Théâtre du Rideau Vert\, 4664 rue Saint-Denis\, Montréal
+URL:https://rideauvert.qc.ca/piece/le-dieu-du-carnage/
+DESCRIPTION:https://rideauvert.qc.ca/piece/le-dieu-du-carnage/
+CATEGORIES:Theatre,Rideau Vert
+X-KARENDA-SOURCE:rideauvert
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-a-7-musicaux-avec-mcgill@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270314
+SUMMARY:5 à 7 musicaux avec McGill · PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-mcgill
+DESCRIPTION:https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-mc
+ gill
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-harry-potter-philosophers-stone-in-concert@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270314
+SUMMARY:Harry Potter and the Philosopher’s Stone™ In Concert · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/harry-potter-philosophers-ston
+ e-in-concert
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/harry-
+ potter-philosophers-stone-in-concert
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-glissant-glissant@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270328
+SUMMARY:Glissant Glissant · PdA
+LOCATION:Cinquième Salle\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/glissant-glissant
+DESCRIPTION:8 performances\nhttps://www.placedesarts.com/en/event/glissa
+ nt-glissant
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-5-7-musicaux-with-uqam@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270321
+SUMMARY:5 à 7 musicaux avec l'UQAM · PdA
+LOCATION:Salon urbain\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/5-7-musicaux-with-uqam
+DESCRIPTION:https://www.placedesarts.com/en/event/5-7-musicaux-with-uqam
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-les-choristes@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270321
+SUMMARY:Les Choristes in Concert · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/les-choristes
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/les-ch
+ oristes
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-cyrano-de-bergerac-comedie-musicale@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Cyrano de Bergerac – La Comédie Musicale · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/cyrano-de-bergerac-comedie-mus
+ icale
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/cyrano
+ -de-bergerac-comedie-musicale
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-atys-dawe-jasmin@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270328
+SUMMARY:Atys | Dawe & Jasmin · PdA
+LOCATION:Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/atys-dawe-jasmin
+DESCRIPTION:3 performances\nhttps://www.placedesarts.com/en/event/atys-d
+ awe-jasmin
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-les-boys-le-spectacle@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Les Boys\, le spectacle · PdA
+LOCATION:Théâtre Maisonneuve\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/les-boys-le-spectacle
+DESCRIPTION:1 performances\nhttps://www.placedesarts.com/en/event/les-bo
+ ys-le-spectacle
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-a-beautiful-noise@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270419
+SUMMARY:A Beautiful Noise: The Neil Diamond Musical · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/a-beautiful-noise
+DESCRIPTION:8 performances\nhttps://www.placedesarts.com/en/event/a-beau
+ tiful-noise
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:trv-motel-helene@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270524
+SUMMARY:Motel Hélène · Rideau Vert
+LOCATION:Théâtre du Rideau Vert\, 4664 rue Saint-Denis\, Montréal
+URL:https://rideauvert.qc.ca/piece/motel-helene/
+DESCRIPTION:https://rideauvert.qc.ca/piece/motel-helene/
+CATEGORIES:Theatre,Rideau Vert
+X-KARENDA-SOURCE:rideauvert
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-rigoletto-giuseppe-verdi@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270510
+SUMMARY:Rigoletto | Giuseppe Verdi · PdA
+LOCATION:Salle Wilfrid-Pelletier\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/rigoletto-giuseppe-verdi
+DESCRIPTION:4 performances\nhttps://www.placedesarts.com/en/event/rigole
+ tto-giuseppe-verdi
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:pda-la-belle-helene@karenda
+DTSTAMP:20261008T133423Z
+DTSTART;VALUE=DATE:20270610
+DTEND;VALUE=DATE:20270613
+SUMMARY:La Belle Hélène · PdA
+LOCATION:Maison symphonique\, Place des Arts\, Montréal
+URL:https://www.placedesarts.com/en/event/la-belle-helene
+DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/la-bel
+ le-helene
+CATEGORIES:Theatre,Place des Arts
+X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+END:VCALENDAR
