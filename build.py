@@ -1,0 +1,506 @@
+#!/usr/bin/env python3
+"""Build karenda.ics: Montreal theatre runs + home games, from public sources.
+
+Sources
+  victoire      PWHL season ICS files linked from thepwhl.com (home games only)
+  cfmontreal    ESPN public schedule API (home games only)
+  placedesarts  placedesarts.com/en/programming listing
+  centaur       centaurtheatre.com WordPress REST API + show pages
+  rideauvert    rideauvert.qc.ca/programmation
+
+Each source is independent. If one fails, its events from the previous
+karenda.ics are kept so the feed never loses a venue because of one bad day.
+"""
+from __future__ import annotations
+
+import html
+import json
+import os
+import re
+import sys
+import traceback
+from dataclasses import dataclass, field
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+
+import requests
+from bs4 import BeautifulSoup
+
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / "docs"
+DEBUG = ROOT / "debug"
+UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36 karenda/1.0"}
+TODAY = date.today()
+KEEP_FROM = TODAY - timedelta(days=1)
+DEBUG_ON = os.environ.get("KARENDA_DEBUG") == "1"
+
+session = requests.Session()
+session.headers.update(UA)
+
+
+def get(url: str, name: str | None = None, **kw) -> requests.Response:
+    r = session.get(url, timeout=40, **kw)
+    r.raise_for_status()
+    if DEBUG_ON and name:
+        DEBUG.mkdir(exist_ok=True)
+        (DEBUG / name).write_bytes(r.content)
+    return r
+
+
+# --------------------------------------------------------------------------- model
+@dataclass
+class Event:
+    source: str
+    uid: str
+    summary: str
+    start: datetime | date
+    end: datetime | date          # exclusive for all-day
+    location: str = ""
+    url: str = ""
+    description: str = ""
+    categories: list[str] = field(default_factory=list)
+
+    @property
+    def all_day(self) -> bool:
+        return not isinstance(self.start, datetime)
+
+    def start_date(self) -> date:
+        return self.start.date() if isinstance(self.start, datetime) else self.start
+
+    def end_date(self) -> date:
+        return self.end.date() if isinstance(self.end, datetime) else self.end
+
+
+def ics_escape(s: str) -> str:
+    return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+
+def fold(line: str) -> str:
+    b = line.encode("utf-8")
+    if len(b) <= 72:
+        return line
+    out, cur = [], b""
+    for ch in line:
+        cb = ch.encode("utf-8")
+        if len(cur) + len(cb) > 72:
+            out.append(cur.decode("utf-8"))
+            cur = b" " + cb
+        else:
+            cur += cb
+    out.append(cur.decode("utf-8"))
+    return "\r\n".join(out)
+
+
+def fmt_dt(d: datetime) -> str:
+    return d.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+
+def write_ics(path: Path, name: str, events: list[Event]) -> None:
+    now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//karenda//montreal-events//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        f"X-WR-CALNAME:{ics_escape(name)}",
+        "X-WR-TIMEZONE:America/Toronto",
+        "X-PUBLISHED-TTL:PT12H",
+        "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
+    ]
+    for e in sorted(events, key=lambda e: (e.start_date(), e.summary)):
+        lines += ["BEGIN:VEVENT", f"UID:{e.uid}", f"DTSTAMP:{now}"]
+        if e.all_day:
+            lines += [f"DTSTART;VALUE=DATE:{e.start:%Y%m%d}", f"DTEND;VALUE=DATE:{e.end:%Y%m%d}"]
+        else:
+            lines += [f"DTSTART:{fmt_dt(e.start)}", f"DTEND:{fmt_dt(e.end)}"]
+        lines.append(f"SUMMARY:{ics_escape(e.summary)}")
+        if e.location:
+            lines.append(f"LOCATION:{ics_escape(e.location)}")
+        if e.url:
+            lines.append(f"URL:{e.url}")
+        desc = e.description
+        if e.url:
+            desc = (desc + "\n" if desc else "") + e.url
+        if desc:
+            lines.append(f"DESCRIPTION:{ics_escape(desc)}")
+        if e.categories:
+            lines.append("CATEGORIES:" + ",".join(ics_escape(c) for c in e.categories))
+        lines.append(f"X-KARENDA-SOURCE:{e.source}")
+        lines.append("END:VEVENT")
+    lines.append("END:VCALENDAR")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\r\n".join(fold(l) for l in lines) + "\r\n", encoding="utf-8")
+
+
+def read_previous(path: Path) -> dict[str, list[Event]]:
+    """Parse our own previous output (only the subset of ICS we write)."""
+    out: dict[str, list[Event]] = {}
+    if not path.exists():
+        return out
+    text = path.read_text(encoding="utf-8").replace("\r\n ", "").replace("\n ", "")
+    for block in re.findall(r"BEGIN:VEVENT\r?\n(.*?)\r?\nEND:VEVENT", text, re.S):
+        props: dict[str, str] = {}
+        for line in block.splitlines():
+            if ":" in line:
+                k, v = line.split(":", 1)
+                props[k.split(";")[0]] = v
+        src = props.get("X-KARENDA-SOURCE")
+        if not src:
+            continue
+
+        def unesc(s: str) -> str:
+            return s.replace("\\n", "\n").replace("\\,", ",").replace("\\;", ";").replace("\\\\", "\\")
+
+        ds, de = props.get("DTSTART", ""), props.get("DTEND", "")
+        try:
+            if ds.endswith("Z"):
+                start = datetime.strptime(ds, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+                end = datetime.strptime(de, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+            else:
+                start = datetime.strptime(ds, "%Y%m%d").date()
+                end = datetime.strptime(de, "%Y%m%d").date()
+        except ValueError:
+            continue
+        url = props.get("URL", "")
+        desc = unesc(props.get("DESCRIPTION", ""))
+        if url and desc.endswith(url):
+            desc = desc[: -len(url)].rstrip("\n")
+        out.setdefault(src, []).append(Event(
+            source=src, uid=props.get("UID", ""), summary=unesc(props.get("SUMMARY", "")),
+            start=start, end=end, location=unesc(props.get("LOCATION", "")), url=url,
+            description=desc, categories=[unesc(c) for c in props.get("CATEGORIES", "").split(",") if c],
+        ))
+    return out
+
+
+# --------------------------------------------------------------------------- helpers
+MONTHS = {m: i for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july", "august",
+     "september", "october", "november", "december"], 1)}
+MONTHS.update({k[:3]: v for k, v in MONTHS.items()})
+MONTHS.update({"sept": 9})
+MONTHS_FR = {"janvier": 1, "février": 2, "fevrier": 2, "mars": 3, "avril": 4, "mai": 5, "juin": 6,
+             "juillet": 7, "août": 8, "aout": 8, "septembre": 9, "octobre": 10, "novembre": 11,
+             "décembre": 12, "decembre": 12}
+MONTH_RE = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
+
+
+def month_num(s: str) -> int | None:
+    s = s.lower().rstrip(".")
+    return MONTHS.get(s) or MONTHS.get(s[:3]) or MONTHS_FR.get(s)
+
+
+def parse_en_range(text: str) -> tuple[date, date] | None:
+    """Parse English date text as used by Place des Arts and Centaur.
+
+    Handles: "October 9, 2026", "October 8 and 9, 2026", "October 8 to 10, 2026",
+    "October 21 to November 19, 2026", "September 25, 2026 to January 30, 2027",
+    "October 13 - November 1, 2026", "Oct. 13 – Nov. 1, 2026".
+    Returns (first_day, last_day) inclusive.
+    """
+    t = html.unescape(text).replace("\u2013", "-").replace("\u2014", "-").replace("\xa0", " ")
+    t = re.sub(r"\s+", " ", t).strip()
+    sep = r"\s*(?:to|-|–|and|&|au|et)\s*"
+    M, D, Y = MONTH_RE, r"(\d{1,2})(?:st|nd|rd|th)?", r"(\d{4})"
+    m = re.search(rf"({M}) {D}, {Y}{sep}({M}) {D}, {Y}", t, re.I)       # M D, Y to M D, Y
+    if m:
+        a = date(int(m[3]), month_num(m[1]), int(m[2])); b = date(int(m[6]), month_num(m[4]), int(m[5]))
+        return (a, b) if b >= a else None
+    m = re.search(rf"({M}) {D}{sep}({M}) {D}, {Y}", t, re.I)             # M D to M D, Y
+    if m:
+        y = int(m[5]); a = date(y, month_num(m[1]), int(m[2])); b = date(y, month_num(m[3]), int(m[4]))
+        if b < a:
+            a = a.replace(year=y - 1)
+        return a, b
+    m = re.search(rf"({M}) {D}{sep}{D}, {Y}", t, re.I)                   # M D to D, Y
+    if m:
+        y = int(m[4]); mo = month_num(m[1])
+        return date(y, mo, int(m[2])), date(y, mo, int(m[3]))
+    m = re.search(rf"({M}) {D}, {Y}", t, re.I)                           # M D, Y
+    if m:
+        d = date(int(m[3]), month_num(m[1]), int(m[2]))
+        return d, d
+    return None
+
+
+def span_event(source: str, uid: str, title: str, first: date, last: date, **kw) -> Event:
+    return Event(source=source, uid=uid, summary=title, start=first, end=last + timedelta(days=1), **kw)
+
+
+def slug(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:80]
+
+
+def text_of(el) -> str:
+    return re.sub(r"\s+", " ", el.get_text(" ", strip=True)) if el else ""
+
+
+# --------------------------------------------------------------------------- sources
+def src_victoire() -> list[Event]:
+    schedule = "https://www.thepwhl.com/en/schedule/"
+    known = [
+        "https://assets.contentstack.io/v3/assets/bltebdb4296e05d53db/bltf9cbf8a71653fae4/FULL_Regular%20Season.ics",
+        "https://assets.contentstack.io/v3/assets/bltebdb4296e05d53db/blt6cd64228c3ea8504/FULL_Preaseason.ics",
+    ]
+    urls: list[str] = []
+    try:
+        page = get(schedule, "pwhl_schedule.html").text
+        urls = [u.replace(" ", "%20") for u in re.findall(r'https?://[^"\'\s<>]+\.ics', html.unescape(page))]
+    except Exception as e:  # noqa: BLE001
+        print("victoire: schedule page failed, using known ICS urls:", e)
+    urls = list(dict.fromkeys(urls + known))
+    events: list[Event] = []
+    seen: set[str] = set()
+    ok = 0
+    for u in urls:
+        try:
+            text = get(u).text.replace("\r\n ", "").replace("\n ", "")
+        except Exception as e:  # noqa: BLE001
+            print("victoire: ics failed", u, e)
+            continue
+        ok += 1
+        for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", text, re.S):
+            p = {k.split(";")[0]: v.strip() for k, v in
+                 (l.split(":", 1) for l in block.strip().splitlines() if ":" in l)}
+            summ = p.get("SUMMARY", "")
+            m = re.match(r"(.+?)\s*@\s*(.+)", summ)
+            if not m or "montr" not in m[2].lower():
+                continue
+            uid = p.get("UID") or f"{p.get('DTSTART')}@pwhl"
+            if uid in seen:
+                continue
+            seen.add(uid)
+            try:
+                start = datetime.strptime(p["DTSTART"], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+                end = datetime.strptime(p.get("DTEND", p["DTSTART"]), "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+            except (KeyError, ValueError):
+                continue
+            if end <= start:
+                end = start + timedelta(hours=3)
+            loc = p.get("LOCATION", "").replace(" | ", ", ")
+            pre = "preseason" in u.lower()
+            events.append(Event(
+                source="victoire", uid=f"{uid}@karenda", summary=f"Victoire vs {m[1].strip()}" + (" (preseason)" if pre else ""),
+                start=start, end=end, location=loc or "Place Bell, Laval",
+                url="https://www.thepwhl.com/en/schedule/", categories=["Sports", "PWHL"],
+            ))
+    if not ok:
+        raise RuntimeError("no PWHL ICS could be fetched")
+    return events
+
+
+def src_cfmontreal() -> list[Event]:
+    base = "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams/9720/schedule"
+    events: list[Event] = []
+    seen: set[str] = set()
+    ok = 0
+    for q in ("", "?seasontype=3"):
+        try:
+            data = get(base + q, f"espn{q.replace('?', '_')}.json").json()
+        except Exception as e:  # noqa: BLE001
+            print("cfmontreal: fetch failed", q, e)
+            continue
+        ok += 1
+        for ev in data.get("events", []):
+            if ev.get("id") in seen:
+                continue
+            comp = (ev.get("competitions") or [{}])[0]
+            home = next((c for c in comp.get("competitors", []) if c.get("homeAway") == "home"), None)
+            away = next((c for c in comp.get("competitors", []) if c.get("homeAway") == "away"), None)
+            if not home or str(home.get("id")) != "9720":
+                continue
+            seen.add(ev.get("id"))
+            ds = ev.get("date", "")
+            try:
+                start = datetime.strptime(ds, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc)
+            except ValueError:
+                try:
+                    start = datetime.fromisoformat(ds.replace("Z", "+00:00"))
+                except ValueError:
+                    continue
+            opp = (away or {}).get("team", {}).get("displayName", "TBD")
+            venue = comp.get("venue", {}).get("fullName") or "Stade Saputo"
+            stype = (ev.get("seasonType") or ev.get("season", {}).get("type") or {})
+            label = ""
+            if isinstance(stype, dict) and "playoff" in (stype.get("name", "") or "").lower():
+                label = " (playoffs)"
+            events.append(Event(
+                source="cfmontreal", uid=f"espn-{ev.get('id')}@karenda", summary=f"CF Montréal vs {opp}{label}",
+                start=start, end=start + timedelta(hours=2), location=f"{venue}, Montréal",
+                url=f"https://www.espn.com/soccer/match/_/gameId/{ev.get('id')}", categories=["Sports", "MLS"],
+            ))
+    if not ok:
+        raise RuntimeError("ESPN schedule unavailable")
+    return events
+
+
+HALLS = ["Salle Wilfrid-Pelletier", "Théâtre Maisonneuve", "Maison symphonique", "Théâtre Jean-Duceppe",
+         "Salle Claude-Léveillée", "Cinquième Salle", "Esplanade", "Salon urbain", "Salle d'exposition",
+         "Espace culturel Georges-Émile-Lapalme", "Multiple venues", "Piano nobile", "Studio-théâtre"]
+
+
+def src_placedesarts() -> list[Event]:
+    url = "https://www.placedesarts.com/en/programming"
+    soup = BeautifulSoup(get(url, "placedesarts.html").text, "html.parser")
+    events: dict[str, Event] = {}
+    for a in soup.select('a[href*="/en/event/"]'):
+        href = a.get("href", "")
+        full = href if href.startswith("http") else "https://www.placedesarts.com" + href
+        if full in events:
+            continue
+        # the card's text is inside the anchor on the listing; fall back to the parent card
+        txt = text_of(a)
+        if not parse_en_range(txt):
+            txt = text_of(a.parent)
+        rng = parse_en_range(txt)
+        if not rng:
+            continue
+        first, last = rng
+        if (last - first).days > 400:      # permanent installations
+            continue
+        title = ""
+        for sel in ("h2", "h3", "h4", "[class*=title]"):
+            h = a.select_one(sel) or (a.parent.select_one(sel) if a.parent else None)
+            if h and text_of(h):
+                title = text_of(h)
+                break
+        if not title:
+            # strip the date text and known decorations from the anchor text
+            title = re.split(r"\b(?:" + MONTH_RE + r") \d{1,2}", txt, 1, flags=re.I)[0]
+            title = re.sub(r"^(New date added|Limited places|Sold out|Free|Last chance)\s*", "", title, flags=re.I).strip(" -|")
+        if not title:
+            title = full.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title()
+        hall = next((h for h in HALLS if h.lower() in txt.lower()), "")
+        perf = re.search(r"(\d+)\s+performances?", txt, re.I)
+        desc = (f"{perf[1]} performances" if perf else "")
+        events[full] = span_event(
+            "placedesarts", f"pda-{slug(full.rsplit('/', 1)[-1])}@karenda", f"{title} · PdA",
+            first, last, location=(hall + ", " if hall else "") + "Place des Arts, Montréal",
+            url=full, description=desc, categories=["Theatre", "Place des Arts"],
+        )
+    if not events:
+        raise RuntimeError("no events parsed from programming page")
+    return list(events.values())
+
+
+def src_centaur() -> list[Event]:
+    api = "https://centaurtheatre.com/wp-json/wp/v2/centaur_event?per_page=100&_fields=id,link,title,content,class_list"
+    items = get(api, "centaur.json").json()
+    events: list[Event] = []
+    for it in items:
+        title = html.unescape(BeautifulSoup(it["title"]["rendered"], "html.parser").get_text())
+        link = it.get("link", "")
+        content = BeautifulSoup(it.get("content", {}).get("rendered", ""), "html.parser").get_text(" ")
+        rng = parse_en_range(content)
+        if not rng:
+            try:
+                page = BeautifulSoup(get(link).text, "html.parser")
+                for s in page(["script", "style", "nav", "footer"]):
+                    s.decompose()
+                rng = parse_en_range(page.get_text(" "))
+            except Exception as e:  # noqa: BLE001
+                print("centaur: page fetch failed", link, e)
+        if not rng:
+            print("centaur: no dates for", title)
+            continue
+        first, last = rng
+        if last < KEEP_FROM or (last - first).days > 120:
+            continue
+        guest = any("guest" in c for c in it.get("class_list", []))
+        events.append(span_event(
+            "centaur", f"centaur-{it['id']}@karenda", f"{title} · Centaur", first, last,
+            location="Centaur Theatre, 453 Saint-François-Xavier, Montréal", url=link,
+            description="Guest show" if guest else "", categories=["Theatre", "Centaur"],
+        ))
+    if not events:
+        raise RuntimeError("no events parsed")
+    return events
+
+
+def src_rideauvert() -> list[Event]:
+    url = "https://rideauvert.qc.ca/programmation/"
+    soup = BeautifulSoup(get(url, "rideauvert.html").text, "html.parser")
+    date_re = re.compile(r"(\d{2})\.(\d{2})\.(\d{4})\s*/\s*(\d{2})\.(\d{2})\.(\d{4})")
+    events: dict[str, Event] = {}
+    for a in soup.select('a[href*="/piece/"]'):
+        href = a.get("href", "").split("?")[0]
+        if href in events or not href:
+            continue
+        node, txt, m = a, "", None
+        for _ in range(5):
+            txt = text_of(node)
+            m = date_re.search(txt)
+            if m or node.parent is None:
+                break
+            node = node.parent
+        if not m:
+            continue
+        first = date(int(m[3]), int(m[2]), int(m[1])); last = date(int(m[6]), int(m[5]), int(m[4]))
+        if last < first or last < KEEP_FROM:
+            continue
+        title = ""
+        for sel in ("h1", "h2", "h3", "h4", "[class*=title]"):
+            h = node.select_one(sel)
+            if h and text_of(h):
+                title = text_of(h); break
+        if not title:
+            title = text_of(a) or href.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title()
+        title = date_re.sub("", title).strip(" -|·")
+        low = txt.lower()
+        on_tour = "tournée" in low or "tournee" in low or "en tournée" in low
+        if on_tour and "rideau vert" not in low.replace("théâtre du rideau vert", ""):
+            # tour listings are not at the theatre; keep only if the block does not say tour
+            continue
+        events[href] = span_event(
+            "rideauvert", f"trv-{slug(href.rstrip('/').rsplit('/', 1)[-1])}@karenda", f"{title} · Rideau Vert",
+            first, last, location="Théâtre du Rideau Vert, 4664 rue Saint-Denis, Montréal", url=href,
+            categories=["Theatre", "Rideau Vert"],
+        )
+    if not events:
+        raise RuntimeError("no events parsed")
+    return list(events.values())
+
+
+SOURCES = {
+    "victoire": src_victoire,
+    "cfmontreal": src_cfmontreal,
+    "placedesarts": src_placedesarts,
+    "centaur": src_centaur,
+    "rideauvert": src_rideauvert,
+}
+GROUPS = {
+    "karenda": list(SOURCES),
+    "karenda-sports": ["victoire", "cfmontreal"],
+    "karenda-theatre": ["placedesarts", "centaur", "rideauvert"],
+}
+
+
+def main() -> int:
+    previous = read_previous(OUT / "karenda.ics")
+    status: dict = {"built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "sources": {}}
+    by_source: dict[str, list[Event]] = {}
+    for name, fn in SOURCES.items():
+        try:
+            evs = [e for e in fn() if e.end_date() >= KEEP_FROM]
+            by_source[name] = evs
+            status["sources"][name] = {"ok": True, "events": len(evs)}
+            print(f"{name}: {len(evs)} events")
+        except Exception as e:  # noqa: BLE001
+            kept = [x for x in previous.get(name, []) if x.end_date() >= KEEP_FROM]
+            by_source[name] = kept
+            status["sources"][name] = {"ok": False, "error": f"{type(e).__name__}: {e}", "kept_previous": len(kept)}
+            print(f"{name}: FAILED ({e}); kept {len(kept)} previous events", file=sys.stderr)
+            traceback.print_exc()
+    for fname, srcs in GROUPS.items():
+        evs = [e for s in srcs for e in by_source.get(s, [])]
+        write_ics(OUT / f"{fname}.ics", {"karenda": "Karenda", "karenda-sports": "Karenda · Sports",
+                                          "karenda-theatre": "Karenda · Théâtre"}[fname], evs)
+        status[fname] = len(evs)
+    (OUT / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n")
+    print(json.dumps(status, indent=2, ensure_ascii=False))
+    return 0 if any(v.get("ok") for v in status["sources"].values()) else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
