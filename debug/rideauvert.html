@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="fr-CA">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="fr-CA">
+<![endif]-->
+<!--[if IE 9]>
+<html class="ie ie9" lang="fr-CA">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="fr-CA">
+<!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#194a40">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#194a40">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#194a40">
+	<meta charset="UTF-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+/* ]]> */
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Programmation - Théâtre du Rideau Vert</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://rideauvert.qc.ca/xmlrpc.php">
+	<!-- Icons -->
+	<link rel="shortcut icon" href="https://rideauvert.qc.ca/app/themes/rideau-vert/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="https://rideauvert.qc.ca/app/uploads/2016/03/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="https://rideauvert.qc.ca/app/uploads/2016/03/android-touch-icon-192x192.png" sizes="192x192">
+			<!--[if lt IE 9]>
+	<script src="https://rideauvert.qc.ca/app/themes/rideau-vert/js/html5.js"></script>
+	<![endif]-->
+	
+	<script data-cookieconsent="ignore">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("consent", "default", {
+            ad_storage: "denied",
+            analytics_storage: "denied",
+            functionality_storage: "denied",
+            personalization_storage: "denied",
+            security_storage: "granted",
+            wait_for_update: 500,
+        });
+        gtag("set", "ads_data_redaction", true);
+        gtag("set", "url_passthrough", false);
+    </script>
+
+	<!-- Google Tag Manager -->
+    <script data-cookieconsent="ignore">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WTWTSV63');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTWTSV63"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<meta name="description" content="Explorez la programmation : spectacles marquants, abonnements et rendez-vous culturels." />
+	<link rel="canonical" href="https://rideauvert.qc.ca/programmation/" />
+	<meta property="og:locale" content="fr_CA" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Programmation - Théâtre du Rideau Vert" />
+	<meta property="og:description" content="Explorez la programmation : spectacles marquants, abonnements et rendez-vous culturels." />
+	<meta property="og:url" content="https://rideauvert.qc.ca/programmation/" />
+	<meta property="og:site_name" content="Théâtre du Rideau Vert" />
+	<meta property="article:publisher" content="https://www.facebook.com/rideauvert/" />
+	<meta property="article:modified_time" content="2026-09-09T20:04:23+00:00" />
+	<meta property="og:image" content="https://rideauvert.qc.ca/app/uploads/2016/03/facebookDisplayLink.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@rideauvert" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://rideauvert.qc.ca/programmation/","url":"https://rideauvert.qc.ca/programmation/","name":"Programmation - Théâtre du Rideau Vert","isPartOf":{"@id":"https://rideauvert.qc.ca/#website"},"datePublished":"2016-03-01T15:30:02+00:00","dateModified":"2026-09-09T20:04:23+00:00","description":"Explorez la programmation : spectacles marquants, abonnements et rendez-vous culturels.","breadcrumb":{"@id":"https://rideauvert.qc.ca/programmation/#breadcrumb"},"inLanguage":"fr-CA","potentialAction":[{"@type":"ReadAction","target":["https://rideauvert.qc.ca/programmation/"]}]},{"@type":"BreadcrumbList","@id":"https://rideauvert.qc.ca/programmation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rideauvert.qc.ca/"},{"@type":"ListItem","position":2,"name":"Programmation"}]},{"@type":"WebSite","@id":"https://rideauvert.qc.ca/#website","url":"https://rideauvert.qc.ca/","name":"Théâtre du Rideau Vert","description":"Le théâtre en plein cœur","publisher":{"@id":"https://rideauvert.qc.ca/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rideauvert.qc.ca/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"fr-CA"},{"@type":"Organization","@id":"https://rideauvert.qc.ca/#organization","name":"Théâtre du Rideau Vert","url":"https://rideauvert.qc.ca/","logo":{"@type":"ImageObject","inLanguage":"fr-CA","@id":"https://rideauvert.qc.ca/#/schema/logo/image/","url":"https://rideauvert.qc.ca/app/uploads/2022/05/trv-logo-carre.jpg","contentUrl":"https://rideauvert.qc.ca/app/uploads/2022/05/trv-logo-carre.jpg","width":435,"height":435,"caption":"Théâtre du Rideau Vert"},"image":{"@id":"https://rideauvert.qc.ca/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/rideauvert/","https://x.com/rideauvert","https://www.instagram.com/rideauvertofficiel/","https://bsky.app/profile/rideauvertofficiel.bsky.social","https://www.youtube.com/@RideauVertTheatre"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://rideauvert.qc.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frideauvert.qc.ca%2Fprogrammation%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://rideauvert.qc.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frideauvert.qc.ca%2Fprogrammation%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='gform_basic-css' href='https://rideauvert.qc.ca/app/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.9.30' type='text/css' media='all' />
+<link rel='stylesheet' id='gform_theme_components-css' href='https://rideauvert.qc.ca/app/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.9.30' type='text/css' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='https://rideauvert.qc.ca/app/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.9.30' type='text/css' media='all' />
+<link rel='stylesheet' id='main-styles-css' href='https://rideauvert.qc.ca/app/themes/rideau-vert/css/build.min.css?ver=1.0.10' type='text/css' media='screen' />
+<script type="text/javascript" src="https://rideauvert.qc.ca/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" defer='defer' src="https://rideauvert.qc.ca/app/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.30" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"Dollar canadien","symbol_left":"$","symbol_right":"CAD","symbol_padding":" ","thousand_separator":",","decimal_separator":".","decimals":2,"code":"CAD"},"base_url":"https://rideauvert.qc.ca/app/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://rideauvert.qc.ca/app/plugins/gravityforms/images/spinner.svg","version_hash":"1caf32274b87d9217afd63334a681ef1","strings":{"newRowAdded":"Nouvelle ligne ajout\u00e9e.","rowRemoved":"Ligne supprim\u00e9e","formSaved":"Le formulaire a \u00e9t\u00e9 sauvegard\u00e9. Le contenu contient un lien pour revenir et compl\u00e9ter le formulaire."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"Janvier","february":"F\u00e9vrier","march":"Mars","april":"Avril","may":"May","june":"Juin","july":"Juillet","august":"Ao\u00fbt","september":"Septembre","october":"Octobre","november":"Novembre","december":"D\u00e9cembre"},"firstDay":0,"iconText":"S\u00e9lectionner une date"}};
+var gf_legacy_multi = {"1":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Ce type de fichier n\u2019est pas autoris\u00e9. Seuls les formats suivants sont autoris\u00e9s :","delete_file":"Supprimer ce fichier","in_progress":"en cours","file_exceeds_limit":"Le fichier d\u00e9passe la taille autoris\u00e9e.","illegal_extension":"Ce type de fichier n\u2019est pas autoris\u00e9.","max_reached":"Nombre de fichiers maximal atteint","unknown_error":"Une erreur s\u2019est produite lors de la sauvegarde du fichier sur le serveur","currently_uploading":"Veuillez attendre la fin de l\u2019envoi","cancel":"Annuler","cancel_upload":"Annuler cet envoi","cancelled":"Annul\u00e9","error":"Erreur","message":"Message"},"vars":{"images_url":"https://rideauvert.qc.ca/app/plugins/gravityforms/images"}};
+//# sourceURL=gform_gravityforms-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="gform_gravityforms-js-before">
+/* <![CDATA[ */
+
+//# sourceURL=gform_gravityforms-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://rideauvert.qc.ca/app/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.30" id="gform_gravityforms-js"></script>
+<script type="text/javascript" defer='defer' src="https://rideauvert.qc.ca/app/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d" id="gform_gravityforms_utils-js"></script>
+<link rel="https://api.w.org/" href="https://rideauvert.qc.ca/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://rideauvert.qc.ca/wp-json/wp/v2/pages/11" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://rideauvert.qc.ca/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.5" />
+<link rel='shortlink' href='https://rideauvert.qc.ca/?p=11' />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://rideauvert.qc.ca/app/uploads/2022/05/trv-logo-carre-150x150.jpg" sizes="32x32" />
+<link rel="icon" href="https://rideauvert.qc.ca/app/uploads/2022/05/trv-logo-carre-300x300.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://rideauvert.qc.ca/app/uploads/2022/05/trv-logo-carre-300x300.jpg" />
+<meta name="msapplication-TileImage" content="https://rideauvert.qc.ca/app/uploads/2022/05/trv-logo-carre-300x300.jpg" />
+
+    <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2d5df65c-6214-4d23-8155-28e0179450ab" type="text/javascript"></script> -->
+</head>
+
+<body class="wp-singular page-template page-template-page-programmation page-template-page-programmation-php page page-id-11 wp-theme-rideau-vert close single-author" data-page='Programmation'>
+	<div id="preloader"></div>
+	<div id="overlay" class="close"></div>
+	<div id="page" class="hfeed site">
+		<!-- Header -->
+		<header class="header" role="banner">
+			<div class="inner-header">
+				<a class="home-link" href="https://rideauvert.qc.ca/" title="Théâtre du Rideau Vert" rel="home"></a>
+				<div id="navbar" class="navbar">
+					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+						<div class="menu-menu-header-container"><ul id="menu-menu-header" class="nav-menu"><li id="menu-item-22" class="prog menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-22"><a href="https://rideauvert.qc.ca/programmation/" aria-current="page">Programmation</a></li>
+<li id="menu-item-10566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10566"><a href="https://rideauvert.qc.ca/abonnement-et-tarifs/">Abonnement et tarifs</a></li>
+<li id="menu-item-14397" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14397"><a href="https://www.rideauvert.qc.ca/nous-joindre/">À propos</a>
+<ul class="sub-menu">
+	<li id="menu-item-505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://rideauvert.qc.ca/le-theatre/mission-et-historique/">Mission</a></li>
+	<li id="menu-item-563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-563"><a href="https://rideauvert.qc.ca/le-theatre/equipe/">Équipe</a></li>
+	<li id="menu-item-715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-715"><a href="https://rideauvert.qc.ca/partenaires/">Partenaires</a></li>
+	<li id="menu-item-14490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14490"><a href="https://rideauvert.qc.ca/nouvelles/">Nouvelles</a></li>
+	<li id="menu-item-631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-631"><a href="https://rideauvert.qc.ca/nous-joindre/">Nous joindre</a></li>
+	<li id="menu-item-802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-802"><a href="https://rideauvert.qc.ca/salle-de-presse/">Salle de presse</a></li>
+	<li id="menu-item-3416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3416"><a href="https://rideauvert.qc.ca/le-theatre/archives/">Archives</a></li>
+</ul>
+</li>
+<li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-592"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/faire-un-don/">Nous soutenir</a>
+<ul class="sub-menu">
+	<li id="menu-item-2139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2139"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/faire-un-don/">Faire un don</a></li>
+	<li id="menu-item-6378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6378"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/campagne-annuelle-de-financement/">Soirée-bénéfice annuelle</a></li>
+	<li id="menu-item-2119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2119"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/philanthropes-du-premier-acte/">Les philanthropes du Rideau Vert</a></li>
+</ul>
+</li>
+<li id="menu-item-10248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10248"><a href="https://www.rideauvert.qc.ca/accessibilite-2/laccessibilite-au-rideau-vert/">Services aux publics</a>
+<ul class="sub-menu">
+	<li id="menu-item-10222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10222"><a href="https://rideauvert.qc.ca/audiodescription/">Audiodescription</a></li>
+	<li id="menu-item-10208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10208"><a href="https://rideauvert.qc.ca/interpretation-en-langue-des-signes-quebecoise/">Interprétation en langue des signes québécoise</a></li>
+	<li id="menu-item-12726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12726"><a href="https://rideauvert.qc.ca/surtitrage-code-en-francais/">Surtitrage codé en français</a></li>
+	<li id="menu-item-14588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14588"><a href="https://rideauvert.qc.ca/public-a-mobilite-reduite/">Mobilité réduite</a></li>
+</ul>
+</li>
+</ul></div>					</nav>
+				</div>
+				<div class="billetterie">
+					<a target="_blank" href="https://rideauvert.tuxedobillet.com/"><span class="billet-txt">Billets<i class='icon-ticket'></i></span></a>
+				</div>
+			</div>
+		</header>
+		<!-- #Header -->
+
+		<!-- Header Mobile -->
+		<header class="header-mobile close" role="banner">
+			<div class="inner-header-mobile">
+				<a class="home-link" href="https://rideauvert.qc.ca/" title="Théâtre du Rideau Vert" rel="home"></a>
+								<div class="billetterie">
+					<a target="_blank" href="https://rideauvert.tuxedobillet.com/"><span class="billet-txt">Billetterie<i class='icon-ticket'></i></span></a>
+				</div>
+								<div class="menu-burger close">
+					<span class="green-screen"></span>
+					<span class="menu-txt">Menu</span>
+					<div class="burger">
+						<div id="nav-icon">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="navbar-mobile" class="navbar close">
+			<nav id="site-navigation-mobile" class="navigation main-navigation" role="navigation">
+				<div class="menu-menu-header-container"><ul id="menu-menu-header-1" class="nav-menu"><li class="prog menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-22"><a href="https://rideauvert.qc.ca/programmation/" aria-current="page">Programmation</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10566"><a href="https://rideauvert.qc.ca/abonnement-et-tarifs/">Abonnement et tarifs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14397"><a href="https://www.rideauvert.qc.ca/nous-joindre/">À propos</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://rideauvert.qc.ca/le-theatre/mission-et-historique/">Mission</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-563"><a href="https://rideauvert.qc.ca/le-theatre/equipe/">Équipe</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-715"><a href="https://rideauvert.qc.ca/partenaires/">Partenaires</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14490"><a href="https://rideauvert.qc.ca/nouvelles/">Nouvelles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-631"><a href="https://rideauvert.qc.ca/nous-joindre/">Nous joindre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-802"><a href="https://rideauvert.qc.ca/salle-de-presse/">Salle de presse</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3416"><a href="https://rideauvert.qc.ca/le-theatre/archives/">Archives</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-592"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/faire-un-don/">Nous soutenir</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2139"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/faire-un-don/">Faire un don</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6378"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/campagne-annuelle-de-financement/">Soirée-bénéfice annuelle</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2119"><a href="https://rideauvert.qc.ca/appuyer-le-theatre/philanthropes-du-premier-acte/">Les philanthropes du Rideau Vert</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10248"><a href="https://www.rideauvert.qc.ca/accessibilite-2/laccessibilite-au-rideau-vert/">Services aux publics</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10222"><a href="https://rideauvert.qc.ca/audiodescription/">Audiodescription</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10208"><a href="https://rideauvert.qc.ca/interpretation-en-langue-des-signes-quebecoise/">Interprétation en langue des signes québécoise</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12726"><a href="https://rideauvert.qc.ca/surtitrage-code-en-francais/">Surtitrage codé en français</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14588"><a href="https://rideauvert.qc.ca/public-a-mobilite-reduite/">Mobilité réduite</a></li>
+</ul>
+</li>
+</ul></div>			</nav>
+			<div id="social-mobile">
+				<ul>
+					<li><a target="_blank" href="https://www.facebook.com/theatrerideauvert/"><i class="icon-facebook"></i></a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/rideauvert/albums"><i class="icon-flickr"></i></a></li>
+					<li><a target="_blank" href="http://www.instagram.com/theatrerideauvert"><i class="icon-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main" class="site-main">
+
+<section class="page-prog" data-page="programmation">
+	<section class="header-prog" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/visuel_site_helene.jpg');">
+		<div class="header-wrapper">
+			<div class="header-content text--white">
+												<h1></h1>
+											</div>
+		</div>
+	</section>
+	<section class="header-mobile clearfix">
+		<div class="header-content">
+									<h1></h1>
+								</div>
+	</section>
+	<section class="container-prog">
+								<div class="inner-prog">
+								
+				<div class="saison">
+					<h2>Saison 2026 / 2027</h2>
+					<div class="piece-grid clearfix">
+												<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/cyrano/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_cyrano.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche a-laffiche">
+											<span>à l'affiche</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>23.09.2026&nbsp;&#x2F;&nbsp;18.10.2026</span>
+											</div>
+																				<div class="title">
+											Cyrano										</div>
+									</div>
+								</a>
+							</div>
+																		<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/soiree-maude-guerin/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_soiree.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche a-venir">
+											<span>à venir</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>07.11.2026&nbsp;&#x2F;&nbsp;08.11.2026</span>
+											</div>
+																				<div class="title">
+											Soirée Maude Guérin										</div>
+									</div>
+								</a>
+							</div>
+													<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/2026-revue-et-corrigee/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_2026.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche a-venir">
+											<span>à venir</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>25.11.2026&nbsp;&#x2F;&nbsp;02.01.2027</span>
+											</div>
+																				<div class="title">
+											2026 revue et corrigée										</div>
+									</div>
+								</a>
+							</div>
+													<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/hedda-gabler-2/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_hedda.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche a-venir">
+											<span>à venir</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>20.01.2027&nbsp;&#x2F;&nbsp;14.02.2027</span>
+											</div>
+																				<div class="title">
+											Hedda Gabler										</div>
+									</div>
+								</a>
+							</div>
+													<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/le-dieu-du-carnage/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_dieu.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche a-venir">
+											<span>à venir</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>10.03.2027&nbsp;&#x2F;&nbsp;04.04.2027</span>
+											</div>
+																				<div class="title">
+											Le dieu du carnage										</div>
+									</div>
+								</a>
+							</div>
+													<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/motel-helene/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_helene.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche a-venir">
+											<span>à venir</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>28.04.2027&nbsp;&#x2F;&nbsp;23.05.2027</span>
+											</div>
+																				<div class="title">
+											Motel Hélène										</div>
+									</div>
+								</a>
+							</div>
+																</div>
+				</div>
+											</div>
+			</section>
+	<section class="container-prog">
+		<div class="inner-prog">
+							<div class="saison">
+					<h2>En tournée</h2>
+					<div class="piece-grid clearfix">
+												<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/a-toi-pour-toujours-ta-marie-lou-2/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_marielou.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche en-tournee">
+											<span>en tournée</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>12.02.2027&nbsp;&#x2F;&nbsp;30.04.2027</span>
+											</div>
+																				<div class="title">
+											À toi, pour toujours, ta Marie-Lou										</div>
+									</div>
+								</a>
+							</div>
+													<div class="piece-item col-mb-12 col-bmb-4 col-tb-4 col-btb-3 col-lt-3 col-dt-3">
+								<a href="https://rideauvert.qc.ca/piece/glenn-gould-naissance-dun-prodige-2/" class="inner-item">
+									<div class="top" style="background-image: url('https://rideauvert.qc.ca/app/uploads/2026/05/programmation_glenn.jpg');">
+										<div class="overlay"></div>
+										<div class="affiche en-tournee">
+											<span>en tournée</span>
+										</div>
+									</div>
+									<div class="bottom" data-mh="piece-item">
+																					<div class="date">
+												<span>22.01.2027&nbsp;&#x2F;&nbsp;15.05.2027</span>
+											</div>
+																				<div class="title">
+											Glenn Gould, naissance d&rsquo;un prodige										</div>
+									</div>
+								</a>
+							</div>
+											</div>
+				</div>
+					</div>
+	</section>
+	<!-- Calendar -->
+	<div id="tooltip-mobile">
+	<span class="close"><i class="icon-cross"></i></span>
+	<div class="content"></div>
+</div>
+<section id="calendar">
+	
+		<div id="calendar-rdv">
+		<div class="calendar-header clearfix">
+		<div class="calendar-title">Calendrier des représentations</div>
+		<div id="month-year" class="calendar-month">octobre&nbsp2026</div>
+		<div class="calendar-nav"><div class="nav-wrap"><div id="calendar-nav" class="navigation"><a class="prev" rel="nofollow" href="https://rideauvert.qc.ca/2026/09/?post_type=piece"><i class="icon-arrow-previous"></i></a><a class="next" rel="nofollow" href="https://rideauvert.qc.ca/2026/11/?post_type=piece"><i class="icon-arrow-next"></i></a></div></div></div>
+		</div>
+		<table id="wp-calendar" cellspacing="0" cellpadding="0">
+		<thead>
+		<th scope="col" title="Dimanche">Dim</th>
+		<th scope="col" title="Lundi">Lun</th>
+		<th scope="col" title="Mardi">Mar</th>
+		<th scope="col" title="Mercredi">Mer</th>
+		<th scope="col" title="Jeudi">Jeu</th>
+		<th scope="col" title="Vendredi">Ven</th>
+		<th scope="col" title="Samedi">Sam</th>
+		</tr>
+		</thead>
+
+		<tfoot>
+		<tr>
+		</tr>
+		</tfoot>
+
+		<tbody>
+		<tr>
+		<td colspan="1" class="pad">27</td>
+		<td colspan="1" class="pad">28</td>
+		<td colspan="1" class="pad">29</td>
+		<td colspan="1" class="pad">30</td><td class="event cell" data-date="1/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261001193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>01</td><td class="event cell" data-date="2/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261002193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>02</td><td class="event cell" data-date="3/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261003160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut"></span></a><a class="représentation en famille" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261003200000">Cyrano<br/><span class="hour">20 h</span><br/><span class="statut">Représentation en famille</span></a></div>
+					</div>03</td>
+	</tr>
+	<tr>
+		<td class="event cell" data-date="4/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261004160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>04</td><td class="cell" data-date="5/10/26">05</td><td class="cell" data-date="6/10/26">06</td><td class="event cell" data-date="7/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261007193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>07</td><td id="today" class="event cell" data-date="8/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/RideauVert/le-dieu-du-carnage/20270408193000">Le dieu du carnage<br/><span class="hour">19 h 30</span><br/><span class="statut">Supplémentaire</span></a><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261008193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>08</td><td class="event cell" data-date="9/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261009193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>09</td><td class="event cell" data-date="10/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261010160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut"></span></a><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261010200000">Cyrano<br/><span class="hour">20 h</span><br/><span class="statut"></span></a></div>
+					</div>10</td>
+	</tr>
+	<tr>
+		<td class="event cell" data-date="11/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261011160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>11</td><td class="cell" data-date="12/10/26">12</td><td class="cell" data-date="13/10/26">13</td><td class="event cell" data-date="14/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="représentation avec surtitrage codé en français et discussion avec le public" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261014193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut">Représentation avec surtitrage codé en français et discussion avec le public</span></a></div>
+					</div>14</td><td class="event cell" data-date="15/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261015193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>15</td><td class="event cell" data-date="16/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261016193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut"></span></a></div>
+					</div>16</td><td class="event cell" data-date="17/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261017160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut"></span></a><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261017200000">Cyrano<br/><span class="hour">20 h</span><br/><span class="statut"></span></a></div>
+					</div>17</td>
+	</tr>
+	<tr>
+		<td class="event cell" data-date="18/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261018160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut"></span></a></div>
+					</div>18</td><td class="cell" data-date="19/10/26">19</td><td class="cell" data-date="20/10/26">20</td><td class="event cell" data-date="21/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261021193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>21</td><td class="event cell" data-date="22/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261022193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>22</td><td class="event cell" data-date="23/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261023193000">Cyrano<br/><span class="hour">19 h 30</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>23</td><td class="event cell" data-date="24/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261024160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut">Supplémentaire</span></a><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261024200000">Cyrano<br/><span class="hour">20 h</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>24</td>
+	</tr>
+	<tr>
+		<td class="event cell" data-date="25/10/26"><div class="tooltip">
+					<span class="close"><i class="icon-cross"></i></span>
+					<div class="content"><a class="supplémentaire" target="_blank" href="https://rideauvert.tuxedobillet.com/Rideau%20Vert/cyrano/20261025160000">Cyrano<br/><span class="hour">16 h</span><br/><span class="statut">Supplémentaire</span></a></div>
+					</div>25</td><td class="cell" data-date="26/10/26">26</td><td class="cell" data-date="27/10/26">27</td><td class="cell" data-date="28/10/26">28</td><td class="cell" data-date="29/10/26">29</td><td class="cell" data-date="30/10/26">30</td><td class="cell" data-date="31/10/26">31</td>
+	</tr>
+	</tbody>
+	</table></div></section>
+
+</section>
+
+
+
+</div>
+<!-- #main -->
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+	<div class="inner-footer col-tb-12 col-dt-12 clearfix">
+		<div class="footer-top col-tb-12 col-dt-12">
+						<div class="left">
+				<h3>Recevez toutes nos nouvelles</h3>
+				<a class="bt" target="_blank" rel="noopener" href="https://suivi.lnk01.com/ngs/110850/Mu9dYlHTC6GvMJOxDQL7">
+					<i class=icon-arrow-next></i>
+					<span class="label">Inscrivez-vous à notre infolettre</span>
+				</a>
+			</div>
+
+			<div class="right">
+				<a class="partner" href="http://www.quebecor.com/fr" target="_blank"><img src="https://rideauvert.qc.ca/app/uploads/2026/05/quebecor_blanc-300x137.png" alt="Partenaire"></a>
+			</div>
+		</div>
+		<div class="footer-bottom col-lt-12 col-tb-12 col-dt-12">
+			<div class="address col-lt-4 col-tb-4 col-dt-4">
+								<h3>Adresse</h3>
+				<ul class="info-items">
+					<li class="street">4664, rue Saint-Denis, Montréal</li>
+					<li class="number">514 844-1793</li>
+					<li class="email"><a href="mailto:info@rideauvert.qc.ca">info@rideauvert.qc.ca</a></li>
+				</ul>
+				<ul class="social-items">
+					<li class="facebook"><a href="https://www.facebook.com/theatrerideauvert/" target="_blank"><i class="icon-facebook"></i></a></li>
+					<li class="flickr"><a href="https://www.flickr.com/photos/rideauvert/albums" target="_blank"><i class="icon-flickr"></i></a></li>
+					<li class="instagram"><a href="http://www.instagram.com/theatrerideauvert" target="_blank"><i class="icon-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="saison col-lt-4 col-tb-4 col-dt-4">
+										<div class="saison-item clearfix">
+							<h3>Saison 2026 / 2027</h3>
+							<ul class="info-items col-lt-12 col-tb-12 col-dt-12">
+																											<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/cyrano/">Cyrano</a></li>
+																			<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/2026-revue-et-corrigee/">2026 revue et corrigée</a></li>
+																			<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/hedda-gabler-2/">Hedda Gabler</a></li>
+																			<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/le-dieu-du-carnage/">Le dieu du carnage</a></li>
+																			<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/motel-helene/">Motel Hélène</a></li>
+																			<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/soiree-maude-guerin/">Soirée Maude Guérin</a></li>
+																								</ul>
+						</div>
+							</div>
+			<div class="tournee col-lt-4 col-tb-4 col-dt-4">
+				<h3>En Tournée</h3>
+				<ul class="info-items">
+												<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/a-toi-pour-toujours-ta-marie-lou-2/">À toi, pour toujours, ta Marie-Lou</a></li>
+												<li class="col-lt-6 col-tb-6 col-dt-6"><a href="https://rideauvert.qc.ca/piece/glenn-gould-naissance-dun-prodige-2/">Glenn Gould, naissance d&rsquo;un prodige</a></li>
+									</ul>
+			</div>
+			<div class="links col-lt-12 col-tb-12 col-dt-12">
+				<div class="menu-menu-footer-container"><ul id="menu-menu-footer" class="nav-menu col-tb-12 col-lt-9"><li id="menu-item-42" class="salle-presse menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="https://rideauvert.qc.ca/salle-de-presse/">Salle de presse</a></li>
+<li id="menu-item-14550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14550"><a href="https://rideauvert.qc.ca/app/uploads/2026/08/trv_conditions-de-vente_08-26.pdf">Conditions de vente</a></li>
+<li id="menu-item-14549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14549"><a href="https://rideauvert.qc.ca/app/uploads/2026/08/trv_politique-de-confidentialite_08-26.pdf">Politique de confidentialité</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="https://rideauvert.qc.ca/nous-joindre/">Nous joindre</a></li>
+</ul></div>				<div class="copyright col-lt-3 col-tb-3 col-dt-3">
+					&copy; 2026 Théâtre Du Rideau Vert				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<!-- #Footer -->
+<!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/app/uploads/*","/app/*","/app/plugins/*","/app/themes/rideau-vert/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"9a474c05d629fc1b020aef02cb545dea"})});</script><script type="text/javascript" src="https://rideauvert.qc.ca/app/themes/rideau-vert/js/vendors/vendors.js" defer="defer"></script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/app/themes/rideau-vert/js/vendors/parsley-fr.js" defer="defer"></script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/app/themes/rideau-vert/js/build.min.js?ver=1.0.11" defer="defer"></script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="wp-a11y-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-10-03 04:54:28+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"fr_CA"},"Notifications":["Notifications"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rideauvert.qc.ca/wp-includes/js/dist/a11y.min.js?ver=cb460b4676c94bd228ed" id="wp-a11y-js"></script>
+<script type="text/javascript" defer='defer' src="https://rideauvert.qc.ca/app/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.9.30" id="gform_placeholder-js"></script>
+<script type="text/javascript" defer='defer' src="https://rideauvert.qc.ca/app/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=4f8b3915c1c1e1a6800825abd64b03cb" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"1caf32274b87d9217afd63334a681ef1"},"ajax":{"ajaxurl":"https://rideauvert.qc.ca/wp-admin/admin-ajax.php","ajax_submission_nonce":"0ef3e37747","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https://rideauvert.qc.ca/app/plugins/gravityforms/assets/js/dist/","config_nonce":"9ef0178e81"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://rideauvert.qc.ca/app/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=4cdd00b8d55dcd30063e139991315d3e" id="gform_gravityforms_theme-js"></script>
+</body>
+
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Object Caching 417/445 objects using Disk
+Page Caching using Disk: Enhanced (SSL caching disabled) 
+
+Served from: rideauvert.qc.ca @ 2026-10-08 09:34:23 by W3 Total Cache
+-->

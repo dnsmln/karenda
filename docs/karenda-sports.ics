@@ -1,0 +1,202 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//karenda//montreal-events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Karenda · Sports
+X-WR-TIMEZONE:America/Toronto
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:113336ac3bddd8896d358@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20261125T180000Z
+DTEND:20261125T210000Z
+SUMMARY:Victoire vs Boston Fleet
+LOCATION:Boston Sports Institute\, Wellesley
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0366@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20261206T000000Z
+DTEND:20261206T030000Z
+SUMMARY:Victoire vs PWHL Hamilton
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0379@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20261212T190000Z
+DTEND:20261212T220000Z
+SUMMARY:Victoire vs PWHL San Jose
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0393@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20261226T190000Z
+DTEND:20261226T220000Z
+SUMMARY:Victoire vs Ottawa Charge
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0399@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20261230T000000Z
+DTEND:20261230T030000Z
+SUMMARY:Victoire vs PWHL Hamilton
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0411@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270107T000000Z
+DTEND:20270107T030000Z
+SUMMARY:Victoire vs PWHL Las Vegas
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0434@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270123T190000Z
+DTEND:20270123T220000Z
+SUMMARY:Victoire vs Boston Fleet
+LOCATION:TBD
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0464@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270213T000000Z
+DTEND:20270213T030000Z
+SUMMARY:Victoire vs Boston Fleet
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0469@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270218T000000Z
+DTEND:20270218T030000Z
+SUMMARY:Victoire vs Toronto Sceptres
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0490@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270310T000000Z
+DTEND:20270310T030000Z
+SUMMARY:Victoire vs New York Sirens
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0495@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270313T000000Z
+DTEND:20270313T030000Z
+SUMMARY:Victoire vs Minnesota Frost
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0500@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270316T230000Z
+DTEND:20270317T020000Z
+SUMMARY:Victoire vs Vancouver Goldeneyes
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0508@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270323T230000Z
+DTEND:20270324T020000Z
+SUMMARY:Victoire vs Seattle Torrent
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0514@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270327T180000Z
+DTEND:20270327T210000Z
+SUMMARY:Victoire vs Toronto Sceptres
+LOCATION:TBD
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0523@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270403T230000Z
+DTEND:20270404T020000Z
+SUMMARY:Victoire vs PWHL Detroit
+LOCATION:TBD
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+BEGIN:VEVENT
+UID:74186ac3bdf425cf0529@hockeytech.com@karenda
+DTSTAMP:20261008T133423Z
+DTSTART:20270409T233000Z
+DTEND:20270410T023000Z
+SUMMARY:Victoire vs Ottawa Charge
+LOCATION:Place Bell\, Laval
+URL:https://www.thepwhl.com/en/schedule/
+DESCRIPTION:https://www.thepwhl.com/en/schedule/
+CATEGORIES:Sports,PWHL
+X-KARENDA-SOURCE:victoire
+END:VEVENT
+END:VCALENDAR
