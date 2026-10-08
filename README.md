@@ -1,6 +1,6 @@
 # karenda
 
-Auto-updating calendar of what's on in Montréal: theatre runs and home games.
+Auto-updating calendar of what's on in Montréal: theatre runs, films and home games.
 A GitHub Action rebuilds the `.ics` files every morning and commits them to `docs/`.
 
 ## Subscribe (iCloud / Apple Calendar)
@@ -12,6 +12,7 @@ Calendar → File → New Calendar Subscription, paste one of:
 | Everything | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda.ics` |
 | Sports only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-sports.ics` |
 | Theatre only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-theatre.ics` |
+| Cinema only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-cinema.ics` |
 
 Set auto-refresh to "Every day". On iPhone: Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar.
 
@@ -21,9 +22,11 @@ Set auto-refresh to "Every day". On iPhone: Settings → Calendar → Accounts �
 |---|---|---|
 | Montréal Victoire (PWHL) | home games, timed | season `.ics` files linked from thepwhl.com |
 | CF Montréal (MLS) | home games, timed | ESPN public schedule API |
+| Laval Rocket (AHL) | home games, timed | AHL schedule feed (HockeyTech) behind theahl.com |
 | Place des Arts | each show as an all-day span over its run, hall in location | `/en/programming` listing |
 | Centaur Theatre | each show as an all-day span over its run | WordPress REST API + show pages |
 | Théâtre du Rideau Vert | each show as an all-day span over its run | `/programmation` |
+| Cinéma Moderne | each screening, timed | cinemamoderne.com programme |
 
 If a source fails on a given day, its events from the previous build are kept.
 `docs/status.json` shows per-source counts and errors from the last run.

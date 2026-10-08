@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build karenda.ics: Montreal theatre runs + home games, from public sources.
+"""Build karenda.ics: Montreal theatre runs, films + home games, from public sources.
 
 Sources
   victoire      PWHL season ICS files linked from thepwhl.com (home games only)
@@ -817,8 +817,15 @@ PLACES = {  # source -> pill label on the web page, in display order
     "centaur": "Centaur",
     "rideauvert": "Rideau Vert",
     "victoire": "Place Bell",
+    "rocket": "Place Bell",
     "cfmontreal": "Stade Saputo",
+    "cinemamoderne": "Cinéma Moderne",
 }
+
+
+def place_key(source: str) -> str:
+    """Sources sharing a label (Victoire and Rocket at Place Bell) share one pill."""
+    return slug(PLACES.get(source, source))
 
 
 def plain_title(e: Event) -> str:
@@ -871,13 +878,16 @@ def render_html(events: list[Event]) -> str:
             t = html.escape(plain_title(e))
             link = f'<a href="{html.escape(e.url)}" target="_blank" rel="noopener">{t}</a>' if e.url else t
             meta = html.escape(when_of(e, m)) + (f' · {html.escape(venue_of(e))}' if venue_of(e) else "")
-            out.append(f'<li data-place="{html.escape(e.source)}">{link}<span class="meta">{meta}</span></li>')
+            out.append(f'<li data-place="{place_key(e.source)}">{link}<span class="meta">{meta}</span></li>')
         out.append("</ul></section>")
     body = "\n".join(out)
     present = {e.source for l in months.values() for e in l}
     pills = ['<button type="button" data-place="all" aria-pressed="true">All</button>']
-    pills += [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
-              for src, label in PLACES.items() if src in present]
+    seen: set[str] = set()
+    for src, label in PLACES.items():
+        if src in present and label not in seen:
+            seen.add(label)
+            pills.append(f'<button type="button" data-place="{place_key(src)}" aria-pressed="false">{html.escape(label)}</button>')
     places = '<nav class="places" aria-label="Filter by place">' + "".join(pills) + "</nav>"
     updated = datetime.now(MTL).strftime("%b %-d, %Y")
     return (HTML_TEMPLATE.replace("{{PLACES}}", places).replace("{{BODY}}", body)
@@ -894,7 +904,7 @@ HTML_TEMPLATE = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Karenda</title>
-<meta name="description" content="What's on in Montréal: theatre runs and home games, by month.">
+<meta name="description" content="What's on in Montréal: theatre runs, films and home games, by month.">
 <style>
 :root { color-scheme: light; --paper:#fdfdfc; --ink:#292824; --link:#080808; --muted:#77746d; --rule:#e5e2db; }
 @media (prefers-color-scheme: dark) { :root { color-scheme: dark; --paper:#121213; --ink:#deddd8; --link:#ffffff; --muted:#9d9b96; --rule:#303030; } }
@@ -934,7 +944,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 <main>
 {{BODY}}
 </main>
-<footer>Updated {{UPDATED}} · Montréal theatre runs and home games. Rebuilt every morning.</footer>
+<footer>Updated {{UPDATED}} · Montréal theatre runs, films and home games. Rebuilt every morning.</footer>
 <script>
 (function () {
   var pills = document.querySelectorAll(".places button");
