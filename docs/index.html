@@ -41,7 +41,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
     <a href="https://github.com/dnsmln/karenda">Source</a>
   </nav>
 </header>
-<nav class="places" aria-label="Filter by place"><button type="button" data-place="all" aria-pressed="true">All</button><button type="button" data-place="placedesarts" aria-pressed="false">Place des Arts</button><button type="button" data-place="centaur" aria-pressed="false">Centaur</button><button type="button" data-place="rideauvert" aria-pressed="false">Rideau Vert</button><button type="button" data-place="victoire" aria-pressed="false">Place Bell</button><button type="button" data-place="cfmontreal" aria-pressed="false">Stade Saputo</button></nav>
+<nav class="places" aria-label="Filter"><button type="button" data-place="placedesarts" aria-pressed="false">Place des Arts</button><button type="button" data-place="rideauvert" aria-pressed="false">Rideau Vert</button><button type="button" data-place="victoire" aria-pressed="false">Victoire</button><button type="button" data-place="cfmontreal" aria-pressed="false">CF Montréal</button></nav>
 <main>
 <section class="month"><h2>October 2026</h2><ul>
 <li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/cyrano/" target="_blank" rel="noopener">Cyrano</a><span class="meta">until Oct 18 · Théâtre du Rideau Vert</span></li>
@@ -71,7 +71,6 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 <li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761903" target="_blank" rel="noopener">CF Montréal vs Nashville SC</a><span class="meta">Sat, Oct 24 · 1:30 pm · Stade Saputo</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jardin-alice-et-theo" target="_blank" rel="noopener">Le jardin d’Alice et Théo</a><span class="meta">Sun, Oct 25 · Cinquième Salle, Place des Arts</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jf-otis" target="_blank" rel="noopener">JF Otis | Avec plaisir!</a><span class="meta">Mon, Oct 26 · Cinquième Salle, Place des Arts</span></li>
-<li data-place="centaur"><a href="https://centaurtheatre.com/shows/morality-bites/" target="_blank" rel="noopener">MORALITY BITES!</a><span class="meta">Mon, Oct 26 · Centaur Theatre</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/christos-papadopoulos" target="_blank" rel="noopener">Christos Papadopoulos | My Fierce Ignorant Step</a><span class="meta">Oct 28 – 31 · Théâtre Maisonneuve, Place des Arts</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-fantome-dans-la-machine" target="_blank" rel="noopener">Le fantôme dans la machine</a><span class="meta">Oct 28 – Nov 28 · Théâtre Jean-Duceppe, Place des Arts</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/midsummer-night-dreams" target="_blank" rel="noopener">Midsummer Night Dreams</a><span class="meta">Oct 29 – Nov 1 · Salle Wilfrid-Pelletier, Place des Arts</span></li>
@@ -154,7 +153,6 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/peter-and-the-wolf-on-the-organ" target="_blank" rel="noopener">Peter and the Wolf on the Organ</a><span class="meta">Tue, Mar 2 · Maison symphonique, Place des Arts</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/semaine-relache" target="_blank" rel="noopener">School Break</a><span class="meta">Mar 2 – 6 · Multiple venues, Place des Arts</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-book-of-mormon" target="_blank" rel="noopener">The Book of Mormon</a><span class="meta">Mar 2 – 7 · Salle Wilfrid-Pelletier, Place des Arts</span></li>
-<li data-place="centaur"><a href="https://centaurtheatre.com/shows/ismene/" target="_blank" rel="noopener">ISMENE</a><span class="meta">Mar 3 – 21 · Centaur Theatre</span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nous-dans-les-plaines-immenses" target="_blank" rel="noopener">Nous, dans les plaines immenses</a><span class="meta">Mar 3 – Apr 3 · Théâtre Jean-Duceppe, Place des Arts</span></li>
 <li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs New York Sirens</a><span class="meta">Tue, Mar 9 · 7 pm · Place Bell, Laval</span></li>
 <li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/le-dieu-du-carnage/" target="_blank" rel="noopener">Le dieu du carnage</a><span class="meta">Mar 10 – Apr 4 · Théâtre du Rideau Vert</span></li>
@@ -190,15 +188,17 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
   var pills = document.querySelectorAll(".places button");
   var items = document.querySelectorAll(".month li");
   var months = document.querySelectorAll(".month");
-  function apply(place) {
+  function apply(place) {            // "" = no filter, show everything
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
-    items.forEach(function (li) { li.hidden = place !== "all" && li.dataset.place !== place; });
+    items.forEach(function (li) { li.hidden = !!place && li.dataset.place !== place; });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
-    history.replaceState(null, "", location.pathname + location.search + (place === "all" ? "" : "#" + place));
+    history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
   }
-  pills.forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.place); }); });
+  pills.forEach(function (b) { b.addEventListener("click", function () {
+    apply(b.getAttribute("aria-pressed") === "true" ? "" : b.dataset.place);
+  }); });
   var h = location.hash.slice(1);
-  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "all");
+  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
 })();
 </script>
 </body>
