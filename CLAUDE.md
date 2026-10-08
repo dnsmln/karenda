@@ -5,7 +5,7 @@
 - The build bot commits to `main` every morning ("Update calendar YYYY-MM-DD"), so fetch `main` right before pushing. Fast-forward; don't rewrite history.
 
 ## What this is
-One script, `build.py`, scrapes four Montréal sources and writes `docs/`: three `.ics` feeds, `index.html`, `status.json`.
+One script, `build.py`, scrapes seven Montréal sources and writes `docs/`: five `.ics` feeds, `index.html`, `status.json`.
 `docs/` is published as-is on Vercel and consumed by calendar subscriptions. No framework, no build step beyond the script.
 
 ## Generated files
