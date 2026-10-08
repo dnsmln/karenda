@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-08T14:19:52+00:00",
+  "built_at": "2026-10-08T14:32:34+00:00",
   "sources": {
     "victoire": {
       "ok": true,
@@ -13,17 +13,12 @@
       "ok": true,
       "events": 95
     },
-    "centaur": {
-      "ok": false,
-      "error": "RuntimeError: no events parsed",
-      "kept_previous": 2
-    },
     "rideauvert": {
       "ok": true,
       "events": 6
     }
   },
-  "karenda": 122,
+  "karenda": 120,
   "karenda-sports": 19,
-  "karenda-theatre": 103
+  "karenda-theatre": 101
 }
