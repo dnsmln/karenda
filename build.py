@@ -9,6 +9,7 @@ Sources
   rideauvert    rideauvert.qc.ca/programmation
   rocket        AHL schedule feed (HockeyTech) behind theahl.com (home games only)
   cinemamoderne cinemamoderne.com screenings
+  mbam          mbam.qc.ca exhibitions (each as an all-day span over its run)
 
 Each source is independent. If one fails, its events from the previous
 karenda.ics are kept so the feed never loses a venue because of one bad day.
@@ -208,7 +209,8 @@ MONTH_RE = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 
 def month_num(s: str) -> int | None:
     s = s.lower().rstrip(".")
-    return MONTHS.get(s) or MONTHS.get(s[:3]) or MONTHS_FR.get(s)
+    return (MONTHS.get(s) or MONTHS.get(s[:3]) or MONTHS_FR.get(s)
+            or (next((v for k, v in MONTHS_FR.items() if k.startswith(s)), None) if len(s) >= 3 else None))
 
 
 def parse_en_range(text: str) -> tuple[date, date] | None:
@@ -809,6 +811,117 @@ def src_cinemamoderne() -> list[Event]:
     return list(events.values())
 
 
+MBAM = "https://www.mbam.qc.ca"
+MBAM_LOC = "Musée des beaux-arts de Montréal, 1380 rue Sherbrooke Ouest, Montréal"
+FR_MONTH = (r"(?:janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|octobre|novembre|décembre|"
+            r"decembre|janv|févr|fevr|avr|juil|sept|oct|nov|déc|dec)\.?")
+
+
+def parse_fr_range(text: str) -> tuple[date, date] | None:
+    """'Du 2 octobre 2026 au 7 février 2027', 'Du 12 mars au 7 juin 2027', 'Du 12 au 28 mars 2027',
+    "Jusqu'au 7 février 2027" (from today). Returns (first_day, last_day) inclusive."""
+    t = html.unescape(text).replace("–", "-").replace("—", "-").replace("\xa0", " ").replace("’", "'")
+    t = re.sub(r"\s+", " ", t).strip()
+    D, M, Y = r"(\d{1,2})(?:er)?", rf"({FR_MONTH})", r"(\d{4})"
+    sep = r"\s*(?:au|à|a|-|et)\s*"
+    m = re.search(rf"{D} {M} {Y}{sep}{D} {M} {Y}", t, re.I)
+    if m:
+        a = date(int(m[3]), month_num(m[2]), int(m[1])); b = date(int(m[6]), month_num(m[5]), int(m[4]))
+        return (a, b) if b >= a else None
+    m = re.search(rf"{D} {M}{sep}{D} {M} {Y}", t, re.I)
+    if m:
+        y = int(m[5]); a = date(y, month_num(m[2]), int(m[1])); b = date(y, month_num(m[4]), int(m[3]))
+        if b < a:
+            a = a.replace(year=y - 1)
+        return a, b
+    m = re.search(rf"{D}{sep}{D} {M} {Y}", t, re.I)
+    if m:
+        y = int(m[4]); mo = month_num(m[3])
+        return date(y, mo, int(m[1])), date(y, mo, int(m[2]))
+    m = re.search(rf"jusqu'au {D} {M} {Y}", t, re.I)
+    if m:
+        b = date(int(m[3]), month_num(m[2]), int(m[1]))
+        return min(TODAY, b), b
+    return None
+
+
+def _mbam_range(txt: str) -> tuple[date, date] | None:
+    rng = parse_fr_range(txt)
+    if rng:
+        return rng
+    rng = parse_en_range(txt)
+    if rng and rng[0] == rng[1] and re.search(r"\b(until|through|jusqu)", txt, re.I):
+        return min(TODAY, rng[1]), rng[1]
+    if rng and rng[0] == rng[1] and re.search(r"\b(from|starting|dès|des)\b", txt, re.I):
+        return None                                         # open-ended: no end date to span
+    return rng
+
+
+def src_mbam() -> list[Event]:
+    pages: dict[str, str] = {}
+    for path, name in (("/en/exhibitions/", "mbam_exhibitions.html"), ("/fr/expositions/", "mbam_expositions.html"),
+                       ("/en/", "mbam_home_en.html"), ("/sitemap.xml", "mbam_sitemap.xml")):
+        try:
+            pages[path] = get(MBAM + path, name).text
+        except Exception as e:  # noqa: BLE001
+            print("  mbam: probe failed", path, e)
+    links: dict[str, tuple[str, str]] = {}          # href -> (title, nearby text)
+    for path, page_html in pages.items():
+        if not path.endswith("/"):
+            continue
+        soup = BeautifulSoup(page_html, "html.parser")
+        for a in soup.select('a[href*="/exhibitions/"], a[href*="/expositions/"]'):
+            href = a.get("href", "").split("?")[0].split("#")[0]
+            full = href if href.startswith("http") else MBAM + href
+            tail = full.rstrip("/").rsplit("/", 1)[-1]
+            if tail in ("exhibitions", "expositions", "en", "fr") or full in links or "mbam.qc.ca" not in full:
+                continue
+            node, txt = a, text_of(a)
+            for _ in range(4):
+                txt = text_of(node)
+                if _mbam_range(txt) or node.parent is None:
+                    break
+                node = node.parent
+            title = ""
+            for sel in ("h1", "h2", "h3", "h4", "[class*=title]"):
+                h = a.select_one(sel) or node.select_one(sel)
+                if h and text_of(h):
+                    title = text_of(h)
+                    break
+            links[full] = (title or text_of(a) or tail.replace("-", " ").title(), txt)
+    events: dict[str, Event] = {}
+    fetched = 0
+    for full, (title, txt) in links.items():
+        rng = _mbam_range(txt)
+        if not rng and fetched < 30:
+            fetched += 1
+            time.sleep(1)
+            try:
+                page = BeautifulSoup(get(full, f"mbam_{slug(full.rstrip('/').rsplit('/', 1)[-1])}.html").text, "html.parser")
+            except Exception as e:  # noqa: BLE001
+                print("  mbam: page fetch failed", full, e)
+                continue
+            for s in page(["script", "style", "nav", "footer", "header"]):
+                s.decompose()
+            title = text_of(page.select_one("h1")) or title
+            main = page.select_one("main, article, .entry-content, #content") or page
+            rng = _mbam_range(text_of(main))
+        if not rng:
+            print("  mbam: no dates for", title, full)
+            continue
+        first, last = rng
+        if last < KEEP_FROM or (last - first).days > 400:
+            continue
+        key = slug(full.rstrip("/").rsplit("/", 1)[-1])
+        events.setdefault(key, span_event(
+            "mbam", f"mbam-{key}@karenda", f"{title} · MBAM", first, last,
+            location=MBAM_LOC, url=full, categories=["Museum", "MBAM"],
+        ))
+    if not events:
+        raise RuntimeError("no exhibitions parsed")
+    return list(events.values())
+
+
 # --------------------------------------------------------------------------- html page
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -820,6 +933,7 @@ PLACES = {  # source -> pill label on the web page, in display order
     "rocket": "Place Bell",
     "cfmontreal": "Stade Saputo",
     "cinemamoderne": "Cinéma Moderne",
+    "mbam": "MBAM",
 }
 
 
@@ -829,7 +943,7 @@ def place_key(source: str) -> str:
 
 
 def plain_title(e: Event) -> str:
-    return re.sub(r"\s*·\s*(PdA|Centaur|Rideau Vert|Moderne)$", "", e.summary)
+    return re.sub(r"\s*·\s*(PdA|Centaur|Rideau Vert|Moderne|MBAM)$", "", e.summary)
 
 
 def venue_of(e: Event) -> str:
@@ -974,12 +1088,14 @@ SOURCES = {
     "rideauvert": src_rideauvert,
     "rocket": src_rocket,
     "cinemamoderne": src_cinemamoderne,
+    "mbam": src_mbam,
 }
 GROUPS = {
     "karenda": list(SOURCES),
     "karenda-sports": ["victoire", "cfmontreal", "rocket"],
     "karenda-theatre": ["placedesarts", "centaur", "rideauvert"],
     "karenda-cinema": ["cinemamoderne"],
+    "karenda-museums": ["mbam"],
 }
 
 
@@ -1006,7 +1122,8 @@ def main() -> int:
     for fname, srcs in GROUPS.items():
         evs = [e for s in srcs for e in by_source.get(s, [])]
         write_ics(OUT / f"{fname}.ics", {"karenda": "Karenda", "karenda-sports": "Karenda · Sports",
-                                          "karenda-theatre": "Karenda · Théâtre", "karenda-cinema": "Karenda · Cinéma"}[fname], evs)
+                                          "karenda-theatre": "Karenda · Théâtre", "karenda-cinema": "Karenda · Cinéma",
+                                          "karenda-museums": "Karenda · Musées"}[fname], evs)
         status[fname] = len(evs)
     (OUT / "index.html").write_text(render_html([e for l in by_source.values() for e in l]), encoding="utf-8")
     (OUT / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n")
