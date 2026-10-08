@@ -545,6 +545,12 @@ PLACES = {  # source -> pill label on the web page (venue or team), in display o
     "victoire": "Victoire",
     "cfmontreal": "CF Montréal",
 }
+HOME = {  # source -> venue text hidden while that source's pill is active (it repeats the pill)
+    "placedesarts": "Place des Arts",
+    "rideauvert": "Théâtre du Rideau Vert",
+    "victoire": "Place Bell, Laval",
+    "cfmontreal": "Stade Saputo",
+}
 
 
 def plain_title(e: Event) -> str:
@@ -555,6 +561,14 @@ def venue_of(e: Event) -> str:
     parts = [p.strip() for p in e.location.split(",")]
     parts = [p for p in parts if p and p != "Montréal" and not re.search(r"\d", p)]
     return ", ".join(parts[:2])
+
+
+def venue_parts(e: Event) -> tuple[str, str]:
+    """Split the venue into (specific, home). The home part repeats the active pill, so the page hides it when filtering."""
+    venue, home = venue_of(e), HOME.get(e.source, "")
+    if home and venue.endswith(home):
+        return venue[: len(venue) - len(home)].rstrip(", "), home
+    return venue, ""
 
 
 def when_of(e: Event, month: date) -> str:
@@ -592,11 +606,16 @@ def render_html(events: list[Event]) -> str:
 
     out = []
     for m in sorted(months):
-        out.append(f'<section class="month"><h2>{MONTHS_FULL[m.month - 1]} {m.year}</h2><ul>')
+        out.append(f'<section class="month"><h2>{MON[m.month - 1]} {m.year}</h2><ul>')
         for e in sorted(months[m], key=sort_key):
             t = html.escape(plain_title(e))
             link = f'<a href="{html.escape(e.url)}" target="_blank" rel="noopener">{t}</a>' if e.url else t
-            meta = html.escape(when_of(e, m)) + (f' · {html.escape(venue_of(e))}' if venue_of(e) else "")
+            specific, place = venue_parts(e)
+            meta = html.escape(when_of(e, m))
+            if specific:
+                meta += f" · {html.escape(specific)}"
+            if place:
+                meta += f'<span class="place">{", " if specific else " · "}{html.escape(place)}</span>'
             out.append(f'<li data-place="{html.escape(e.source)}">{link}<span class="meta">{meta}</span></li>')
         out.append("</ul></section>")
     body = "\n".join(out)
@@ -608,9 +627,6 @@ def render_html(events: list[Event]) -> str:
     return (HTML_TEMPLATE.replace("{{PLACES}}", places).replace("{{BODY}}", body)
             .replace("{{UPDATED}}", updated))
 
-
-MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August",
-               "September", "October", "November", "December"]
 
 HTML_TEMPLATE = """<!doctype html>
 <html lang="en">
@@ -638,6 +654,7 @@ header nav a { color: var(--muted); font-weight: 400; }
   padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
 .places button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
 [hidden] { display: none !important; }
+.filtered .place { display: none; }
 .month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
 .month h2 { color: var(--muted); font-size: 12px; font-weight: 400; margin: 3px 0 0; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
@@ -659,7 +676,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 <main>
 {{BODY}}
 </main>
-<footer>Updated {{UPDATED}} · Montréal theatre runs and home games. Rebuilt every morning.</footer>
+<footer>Updated {{UPDATED}}</footer>
 <script>
 (function () {
   var pills = document.querySelectorAll(".places button");
@@ -669,6 +686,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
     items.forEach(function (li) { li.hidden = !!place && li.dataset.place !== place; });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
+    document.body.classList.toggle("filtered", !!place);
     history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
   }
   pills.forEach(function (b) { b.addEventListener("click", function () {

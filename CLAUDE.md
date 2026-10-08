@@ -18,7 +18,7 @@ One script, `build.py`, scrapes four Montréal sources and writes `docs/`: three
 - Keep everything in `build.py`. Each source is one `src_*` function returning `list[Event]`; a source that raises keeps its previous events, so raise on empty results rather than returning `[]`.
 - Event identity is `uid`; keep UIDs stable across runs or subscribers get duplicates.
 - The web page is `render_html` plus `HTML_TEMPLATE`. Keep it minimal: system font, 14px, one column, light and dark via the CSS variables already there, no dependencies.
-- Place filter pills come from `PLACES` (source key → label). Adding a source means adding it to `SOURCES`, `GROUPS`, and `PLACES`.
+- Place filter pills come from `PLACES` (source key → label). Adding a source means adding it to `SOURCES`, `GROUPS`, and `PLACES`, plus `HOME` if its usual venue should disappear while its pill is active.
 - All HTTP goes through `get()`: it retries on 429/5xx and saves the body to `debug/` under `KARENDA_DEBUG=1`. Never call `requests.get` directly. Dependencies stay at `requests` and `beautifulsoup4`.
 - Dates: a theatre run is an all-day `date` span with an exclusive end (build it with `span_event`); a game is a timezone-aware UTC `datetime`. The page converts to America/Toronto. Reuse `parse_en_range`, `month_num` and `MONTHS_FR` before writing a new date parser.
 - Theatre summaries end with a venue suffix for the calendar feed (`· PdA`, `· Rideau Vert`); `plain_title` strips it on the page. A new theatre source adds its suffix to that regex.
