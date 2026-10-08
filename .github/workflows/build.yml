@@ -10,7 +10,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main, claude/dreamy-noether-v4qzeq]
+    branches: [main]
     paths-ignore:
       - "docs/**"
       - "debug/**"
