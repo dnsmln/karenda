@@ -18,6 +18,7 @@ import json
 import os
 import re
 import sys
+import time
 import traceback
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
@@ -38,13 +39,29 @@ session = requests.Session()
 session.headers.update(UA)
 
 
-def get(url: str, name: str | None = None, **kw) -> requests.Response:
-    r = session.get(url, timeout=40, **kw)
+def get(url: str, name: str | None = None, retries: int = 3, **kw) -> requests.Response:
+    """GET with backoff on 429/5xx. Saves the body under debug/ when KARENDA_DEBUG=1."""
+    delay = 5.0
+    for attempt in range(retries):
+        r = session.get(url, timeout=40, **kw)
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < retries - 1:
+            wait = float(r.headers.get("Retry-After") or delay)
+            print(f"  {r.status_code} on {url}; retrying in {wait:.0f}s")
+            time.sleep(min(wait, 90))
+            delay *= 3
+            continue
+        break
     r.raise_for_status()
     if DEBUG_ON and name:
         DEBUG.mkdir(exist_ok=True)
         (DEBUG / name).write_bytes(r.content)
     return r
+
+
+def save_debug(name: str, data: bytes | str) -> None:
+    if DEBUG_ON:
+        DEBUG.mkdir(exist_ok=True)
+        (DEBUG / name).write_bytes(data if isinstance(data, bytes) else data.encode("utf-8"))
 
 
 # --------------------------------------------------------------------------- model
@@ -295,9 +312,10 @@ def src_cfmontreal() -> list[Event]:
     events: list[Event] = []
     seen: set[str] = set()
     ok = 0
-    for q in ("", "?seasontype=3"):
+    # ESPN splits a team's schedule: default = results so far, fixture=true = upcoming.
+    for q in ("?fixture=true", "", "?fixture=true&seasontype=3"):
         try:
-            data = get(base + q, f"espn{q.replace('?', '_')}.json").json()
+            data = get(base + q, "espn" + re.sub(r"\W+", "_", q) + ".json").json()
         except Exception as e:  # noqa: BLE001
             print("cfmontreal: fetch failed", q, e)
             continue
@@ -340,9 +358,101 @@ HALLS = ["Salle Wilfrid-Pelletier", "Théâtre Maisonneuve", "Maison symphonique
          "Espace culturel Georges-Émile-Lapalme", "Multiple venues", "Piano nobile", "Studio-théâtre"]
 
 
+def _pda_event(href: str, title: str, first: date, last: date, hall: str, desc: str = "") -> Event:
+    full = href if href.startswith("http") else "https://www.placedesarts.com" + href
+    return span_event(
+        "placedesarts", f"pda-{slug(full.rstrip('/').rsplit('/', 1)[-1])}@karenda", f"{title} · PdA",
+        first, last, location=(hall + ", " if hall else "") + "Place des Arts, Montréal",
+        url=full, description=desc, categories=["Theatre", "Place des Arts"],
+    )
+
+
+def _first_str(d: dict, *keys: str) -> str:
+    for k in keys:
+        v = d.get(k)
+        if isinstance(v, str) and v.strip():
+            return html.unescape(v.strip())
+        if isinstance(v, dict):
+            for kk in ("title", "name", "en", "value"):
+                if isinstance(v.get(kk), str) and v[kk].strip():
+                    return html.unescape(v[kk].strip())
+        if isinstance(v, list) and v and isinstance(v[0], str):
+            return html.unescape(v[0].strip())
+        if isinstance(v, list) and v and isinstance(v[0], dict):
+            s = _first_str(v[0], "title", "name")
+            if s:
+                return s
+    return ""
+
+
+def _pda_algolia(page_html: str) -> list[Event]:
+    """Full listing through the site's own public search index (the HTML shows a subset)."""
+    app = re.search(r'algoliaId\s*=\s*"([^"]+)"', page_html)
+    key = re.search(r'algoliaKey\s*=\s*"([^"]+)"', page_html)
+    idx = re.search(r'algoliaIndexName\s*=\s*"([^"]+)"', page_html)
+    if not (app and key and idx):
+        raise RuntimeError("algolia config not found in page")
+    now_ts = int(time.time())
+    r = session.post(
+        f"https://{app[1]}-dsn.algolia.net/1/indexes/{idx[1]}/query",
+        headers={"X-Algolia-Application-Id": app[1], "X-Algolia-API-Key": key[1]},
+        json={"query": "", "hitsPerPage": 1000, "numericFilters": [f"datesTimestamp>={now_ts - 86400}"]},
+        timeout=40,
+    )
+    r.raise_for_status()
+    data = r.json()
+    save_debug("algolia.json", json.dumps(data, ensure_ascii=False, indent=1)[:400000])
+    hits = data.get("hits", [])
+    events: dict[str, Event] = {}
+    for h in hits:
+        href = _first_str(h, "url", "uri", "link", "permalink")
+        if not href:
+            s = _first_str(h, "slug")
+            href = f"/en/event/{s}" if s else ""
+        if not href or "/event/" not in href:
+            continue
+        title = _first_str(h, "title", "name")
+        if not title:
+            continue
+        # dates: prefer explicit timestamps, else the display text
+        ts = h.get("datesTimestamp") or h.get("dates_timestamp") or h.get("performanceDates")
+        first = last = None
+        if isinstance(ts, (int, float)):
+            first = last = datetime.fromtimestamp(ts, timezone.utc).date()
+        elif isinstance(ts, list) and ts and all(isinstance(x, (int, float)) for x in ts):
+            ds = sorted(datetime.fromtimestamp(x, timezone.utc).date() for x in ts)
+            first, last = ds[0], ds[-1]
+        if first is None:
+            txt = _first_str(h, "dates", "dateText", "date", "dateRange", "displayDate")
+            rng = parse_en_range(txt) if txt else None
+            if not rng:
+                continue
+            first, last = rng
+        if (last - first).days > 400:
+            continue
+        hall = _first_str(h, "venue", "hall", "room", "salle", "venues", "location")
+        n = ts if isinstance(ts, list) else None
+        desc = f"{len(n)} performances" if n and len(n) > 1 else ""
+        events[href] = _pda_event(href, title, first, last, hall, desc)
+    return list(events.values())
+
+
 def src_placedesarts() -> list[Event]:
     url = "https://www.placedesarts.com/en/programming"
-    soup = BeautifulSoup(get(url, "placedesarts.html").text, "html.parser")
+    page_html = get(url, "placedesarts.html").text
+    html_events = _pda_html(page_html)
+    try:
+        alg = _pda_algolia(page_html)
+        print(f"  placedesarts: algolia {len(alg)} vs html {len(html_events)}")
+        if len(alg) >= len(html_events):
+            return alg
+    except Exception as e:  # noqa: BLE001
+        print("  placedesarts: algolia failed, using html listing:", e)
+    return html_events
+
+
+def _pda_html(page_html: str) -> list[Event]:
+    soup = BeautifulSoup(page_html, "html.parser")
     events: dict[str, Event] = {}
     for a in soup.select('a[href*="/en/event/"]'):
         href = a.get("href", "")
@@ -374,44 +484,60 @@ def src_placedesarts() -> list[Event]:
         hall = next((h for h in HALLS if h.lower() in txt.lower()), "")
         perf = re.search(r"(\d+)\s+performances?", txt, re.I)
         desc = (f"{perf[1]} performances" if perf else "")
-        events[full] = span_event(
-            "placedesarts", f"pda-{slug(full.rsplit('/', 1)[-1])}@karenda", f"{title} · PdA",
-            first, last, location=(hall + ", " if hall else "") + "Place des Arts, Montréal",
-            url=full, description=desc, categories=["Theatre", "Place des Arts"],
-        )
+        events[full] = _pda_event(full, title, first, last, hall, desc)
     if not events:
         raise RuntimeError("no events parsed from programming page")
     return list(events.values())
 
 
+def _centaur_shows() -> list[dict]:
+    """[{id, link, title, guest}] — WordPress REST first, sitemap if the API rate-limits."""
+    api = "https://centaurtheatre.com/wp-json/wp/v2/centaur_event?per_page=40&_fields=id,link,title,class_list"
+    try:
+        items = get(api, "centaur.json").json()
+        return [{
+            "id": it["id"], "link": it.get("link", ""),
+            "title": html.unescape(BeautifulSoup(it["title"]["rendered"], "html.parser").get_text()),
+            "guest": any("guest" in c for c in it.get("class_list", [])),
+        } for it in items if it.get("link")]
+    except Exception as e:  # noqa: BLE001
+        print("  centaur: REST API failed, falling back to sitemap:", e)
+    xml = get("https://centaurtheatre.com/centaur_event-sitemap.xml", "centaur_sitemap.xml").text
+    rows = re.findall(r"<loc>(https://centaurtheatre\.com/shows/[^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", xml)
+    cutoff = (TODAY - timedelta(days=270)).isoformat()
+    recent = sorted((lm, loc) for loc, lm in rows if lm[:10] >= cutoff)[-40:]
+    return [{"id": slug(loc.rstrip("/").rsplit("/", 1)[-1]), "link": loc,
+             "title": loc.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title(), "guest": False}
+            for _, loc in recent]
+
+
 def src_centaur() -> list[Event]:
-    api = "https://centaurtheatre.com/wp-json/wp/v2/centaur_event?per_page=100&_fields=id,link,title,content,class_list"
-    items = get(api, "centaur.json").json()
+    shows = _centaur_shows()
     events: list[Event] = []
-    for it in items:
-        title = html.unescape(BeautifulSoup(it["title"]["rendered"], "html.parser").get_text())
-        link = it.get("link", "")
-        content = BeautifulSoup(it.get("content", {}).get("rendered", ""), "html.parser").get_text(" ")
-        rng = parse_en_range(content)
+    for i, sh in enumerate(shows):
+        if i:
+            time.sleep(1.5)                      # the site rate-limits bursts
+        try:
+            page = BeautifulSoup(get(sh["link"], f"centaur_{sh['id']}.html").text, "html.parser")
+        except Exception as e:  # noqa: BLE001
+            print("  centaur: page fetch failed", sh["link"], e)
+            continue
+        for s in page(["script", "style", "nav", "footer", "header"]):
+            s.decompose()
+        h1 = page.select_one("h1")
+        title = text_of(h1) or sh["title"]
+        main = page.select_one("main, article, .entry-content, #content") or page
+        rng = parse_en_range(text_of(main))
         if not rng:
-            try:
-                page = BeautifulSoup(get(link).text, "html.parser")
-                for s in page(["script", "style", "nav", "footer"]):
-                    s.decompose()
-                rng = parse_en_range(page.get_text(" "))
-            except Exception as e:  # noqa: BLE001
-                print("centaur: page fetch failed", link, e)
-        if not rng:
-            print("centaur: no dates for", title)
+            print("  centaur: no dates for", title)
             continue
         first, last = rng
         if last < KEEP_FROM or (last - first).days > 120:
             continue
-        guest = any("guest" in c for c in it.get("class_list", []))
         events.append(span_event(
-            "centaur", f"centaur-{it['id']}@karenda", f"{title} · Centaur", first, last,
-            location="Centaur Theatre, 453 Saint-François-Xavier, Montréal", url=link,
-            description="Guest show" if guest else "", categories=["Theatre", "Centaur"],
+            "centaur", f"centaur-{sh['id']}@karenda", f"{title} · Centaur", first, last,
+            location="Centaur Theatre, 453 Saint-François-Xavier, Montréal", url=sh["link"],
+            description="Guest show" if sh["guest"] else "", categories=["Theatre", "Centaur"],
         ))
     if not events:
         raise RuntimeError("no events parsed")
