@@ -812,6 +812,13 @@ def src_cinemamoderne() -> list[Event]:
 # --------------------------------------------------------------------------- html page
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+PLACES = {  # source -> pill label on the web page, in display order
+    "placedesarts": "Place des Arts",
+    "centaur": "Centaur",
+    "rideauvert": "Rideau Vert",
+    "victoire": "Place Bell",
+    "cfmontreal": "Stade Saputo",
+}
 
 
 def plain_title(e: Event) -> str:
@@ -864,11 +871,17 @@ def render_html(events: list[Event]) -> str:
             t = html.escape(plain_title(e))
             link = f'<a href="{html.escape(e.url)}" target="_blank" rel="noopener">{t}</a>' if e.url else t
             meta = html.escape(when_of(e, m)) + (f' · {html.escape(venue_of(e))}' if venue_of(e) else "")
-            out.append(f'<li>{link}<span class="meta">{meta}</span></li>')
+            out.append(f'<li data-place="{html.escape(e.source)}">{link}<span class="meta">{meta}</span></li>')
         out.append("</ul></section>")
     body = "\n".join(out)
+    present = {e.source for l in months.values() for e in l}
+    pills = ['<button type="button" data-place="all" aria-pressed="true">All</button>']
+    pills += [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
+              for src, label in PLACES.items() if src in present]
+    places = '<nav class="places" aria-label="Filter by place">' + "".join(pills) + "</nav>"
     updated = datetime.now(MTL).strftime("%b %-d, %Y")
-    return HTML_TEMPLATE.replace("{{BODY}}", body).replace("{{UPDATED}}", updated)
+    return (HTML_TEMPLATE.replace("{{PLACES}}", places).replace("{{BODY}}", body)
+            .replace("{{UPDATED}}", updated))
 
 
 MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August",
@@ -891,10 +904,15 @@ body { max-width: 480px; margin: 0 auto; padding: 72px 24px 60px; color: var(--i
   font-family: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
   font-size: 14px; font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-wrap: break-word; }
 a { color: var(--link); font-weight: 450; text-decoration: none; }
-header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin: 0 0 46px; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin: 0 0 28px; }
 header h1 { margin: 0; font-size: 14px; font-weight: 500; letter-spacing: -0.2px; line-height: 1.4; }
 header nav { display: flex; gap: 20px; font-size: 12px; }
 header nav a { color: var(--muted); font-weight: 400; }
+.places { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 40px; }
+.places button { appearance: none; background: none; border: 1px solid var(--rule); border-radius: 999px;
+  padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
+.places button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
+[hidden] { display: none !important; }
 .month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
 .month h2 { color: var(--muted); font-size: 12px; font-weight: 400; margin: 3px 0 0; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
@@ -912,10 +930,27 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
     <a href="https://github.com/dnsmln/karenda">Source</a>
   </nav>
 </header>
+{{PLACES}}
 <main>
 {{BODY}}
 </main>
 <footer>Updated {{UPDATED}} · Montréal theatre runs and home games. Rebuilt every morning.</footer>
+<script>
+(function () {
+  var pills = document.querySelectorAll(".places button");
+  var items = document.querySelectorAll(".month li");
+  var months = document.querySelectorAll(".month");
+  function apply(place) {
+    pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
+    items.forEach(function (li) { li.hidden = place !== "all" && li.dataset.place !== place; });
+    months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
+    history.replaceState(null, "", location.pathname + location.search + (place === "all" ? "" : "#" + place));
+  }
+  pills.forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.place); }); });
+  var h = location.hash.slice(1);
+  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "all");
+})();
+</script>
 </body>
 </html>
 """
