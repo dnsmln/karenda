@@ -35,3 +35,8 @@ pip install -r requirements.txt
 python build.py            # writes docs/*.ics and docs/status.json
 KARENDA_DEBUG=1 python build.py   # also saves raw source pages to debug/
 ```
+
+## Web page
+
+`docs/index.html` is regenerated with the feeds: events by month, title linked to the venue page.
+On Vercel, set the project's Output Directory to `docs` (no build command).
