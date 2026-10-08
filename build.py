@@ -23,6 +23,7 @@ import traceback
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
@@ -588,6 +589,119 @@ def src_rideauvert() -> list[Event]:
     return list(events.values())
 
 
+# --------------------------------------------------------------------------- html page
+MTL = ZoneInfo("America/Toronto")
+MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
+def plain_title(e: Event) -> str:
+    return re.sub(r"\s*·\s*(PdA|Centaur|Rideau Vert)$", "", e.summary)
+
+
+def venue_of(e: Event) -> str:
+    parts = [p.strip() for p in e.location.split(",")]
+    parts = [p for p in parts if p and p != "Montréal" and not re.search(r"\d", p)]
+    return ", ".join(parts[:2])
+
+
+def when_of(e: Event, month: date) -> str:
+    if e.all_day:
+        a, b = e.start, e.end - timedelta(days=1)
+        if a == b:
+            return f"{DOW[a.weekday()]}, {MON[a.month - 1]} {a.day}"
+        if a < month:
+            return f"until {MON[b.month - 1]} {b.day}"
+        if a.month == b.month:
+            return f"{MON[a.month - 1]} {a.day} – {b.day}"
+        return f"{MON[a.month - 1]} {a.day} – {MON[b.month - 1]} {b.day}"
+    s = e.start.astimezone(MTL)
+    h = s.strftime("%-I:%M %p").lower().replace(":00", "")
+    return f"{DOW[s.weekday()]}, {MON[s.month - 1]} {s.day} · {h}"
+
+
+def render_html(events: list[Event]) -> str:
+    today = TODAY
+    first_month = today.replace(day=1)
+    months: dict[date, list[Event]] = {}
+    now = datetime.now(timezone.utc)
+    for e in events:
+        if e.all_day and e.end - timedelta(days=1) < today:
+            continue
+        if not e.all_day and e.end < now:
+            continue
+        start = e.start.astimezone(MTL).date() if isinstance(e.start, datetime) else e.start
+        key = max(start.replace(day=1), first_month)
+        months.setdefault(key, []).append(e)
+
+    def sort_key(e: Event):
+        s = e.start.astimezone(MTL) if isinstance(e.start, datetime) else datetime.combine(e.start, datetime.min.time(), MTL)
+        return (s, plain_title(e))
+
+    out = []
+    for m in sorted(months):
+        out.append(f'<section class="month"><h2>{MONTHS_FULL[m.month - 1]} {m.year}</h2><ul>')
+        for e in sorted(months[m], key=sort_key):
+            t = html.escape(plain_title(e))
+            link = f'<a href="{html.escape(e.url)}" target="_blank" rel="noopener">{t}</a>' if e.url else t
+            meta = html.escape(when_of(e, m)) + (f' · {html.escape(venue_of(e))}' if venue_of(e) else "")
+            out.append(f'<li>{link}<span class="meta">{meta}</span></li>')
+        out.append("</ul></section>")
+    body = "\n".join(out)
+    updated = datetime.now(MTL).strftime("%b %-d, %Y")
+    return HTML_TEMPLATE.replace("{{BODY}}", body).replace("{{UPDATED}}", updated)
+
+
+MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August",
+               "September", "October", "November", "December"]
+
+HTML_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Karenda</title>
+<meta name="description" content="What's on in Montréal: theatre runs and home games, by month.">
+<style>
+:root { color-scheme: light; --paper:#fdfdfc; --ink:#292824; --link:#080808; --muted:#77746d; --rule:#e5e2db; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --paper:#121213; --ink:#deddd8; --link:#ffffff; --muted:#9d9b96; --rule:#303030; } }
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { max-width: 480px; margin: 0 auto; padding: 72px 24px 60px; color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 14px; font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-wrap: break-word; }
+a { color: var(--link); font-weight: 450; text-decoration: none; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin: 0 0 46px; }
+header h1 { margin: 0; font-size: 14px; font-weight: 500; letter-spacing: -0.2px; line-height: 1.4; }
+header nav { display: flex; gap: 20px; font-size: 12px; }
+header nav a { color: var(--muted); font-weight: 400; }
+.month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
+.month h2 { color: var(--muted); font-size: 12px; font-weight: 400; margin: 3px 0 0; line-height: 1.5; }
+.month ul { list-style: none; margin: 0; padding: 0; }
+.month li { margin: 0 0 13px; line-height: 1.45; }
+.meta { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
+@media (max-width: 420px) { .month { grid-template-columns: 1fr; gap: 6px; } .month h2 { margin-bottom: 4px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Karenda</h1>
+  <nav>
+    <a href="karenda.ics" title="Subscribe in your calendar app">Subscribe</a>
+    <a href="https://github.com/dnsmln/karenda">Source</a>
+  </nav>
+</header>
+<main>
+{{BODY}}
+</main>
+<footer>Updated {{UPDATED}} · Montréal theatre runs and home games. Rebuilt every morning.</footer>
+</body>
+</html>
+"""
+
+
 SOURCES = {
     "victoire": src_victoire,
     "cfmontreal": src_cfmontreal,
@@ -604,6 +718,10 @@ GROUPS = {
 
 def main() -> int:
     previous = read_previous(OUT / "karenda.ics")
+    if "--render-only" in sys.argv:          # rebuild index.html from the existing ICS, no network
+        (OUT / "index.html").write_text(render_html([e for l in previous.values() for e in l]), encoding="utf-8")
+        print("rendered docs/index.html from existing karenda.ics")
+        return 0
     status: dict = {"built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "sources": {}}
     by_source: dict[str, list[Event]] = {}
     for name, fn in SOURCES.items():
@@ -623,6 +741,7 @@ def main() -> int:
         write_ics(OUT / f"{fname}.ics", {"karenda": "Karenda", "karenda-sports": "Karenda · Sports",
                                           "karenda-theatre": "Karenda · Théâtre"}[fname], evs)
         status[fname] = len(evs)
+    (OUT / "index.html").write_text(render_html([e for l in by_source.values() for e in l]), encoding="utf-8")
     (OUT / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps(status, indent=2, ensure_ascii=False))
     return 0 if any(v.get("ok") for v in status["sources"].values()) else 1
