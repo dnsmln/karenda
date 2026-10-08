@@ -5,7 +5,6 @@ Sources
   victoire      PWHL season ICS files linked from thepwhl.com (home games only)
   cfmontreal    ESPN public schedule API (home games only)
   placedesarts  placedesarts.com/en/programming listing
-  centaur       centaurtheatre.com WordPress REST API + show pages
   rideauvert    rideauvert.qc.ca/programmation
 
 Each source is independent. If one fails, its events from the previous
@@ -210,7 +209,7 @@ def month_num(s: str) -> int | None:
 
 
 def parse_en_range(text: str) -> tuple[date, date] | None:
-    """Parse English date text as used by Place des Arts and Centaur.
+    """Parse English date text as used by Place des Arts.
 
     Handles: "October 9, 2026", "October 8 and 9, 2026", "October 8 to 10, 2026",
     "October 21 to November 19, 2026", "September 25, 2026 to January 30, 2027",
@@ -491,59 +490,6 @@ def _pda_html(page_html: str) -> list[Event]:
     return list(events.values())
 
 
-def _centaur_shows() -> list[dict]:
-    """[{id, link, title, guest}] — WordPress REST first, sitemap if the API rate-limits."""
-    api = "https://centaurtheatre.com/wp-json/wp/v2/centaur_event?per_page=40&_fields=id,link,title,class_list"
-    try:
-        items = get(api, "centaur.json").json()
-        return [{
-            "id": it["id"], "link": it.get("link", ""),
-            "title": html.unescape(BeautifulSoup(it["title"]["rendered"], "html.parser").get_text()),
-            "guest": any("guest" in c for c in it.get("class_list", [])),
-        } for it in items if it.get("link")]
-    except Exception as e:  # noqa: BLE001
-        print("  centaur: REST API failed, falling back to sitemap:", e)
-    xml = get("https://centaurtheatre.com/centaur_event-sitemap.xml", "centaur_sitemap.xml").text
-    rows = re.findall(r"<loc>(https://centaurtheatre\.com/shows/[^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", xml)
-    cutoff = (TODAY - timedelta(days=270)).isoformat()
-    recent = sorted((lm, loc) for loc, lm in rows if lm[:10] >= cutoff)[-40:]
-    return [{"id": slug(loc.rstrip("/").rsplit("/", 1)[-1]), "link": loc,
-             "title": loc.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title(), "guest": False}
-            for _, loc in recent]
-
-
-def src_centaur() -> list[Event]:
-    shows = _centaur_shows()
-    events: list[Event] = []
-    for i, sh in enumerate(shows):
-        if i:
-            time.sleep(1.5)                      # the site rate-limits bursts
-        try:
-            page = BeautifulSoup(get(sh["link"], f"centaur_{sh['id']}.html").text, "html.parser")
-        except Exception as e:  # noqa: BLE001
-            print("  centaur: page fetch failed", sh["link"], e)
-            continue
-        for s in page(["script", "style", "nav", "footer", "header"]):
-            s.decompose()
-        h1 = page.select_one("h1")
-        title = text_of(h1) or sh["title"]
-        main = page.select_one("main, article, .entry-content, #content") or page
-        rng = parse_en_range(text_of(main))
-        if not rng:
-            print("  centaur: no dates for", title)
-            continue
-        first, last = rng
-        if last < KEEP_FROM or (last - first).days > 120:
-            continue
-        events.append(span_event(
-            "centaur", f"centaur-{sh['id']}@karenda", f"{title} · Centaur", first, last,
-            location="Centaur Theatre, 453 Saint-François-Xavier, Montréal", url=sh["link"],
-            description="Guest show" if sh["guest"] else "", categories=["Theatre", "Centaur"],
-        ))
-    if not events:
-        raise RuntimeError("no events parsed")
-    return events
-
 
 def src_rideauvert() -> list[Event]:
     url = "https://rideauvert.qc.ca/programmation/"
@@ -593,17 +539,16 @@ def src_rideauvert() -> list[Event]:
 MTL = ZoneInfo("America/Toronto")
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-PLACES = {  # source -> pill label on the web page, in display order
+PLACES = {  # source -> pill label on the web page (venue or team), in display order
     "placedesarts": "Place des Arts",
-    "centaur": "Centaur",
     "rideauvert": "Rideau Vert",
-    "victoire": "Place Bell",
-    "cfmontreal": "Stade Saputo",
+    "victoire": "Victoire",
+    "cfmontreal": "CF Montréal",
 }
 
 
 def plain_title(e: Event) -> str:
-    return re.sub(r"\s*·\s*(PdA|Centaur|Rideau Vert)$", "", e.summary)
+    return re.sub(r"\s*·\s*(PdA|Rideau Vert)$", "", e.summary)
 
 
 def venue_of(e: Event) -> str:
@@ -656,10 +601,9 @@ def render_html(events: list[Event]) -> str:
         out.append("</ul></section>")
     body = "\n".join(out)
     present = {e.source for l in months.values() for e in l}
-    pills = ['<button type="button" data-place="all" aria-pressed="true">All</button>']
-    pills += [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
+    pills = [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
               for src, label in PLACES.items() if src in present]
-    places = '<nav class="places" aria-label="Filter by place">' + "".join(pills) + "</nav>"
+    places = '<nav class="places" aria-label="Filter">' + "".join(pills) + "</nav>"
     updated = datetime.now(MTL).strftime("%b %-d, %Y")
     return (HTML_TEMPLATE.replace("{{PLACES}}", places).replace("{{BODY}}", body)
             .replace("{{UPDATED}}", updated))
@@ -721,15 +665,17 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
   var pills = document.querySelectorAll(".places button");
   var items = document.querySelectorAll(".month li");
   var months = document.querySelectorAll(".month");
-  function apply(place) {
+  function apply(place) {            // "" = no filter, show everything
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
-    items.forEach(function (li) { li.hidden = place !== "all" && li.dataset.place !== place; });
+    items.forEach(function (li) { li.hidden = !!place && li.dataset.place !== place; });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
-    history.replaceState(null, "", location.pathname + location.search + (place === "all" ? "" : "#" + place));
+    history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
   }
-  pills.forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.place); }); });
+  pills.forEach(function (b) { b.addEventListener("click", function () {
+    apply(b.getAttribute("aria-pressed") === "true" ? "" : b.dataset.place);
+  }); });
   var h = location.hash.slice(1);
-  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "all");
+  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
 })();
 </script>
 </body>
@@ -741,20 +687,19 @@ SOURCES = {
     "victoire": src_victoire,
     "cfmontreal": src_cfmontreal,
     "placedesarts": src_placedesarts,
-    "centaur": src_centaur,
     "rideauvert": src_rideauvert,
 }
 GROUPS = {
     "karenda": list(SOURCES),
     "karenda-sports": ["victoire", "cfmontreal"],
-    "karenda-theatre": ["placedesarts", "centaur", "rideauvert"],
+    "karenda-theatre": ["placedesarts", "rideauvert"],
 }
 
 
 def main() -> int:
     previous = read_previous(OUT / "karenda.ics")
     if "--render-only" in sys.argv:          # rebuild index.html from the existing ICS, no network
-        (OUT / "index.html").write_text(render_html([e for l in previous.values() for e in l]), encoding="utf-8")
+        (OUT / "index.html").write_text(render_html([e for s in SOURCES for e in previous.get(s, [])]), encoding="utf-8")
         print("rendered docs/index.html from existing karenda.ics")
         return 0
     status: dict = {"built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "sources": {}}
