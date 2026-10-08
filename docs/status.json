@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-08T13:40:18+00:00",
+  "built_at": "2026-10-08T14:11:37+00:00",
   "sources": {
     "victoire": {
       "ok": true,
@@ -14,8 +14,9 @@
       "events": 95
     },
     "centaur": {
-      "ok": true,
-      "events": 2
+      "ok": false,
+      "error": "RuntimeError: no events parsed",
+      "kept_previous": 2
     },
     "rideauvert": {
       "ok": true,
