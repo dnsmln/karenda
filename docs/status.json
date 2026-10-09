@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-09T19:16:38+00:00",
+  "built_at": "2026-10-09T19:17:11+00:00",
   "sources": {
     "victoire": {
       "ok": true,
@@ -33,13 +33,13 @@
     },
     "mbam": {
       "ok": true,
-      "events": 9,
+      "events": 8,
       "last_ok": "2026-10-09"
     }
   },
-  "karenda": 166,
+  "karenda": 165,
   "karenda-sports": 52,
   "karenda-theatre": 101,
   "karenda-cinema": 4,
-  "karenda-museums": 9
+  "karenda-museums": 8
 }
