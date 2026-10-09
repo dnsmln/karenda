@@ -3,1313 +3,6 @@
   {
    "segment": "1event",
    "entryType": "event",
-   "title": "Adib Alkhalidey | Comme les Mongols à Baghdad",
-   "eventCanceled": 0,
-   "discipline": "Comedy",
-   "venues": [
-    "Cinquième Salle",
-    "Théâtre Maisonneuve"
-   ],
-   "datesTimestamp": [
-    1791504000,
-    1791590400,
-    1791676800,
-    1797469200,
-    1801270800,
-    1801357200
-   ],
-   "priceHigh": 58.5,
-   "priceLow": 39.5,
-   "free": false,
-   "eventType": "show",
-   "subCategory": "Comedy • Stand-up",
-   "themes": [],
-   "festivals": [],
-   "residents": [],
-   "artist": "Adib Alkhalidey",
-   "producer": "La Tribu",
-   "keywords": null,
-   "content": "Following Québécois Tabarnak and Des putes et des voleurs—both winners of the Comedy Show of the Year award at the ADISQ Gala, a first in 45 years to win two years in a row—Adib Alkhalidey returns with Comme les Mongols à Baghdad.  | This new show is about transmission. The transmission of meaning, knowledge, wounds, fears, contradictions, and impulses that span an era that sometimes seems to have lost faith in its own ability to pass anything on at all. Reflecting his branching train of thought, the show unfolds through themes as varied as tax evasion, political corruption, the nightmare of putting children to sleep, the House of Wisdom in Baghdad, Jesus, and the reality of blended families. By tackling the most sensitive, intimate, or taboo subjects of our time, Adib Alkhalidey seeks less to provide answers than to reveal what emerges when we dare to face certain truths head-on. Driven by a rare freedom of expression—likely amplified by sleep deprivation and the questionable honesty of exhausted young parents—the show ultimately transforms this chaos into something strangely lucid, as if all these scattered branches secretly stemmed from the same tree. Comme les Mongols à Baghdad is a deeply funny show, at times brutal, at times unsettling, but always driven by a sincere desire to bring together what the times are determined to keep apart.  | [\"1h30 without intermission\",\"French\"] | [\"Production \\/ Presentation: La Tribu\"]",
-   "firstEventDate": 1790380800,
-   "nextEventDate": 1791417600,
-   "venueSorting": {
-    "title": "Théâtre Maisonneuve",
-    "place": "Place des Arts",
-    "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
-    "slug": "theatre-maisonneuve",
-    "type": "performance_hall",
-    "isOutdoor": false,
-    "mainImage": null
-   },
-   "toEnd": false,
-   "cardData": {
-    "id": 1742594,
-    "apiGroupId": "api_P6C0925",
-    "type": "show",
-    "title": "Adib Alkhalidey | Comme les Mongols à Baghdad",
-    "description": "<p>Following <i>Québécois Tabarnak </i>and <i>Des putes et des voleurs</i>—both winners of the Comedy Show of the Year award at the ADISQ Gala, a first in 45 years to win two years in a row—Adib Alkhalidey returns with <i>Comme les Mongols à Baghdad</i>. </p>",
-    "categories": {
-     "type": {
-      "title": "Show",
-      "slug": "show"
-     },
-     "subCategory": {
-      "title": "Comedy • Stand-up",
-      "url": "https://www.placedesarts.com/en/discipline/comedy"
-     },
-     "attribute": {
-      "title": ""
-     }
-    },
-    "performances": {
-     "count": 10,
-     "list": [
-      {
-       "id": 2051823,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-10-08 00:10:42.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Thursday October 8, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "55.00",
-          "high": "55.00"
-         }
-        ],
-        "totalPriceLow": "55.00",
-        "totalPriceHigh": "55.00"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": true,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6C1008",
-       "is3d": true,
-       "venue": {
-        "title": "Cinquième Salle",
-        "place": "Place des Arts",
-        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
-        "slug": "cinquieme-salle",
-        "type": "performance_hall",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTAwOA==",
-       "ticketSaleDate": {
-        "date": "2026-05-22 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "May 22 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 8 at 8:00 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 2051824,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-10-09 00:10:42.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-09 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Friday October 9, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "55.00",
-          "high": "55.00"
-         }
-        ],
-        "totalPriceLow": "55.00",
-        "totalPriceHigh": "55.00"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": false,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6C1009",
-       "is3d": true,
-       "venue": {
-        "title": "Cinquième Salle",
-        "place": "Place des Arts",
-        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
-        "slug": "cinquieme-salle",
-        "type": "performance_hall",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTAwOQ==",
-       "ticketSaleDate": {
-        "date": "2026-05-22 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "May 22 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-09 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 9 at 8:00 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 2051825,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-10-10 00:10:43.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-10 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Saturday October 10, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "55.00",
-          "high": "55.00"
-         }
-        ],
-        "totalPriceLow": "55.00",
-        "totalPriceHigh": "55.00"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": false,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6C1010",
-       "is3d": true,
-       "venue": {
-        "title": "Cinquième Salle",
-        "place": "Place des Arts",
-        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
-        "slug": "cinquieme-salle",
-        "type": "performance_hall",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTAxMA==",
-       "ticketSaleDate": {
-        "date": "2026-05-22 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "May 22 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-10 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 10 at 8:00 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 2051826,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-12-16 00:10:43.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-12-16 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Wednesday December 16, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "55.00",
-          "high": "55.00"
-         }
-        ],
-        "totalPriceLow": "55.00",
-        "totalPriceHigh": "55.00"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": true,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6C1216",
-       "is3d": true,
-       "venue": {
-        "title": "Cinquième Salle",
-        "place": "Place des Arts",
-        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
-        "slug": "cinquieme-salle",
-        "type": "performance_hall",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTIxNg==",
-       "ticketSaleDate": {
-        "date": "2026-09-03 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "September 3 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-12-16 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "December 16 at 8:00 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 2066370,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2027-01-29 00:10:43.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2027-01-29 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Friday January 29, 2027",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "39.50",
-          "high": "58.50"
-         }
-        ],
-        "totalPriceLow": "39.50",
-        "totalPriceHigh": "58.50"
-       },
-       "status": "",
-       "isLimitedSeats": false,
-       "isComplete": false,
-       "isExtra": true,
-       "isCanceled": false,
-       "apiId": "P7M0129",
-       "is3d": true,
-       "venue": {
-        "title": "Théâtre Maisonneuve",
-        "place": "Place des Arts",
-        "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
-        "slug": "theatre-maisonneuve",
-        "type": "performance_hall",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDdNMDEyOQ==",
-       "ticketSaleDate": {
-        "date": "2026-09-18 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "September 18 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2027-01-29 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "January 29 at 8:00 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 2066371,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2027-01-30 00:10:43.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2027-01-30 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Saturday January 30, 2027",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "39.50",
-          "high": "58.50"
-         }
-        ],
-        "totalPriceLow": "39.50",
-        "totalPriceHigh": "58.50"
-       },
-       "status": "",
-       "isLimitedSeats": false,
-       "isComplete": false,
-       "isExtra": true,
-       "isCanceled": false,
-       "apiId": "P7M0130",
-       "is3d": true,
-       "venue": {
-        "title": "Théâtre Maisonneuve",
-        "place": "Place des Arts",
-        "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
-        "slug": "theatre-maisonneuve",
-        "type": "performance_hall",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDdNMDEzMA==",
-       "ticketSaleDate": {
-        "date": "2026-09-18 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "September 18 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2027-01-30 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "January 30 at 8:00 p.m.",
-       "sponsors": []
-      }
-     ],
-     "date": [
-      {
-       "date": "2026-09-25 20:00:00.000000",
-       "timezone_type": 3,
-       "timezone": "America/Toronto"
-      },
-      {
-       "date": "2027-01-31 00:00:00.000000",
-       "timezone_type": 3,
-       "timezone": "America/Toronto"
-      }
-     ],
-     "hour": {
-      "date": "2026-10-07 20:00:00.000000",
-      "timezone_type": 3,
-      "timezone": "America/Toronto"
-     },
-     "verboseHour": "8:00 p.m.",
-     "prices": {
-      "Régulier": {
-       "label": "Régulier",
-       "low": "39.50",
-       "high": "58.50"
-      }
-     },
-     "totalPriceLow": "39.50",
-     "totalPriceHigh": "58.50",
-     "ticketSaleDate": {
-      "date": "2026-05-22 10:00:00.000000",
-      "timezone_type": 3,
-      "timezone": "America/Toronto"
-     },
-     "verboseTicketSaleDate": "May 22 2026 at 10:00 a.m.",
-     "isFree": false,
-     "resumedDates": "September 25, 2026 to January 30, 2027",
-     "resumedCountTxt": "10 performances",
-     "resumedCount": 10,
-     "resumedFirstHour": "8:00 p.m.",
-     "lastChance": false,
-     "displayHour": true,
-     "scheduleText": ""
-    },
-    "venues": [
-     {
-      "order": 10,
-      "title": "Cinquième Salle",
-      "place": "Place des Arts",
-      "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
-      "slug": "cinquieme-salle",
-      "type": "performance_hall",
-      "address": {
-       "address": "175 Sainte-Catherine West Street",
-       "city": "Montréal",
-       "province": "QC",
-       "postalCode": "H2X 3X5"
-      },
-      "isOutdoor": false,
-      "mainImage": "https://cdn.placedesarts.com/salles/Cinquieme-Salle/Cinquie%CC%80me-Salle_HR-7-copy.jpeg"
-     },
-     {
-      "title": "Théâtre Maisonneuve",
-      "place": "Place des Arts",
-      "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
-      "slug": "theatre-maisonneuve",
-      "type": "performance_hall",
-      "isOutdoor": false,
-      "mainImage": null
-     }
-    ],
-    "mainImage": "https://cdn.placedesarts.com/Adib-Alkhalidey-2400x1035.jpg",
-    "portraitImage": "https://cdn.placedesarts.com/Adib-Alkhalidey-2400x3680.jpg",
-    "isCompleted": 0,
-    "hasPassed": 0,
-    "eventStatusMultiple": {},
-    "eventLimitedSeats": 0,
-    "eventExtra": 1,
-    "eventCanceled": 0,
-    "eventCustomStatus": null,
-    "eventCustomStatusLink": {
-     "label": "",
-     "url": ""
-    },
-    "eventTicketSaleDate": {
-     "date": "2026-05-22 10:00:00.000000",
-     "timezone_type": 3,
-     "timezone": "America/Toronto"
-    },
-    "ticketSaleEndDate": {
-     "date": "2027-01-30 20:00:00.000000",
-     "timezone_type": 3,
-     "timezone": "America/Toronto"
-    },
-    "url": "https://www.placedesarts.com/en/event/adib-alkhalidey",
-    "partners": [],
-    "themes": [],
-    "promotion": [],
-    "mainImages": {
-     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1761190/Adib-Alkhalidey-2400x1035.webp",
-     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1761190/Adib-Alkhalidey-2400x1035.webp",
-     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1761190/Adib-Alkhalidey-2400x1035.webp",
-     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1761190/Adib-Alkhalidey-2400x1035.webp"
-    },
-    "portraitImages": {
-     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1761191/Adib-Alkhalidey-2400x3680.webp",
-     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1761191/Adib-Alkhalidey-2400x3680.webp",
-     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1761191/Adib-Alkhalidey-2400x3680.webp",
-     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1761191/Adib-Alkhalidey-2400x3680.webp"
-    }
-   },
-   "objectID": "1742594",
-   "_highlightResult": {
-    "title": {
-     "value": "Adib Alkhalidey | Comme les Mongols à Baghdad",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "eventType": {
-     "value": "show",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "subCategory": {
-     "value": "Comedy • Stand-up",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "artist": {
-     "value": "Adib Alkhalidey",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "producer": {
-     "value": "La Tribu",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "content": {
-     "value": "Following Québécois Tabarnak and Des putes et des voleurs—both winners of the Comedy Show of the Year award at the ADISQ Gala, a first in 45 years to win two years in a row—Adib Alkhalidey returns with Comme les Mongols à Baghdad.  | This new show is about transmission. The transmission of meaning, knowledge, wounds, fears, contradictions, and impulses that span an era that sometimes seems to have lost faith in its own ability to pass anything on at all. Reflecting his branching train of thought, the show unfolds through themes as varied as tax evasion, political corruption, the nightmare of putting children to sleep, the House of Wisdom in Baghdad, Jesus, and the reality of blended families. By tackling the most sensitive, intimate, or taboo subjects of our time, Adib Alkhalidey seeks less to provide answers than to reveal what emerges when we dare to face certain truths head-on. Driven by a rare freedom of expression—likely amplified by sleep deprivation and the questionable honesty of exhausted young parents—the show ultimately transforms this chaos into something strangely lucid, as if all these scattered branches secretly stemmed from the same tree. Comme les Mongols à Baghdad is a deeply funny show, at times brutal, at times unsettling, but always driven by a sincere desire to bring together what the times are determined to keep apart.  | [\"1h30 without intermission\",\"French\"] | [\"Production \\/ Presentation: La Tribu\"]",
-     "matchLevel": "none",
-     "matchedWords": []
-    }
-   }
-  },
-  {
-   "segment": "1event",
-   "entryType": "event",
-   "title": "Engelbert Humperdinck | The Celebration Tour",
-   "eventCanceled": 0,
-   "discipline": "Pop Music",
-   "venues": [
-    "Théâtre Maisonneuve"
-   ],
-   "datesTimestamp": [
-    1791502200,
-    1791588600
-   ],
-   "priceHigh": 153,
-   "priceLow": 83.5,
-   "free": false,
-   "eventType": "show",
-   "subCategory": "Pop Music",
-   "themes": [],
-   "festivals": [],
-   "residents": [],
-   "artist": "Engelbert Humperdinck",
-   "producer": "Productions Rubin Fogel",
-   "keywords": null,
-   "content": "Following a global career renaissance, Engelbert Humperdinck is set to bring The Celebration Tour to Montréal. Marking his landmark 90th birthday on May 2nd, the \"King of Romance” offers you a memorable and intimate evening.  | Proving that age is merely a number, the 90-year-old icon continues to deliver powerful 90-minute sets to sold-out audiences worldwide. For this concert, you can expect an evening that honours an unparalleled legacy while looking firmly toward the future. In addition to his definitive signature hits, you will also get to hear some fresh new material!\"The stage is my home,\" declares Humperdinck. \"Canada has always been a highlight of my world tours, and I am thrilled to share this 90th-year celebration with the fans in Ontario and Quebec who have been with me… from the beginning through every chapter.\"With more than 140 million records sold and a recent surge in popularity driven by soundtracks like Marvel’s Moon Knight and Netflix’s The Umbrella Academy, these shows represent an exceptional opportunity to experience a living legend at the crowning of his historic \"victory lap.\"Engelbert’s hits include Release Me, After the Lovin’, Spanish Eyes, The Last Waltz, There Goes My Everything, Am I That Easy to Forget, Quando Quando Quando and  A Man Without Love.  | [\"1h30-40 without intermission\"] | [\"Production \\/ Presentation: Rubin Fogel Productions\"]",
-   "firstEventDate": 1791502200,
-   "nextEventDate": 1791417600,
-   "venueSorting": {
-    "order": 4,
-    "title": "Théâtre Maisonneuve",
-    "place": "Place des Arts",
-    "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
-    "slug": "theatre-maisonneuve",
-    "type": "performance_hall",
-    "address": {
-     "address": "175 Sainte-Catherine West Street",
-     "city": "Montréal",
-     "province": "QC",
-     "postalCode": "H2X 3X5"
-    },
-    "isOutdoor": false,
-    "mainImage": "https://cdn.placedesarts.com/salles/Theatre-Maisonneuve/The%CC%81a%CC%82tre-Maisonneuve-WEB-10-copy.jpeg"
-   },
-   "toEnd": false,
-   "cardData": {
-    "id": 1655062,
-    "apiGroupId": "api_P6M1008",
-    "type": "show",
-    "title": "Engelbert Humperdinck | The Celebration Tour",
-    "description": "<p style=\"margin-left:0cm;\">Following a global career renaissance, Engelbert Humperdinck is set to bring <i>The Celebration Tour </i>to Montréal. Marking his landmark 90<sup>th</sup> birthday on May 2<sup>nd</sup>, the \"King of Romance” offers you a memorable and intimate evening. </p>",
-    "categories": {
-     "type": {
-      "title": "Show",
-      "slug": "show"
-     },
-     "subCategory": {
-      "title": "Pop Music",
-      "url": "https://www.placedesarts.com/en/discipline/pop-music"
-     },
-     "attribute": {
-      "title": ""
-     }
-    },
-    "performances": {
-     "count": 2,
-     "list": [
-      {
-       "id": 1655073,
-       "hour": {
-        "date": "2026-10-08 19:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "7:30 p.m.",
-       "date": {
-        "date": "2026-10-08 00:15:09.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-08 19:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Thursday October 8, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "83.50",
-          "high": "153.00"
-         }
-        ],
-        "totalPriceLow": "83.50",
-        "totalPriceHigh": "153.00"
-       },
-       "status": "",
-       "isLimitedSeats": false,
-       "isComplete": false,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6M1008",
-       "is3d": true,
-       "venue": {
-        "title": "",
-        "place": "",
-        "url": "",
-        "slug": "",
-        "type": "",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZNMTAwOA==",
-       "ticketSaleDate": {
-        "date": "2026-04-17 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "April 17 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-08 19:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 8 at 7:30 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 1877405,
-       "hour": {
-        "date": "2026-10-08 19:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "7:30 p.m.",
-       "date": {
-        "date": "2026-10-09 00:15:09.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-09 19:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Friday October 9, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "83.50",
-          "high": "153.00"
-         }
-        ],
-        "totalPriceLow": "83.50",
-        "totalPriceHigh": "153.00"
-       },
-       "status": "",
-       "isLimitedSeats": false,
-       "isComplete": false,
-       "isExtra": true,
-       "isCanceled": false,
-       "apiId": "P6M1009",
-       "is3d": true,
-       "venue": {
-        "title": "",
-        "place": "",
-        "url": "",
-        "slug": "",
-        "type": "",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZNMTAwOQ==",
-       "ticketSaleDate": {
-        "date": "2026-07-10 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "July 10 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-09 19:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 9 at 7:30 p.m.",
-       "sponsors": []
-      }
-     ],
-     "date": [
-      {
-       "date": "2026-10-08 19:30:00.000000",
-       "timezone_type": 3,
-       "timezone": "America/Toronto"
-      },
-      {
-       "date": "2026-10-10 00:00:00.000000",
-       "timezone_type": 3,
-       "timezone": "America/Toronto"
-      }
-     ],
-     "hour": {
-      "date": "2026-10-07 20:00:00.000000",
-      "timezone_type": 3,
-      "timezone": "America/Toronto"
-     },
-     "verboseHour": "8:00 p.m.",
-     "prices": {
-      "Régulier": {
-       "label": "Régulier",
-       "low": "83.50",
-       "high": "153.00"
-      }
-     },
-     "totalPriceLow": "83.50",
-     "totalPriceHigh": "153.00",
-     "ticketSaleDate": {
-      "date": "2026-04-17 10:00:00.000000",
-      "timezone_type": 3,
-      "timezone": "America/Toronto"
-     },
-     "verboseTicketSaleDate": "April 17 2026 at 10:00 a.m.",
-     "isFree": false,
-     "resumedDates": "October 8 and 9, 2026",
-     "resumedCountTxt": "2 performances",
-     "resumedCount": 2,
-     "resumedFirstHour": "7:30 p.m.",
-     "lastChance": false,
-     "displayHour": true,
-     "scheduleText": ""
-    },
-    "venues": [
-     {
-      "order": 4,
-      "title": "Théâtre Maisonneuve",
-      "place": "Place des Arts",
-      "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
-      "slug": "theatre-maisonneuve",
-      "type": "performance_hall",
-      "address": {
-       "address": "175 Sainte-Catherine West Street",
-       "city": "Montréal",
-       "province": "QC",
-       "postalCode": "H2X 3X5"
-      },
-      "isOutdoor": false,
-      "mainImage": "https://cdn.placedesarts.com/salles/Theatre-Maisonneuve/The%CC%81a%CC%82tre-Maisonneuve-WEB-10-copy.jpeg"
-     }
-    ],
-    "mainImage": "https://cdn.placedesarts.com/ENGELBERT_2400x1035.jpg",
-    "portraitImage": "https://cdn.placedesarts.com/ENGELBERT_2400x3680.jpg",
-    "isCompleted": 0,
-    "hasPassed": 0,
-    "eventStatusMultiple": {},
-    "eventLimitedSeats": 0,
-    "eventExtra": 1,
-    "eventCanceled": 0,
-    "eventCustomStatus": null,
-    "eventCustomStatusLink": {
-     "label": "",
-     "url": ""
-    },
-    "eventTicketSaleDate": {
-     "date": "2026-04-17 10:00:00.000000",
-     "timezone_type": 3,
-     "timezone": "America/Toronto"
-    },
-    "ticketSaleEndDate": {
-     "date": "2026-10-09 19:30:00.000000",
-     "timezone_type": 3,
-     "timezone": "America/Toronto"
-    },
-    "url": "https://www.placedesarts.com/en/event/engelbert-humperdinck",
-    "partners": [],
-    "themes": [],
-    "promotion": [],
-    "mainImages": {
-     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1655064/ENGELBERT_2400x1035.webp",
-     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1655064/ENGELBERT_2400x1035.webp",
-     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1655064/ENGELBERT_2400x1035.webp",
-     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1655064/ENGELBERT_2400x1035.webp"
-    },
-    "portraitImages": {
-     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1655063/ENGELBERT_2400x3680.webp",
-     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1655063/ENGELBERT_2400x3680.webp",
-     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1655063/ENGELBERT_2400x3680.webp",
-     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1655063/ENGELBERT_2400x3680.webp"
-    }
-   },
-   "objectID": "1655062",
-   "_highlightResult": {
-    "title": {
-     "value": "Engelbert Humperdinck | The Celebration Tour",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "eventType": {
-     "value": "show",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "subCategory": {
-     "value": "Pop Music",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "artist": {
-     "value": "Engelbert Humperdinck",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "producer": {
-     "value": "Productions Rubin Fogel",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "content": {
-     "value": "Following a global career renaissance, Engelbert Humperdinck is set to bring The Celebration Tour to Montréal. Marking his landmark 90th birthday on May 2nd, the \"King of Romance” offers you a memorable and intimate evening.  | Proving that age is merely a number, the 90-year-old icon continues to deliver powerful 90-minute sets to sold-out audiences worldwide. For this concert, you can expect an evening that honours an unparalleled legacy while looking firmly toward the future. In addition to his definitive signature hits, you will also get to hear some fresh new material!\"The stage is my home,\" declares Humperdinck. \"Canada has always been a highlight of my world tours, and I am thrilled to share this 90th-year celebration with the fans in Ontario and Quebec who have been with me… from the beginning through every chapter.\"With more than 140 million records sold and a recent surge in popularity driven by soundtracks like Marvel’s Moon Knight and Netflix’s The Umbrella Academy, these shows represent an exceptional opportunity to experience a living legend at the crowning of his historic \"victory lap.\"Engelbert’s hits include Release Me, After the Lovin’, Spanish Eyes, The Last Waltz, There Goes My Everything, Am I That Easy to Forget, Quando Quando Quando and  A Man Without Love.  | [\"1h30-40 without intermission\"] | [\"Production \\/ Presentation: Rubin Fogel Productions\"]",
-     "matchLevel": "none",
-     "matchedWords": []
-    }
-   }
-  },
-  {
-   "segment": "1event",
-   "entryType": "event",
-   "title": "Apashe x OSM",
-   "eventCanceled": 0,
-   "discipline": "Classical Music",
-   "venues": [
-    "Maison symphonique"
-   ],
-   "datesTimestamp": [
-    1791504000,
-    1791590400,
-    1791676800
-   ],
-   "priceHigh": 247.2,
-   "priceLow": 166.71,
-   "free": false,
-   "eventType": "show",
-   "subCategory": "Classical Music",
-   "themes": [
-    "OSM Pop"
-   ],
-   "festivals": [],
-   "residents": [
-    "Orchestre symphonique de Montréal "
-   ],
-   "artist": "Orchestre symphonique de Montréal, Apashe, Dina Gilbert",
-   "producer": "Orchestre symphonique de Montréal",
-   "keywords": null,
-   "content": "An artist and producer with a truly distinctive sound, Apashe reaches a major milestone by presenting—for the very first time—a symphonic version of his repertoire with the Orchestre symphonique de Montréal, unveiling an immersive experience of extraordinary intensity. | Apashe  has carved out a unique place in the music world by blending electronic beats, hip-hop rhythms, and orchestral grandeur. His bold, cinematic style has earned him international acclaim. Originally from Belgium and now proudly calling Montreal home, Apashe has lit up some of the world’s most prestigious stages.  | [] | [\"Conductor: Dina Gilbert\",\"Artist: Apashe\",\"Production \\/ Presentation: Orchestre symphonique de Montréal (OSM)\",\"Presentation: IG Gestion privée de patrimoine\"]",
-   "firstEventDate": 1791504000,
-   "nextEventDate": 1791417600,
-   "venueSorting": {
-    "order": 6,
-    "title": "Maison symphonique",
-    "place": "Place des Arts",
-    "url": "https://www.placedesarts.com/en/venue/maison-symphonique",
-    "slug": "maison-symphonique",
-    "type": "performance_hall",
-    "address": {
-     "address": "1600 Saint-Urbain Street",
-     "city": "Montréal",
-     "province": "QC",
-     "postalCode": "H2X 0S1"
-    },
-    "isOutdoor": false,
-    "mainImage": "https://cdn.placedesarts.com/salles/Maison-symphonique/20240612_GALA_DE_LA_TERRE_PDA_HOTE_Cr_Gabriel-Fournier-52-copy.jpg"
-   },
-   "toEnd": false,
-   "cardData": {
-    "id": 1491448,
-    "apiGroupId": "api_P6S1009",
-    "type": "show",
-    "title": "Apashe x OSM",
-    "description": "<p>An artist and producer with a truly distinctive sound, Apashe reaches a major milestone by presenting—for the very first time—a symphonic version of his repertoire with the Orchestre symphonique de Montréal, unveiling an immersive experience of extraordinary intensity.</p>",
-    "categories": {
-     "type": {
-      "title": "Show",
-      "slug": "show",
-      "precision": "Concert"
-     },
-     "subCategory": {
-      "title": "Classical Music",
-      "url": "https://www.placedesarts.com/en/discipline/classical-music"
-     },
-     "attribute": {
-      "title": "electronic"
-     }
-    },
-    "performances": {
-     "count": 3,
-     "list": [
-      {
-       "id": 1613210,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-10-08 00:17:12.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Thursday October 8, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "189.71",
-          "high": "247.20"
-         }
-        ],
-        "totalPriceLow": "189.71",
-        "totalPriceHigh": "247.20"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": false,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6S1009",
-       "is3d": true,
-       "venue": {
-        "title": "",
-        "place": "",
-        "url": "",
-        "slug": "",
-        "type": "",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTAwOQ==",
-       "ticketSaleDate": {
-        "date": "2026-03-31 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "March 31 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-08 20:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 8 at 8:30 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 1890227,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-10-09 00:17:12.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-09 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Friday October 9, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "166.71",
-          "high": "178.21"
-         }
-        ],
-        "totalPriceLow": "166.71",
-        "totalPriceHigh": "178.21"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": false,
-       "isExtra": true,
-       "isCanceled": false,
-       "apiId": "P6S1009S",
-       "is3d": true,
-       "venue": {
-        "title": "",
-        "place": "",
-        "url": "",
-        "slug": "",
-        "type": "",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTAwOVM=",
-       "ticketSaleDate": {
-        "date": "2026-03-31 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "March 31 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-09 20:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 9 at 8:30 p.m.",
-       "sponsors": []
-      },
-      {
-       "id": 1613211,
-       "hour": {
-        "date": "2026-10-08 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseHour": "8:00 p.m.",
-       "date": {
-        "date": "2026-10-10 00:17:12.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "days": [],
-       "dateTime": {
-        "date": "2026-10-10 20:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseDate": "Saturday October 10, 2026",
-       "prices": {
-        "list": [
-         {
-          "label": "Régulier",
-          "low": "209.25",
-          "high": "227.65"
-         }
-        ],
-        "totalPriceLow": "209.25",
-        "totalPriceHigh": "227.65"
-       },
-       "status": "",
-       "isLimitedSeats": true,
-       "isComplete": false,
-       "isExtra": false,
-       "isCanceled": false,
-       "apiId": "P6S1010",
-       "is3d": true,
-       "venue": {
-        "title": "",
-        "place": "",
-        "url": "",
-        "slug": "",
-        "type": "",
-        "isOutdoor": false
-       },
-       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTAxMA==",
-       "ticketSaleDate": {
-        "date": "2026-03-31 10:00:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleDate": "March 31 at 10:00 a.m.",
-       "ticketSaleEndDate": {
-        "date": "2026-10-10 20:30:00.000000",
-        "timezone_type": 3,
-        "timezone": "America/Toronto"
-       },
-       "verboseTicketSaleEndDate": "October 10 at 8:30 p.m.",
-       "sponsors": []
-      }
-     ],
-     "date": [
-      {
-       "date": "2026-10-08 20:00:00.000000",
-       "timezone_type": 3,
-       "timezone": "America/Toronto"
-      },
-      {
-       "date": "2026-10-11 00:00:00.000000",
-       "timezone_type": 3,
-       "timezone": "America/Toronto"
-      }
-     ],
-     "hour": {
-      "date": "2026-10-07 20:00:00.000000",
-      "timezone_type": 3,
-      "timezone": "America/Toronto"
-     },
-     "verboseHour": "8:00 p.m.",
-     "prices": {
-      "Régulier": {
-       "label": "Régulier",
-       "low": "166.71",
-       "high": "247.20"
-      }
-     },
-     "totalPriceLow": "166.71",
-     "totalPriceHigh": "247.20",
-     "ticketSaleDate": {
-      "date": "2026-03-31 10:00:00.000000",
-      "timezone_type": 3,
-      "timezone": "America/Toronto"
-     },
-     "verboseTicketSaleDate": "March 31 2026 at 10:00 a.m.",
-     "isFree": false,
-     "resumedDates": "October 8 to 10, 2026",
-     "resumedCountTxt": "3 performances",
-     "resumedCount": 3,
-     "resumedFirstHour": "8:00 p.m.",
-     "lastChance": false,
-     "displayHour": true,
-     "scheduleText": ""
-    },
-    "venues": [
-     {
-      "order": 6,
-      "title": "Maison symphonique",
-      "place": "Place des Arts",
-      "url": "https://www.placedesarts.com/en/venue/maison-symphonique",
-      "slug": "maison-symphonique",
-      "type": "performance_hall",
-      "address": {
-       "address": "1600 Saint-Urbain Street",
-       "city": "Montréal",
-       "province": "QC",
-       "postalCode": "H2X 0S1"
-      },
-      "isOutdoor": false,
-      "mainImage": "https://cdn.placedesarts.com/salles/Maison-symphonique/20240612_GALA_DE_LA_TERRE_PDA_HOTE_Cr_Gabriel-Fournier-52-copy.jpg"
-     }
-    ],
-    "mainImage": "https://cdn.placedesarts.com/apashe-2400x1035-osm2627.jpg",
-    "portraitImage": "https://cdn.placedesarts.com/apashe-2400x3680-osm2627.jpg",
-    "isCompleted": 0,
-    "hasPassed": 0,
-    "eventStatusMultiple": {},
-    "eventLimitedSeats": 1,
-    "eventExtra": 1,
-    "eventCanceled": 0,
-    "eventCustomStatus": null,
-    "eventCustomStatusLink": {
-     "label": "",
-     "url": ""
-    },
-    "eventTicketSaleDate": {
-     "date": "2026-03-31 10:00:00.000000",
-     "timezone_type": 3,
-     "timezone": "America/Toronto"
-    },
-    "ticketSaleEndDate": {
-     "date": "2026-10-10 20:30:00.000000",
-     "timezone_type": 3,
-     "timezone": "America/Toronto"
-    },
-    "url": "https://www.placedesarts.com/en/event/apashe-osm",
-    "partners": [
-     {
-      "title": "Orchestre symphonique de Montréal ",
-      "type": "resident",
-      "url": "https://www.placedesarts.com/en/partner/osm",
-      "slug": "osm"
-     }
-    ],
-    "themes": [
-     {
-      "title": "OSM Pop",
-      "url": "https://www.placedesarts.com/en/osm-pop",
-      "slug": "osm-pop"
-     }
-    ],
-    "promotion": [],
-    "mainImages": {
-     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1625392/apashe-2400x1035-osm2627.webp",
-     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1625392/apashe-2400x1035-osm2627.webp",
-     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1625392/apashe-2400x1035-osm2627.webp",
-     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1625392/apashe-2400x1035-osm2627.webp"
-    },
-    "portraitImages": {
-     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1625393/apashe-2400x3680-osm2627.webp",
-     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1625393/apashe-2400x3680-osm2627.webp",
-     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1625393/apashe-2400x3680-osm2627.webp",
-     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1625393/apashe-2400x3680-osm2627.webp"
-    }
-   },
-   "objectID": "1491448",
-   "_highlightResult": {
-    "title": {
-     "value": "Apashe x OSM",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "eventType": {
-     "value": "show",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "subCategory": {
-     "value": "Classical Music",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "residents": [
-     {
-      "value": "Orchestre symphonique de Montréal ",
-      "matchLevel": "none",
-      "matchedWords": []
-     }
-    ],
-    "artist": {
-     "value": "Orchestre symphonique de Montréal, Apashe, Dina Gilbert",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "producer": {
-     "value": "Orchestre symphonique de Montréal",
-     "matchLevel": "none",
-     "matchedWords": []
-    },
-    "content": {
-     "value": "An artist and producer with a truly distinctive sound, Apashe reaches a major milestone by presenting—for the very first time—a symphonic version of his repertoire with the Orchestre symphonique de Montréal, unveiling an immersive experience of extraordinary intensity. | Apashe  has carved out a unique place in the music world by blending electronic beats, hip-hop rhythms, and orchestral grandeur. His bold, cinematic style has earned him international acclaim. Originally from Belgium and now proudly calling Montreal home, Apashe has lit up some of the world’s most prestigious stages.  | [] | [\"Conductor: Dina Gilbert\",\"Artist: Apashe\",\"Production \\/ Presentation: Orchestre symphonique de Montréal (OSM)\",\"Presentation: IG Gestion privée de patrimoine\"]",
-     "matchLevel": "none",
-     "matchedWords": []
-    }
-   }
-  },
-  {
-   "segment": "1event",
-   "entryType": "event",
    "title": "5 à 7 musicaux avec la Faculté de musique de l’UdeM",
    "eventCanceled": 0,
    "discipline": "Jazz Music",
@@ -1381,7 +74,7 @@
       {
        "id": 2068792,
        "hour": {
-        "date": "2026-10-08 17:30:00.000000",
+        "date": "2026-10-09 17:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -1400,8 +93,8 @@
        "verboseDate": "Thursday October 8, 2026",
        "prices": {
         "list": [],
-        "totalPriceLow": "0.00",
-        "totalPriceHigh": "0.00"
+        "totalPriceLow": null,
+        "totalPriceHigh": 0
        },
        "status": "",
        "isLimitedSeats": false,
@@ -1428,7 +121,7 @@
       {
        "id": 2068793,
        "hour": {
-        "date": "2026-10-08 17:30:00.000000",
+        "date": "2026-10-09 17:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -1475,7 +168,7 @@
       {
        "id": 2068794,
        "hour": {
-        "date": "2026-10-08 17:30:00.000000",
+        "date": "2026-10-09 17:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -1708,13 +401,13 @@
       {
        "id": 1959879,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-09 00:21:47.000000",
+        "date": "2026-10-09 00:21:44.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -1775,7 +468,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -1894,6 +587,1127 @@
   {
    "segment": "1event",
    "entryType": "event",
+   "title": "Adib Alkhalidey | Comme les Mongols à Baghdad",
+   "eventCanceled": 0,
+   "discipline": "Comedy",
+   "venues": [
+    "Cinquième Salle",
+    "Théâtre Maisonneuve"
+   ],
+   "datesTimestamp": [
+    1791590400,
+    1791676800,
+    1797469200,
+    1801270800,
+    1801357200
+   ],
+   "priceHigh": 58.5,
+   "priceLow": 39.5,
+   "free": false,
+   "eventType": "show",
+   "subCategory": "Comedy • Stand-up",
+   "themes": [],
+   "festivals": [],
+   "residents": [],
+   "artist": "Adib Alkhalidey",
+   "producer": "La Tribu",
+   "keywords": null,
+   "content": "Following Québécois Tabarnak and Des putes et des voleurs—both winners of the Comedy Show of the Year award at the ADISQ Gala, a first in 45 years to win two years in a row—Adib Alkhalidey returns with Comme les Mongols à Baghdad.  | This new show is about transmission. The transmission of meaning, knowledge, wounds, fears, contradictions, and impulses that span an era that sometimes seems to have lost faith in its own ability to pass anything on at all. Reflecting his branching train of thought, the show unfolds through themes as varied as tax evasion, political corruption, the nightmare of putting children to sleep, the House of Wisdom in Baghdad, Jesus, and the reality of blended families. By tackling the most sensitive, intimate, or taboo subjects of our time, Adib Alkhalidey seeks less to provide answers than to reveal what emerges when we dare to face certain truths head-on. Driven by a rare freedom of expression—likely amplified by sleep deprivation and the questionable honesty of exhausted young parents—the show ultimately transforms this chaos into something strangely lucid, as if all these scattered branches secretly stemmed from the same tree. Comme les Mongols à Baghdad is a deeply funny show, at times brutal, at times unsettling, but always driven by a sincere desire to bring together what the times are determined to keep apart.  | [\"1h30 without intermission\",\"French\"] | [\"Production \\/ Presentation: La Tribu\"]",
+   "firstEventDate": 1790380800,
+   "nextEventDate": 1791504000,
+   "venueSorting": {
+    "title": "Théâtre Maisonneuve",
+    "place": "Place des Arts",
+    "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
+    "slug": "theatre-maisonneuve",
+    "type": "performance_hall",
+    "isOutdoor": false,
+    "mainImage": null
+   },
+   "toEnd": false,
+   "cardData": {
+    "id": 1742594,
+    "apiGroupId": "api_P6C0925",
+    "type": "show",
+    "title": "Adib Alkhalidey | Comme les Mongols à Baghdad",
+    "description": "<p>Following <i>Québécois Tabarnak </i>and <i>Des putes et des voleurs</i>—both winners of the Comedy Show of the Year award at the ADISQ Gala, a first in 45 years to win two years in a row—Adib Alkhalidey returns with <i>Comme les Mongols à Baghdad</i>. </p>",
+    "categories": {
+     "type": {
+      "title": "Show",
+      "slug": "show"
+     },
+     "subCategory": {
+      "title": "Comedy • Stand-up",
+      "url": "https://www.placedesarts.com/en/discipline/comedy"
+     },
+     "attribute": {
+      "title": ""
+     }
+    },
+    "performances": {
+     "count": 10,
+     "list": [
+      {
+       "id": 2051824,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-10-09 00:10:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Friday October 9, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "55.00",
+          "high": "55.00"
+         }
+        ],
+        "totalPriceLow": "55.00",
+        "totalPriceHigh": "55.00"
+       },
+       "status": "",
+       "isLimitedSeats": true,
+       "isComplete": false,
+       "isExtra": false,
+       "isCanceled": false,
+       "apiId": "P6C1009",
+       "is3d": true,
+       "venue": {
+        "title": "Cinquième Salle",
+        "place": "Place des Arts",
+        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
+        "slug": "cinquieme-salle",
+        "type": "performance_hall",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTAwOQ==",
+       "ticketSaleDate": {
+        "date": "2026-05-22 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "May 22 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "October 9 at 8:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 2051825,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-10-10 00:10:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-10-10 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Saturday October 10, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "55.00",
+          "high": "55.00"
+         }
+        ],
+        "totalPriceLow": "55.00",
+        "totalPriceHigh": "55.00"
+       },
+       "status": "",
+       "isLimitedSeats": true,
+       "isComplete": false,
+       "isExtra": false,
+       "isCanceled": false,
+       "apiId": "P6C1010",
+       "is3d": true,
+       "venue": {
+        "title": "Cinquième Salle",
+        "place": "Place des Arts",
+        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
+        "slug": "cinquieme-salle",
+        "type": "performance_hall",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTAxMA==",
+       "ticketSaleDate": {
+        "date": "2026-05-22 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "May 22 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-10-10 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "October 10 at 8:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 2051826,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-12-16 00:10:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-12-16 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Wednesday December 16, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "55.00",
+          "high": "55.00"
+         }
+        ],
+        "totalPriceLow": "55.00",
+        "totalPriceHigh": "55.00"
+       },
+       "status": "",
+       "isLimitedSeats": true,
+       "isComplete": true,
+       "isExtra": false,
+       "isCanceled": false,
+       "apiId": "P6C1216",
+       "is3d": true,
+       "venue": {
+        "title": "Cinquième Salle",
+        "place": "Place des Arts",
+        "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
+        "slug": "cinquieme-salle",
+        "type": "performance_hall",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZDMTIxNg==",
+       "ticketSaleDate": {
+        "date": "2026-09-03 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "September 3 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-12-16 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "December 16 at 8:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 2066370,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2027-01-29 00:10:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2027-01-29 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Friday January 29, 2027",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "39.50",
+          "high": "58.50"
+         }
+        ],
+        "totalPriceLow": "39.50",
+        "totalPriceHigh": "58.50"
+       },
+       "status": "",
+       "isLimitedSeats": false,
+       "isComplete": false,
+       "isExtra": true,
+       "isCanceled": false,
+       "apiId": "P7M0129",
+       "is3d": true,
+       "venue": {
+        "title": "Théâtre Maisonneuve",
+        "place": "Place des Arts",
+        "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
+        "slug": "theatre-maisonneuve",
+        "type": "performance_hall",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDdNMDEyOQ==",
+       "ticketSaleDate": {
+        "date": "2026-09-18 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "September 18 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2027-01-29 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "January 29 at 8:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 2066371,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2027-01-30 00:10:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2027-01-30 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Saturday January 30, 2027",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "39.50",
+          "high": "58.50"
+         }
+        ],
+        "totalPriceLow": "39.50",
+        "totalPriceHigh": "58.50"
+       },
+       "status": "",
+       "isLimitedSeats": false,
+       "isComplete": false,
+       "isExtra": true,
+       "isCanceled": false,
+       "apiId": "P7M0130",
+       "is3d": true,
+       "venue": {
+        "title": "Théâtre Maisonneuve",
+        "place": "Place des Arts",
+        "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
+        "slug": "theatre-maisonneuve",
+        "type": "performance_hall",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDdNMDEzMA==",
+       "ticketSaleDate": {
+        "date": "2026-09-18 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "September 18 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2027-01-30 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "January 30 at 8:00 p.m.",
+       "sponsors": []
+      }
+     ],
+     "date": [
+      {
+       "date": "2026-09-25 20:00:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Toronto"
+      },
+      {
+       "date": "2027-01-31 00:00:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Toronto"
+      }
+     ],
+     "hour": {
+      "date": "2026-10-08 20:00:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Toronto"
+     },
+     "verboseHour": "8:00 p.m.",
+     "prices": {
+      "Régulier": {
+       "label": "Régulier",
+       "low": "39.50",
+       "high": "58.50"
+      }
+     },
+     "totalPriceLow": "39.50",
+     "totalPriceHigh": "58.50",
+     "ticketSaleDate": {
+      "date": "2026-05-22 10:00:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Toronto"
+     },
+     "verboseTicketSaleDate": "May 22 2026 at 10:00 a.m.",
+     "isFree": false,
+     "resumedDates": "September 25, 2026 to January 30, 2027",
+     "resumedCountTxt": "10 performances",
+     "resumedCount": 10,
+     "resumedFirstHour": "8:00 p.m.",
+     "lastChance": false,
+     "displayHour": true,
+     "scheduleText": ""
+    },
+    "venues": [
+     {
+      "order": 10,
+      "title": "Cinquième Salle",
+      "place": "Place des Arts",
+      "url": "https://www.placedesarts.com/en/venue/cinquieme-salle",
+      "slug": "cinquieme-salle",
+      "type": "performance_hall",
+      "address": {
+       "address": "175 Sainte-Catherine West Street",
+       "city": "Montréal",
+       "province": "QC",
+       "postalCode": "H2X 3X5"
+      },
+      "isOutdoor": false,
+      "mainImage": "https://cdn.placedesarts.com/salles/Cinquieme-Salle/Cinquie%CC%80me-Salle_HR-7-copy.jpeg"
+     },
+     {
+      "title": "Théâtre Maisonneuve",
+      "place": "Place des Arts",
+      "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
+      "slug": "theatre-maisonneuve",
+      "type": "performance_hall",
+      "isOutdoor": false,
+      "mainImage": null
+     }
+    ],
+    "mainImage": "https://cdn.placedesarts.com/Adib-Alkhalidey-2400x1035.jpg",
+    "portraitImage": "https://cdn.placedesarts.com/Adib-Alkhalidey-2400x3680.jpg",
+    "isCompleted": 0,
+    "hasPassed": 0,
+    "eventStatusMultiple": {},
+    "eventLimitedSeats": 0,
+    "eventExtra": 1,
+    "eventCanceled": 0,
+    "eventCustomStatus": null,
+    "eventCustomStatusLink": {
+     "label": "",
+     "url": ""
+    },
+    "eventTicketSaleDate": {
+     "date": "2026-05-22 10:00:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Toronto"
+    },
+    "ticketSaleEndDate": {
+     "date": "2027-01-30 20:00:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Toronto"
+    },
+    "url": "https://www.placedesarts.com/en/event/adib-alkhalidey",
+    "partners": [],
+    "themes": [],
+    "promotion": [],
+    "mainImages": {
+     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1761190/Adib-Alkhalidey-2400x1035.webp",
+     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1761190/Adib-Alkhalidey-2400x1035.webp",
+     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1761190/Adib-Alkhalidey-2400x1035.webp",
+     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1761190/Adib-Alkhalidey-2400x1035.webp"
+    },
+    "portraitImages": {
+     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1761191/Adib-Alkhalidey-2400x3680.webp",
+     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1761191/Adib-Alkhalidey-2400x3680.webp",
+     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1761191/Adib-Alkhalidey-2400x3680.webp",
+     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1761191/Adib-Alkhalidey-2400x3680.webp"
+    }
+   },
+   "objectID": "1742594",
+   "_highlightResult": {
+    "title": {
+     "value": "Adib Alkhalidey | Comme les Mongols à Baghdad",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "eventType": {
+     "value": "show",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "subCategory": {
+     "value": "Comedy • Stand-up",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "artist": {
+     "value": "Adib Alkhalidey",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "producer": {
+     "value": "La Tribu",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "content": {
+     "value": "Following Québécois Tabarnak and Des putes et des voleurs—both winners of the Comedy Show of the Year award at the ADISQ Gala, a first in 45 years to win two years in a row—Adib Alkhalidey returns with Comme les Mongols à Baghdad.  | This new show is about transmission. The transmission of meaning, knowledge, wounds, fears, contradictions, and impulses that span an era that sometimes seems to have lost faith in its own ability to pass anything on at all. Reflecting his branching train of thought, the show unfolds through themes as varied as tax evasion, political corruption, the nightmare of putting children to sleep, the House of Wisdom in Baghdad, Jesus, and the reality of blended families. By tackling the most sensitive, intimate, or taboo subjects of our time, Adib Alkhalidey seeks less to provide answers than to reveal what emerges when we dare to face certain truths head-on. Driven by a rare freedom of expression—likely amplified by sleep deprivation and the questionable honesty of exhausted young parents—the show ultimately transforms this chaos into something strangely lucid, as if all these scattered branches secretly stemmed from the same tree. Comme les Mongols à Baghdad is a deeply funny show, at times brutal, at times unsettling, but always driven by a sincere desire to bring together what the times are determined to keep apart.  | [\"1h30 without intermission\",\"French\"] | [\"Production \\/ Presentation: La Tribu\"]",
+     "matchLevel": "none",
+     "matchedWords": []
+    }
+   }
+  },
+  {
+   "segment": "1event",
+   "entryType": "event",
+   "title": "Engelbert Humperdinck | The Celebration Tour",
+   "eventCanceled": 0,
+   "discipline": "Pop Music",
+   "venues": [
+    "Théâtre Maisonneuve"
+   ],
+   "datesTimestamp": [
+    1791588600
+   ],
+   "priceHigh": 153,
+   "priceLow": 83.5,
+   "free": false,
+   "eventType": "show",
+   "subCategory": "Pop Music",
+   "themes": [],
+   "festivals": [],
+   "residents": [],
+   "artist": "Engelbert Humperdinck",
+   "producer": "Productions Rubin Fogel",
+   "keywords": null,
+   "content": "Following a global career renaissance, Engelbert Humperdinck is set to bring The Celebration Tour to Montréal. Marking his landmark 90th birthday on May 2nd, the \"King of Romance” offers you a memorable and intimate evening.  | Proving that age is merely a number, the 90-year-old icon continues to deliver powerful 90-minute sets to sold-out audiences worldwide. For this concert, you can expect an evening that honours an unparalleled legacy while looking firmly toward the future. In addition to his definitive signature hits, you will also get to hear some fresh new material!\"The stage is my home,\" declares Humperdinck. \"Canada has always been a highlight of my world tours, and I am thrilled to share this 90th-year celebration with the fans in Ontario and Quebec who have been with me… from the beginning through every chapter.\"With more than 140 million records sold and a recent surge in popularity driven by soundtracks like Marvel’s Moon Knight and Netflix’s The Umbrella Academy, these shows represent an exceptional opportunity to experience a living legend at the crowning of his historic \"victory lap.\"Engelbert’s hits include Release Me, After the Lovin’, Spanish Eyes, The Last Waltz, There Goes My Everything, Am I That Easy to Forget, Quando Quando Quando and  A Man Without Love.  | [\"1h30-40 without intermission\"] | [\"Production \\/ Presentation: Rubin Fogel Productions\"]",
+   "firstEventDate": 1791502200,
+   "nextEventDate": 1791504000,
+   "venueSorting": {
+    "order": 4,
+    "title": "Théâtre Maisonneuve",
+    "place": "Place des Arts",
+    "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
+    "slug": "theatre-maisonneuve",
+    "type": "performance_hall",
+    "address": {
+     "address": "175 Sainte-Catherine West Street",
+     "city": "Montréal",
+     "province": "QC",
+     "postalCode": "H2X 3X5"
+    },
+    "isOutdoor": false,
+    "mainImage": "https://cdn.placedesarts.com/salles/Theatre-Maisonneuve/The%CC%81a%CC%82tre-Maisonneuve-WEB-10-copy.jpeg"
+   },
+   "toEnd": false,
+   "cardData": {
+    "id": 1655062,
+    "apiGroupId": "api_P6M1008",
+    "type": "show",
+    "title": "Engelbert Humperdinck | The Celebration Tour",
+    "description": "<p style=\"margin-left:0cm;\">Following a global career renaissance, Engelbert Humperdinck is set to bring <i>The Celebration Tour </i>to Montréal. Marking his landmark 90<sup>th</sup> birthday on May 2<sup>nd</sup>, the \"King of Romance” offers you a memorable and intimate evening. </p>",
+    "categories": {
+     "type": {
+      "title": "Show",
+      "slug": "show"
+     },
+     "subCategory": {
+      "title": "Pop Music",
+      "url": "https://www.placedesarts.com/en/discipline/pop-music"
+     },
+     "attribute": {
+      "title": ""
+     }
+    },
+    "performances": {
+     "count": 2,
+     "list": [
+      {
+       "id": 1877405,
+       "hour": {
+        "date": "2026-10-09 19:30:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "7:30 p.m.",
+       "date": {
+        "date": "2026-10-09 00:15:06.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-10-09 19:30:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Friday October 9, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "83.50",
+          "high": "153.00"
+         }
+        ],
+        "totalPriceLow": "83.50",
+        "totalPriceHigh": "153.00"
+       },
+       "status": "",
+       "isLimitedSeats": false,
+       "isComplete": false,
+       "isExtra": true,
+       "isCanceled": false,
+       "apiId": "P6M1009",
+       "is3d": true,
+       "venue": {
+        "title": "",
+        "place": "",
+        "url": "",
+        "slug": "",
+        "type": "",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZNMTAwOQ==",
+       "ticketSaleDate": {
+        "date": "2026-07-10 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "July 10 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-10-09 19:30:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "October 9 at 7:30 p.m.",
+       "sponsors": []
+      }
+     ],
+     "date": [
+      {
+       "date": "2026-10-08 19:30:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Toronto"
+      },
+      {
+       "date": "2026-10-10 00:00:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Toronto"
+      }
+     ],
+     "hour": {
+      "date": "2026-10-08 20:00:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Toronto"
+     },
+     "verboseHour": "8:00 p.m.",
+     "prices": {
+      "Régulier": {
+       "label": "Régulier",
+       "low": "83.50",
+       "high": "153.00"
+      }
+     },
+     "totalPriceLow": "83.50",
+     "totalPriceHigh": "153.00",
+     "ticketSaleDate": {
+      "date": "2026-07-10 10:00:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Toronto"
+     },
+     "verboseTicketSaleDate": "July 10 2026 at 10:00 a.m.",
+     "isFree": false,
+     "resumedDates": "October 8 and 9, 2026",
+     "resumedCountTxt": "2 performances",
+     "resumedCount": 2,
+     "resumedFirstHour": "7:30 p.m.",
+     "lastChance": false,
+     "displayHour": true,
+     "scheduleText": ""
+    },
+    "venues": [
+     {
+      "order": 4,
+      "title": "Théâtre Maisonneuve",
+      "place": "Place des Arts",
+      "url": "https://www.placedesarts.com/en/venue/theatre-maisonneuve",
+      "slug": "theatre-maisonneuve",
+      "type": "performance_hall",
+      "address": {
+       "address": "175 Sainte-Catherine West Street",
+       "city": "Montréal",
+       "province": "QC",
+       "postalCode": "H2X 3X5"
+      },
+      "isOutdoor": false,
+      "mainImage": "https://cdn.placedesarts.com/salles/Theatre-Maisonneuve/The%CC%81a%CC%82tre-Maisonneuve-WEB-10-copy.jpeg"
+     }
+    ],
+    "mainImage": "https://cdn.placedesarts.com/ENGELBERT_2400x1035.jpg",
+    "portraitImage": "https://cdn.placedesarts.com/ENGELBERT_2400x3680.jpg",
+    "isCompleted": 0,
+    "hasPassed": 0,
+    "eventStatusMultiple": {},
+    "eventLimitedSeats": 0,
+    "eventExtra": 1,
+    "eventCanceled": 0,
+    "eventCustomStatus": null,
+    "eventCustomStatusLink": {
+     "label": "",
+     "url": ""
+    },
+    "eventTicketSaleDate": {
+     "date": "2026-07-10 10:00:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Toronto"
+    },
+    "ticketSaleEndDate": {
+     "date": "2026-10-09 19:30:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Toronto"
+    },
+    "url": "https://www.placedesarts.com/en/event/engelbert-humperdinck",
+    "partners": [],
+    "themes": [],
+    "promotion": [],
+    "mainImages": {
+     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1655064/ENGELBERT_2400x1035.webp",
+     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1655064/ENGELBERT_2400x1035.webp",
+     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1655064/ENGELBERT_2400x1035.webp",
+     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1655064/ENGELBERT_2400x1035.webp"
+    },
+    "portraitImages": {
+     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1655063/ENGELBERT_2400x3680.webp",
+     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1655063/ENGELBERT_2400x3680.webp",
+     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1655063/ENGELBERT_2400x3680.webp",
+     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1655063/ENGELBERT_2400x3680.webp"
+    }
+   },
+   "objectID": "1655062",
+   "_highlightResult": {
+    "title": {
+     "value": "Engelbert Humperdinck | The Celebration Tour",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "eventType": {
+     "value": "show",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "subCategory": {
+     "value": "Pop Music",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "artist": {
+     "value": "Engelbert Humperdinck",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "producer": {
+     "value": "Productions Rubin Fogel",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "content": {
+     "value": "Following a global career renaissance, Engelbert Humperdinck is set to bring The Celebration Tour to Montréal. Marking his landmark 90th birthday on May 2nd, the \"King of Romance” offers you a memorable and intimate evening.  | Proving that age is merely a number, the 90-year-old icon continues to deliver powerful 90-minute sets to sold-out audiences worldwide. For this concert, you can expect an evening that honours an unparalleled legacy while looking firmly toward the future. In addition to his definitive signature hits, you will also get to hear some fresh new material!\"The stage is my home,\" declares Humperdinck. \"Canada has always been a highlight of my world tours, and I am thrilled to share this 90th-year celebration with the fans in Ontario and Quebec who have been with me… from the beginning through every chapter.\"With more than 140 million records sold and a recent surge in popularity driven by soundtracks like Marvel’s Moon Knight and Netflix’s The Umbrella Academy, these shows represent an exceptional opportunity to experience a living legend at the crowning of his historic \"victory lap.\"Engelbert’s hits include Release Me, After the Lovin’, Spanish Eyes, The Last Waltz, There Goes My Everything, Am I That Easy to Forget, Quando Quando Quando and  A Man Without Love.  | [\"1h30-40 without intermission\"] | [\"Production \\/ Presentation: Rubin Fogel Productions\"]",
+     "matchLevel": "none",
+     "matchedWords": []
+    }
+   }
+  },
+  {
+   "segment": "1event",
+   "entryType": "event",
+   "title": "Apashe x OSM",
+   "eventCanceled": 0,
+   "discipline": "Classical Music",
+   "venues": [
+    "Maison symphonique"
+   ],
+   "datesTimestamp": [
+    1791590400,
+    1791676800
+   ],
+   "priceHigh": 227.65,
+   "priceLow": 166.71,
+   "free": false,
+   "eventType": "show",
+   "subCategory": "Classical Music",
+   "themes": [
+    "OSM Pop"
+   ],
+   "festivals": [],
+   "residents": [
+    "Orchestre symphonique de Montréal "
+   ],
+   "artist": "Orchestre symphonique de Montréal, Apashe, Dina Gilbert",
+   "producer": "Orchestre symphonique de Montréal",
+   "keywords": null,
+   "content": "An artist and producer with a truly distinctive sound, Apashe reaches a major milestone by presenting—for the very first time—a symphonic version of his repertoire with the Orchestre symphonique de Montréal, unveiling an immersive experience of extraordinary intensity. | Apashe  has carved out a unique place in the music world by blending electronic beats, hip-hop rhythms, and orchestral grandeur. His bold, cinematic style has earned him international acclaim. Originally from Belgium and now proudly calling Montreal home, Apashe has lit up some of the world’s most prestigious stages.  | [] | [\"Conductor: Dina Gilbert\",\"Artist: Apashe\",\"Production \\/ Presentation: Orchestre symphonique de Montréal (OSM)\",\"Presentation: IG Gestion privée de patrimoine\"]",
+   "firstEventDate": 1791504000,
+   "nextEventDate": 1791504000,
+   "venueSorting": {
+    "order": 6,
+    "title": "Maison symphonique",
+    "place": "Place des Arts",
+    "url": "https://www.placedesarts.com/en/venue/maison-symphonique",
+    "slug": "maison-symphonique",
+    "type": "performance_hall",
+    "address": {
+     "address": "1600 Saint-Urbain Street",
+     "city": "Montréal",
+     "province": "QC",
+     "postalCode": "H2X 0S1"
+    },
+    "isOutdoor": false,
+    "mainImage": "https://cdn.placedesarts.com/salles/Maison-symphonique/20240612_GALA_DE_LA_TERRE_PDA_HOTE_Cr_Gabriel-Fournier-52-copy.jpg"
+   },
+   "toEnd": false,
+   "cardData": {
+    "id": 1491448,
+    "apiGroupId": "api_P6S1009",
+    "type": "show",
+    "title": "Apashe x OSM",
+    "description": "<p>An artist and producer with a truly distinctive sound, Apashe reaches a major milestone by presenting—for the very first time—a symphonic version of his repertoire with the Orchestre symphonique de Montréal, unveiling an immersive experience of extraordinary intensity.</p>",
+    "categories": {
+     "type": {
+      "title": "Show",
+      "slug": "show",
+      "precision": "Concert"
+     },
+     "subCategory": {
+      "title": "Classical Music",
+      "url": "https://www.placedesarts.com/en/discipline/classical-music"
+     },
+     "attribute": {
+      "title": "electronic"
+     }
+    },
+    "performances": {
+     "count": 3,
+     "list": [
+      {
+       "id": 1890227,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-10-09 00:17:09.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Friday October 9, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "166.71",
+          "high": "178.21"
+         }
+        ],
+        "totalPriceLow": "166.71",
+        "totalPriceHigh": "178.21"
+       },
+       "status": "",
+       "isLimitedSeats": true,
+       "isComplete": false,
+       "isExtra": true,
+       "isCanceled": false,
+       "apiId": "P6S1009S",
+       "is3d": true,
+       "venue": {
+        "title": "",
+        "place": "",
+        "url": "",
+        "slug": "",
+        "type": "",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTAwOVM=",
+       "ticketSaleDate": {
+        "date": "2026-03-31 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "March 31 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-10-09 20:30:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "October 9 at 8:30 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 1613211,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-10-10 00:17:09.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-10-10 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Saturday October 10, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "Régulier",
+          "low": "209.25",
+          "high": "227.65"
+         }
+        ],
+        "totalPriceLow": "209.25",
+        "totalPriceHigh": "227.65"
+       },
+       "status": "",
+       "isLimitedSeats": true,
+       "isComplete": false,
+       "isExtra": false,
+       "isCanceled": false,
+       "apiId": "P6S1010",
+       "is3d": true,
+       "venue": {
+        "title": "",
+        "place": "",
+        "url": "",
+        "slug": "",
+        "type": "",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTAxMA==",
+       "ticketSaleDate": {
+        "date": "2026-03-31 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "March 31 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-10-10 20:30:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "October 10 at 8:30 p.m.",
+       "sponsors": []
+      }
+     ],
+     "date": [
+      {
+       "date": "2026-10-08 20:00:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Toronto"
+      },
+      {
+       "date": "2026-10-11 00:00:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Toronto"
+      }
+     ],
+     "hour": {
+      "date": "2026-10-08 20:00:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Toronto"
+     },
+     "verboseHour": "8:00 p.m.",
+     "prices": {
+      "Régulier": {
+       "label": "Régulier",
+       "low": "166.71",
+       "high": "227.65"
+      }
+     },
+     "totalPriceLow": "166.71",
+     "totalPriceHigh": "227.65",
+     "ticketSaleDate": {
+      "date": "2026-03-31 10:00:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Toronto"
+     },
+     "verboseTicketSaleDate": "March 31 2026 at 10:00 a.m.",
+     "isFree": false,
+     "resumedDates": "October 8 to 10, 2026",
+     "resumedCountTxt": "3 performances",
+     "resumedCount": 3,
+     "resumedFirstHour": "8:00 p.m.",
+     "lastChance": false,
+     "displayHour": true,
+     "scheduleText": ""
+    },
+    "venues": [
+     {
+      "order": 6,
+      "title": "Maison symphonique",
+      "place": "Place des Arts",
+      "url": "https://www.placedesarts.com/en/venue/maison-symphonique",
+      "slug": "maison-symphonique",
+      "type": "performance_hall",
+      "address": {
+       "address": "1600 Saint-Urbain Street",
+       "city": "Montréal",
+       "province": "QC",
+       "postalCode": "H2X 0S1"
+      },
+      "isOutdoor": false,
+      "mainImage": "https://cdn.placedesarts.com/salles/Maison-symphonique/20240612_GALA_DE_LA_TERRE_PDA_HOTE_Cr_Gabriel-Fournier-52-copy.jpg"
+     }
+    ],
+    "mainImage": "https://cdn.placedesarts.com/apashe-2400x1035-osm2627.jpg",
+    "portraitImage": "https://cdn.placedesarts.com/apashe-2400x3680-osm2627.jpg",
+    "isCompleted": 0,
+    "hasPassed": 0,
+    "eventStatusMultiple": {},
+    "eventLimitedSeats": 1,
+    "eventExtra": 1,
+    "eventCanceled": 0,
+    "eventCustomStatus": null,
+    "eventCustomStatusLink": {
+     "label": "",
+     "url": ""
+    },
+    "eventTicketSaleDate": {
+     "date": "2026-03-31 10:00:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Toronto"
+    },
+    "ticketSaleEndDate": {
+     "date": "2026-10-10 20:30:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Toronto"
+    },
+    "url": "https://www.placedesarts.com/en/event/apashe-osm",
+    "partners": [
+     {
+      "title": "Orchestre symphonique de Montréal ",
+      "type": "resident",
+      "url": "https://www.placedesarts.com/en/partner/osm",
+      "slug": "osm"
+     }
+    ],
+    "themes": [
+     {
+      "title": "OSM Pop",
+      "url": "https://www.placedesarts.com/en/osm-pop",
+      "slug": "osm-pop"
+     }
+    ],
+    "promotion": [],
+    "mainImages": {
+     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1625392/apashe-2400x1035-osm2627.webp",
+     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1625392/apashe-2400x1035-osm2627.webp",
+     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1625392/apashe-2400x1035-osm2627.webp",
+     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1625392/apashe-2400x1035-osm2627.webp"
+    },
+    "portraitImages": {
+     "programmingMobile": "https://cdn.placedesarts.com/tranforms/_programmingMobile/1625393/apashe-2400x3680-osm2627.webp",
+     "programmingDesktop": "https://cdn.placedesarts.com/tranforms/_programmingDesktop/1625393/apashe-2400x3680-osm2627.webp",
+     "searchMobile": "https://cdn.placedesarts.com/tranforms/_searchMobile/1625393/apashe-2400x3680-osm2627.webp",
+     "searchDesktop": "https://cdn.placedesarts.com/tranforms/_searchDesktop/1625393/apashe-2400x3680-osm2627.webp"
+    }
+   },
+   "objectID": "1491448",
+   "_highlightResult": {
+    "title": {
+     "value": "Apashe x OSM",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "eventType": {
+     "value": "show",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "subCategory": {
+     "value": "Classical Music",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "residents": [
+     {
+      "value": "Orchestre symphonique de Montréal ",
+      "matchLevel": "none",
+      "matchedWords": []
+     }
+    ],
+    "artist": {
+     "value": "Orchestre symphonique de Montréal, Apashe, Dina Gilbert",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "producer": {
+     "value": "Orchestre symphonique de Montréal",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "content": {
+     "value": "An artist and producer with a truly distinctive sound, Apashe reaches a major milestone by presenting—for the very first time—a symphonic version of his repertoire with the Orchestre symphonique de Montréal, unveiling an immersive experience of extraordinary intensity. | Apashe  has carved out a unique place in the music world by blending electronic beats, hip-hop rhythms, and orchestral grandeur. His bold, cinematic style has earned him international acclaim. Originally from Belgium and now proudly calling Montreal home, Apashe has lit up some of the world’s most prestigious stages.  | [] | [\"Conductor: Dina Gilbert\",\"Artist: Apashe\",\"Production \\/ Presentation: Orchestre symphonique de Montréal (OSM)\",\"Presentation: IG Gestion privée de patrimoine\"]",
+     "matchLevel": "none",
+     "matchedWords": []
+    }
+   }
+  },
+  {
+   "segment": "1event",
+   "entryType": "event",
    "title": "Their Master’s Voice with John Malkovich",
    "eventCanceled": 1,
    "discipline": "Opera",
@@ -1959,13 +1773,13 @@
       {
        "id": 1352903,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-09 00:21:42.000000",
+        "date": "2026-10-09 00:21:40.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -2026,7 +1840,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 20:00:00.000000",
+      "date": "2026-10-09 20:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -2213,13 +2027,13 @@
       {
        "id": 1600549,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-10 00:21:52.000000",
+        "date": "2026-10-10 00:21:49.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -2280,7 +2094,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -2470,13 +2284,13 @@
       {
        "id": 2038852,
        "hour": {
-        "date": "2026-10-08 15:00:00.000000",
+        "date": "2026-10-09 15:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "3:00 p.m.",
        "date": {
-        "date": "2026-10-11 00:17:17.000000",
+        "date": "2026-10-11 00:17:14.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -2537,7 +2351,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 15:00:00.000000",
+      "date": "2026-10-09 15:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -2726,13 +2540,13 @@
       {
        "id": 1837095,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-11 00:03:52.000000",
+        "date": "2026-10-11 00:03:51.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -2793,7 +2607,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -2986,13 +2800,13 @@
       {
        "id": 1682229,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-13 00:21:57.000000",
+        "date": "2026-10-13 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3047,13 +2861,13 @@
       {
        "id": 1682230,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-14 00:21:57.000000",
+        "date": "2026-10-14 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3108,13 +2922,13 @@
       {
        "id": 1682231,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-15 00:21:57.000000",
+        "date": "2026-10-15 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3169,13 +2983,13 @@
       {
        "id": 1682232,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-16 00:21:57.000000",
+        "date": "2026-10-16 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3230,13 +3044,13 @@
       {
        "id": 1682233,
        "hour": {
-        "date": "2026-10-08 13:00:00.000000",
+        "date": "2026-10-09 13:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "1:00 p.m.",
        "date": {
-        "date": "2026-10-17 00:21:57.000000",
+        "date": "2026-10-17 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3291,13 +3105,13 @@
       {
        "id": 1682234,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-17 00:21:57.000000",
+        "date": "2026-10-17 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3352,13 +3166,13 @@
       {
        "id": 1682235,
        "hour": {
-        "date": "2026-10-08 13:00:00.000000",
+        "date": "2026-10-09 13:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "1:00 p.m.",
        "date": {
-        "date": "2026-10-18 00:21:57.000000",
+        "date": "2026-10-18 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3413,13 +3227,13 @@
       {
        "id": 1682236,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-18 00:21:57.000000",
+        "date": "2026-10-18 00:21:54.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3686,7 +3500,7 @@
       {
        "id": 1731611,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3767,7 +3581,7 @@
       {
        "id": 1354026,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3848,7 +3662,7 @@
       {
        "id": 1354027,
        "hour": {
-        "date": "2026-10-08 15:00:00.000000",
+        "date": "2026-10-09 15:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -3929,7 +3743,7 @@
       {
        "id": 1982567,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -4010,7 +3824,7 @@
       {
        "id": 1354028,
        "hour": {
-        "date": "2026-10-08 15:00:00.000000",
+        "date": "2026-10-09 15:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -4322,13 +4136,13 @@
       {
        "id": 1615990,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-15 00:17:22.000000",
+        "date": "2026-10-15 00:17:18.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -4389,7 +4203,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -4592,13 +4406,13 @@
       {
        "id": 1353022,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-16 00:17:27.000000",
+        "date": "2026-10-16 00:17:23.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -4659,7 +4473,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -4850,13 +4664,13 @@
       {
        "id": 1964764,
        "hour": {
-        "date": "2026-10-08 14:00:00.000000",
+        "date": "2026-10-09 14:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "2:00 p.m.",
        "date": {
-        "date": "2026-10-17 00:17:32.000000",
+        "date": "2026-10-17 00:17:28.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -4911,13 +4725,13 @@
       {
        "id": 1592152,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-17 00:17:32.000000",
+        "date": "2026-10-17 00:17:28.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -5173,13 +4987,13 @@
       {
        "id": 1979858,
        "hour": {
-        "date": "2026-10-08 19:00:00.000000",
+        "date": "2026-10-09 19:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:00 p.m.",
        "date": {
-        "date": "2026-10-20 00:10:52.000000",
+        "date": "2026-10-20 00:10:49.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -5240,7 +5054,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:00:00.000000",
+      "date": "2026-10-09 19:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -5426,13 +5240,13 @@
       {
        "id": 1383562,
        "hour": {
-        "date": "2026-10-08 19:00:00.000000",
+        "date": "2026-10-09 19:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:00 p.m.",
        "date": {
-        "date": "2026-10-20 00:22:02.000000",
+        "date": "2026-10-20 00:21:59.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -5487,13 +5301,13 @@
       {
        "id": 1414678,
        "hour": {
-        "date": "2026-10-08 19:00:00.000000",
+        "date": "2026-10-09 19:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:00 p.m.",
        "date": {
-        "date": "2026-10-21 00:22:02.000000",
+        "date": "2026-10-21 00:21:59.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -5548,13 +5362,13 @@
       {
        "id": 1714450,
        "hour": {
-        "date": "2026-10-08 21:30:00.000000",
+        "date": "2026-10-09 21:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "9:30 p.m.",
        "date": {
-        "date": "2026-10-21 00:22:02.000000",
+        "date": "2026-10-21 00:21:59.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -5809,13 +5623,13 @@
       {
        "id": 1345974,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-20 00:15:14.000000",
+        "date": "2026-10-20 00:15:12.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -5876,7 +5690,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 20:00:00.000000",
+      "date": "2026-10-09 20:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -6071,13 +5885,13 @@
       {
        "id": 1706475,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-21 10:35:44.000000",
+        "date": "2026-10-21 10:07:18.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6132,13 +5946,13 @@
       {
        "id": 1706476,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-22 10:35:44.000000",
+        "date": "2026-10-22 10:07:18.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6193,13 +6007,13 @@
       {
        "id": 1706477,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-23 10:35:44.000000",
+        "date": "2026-10-23 10:07:19.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6254,13 +6068,13 @@
       {
        "id": 1942387,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-18 10:35:44.000000",
+        "date": "2026-11-18 10:07:19.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6315,13 +6129,13 @@
       {
        "id": 1942388,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-19 10:35:44.000000",
+        "date": "2026-11-19 10:07:19.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6376,13 +6190,13 @@
       {
        "id": 2089734,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2027-01-06 10:35:44.000000",
+        "date": "2027-01-06 10:07:19.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6437,13 +6251,13 @@
       {
        "id": 2089735,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2027-01-07 10:35:44.000000",
+        "date": "2027-01-07 10:07:19.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6698,13 +6512,13 @@
       {
        "id": 1659682,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-21 00:11:57.000000",
+        "date": "2026-10-21 00:11:53.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -6765,7 +6579,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 20:00:00.000000",
+      "date": "2026-10-09 20:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -6958,13 +6772,13 @@
       {
        "id": 1625022,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-21 00:17:37.000000",
+        "date": "2026-10-21 00:17:33.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7019,13 +6833,13 @@
       {
        "id": 1625029,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-22 00:17:37.000000",
+        "date": "2026-10-22 00:17:33.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7300,7 +7114,7 @@
       {
        "id": 2068801,
        "hour": {
-        "date": "2026-10-08 17:30:00.000000",
+        "date": "2026-10-09 17:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7347,7 +7161,7 @@
       {
        "id": 2068802,
        "hour": {
-        "date": "2026-10-08 17:30:00.000000",
+        "date": "2026-10-09 17:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7394,7 +7208,7 @@
       {
        "id": 2068803,
        "hour": {
-        "date": "2026-10-08 17:30:00.000000",
+        "date": "2026-10-09 17:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7629,13 +7443,13 @@
       {
        "id": 1643586,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-22 00:12:02.000000",
+        "date": "2026-10-22 00:11:58.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7690,13 +7504,13 @@
       {
        "id": 1913295,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-23 00:12:02.000000",
+        "date": "2026-10-23 00:11:59.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -7954,13 +7768,13 @@
       {
        "id": 1625024,
        "hour": {
-        "date": "2026-10-08 10:30:00.000000",
+        "date": "2026-10-09 10:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "10:30 a.m.",
        "date": {
-        "date": "2026-10-22 00:17:41.000000",
+        "date": "2026-10-22 00:17:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -8021,7 +7835,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 10:30:00.000000",
+      "date": "2026-10-09 10:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -8225,13 +8039,13 @@
       {
        "id": 2068946,
        "hour": {
-        "date": "2026-10-08 19:00:00.000000",
+        "date": "2026-10-09 19:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:00 p.m.",
        "date": {
-        "date": "2026-10-24 00:12:07.000000",
+        "date": "2026-10-24 00:12:03.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -8292,7 +8106,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:00:00.000000",
+      "date": "2026-10-09 19:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -8481,13 +8295,13 @@
       {
        "id": 1611084,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-24 00:15:24.000000",
+        "date": "2026-10-24 00:15:21.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -8548,7 +8362,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 20:00:00.000000",
+      "date": "2026-10-09 20:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -8740,13 +8554,13 @@
       {
        "id": 1664861,
        "hour": {
-        "date": "2026-10-08 11:00:00.000000",
+        "date": "2026-10-09 11:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "11:00 a.m.",
        "date": {
-        "date": "2026-10-25 00:12:12.000000",
+        "date": "2026-10-25 00:12:08.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -8801,13 +8615,13 @@
       {
        "id": 1664862,
        "hour": {
-        "date": "2026-10-08 14:00:00.000000",
+        "date": "2026-10-09 14:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "2:00 p.m.",
        "date": {
-        "date": "2026-10-25 00:12:12.000000",
+        "date": "2026-10-25 00:12:08.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -9063,13 +8877,13 @@
       {
        "id": 1579713,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-25 00:18:46.000000",
+        "date": "2026-10-25 00:18:44.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -9130,7 +8944,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 20:00:00.000000",
+      "date": "2026-10-09 20:00:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -9319,13 +9133,13 @@
       {
        "id": 1500802,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-26 00:10:12.000000",
+        "date": "2026-10-26 00:10:08.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -9582,13 +9396,13 @@
       {
        "id": 1412463,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-26 00:18:51.000000",
+        "date": "2026-10-26 00:18:49.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -9643,13 +9457,13 @@
       {
        "id": 1421137,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-27 00:18:51.000000",
+        "date": "2026-10-27 00:18:49.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -9704,13 +9518,13 @@
       {
        "id": 1608414,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-02 00:18:51.000000",
+        "date": "2026-11-02 00:18:49.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -9968,13 +9782,13 @@
       {
        "id": 1837036,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-27 00:12:17.000000",
+        "date": "2026-10-27 00:12:13.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10035,7 +9849,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -10240,13 +10054,13 @@
       {
        "id": 1959931,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-28 00:12:22.000000",
+        "date": "2026-10-28 00:12:18.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10307,7 +10121,7 @@
       }
      ],
      "hour": {
-      "date": "2026-10-08 19:30:00.000000",
+      "date": "2026-10-09 19:30:00.000000",
       "timezone_type": 3,
       "timezone": "America/Toronto"
      },
@@ -10529,13 +10343,13 @@
       {
        "id": 1671163,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-10-28 00:00:36.000000",
+        "date": "2026-10-28 00:00:37.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10610,13 +10424,13 @@
       {
        "id": 1671164,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-10-30 00:00:36.000000",
+        "date": "2026-10-30 00:00:37.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10691,13 +10505,13 @@
       {
        "id": 1671165,
        "hour": {
-        "date": "2026-10-08 15:00:00.000000",
+        "date": "2026-10-09 15:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "3:00 p.m.",
        "date": {
-        "date": "2026-10-31 00:00:36.000000",
+        "date": "2026-10-31 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10772,13 +10586,13 @@
       {
        "id": 1671166,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-11-04 00:00:36.000000",
+        "date": "2026-11-04 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10853,13 +10667,13 @@
       {
        "id": 1671167,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-05 00:00:36.000000",
+        "date": "2026-11-05 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -10934,13 +10748,13 @@
       {
        "id": 1671168,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-06 00:00:37.000000",
+        "date": "2026-11-06 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -11015,13 +10829,13 @@
       {
        "id": 1671169,
        "hour": {
-        "date": "2026-10-08 15:00:00.000000",
+        "date": "2026-10-09 15:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "3:00 p.m.",
        "date": {
-        "date": "2026-11-07 00:00:37.000000",
+        "date": "2026-11-07 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -11096,13 +10910,13 @@
       {
        "id": 1671170,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-07 00:00:37.000000",
+        "date": "2026-11-07 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -11177,13 +10991,13 @@
       {
        "id": 1671171,
        "hour": {
-        "date": "2026-10-08 15:00:00.000000",
+        "date": "2026-10-09 15:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "3:00 p.m.",
        "date": {
-        "date": "2026-11-08 00:00:37.000000",
+        "date": "2026-11-08 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -11258,13 +11072,13 @@
       {
        "id": 1671172,
        "hour": {
-        "date": "2026-10-08 19:30:00.000000",
+        "date": "2026-10-09 19:30:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "7:30 p.m.",
        "date": {
-        "date": "2026-11-11 00:00:37.000000",
+        "date": "2026-11-11 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -11339,13 +11153,13 @@
       {
        "id": 1671173,
        "hour": {
-        "date": "2026-10-08 20:00:00.000000",
+        "date": "2026-10-09 20:00:00.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
        "verboseHour": "8:00 p.m.",
        "date": {
-        "date": "2026-11-12 00:00:37.000000",
+        "date": "2026-11-12 00:00:38.000000",
         "timezone_type": 3,
         "timezone": "America/Toronto"
        },
@@ -11393,4 +11207,199 @@
        "isExtra": false,
        "isCanceled": false,
        "apiId": "D6D1112",
- 
+       "is3d": true,
+       "venue": {
+        "title": "",
+        "place": "",
+        "url": "",
+        "slug": "",
+        "type": "",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/RDZEMTExMg==",
+       "ticketSaleDate": {
+        "date": "2026-04-21 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "April 21 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-11-12 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "November 12 at 8:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 1671174,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-11-13 00:00:38.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-11-13 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Friday November 13, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "A - Bleu",
+          "low": "97.50",
+          "high": "97.50"
+         },
+         {
+          "label": "B - Vert",
+          "low": "84.50",
+          "high": "84.50"
+         },
+         {
+          "label": "C - Jaune",
+          "low": "71.00",
+          "high": "71.00"
+         },
+         {
+          "label": "D - Gris",
+          "low": "46.25",
+          "high": "46.25"
+         },
+         {
+          "label": "E - Rouge",
+          "low": "33.00",
+          "high": "33.00"
+         }
+        ],
+        "totalPriceLow": "33.00",
+        "totalPriceHigh": "97.50"
+       },
+       "status": "",
+       "isLimitedSeats": false,
+       "isComplete": false,
+       "isExtra": false,
+       "isCanceled": false,
+       "apiId": "D6D1113",
+       "is3d": true,
+       "venue": {
+        "title": "",
+        "place": "",
+        "url": "",
+        "slug": "",
+        "type": "",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/RDZEMTExMw==",
+       "ticketSaleDate": {
+        "date": "2026-04-21 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "April 21 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-11-13 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "November 13 at 8:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 1671175,
+       "hour": {
+        "date": "2026-10-09 15:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "3:00 p.m.",
+       "date": {
+        "date": "2026-11-14 00:00:38.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "days": [],
+       "dateTime": {
+        "date": "2026-11-14 15:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseDate": "Saturday November 14, 2026",
+       "prices": {
+        "list": [
+         {
+          "label": "A - Bleu",
+          "low": "97.50",
+          "high": "97.50"
+         },
+         {
+          "label": "B - Vert",
+          "low": "84.50",
+          "high": "84.50"
+         },
+         {
+          "label": "C - Jaune",
+          "low": "71.00",
+          "high": "71.00"
+         },
+         {
+          "label": "D - Gris",
+          "low": "46.25",
+          "high": "46.25"
+         },
+         {
+          "label": "E - Rouge",
+          "low": "33.00",
+          "high": "33.00"
+         }
+        ],
+        "totalPriceLow": "33.00",
+        "totalPriceHigh": "97.50"
+       },
+       "status": "",
+       "isLimitedSeats": false,
+       "isComplete": false,
+       "isExtra": false,
+       "isCanceled": false,
+       "apiId": "D6D1114P",
+       "is3d": true,
+       "venue": {
+        "title": "",
+        "place": "",
+        "url": "",
+        "slug": "",
+        "type": "",
+        "isOutdoor": false
+       },
+       "url": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/RDZEMTExNFA=",
+       "ticketSaleDate": {
+        "date": "2026-04-21 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleDate": "April 21 at 10:00 a.m.",
+       "ticketSaleEndDate": {
+        "date": "2026-11-14 15:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseTicketSaleEndDate": "November 14 at 3:00 p.m.",
+       "sponsors": []
+      },
+      {
+       "id": 1671176,
+       "hour": {
+        "date": "2026-10-09 20:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "America/Toronto"
+       },
+       "verboseHour": "8:00 p.m.",
+       "date": {
+        "date": "2026-11-14 00:00:3
