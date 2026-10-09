@@ -7,8 +7,8 @@ Sources
   placedesarts  placedesarts.com/en/programming listing
   rideauvert    rideauvert.qc.ca/programmation
   rocket        AHL schedule feed (HockeyTech) behind theahl.com (home games only)
-  cinemamoderne cinemamoderne.com/en/schedule month calendar (each screening, timed)
-  mbam          mbam.qc.ca/en/exhibitions listing (current and coming exhibitions as all-day spans)
+  cinemamoderne cinemamoderne.com/en/schedule month calendar (Petits Modernes screenings only, timed)
+  mbam          mbam.qc.ca/en/exhibitions listing (each exhibition's opening day and last day)
 
 Each source is independent. If one fails, its events from the previous
 karenda.ics are kept so the feed never loses a venue because of one bad day.
@@ -633,9 +633,15 @@ MODERNE = "https://www.cinemamoderne.com"
 MODERNE_LOC = "Cinéma Moderne, 5150 boul. Saint-Laurent, Montréal"
 
 
-def _moderne_month(page_html: str, events: dict[str, Event]) -> str:
-    """Parse one month of the schedule calendar into `events`; returns the next-month URL (or "")."""
+PETITS = re.compile(r"petits[- ]modernes", re.I)
+PETITS_TAG = re.compile(r"\s*[-\u2013\u2014:|]?\s*\[?\s*petits modernes\s*\]?", re.I)   # "[PETITS MODERNES]", "– Petits Modernes"
+
+
+def _moderne_month(page_html: str, events: dict[str, Event]) -> tuple[str, int]:
+    """Parse one month of the schedule calendar into `events`, keeping the Petits Modernes screenings only.
+    Returns (next-month URL or "", number of screenings on the page, Petits Modernes or not)."""
     soup = BeautifulSoup(page_html, "html.parser")
+    seen = 0
     for day in soup.select(".cm-Cal__day[data-day]"):
         try:
             d = date.fromisoformat(day["data-day"])
@@ -646,6 +652,7 @@ def _moderne_month(page_html: str, events: dict[str, Event]) -> str:
             m = re.match(r"(\d{1,2}):(\d{2})", text_of(ev.select_one(".cm-Fat")))
             if not a or not m:
                 continue
+            seen += 1
             href = a["href"].split("?")[0]
             title_el = ev.select_one(".cm-Card__title")
             version = ""
@@ -657,8 +664,9 @@ def _moderne_month(page_html: str, events: dict[str, Event]) -> str:
                 title = text_of(title_el)
             else:
                 title = re.sub(r"^\d{1,2}:\d{2}\s*", "", text_of(a))
-            if not title:
+            if not title or not (PETITS.search(title) or PETITS.search(href)):
                 continue
+            title = PETITS_TAG.sub("", title).strip()
             film = slug(href.rstrip("/").rsplit("/", 1)[-1]) if "/details/" in href else slug(title)
             items = [text_of(x) for x in ev.select(".cm-List__item")]      # director, country, year, runtime, languages, format
             mins = next((int(x.split()[0]) for x in items if re.match(r"\d+ min", x)), 120)
@@ -670,14 +678,27 @@ def _moderne_month(page_html: str, events: dict[str, Event]) -> str:
                 description=" · ".join(x for x in items if x), categories=["Cinema", "Cinéma Moderne"],
             ))
     nxt = soup.select_one(".cm-MonthNav__arrow--right[href]")
-    return nxt["href"] if nxt else ""
+    return (nxt["href"] if nxt else ""), seen
+
+
+def _one_version(events: list[Event]) -> list[Event]:
+    """A film screened in two language versions (VF and VOSTA, say) keeps one: the version with the most
+    screenings, then the one that screens first."""
+    films: dict[str, dict[str, list[Event]]] = {}
+    for e in events:
+        films.setdefault(e.url, {}).setdefault(e.summary, []).append(e)
+    out: list[Event] = []
+    for versions in films.values():
+        out.extend(max(versions.values(), key=lambda l: (len(l), -min(x.start for x in l).timestamp())))
+    return out
 
 
 def src_cinemamoderne() -> list[Event]:
+    """Petits Modernes, the cinema's kids' series, not the whole programme."""
     events: dict[str, Event] = {}
     url = MODERNE + "/en/schedule/"
+    seen = 0
     for i in range(3):                                   # this month and the next two
-        before = len(events)
         try:
             page_html = get(url, f"moderne_schedule_{i}.html").text
         except Exception as e:  # noqa: BLE001
@@ -685,13 +706,14 @@ def src_cinemamoderne() -> list[Event]:
                 raise
             print("  moderne: next month failed", url, e)
             break
-        url = _moderne_month(page_html, events)
-        if not url or (i and len(events) == before):     # a month with nothing listed yet: stop
+        url, n = _moderne_month(page_html, events)
+        seen += n
+        if not url or (i and not n):                     # a month with nothing listed yet: stop
             break
         time.sleep(1)
-    if not events:
+    if not seen:
         raise RuntimeError("no screenings parsed")
-    return list(events.values())
+    return _one_version(list(events.values()))
 
 
 MBAM = "https://www.mbam.qc.ca"
@@ -699,9 +721,15 @@ MBAM_LOC = "Musée des beaux-arts de Montréal, 1380 rue Sherbrooke Ouest, Montr
 
 
 def src_mbam() -> list[Event]:
+    """Each exhibition as two one-day events: the day it opens and its last day.
+
+    A run of several months as one all-day span sits as a banner on every day of the calendar, and the
+    listing gives no opening date for a show already open ("Until February 14, 2027"), so such a span
+    could only start on the day the scraper first saw it. The two days are the ones worth a reminder.
+    """
     soup = BeautifulSoup(get(MBAM + "/en/exhibitions/", "mbam_exhibitions.html").text, "html.parser")
-    previous = {e.uid: e for e in read_previous(OUT / "karenda.ics").get("mbam", [])}
     events: dict[str, Event] = {}
+    parsed = 0
     for sec in soup.select("section[id]"):
         if not sec["id"].startswith(("temporary-exhibitions", "coming-soon")):
             continue                                     # permanent collection, past exhibitions
@@ -717,26 +745,20 @@ def src_mbam() -> list[Event]:
             title = text_of(p.select_one("strong"))
             dates = text_of(p).replace(title, "", 1).strip()  # "Until February 14, 2027" / "October 9, 2026 – March 14, 2027"
             rng = parse_en_range(dates)
-            if not rng:                                       # month-only: "November 2026 – April 2027"
-                m = re.search(rf"({MONTH_RE}) (\d{{4}})\s*(?:-|–|to)\s*({MONTH_RE}) (\d{{4}})", dates, re.I)
-                if m and month_num(m[1]) and month_num(m[3]):
-                    y2, mo2 = int(m[4]), month_num(m[3])
-                    rng = (date(int(m[2]), month_num(m[1]), 1), date(y2 + mo2 // 12, mo2 % 12 + 1, 1) - timedelta(days=1))
-            if not rng:
+            if not rng:                                       # "November 2026 – April 2027": no days yet, wait for the museum to set them
                 print("  mbam: no dates for", title, repr(dates))
                 continue
+            parsed += 1
             first, last = rng
-            uid = f"mbam-{slug(tail)}@karenda"
-            if re.match(r"(?i)(until|through)\b", dates):   # already open: keep the start we first saw
-                old = previous.get(uid)
-                first = old.start if old and old.start_date() <= TODAY else min(TODAY, last)
-            if last < KEEP_FROM or (last - first).days > 400:
-                continue
-            events.setdefault(uid, span_event(
-                "mbam", uid, f"{title} · MBAM", first, last, location=MBAM_LOC,
-                url=href if href.startswith("http") else MBAM + href, categories=["Museum", "MBAM"],
-            ))
-    if not events:
+            opens = not re.match(r"(?i)(until|through)\b", dates) and first != last   # "Until ..." gives the last day only
+            url = href if href.startswith("http") else MBAM + href
+            for kind, day, label in (("opens", first, "Opens"), ("last", last, "Last day")):
+                if (kind == "opens" and not opens) or day < KEEP_FROM:
+                    continue
+                uid = f"mbam-{slug(tail)}-{kind}@karenda"
+                events.setdefault(uid, span_event("mbam", uid, f"{label}: {title} · MBAM", day, day, location=MBAM_LOC,
+                                                  url=url, description=dates, categories=["Museum", "MBAM"]))
+    if not parsed:
         raise RuntimeError("no exhibitions parsed")
     return list(events.values())
 
@@ -751,7 +773,7 @@ PLACES = {  # source -> pill label on the web page (venue or team), in display o
     "victoire": "Victoire",
     "cfmontreal": "CF Montréal",
     "rocket": "Rocket",
-    "cinemamoderne": "Cinéma Moderne",
+    "cinemamoderne": "Petits Modernes",
     "mbam": "MBAM",
 }
 HOME = {  # source -> venue text hidden while that source's pill is active (it repeats the pill)
@@ -783,34 +805,40 @@ def venue_parts(e: Event) -> tuple[str, str]:
     return venue, ""
 
 
-def when_of(e: Event, month: date) -> str:
+def when_of(e: Event) -> str:
+    """The time of a timed event; "until <last day>" for a run; nothing for a one-day event (its day heading has the date)."""
     if e.all_day:
-        a, b = e.start, e.end - timedelta(days=1)
-        if a == b:
-            return f"{DOW[a.weekday()]}, {MON[a.month - 1]} {a.day}"
-        if a < month:
-            return f"until {MON[b.month - 1]} {b.day}"
-        if a.month == b.month:
-            return f"{MON[a.month - 1]} {a.day} – {b.day}"
-        return f"{MON[a.month - 1]} {a.day} – {MON[b.month - 1]} {b.day}"
+        last = e.end - timedelta(days=1)
+        return f"until {MON[last.month - 1]} {last.day}" if last != e.start else ""
     s = e.start.astimezone(MTL)
-    h = s.strftime("%-I:%M %p").lower().replace(":00", "")
-    return f"{DOW[s.weekday()]}, {MON[s.month - 1]} {s.day} · {h}"
+    return s.strftime("%-I:%M %p").lower().replace(":00", "")
 
 
-def render_html(events: list[Event]) -> str:
+def day_of(e: Event, today: date) -> date | None:
+    """The day an event is listed under; None for a run already under way, listed first in its month as 'On now'."""
+    if e.all_day:
+        return e.start if e.start >= today else None
+    return max(e.start.astimezone(MTL).date(), today)
+
+
+def short_date(iso: str) -> str:
+    d = date.fromisoformat(iso)
+    return f"{MON[d.month - 1]} {d.day}"
+
+
+def render_html(events: list[Event], status: dict | None = None) -> str:
     today = TODAY
     first_month = today.replace(day=1)
-    months: dict[date, list[Event]] = {}
     now = datetime.now(timezone.utc)
+    months: dict[date, dict[date | None, list[Event]]] = {}
     for e in events:
         if e.all_day and e.end - timedelta(days=1) < today:
             continue
         if not e.all_day and e.end < now:
             continue
-        start = e.start.astimezone(MTL).date() if isinstance(e.start, datetime) else e.start
-        key = max(start.replace(day=1), first_month)
-        months.setdefault(key, []).append(e)
+        day = day_of(e, today)
+        month = max((day or today).replace(day=1), first_month)
+        months.setdefault(month, {}).setdefault(day, []).append(e)
 
     def sort_key(e: Event):
         s = e.start.astimezone(MTL) if isinstance(e.start, datetime) else datetime.combine(e.start, datetime.min.time(), MTL)
@@ -818,26 +846,41 @@ def render_html(events: list[Event]) -> str:
 
     out = []
     for m in sorted(months):
-        out.append(f'<section class="month"><h2>{MON[m.month - 1]} {m.year}</h2><ul>')
-        for e in sorted(months[m], key=sort_key):
-            t = html.escape(plain_title(e))
-            link = f'<a href="{html.escape(e.url)}" target="_blank" rel="noopener">{t}</a>' if e.url else t
-            specific, place = venue_parts(e)
-            meta = html.escape(when_of(e, m))
-            if specific:
-                meta += f" · {html.escape(specific)}"
-            if place:
-                meta += f'<span class="place">{", " if specific else " · "}{html.escape(place)}</span>'
-            out.append(f'<li data-place="{html.escape(e.source)}">{link}<span class="meta">{meta}</span></li>')
-        out.append("</ul></section>")
+        out.append(f'<section class="month"><h2>{MON[m.month - 1]} {m.year}</h2><div class="days">')
+        for d in sorted(months[m], key=lambda d: d or date.min):
+            label = "On now" if d is None else f"{DOW[d.weekday()]}, {MON[d.month - 1]} {d.day}"
+            out.append(f'<div class="day"><h3>{label}</h3><ul>')
+            lines: dict[tuple, list[Event]] = {}        # the same film twice in a day is one line with both times
+            for e in sorted(months[m][d], key=sort_key):
+                lines.setdefault((e.uid,) if e.all_day else (e.source, e.url, plain_title(e)), []).append(e)
+            for group in lines.values():
+                e = group[0]
+                t = html.escape(plain_title(e))
+                link = f'<a href="{html.escape(e.url)}" target="_blank" rel="noopener">{t}</a>' if e.url else t
+                specific, place = venue_parts(e)
+                when = ", ".join(w for w in (when_of(x) for x in group) if w)
+                parts = " · ".join(html.escape(p) for p in (when, specific) if p)
+                if place and parts:
+                    meta = f'<span class="meta">{parts}<span class="place">{", " if specific else " · "}{html.escape(place)}</span></span>'
+                elif place:
+                    meta = f'<span class="meta place">{html.escape(place)}</span>'   # hidden with the pill's venue while filtering
+                else:
+                    meta = f'<span class="meta">{parts}</span>' if parts else ""
+                out.append(f'<li data-place="{html.escape(e.source)}">{link}{meta}</li>')
+            out.append("</ul></div>")
+        out.append("</div></section>")
     body = "\n".join(out)
-    present = {e.source for l in months.values() for e in l}
+    present = {e.source for days in months.values() for l in days.values() for e in l}
     pills = [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
               for src, label in PLACES.items() if src in present]
     places = '<nav class="places" aria-label="Filter">' + "".join(pills) + "</nav>"
     updated = datetime.now(MTL).strftime("%b %-d, %Y")
+    for src, s in (status or {}).get("sources", {}).items():   # a failed source keeps its old events; say so
+        if not s.get("ok"):
+            label = PLACES.get(src, src)
+            updated += f" · {label} last fetched {short_date(s['last_ok'])}" if s.get("last_ok") else f" · {label} not fetched"
     return (HTML_TEMPLATE.replace("{{PLACES}}", places).replace("{{BODY}}", body)
-            .replace("{{UPDATED}}", updated))
+            .replace("{{UPDATED}}", html.escape(updated)))
 
 
 HTML_TEMPLATE = """<!doctype html>
@@ -861,7 +904,7 @@ header { display: flex; justify-content: space-between; align-items: baseline; g
 header h1 { margin: 0; font-size: 14px; font-weight: 500; letter-spacing: -0.2px; line-height: 1.4; }
 header nav { display: flex; gap: 20px; font-size: 12px; }
 header nav a { color: var(--muted); font-weight: 400; }
-.places { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 40px; }
+.places { position: sticky; top: 0; z-index: 1; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 32px; padding: 8px 0 10px; background: var(--paper); }
 .places button { appearance: none; background: none; border: 1px solid var(--rule); border-radius: 999px;
   padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
 .places button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
@@ -869,9 +912,11 @@ header nav a { color: var(--muted); font-weight: 400; }
 .filtered .place { display: none; }
 .month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
 .month h2 { color: var(--muted); font-size: 12px; font-weight: 400; margin: 3px 0 0; line-height: 1.5; }
+.day { margin: 0 0 22px; }
+.day h3 { font-size: 12px; font-weight: 500; margin: 0 0 7px; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
-.month li { margin: 0 0 13px; line-height: 1.45; }
-.meta { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+.month li { margin: 0 0 11px; line-height: 1.45; }
+.meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 @media (max-width: 420px) { .month { grid-template-columns: 1fr; gap: 6px; } .month h2 { margin-bottom: 4px; } }
 </style>
@@ -893,10 +938,12 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 (function () {
   var pills = document.querySelectorAll(".places button");
   var items = document.querySelectorAll(".month li");
+  var days = document.querySelectorAll(".day");
   var months = document.querySelectorAll(".month");
   function apply(place) {            // "" = no filter, show everything
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
     items.forEach(function (li) { li.hidden = !!place && li.dataset.place !== place; });
+    days.forEach(function (d) { d.hidden = !d.querySelector("li:not([hidden])"); });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
     document.body.classList.toggle("filtered", !!place);
     history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
@@ -933,8 +980,9 @@ GROUPS = {
 
 def main() -> int:
     previous = read_previous(OUT / "karenda.ics")
+    prev_status = json.loads((OUT / "status.json").read_text()) if (OUT / "status.json").exists() else {}
     if "--render-only" in sys.argv:          # rebuild index.html from the existing ICS, no network
-        (OUT / "index.html").write_text(render_html([e for s in SOURCES for e in previous.get(s, [])]), encoding="utf-8")
+        (OUT / "index.html").write_text(render_html([e for s in SOURCES for e in previous.get(s, [])], prev_status), encoding="utf-8")
         print("rendered docs/index.html from existing karenda.ics")
         return 0
     status: dict = {"built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "sources": {}}
@@ -943,12 +991,14 @@ def main() -> int:
         try:
             evs = [e for e in fn() if e.end_date() >= KEEP_FROM]
             by_source[name] = evs
-            status["sources"][name] = {"ok": True, "events": len(evs)}
+            status["sources"][name] = {"ok": True, "events": len(evs), "last_ok": str(TODAY)}
             print(f"{name}: {len(evs)} events")
         except Exception as e:  # noqa: BLE001
             kept = [x for x in previous.get(name, []) if x.end_date() >= KEEP_FROM]
             by_source[name] = kept
             status["sources"][name] = {"ok": False, "error": f"{type(e).__name__}: {e}", "kept_previous": len(kept)}
+            if last_ok := prev_status.get("sources", {}).get(name, {}).get("last_ok"):
+                status["sources"][name]["last_ok"] = last_ok
             print(f"{name}: FAILED ({e}); kept {len(kept)} previous events", file=sys.stderr)
             traceback.print_exc()
     for fname, srcs in GROUPS.items():
@@ -957,7 +1007,7 @@ def main() -> int:
                                           "karenda-theatre": "Karenda · Théâtre", "karenda-cinema": "Karenda · Cinéma",
                                           "karenda-museums": "Karenda · Musées"}[fname], evs)
         status[fname] = len(evs)
-    (OUT / "index.html").write_text(render_html([e for l in by_source.values() for e in l]), encoding="utf-8")
+    (OUT / "index.html").write_text(render_html([e for l in by_source.values() for e in l], status), encoding="utf-8")
     (OUT / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps(status, indent=2, ensure_ascii=False))
     return 0 if any(v.get("ok") for v in status["sources"].values()) else 1
