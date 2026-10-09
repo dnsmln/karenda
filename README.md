@@ -26,8 +26,8 @@ Set auto-refresh to "Every day". On iPhone: Settings → Calendar → Accounts �
 | Laval Rocket (AHL) | home games, timed | AHL schedule feed (HockeyTech) behind theahl.com |
 | Place des Arts | each show as an all-day span over its run, hall in location | `/en/programming` listing |
 | Théâtre du Rideau Vert | each show as an all-day span over its run | `/programmation` |
-| Cinéma Moderne | each screening, timed, runtime from the listing | `/en/schedule` month calendar, this month and the next two |
-| Musée des beaux-arts (MBAM) | current and coming exhibitions, each as an all-day span over its run | `/en/exhibitions` listing |
+| Cinéma Moderne | Petits Modernes screenings only (the kids' series), timed, runtime from the listing; a film shown in two language versions keeps one | `/en/schedule` month calendar, this month and the next two |
+| Musée des beaux-arts (MBAM) | each exhibition as two one-day events, the day it opens and its last day | `/en/exhibitions` listing |
 
 If a source fails on a given day, its events from the previous build are kept.
 `docs/status.json` shows per-source counts and errors from the last run.
@@ -42,5 +42,5 @@ KARENDA_DEBUG=1 python build.py   # also saves raw source pages to debug/
 
 ## Web page
 
-`docs/index.html` is regenerated with the feeds: events by month, title linked to the venue page, pills at the top to filter by venue or team (labels in `PLACES` in `build.py`).
+`docs/index.html` is regenerated with the feeds: events by day, runs already under way first in the month, title linked to the venue page, pills at the top (they stay in view while scrolling) to filter by venue or team (labels in `PLACES` in `build.py`). The footer names any source whose last fetch failed and when it last succeeded.
 On Vercel, set the project's Output Directory to `docs` (no build command).

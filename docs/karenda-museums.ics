@@ -8,95 +8,130 @@ X-WR-TIMEZONE:America/Toronto
 X-PUBLISHED-TTL:PT12H
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
-UID:mbam-14001@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20270308
-SUMMARY:Beyond the Pedestal: Sculptures in the Collection\, from the 196
- 0s to Today · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/14001/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14001/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13640@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20270215
-SUMMARY:Chiharu Shiota: The Soul Trembles · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/13640/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13640/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13516@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20261012
-SUMMARY:Rising Suns: Art from the Confederacies of the Great Lakes and R
- ivers · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/13516/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13516/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13638@karenda
-DTSTAMP:20261009T165922Z
+UID:mbam-13638-opens@karenda
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20270315
-SUMMARY:Allison Katz : Jeu d'esprit · MBAM
+DTEND;VALUE=DATE:20261010
+SUMMARY:Opens: Allison Katz : Jeu d'esprit · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
 URL:https://www.mbam.qc.ca/en/exhibitions/13638/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13638/
+DESCRIPTION:October 9\, 2026 – March 14\, 2027\nhttps://www.mbam.qc.ca
+ /en/exhibitions/13638/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
-UID:mbam-13639@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20270501
-SUMMARY:Anne Kahane: Structures · MBAM
+UID:mbam-13516-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Last day: Rising Suns: Art from the Confederacies of the Great L
+ akes and Rivers · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/13639/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13639/
+URL:https://www.mbam.qc.ca/en/exhibitions/13516/
+DESCRIPTION:Until October 11\, 2026\nhttps://www.mbam.qc.ca/en/exhibitio
+ ns/13516/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
-UID:mbam-14081@karenda
-DTSTAMP:20261009T165922Z
+UID:mbam-13640-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Last day: Chiharu Shiota: The Soul Trembles · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13640/
+DESCRIPTION:Until February 14\, 2027\nhttps://www.mbam.qc.ca/en/exhibiti
+ ons/13640/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14081-opens@karenda
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270220
-DTEND;VALUE=DATE:20270510
-SUMMARY:MARIE CHOUINARD: BECOMING BREATH · MBAM
+DTEND;VALUE=DATE:20270221
+SUMMARY:Opens: MARIE CHOUINARD: BECOMING BREATH · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
 URL:https://www.mbam.qc.ca/en/exhibitions/14081/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14081/
+DESCRIPTION:February 20 – May 9\, 2027\nhttps://www.mbam.qc.ca/en/exhi
+ bitions/14081/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
-UID:mbam-14087@karenda
-DTSTAMP:20261009T165922Z
+UID:mbam-14001-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Last day: Beyond the Pedestal: Sculptures in the Collection\, fr
+ om the 1960s to Today · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14001/
+DESCRIPTION:Until March 7\, 2027\nhttps://www.mbam.qc.ca/en/exhibitions/
+ 14001/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-13638-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Last day: Allison Katz : Jeu d'esprit · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13638/
+DESCRIPTION:October 9\, 2026 – March 14\, 2027\nhttps://www.mbam.qc.ca
+ /en/exhibitions/13638/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14081-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Last day: MARIE CHOUINARD: BECOMING BREATH · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14081/
+DESCRIPTION:February 20 – May 9\, 2027\nhttps://www.mbam.qc.ca/en/exhi
+ bitions/14081/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14087-opens@karenda
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270515
-DTEND;VALUE=DATE:20270913
-SUMMARY:Keith Haring in 3D · MBAM
+DTEND;VALUE=DATE:20270516
+SUMMARY:Opens: Keith Haring in 3D · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
 URL:https://www.mbam.qc.ca/en/exhibitions/14087/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14087/
+DESCRIPTION:May 15 – September 12\, 2027\nhttps://www.mbam.qc.ca/en/ex
+ hibitions/14087/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14087-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Last day: Keith Haring in 3D · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14087/
+DESCRIPTION:May 15 – September 12\, 2027\nhttps://www.mbam.qc.ca/en/ex
+ hibitions/14087/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT

@@ -19,7 +19,7 @@ header { display: flex; justify-content: space-between; align-items: baseline; g
 header h1 { margin: 0; font-size: 14px; font-weight: 500; letter-spacing: -0.2px; line-height: 1.4; }
 header nav { display: flex; gap: 20px; font-size: 12px; }
 header nav a { color: var(--muted); font-weight: 400; }
-.places { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 40px; }
+.places { position: sticky; top: 0; z-index: 1; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 32px; padding: 8px 0 10px; background: var(--paper); }
 .places button { appearance: none; background: none; border: 1px solid var(--rule); border-radius: 999px;
   padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
 .places button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
@@ -27,9 +27,11 @@ header nav a { color: var(--muted); font-weight: 400; }
 .filtered .place { display: none; }
 .month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
 .month h2 { color: var(--muted); font-size: 12px; font-weight: 400; margin: 3px 0 0; line-height: 1.5; }
+.day { margin: 0 0 22px; }
+.day h3 { font-size: 12px; font-weight: 500; margin: 0 0 7px; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
-.month li { margin: 0 0 13px; line-height: 1.45; }
-.meta { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+.month li { margin: 0 0 11px; line-height: 1.45; }
+.meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 @media (max-width: 420px) { .month { grid-template-columns: 1fr; gap: 6px; } .month h2 { margin-bottom: 4px; } }
 </style>
@@ -42,278 +44,422 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
     <a href="https://github.com/dnsmln/karenda">Source</a>
   </nav>
 </header>
-<nav class="places" aria-label="Filter"><button type="button" data-place="placedesarts" aria-pressed="false">Place des Arts</button><button type="button" data-place="rideauvert" aria-pressed="false">Rideau Vert</button><button type="button" data-place="victoire" aria-pressed="false">Victoire</button><button type="button" data-place="cfmontreal" aria-pressed="false">CF Montréal</button><button type="button" data-place="rocket" aria-pressed="false">Rocket</button><button type="button" data-place="cinemamoderne" aria-pressed="false">Cinéma Moderne</button><button type="button" data-place="mbam" aria-pressed="false">MBAM</button></nav>
+<nav class="places" aria-label="Filter"><button type="button" data-place="placedesarts" aria-pressed="false">Place des Arts</button><button type="button" data-place="rideauvert" aria-pressed="false">Rideau Vert</button><button type="button" data-place="victoire" aria-pressed="false">Victoire</button><button type="button" data-place="cfmontreal" aria-pressed="false">CF Montréal</button><button type="button" data-place="rocket" aria-pressed="false">Rocket</button><button type="button" data-place="cinemamoderne" aria-pressed="false">Petits Modernes</button><button type="button" data-place="mbam" aria-pressed="false">MBAM</button></nav>
 <main>
-<section class="month"><h2>Oct 2026</h2><ul>
+<section class="month"><h2>Oct 2026</h2><div class="days">
+<div class="day"><h3>On now</h3><ul>
 <li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/cyrano/" target="_blank" rel="noopener">Cyrano</a><span class="meta">until Oct 18<span class="place"> · Théâtre du Rideau Vert</span></span></li>
 <li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/adib-alkhalidey" target="_blank" rel="noopener">Adib Alkhalidey | Comme les Mongols à Baghdad</a><span class="meta">until Jan 30 · Multiple venues<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-udm" target="_blank" rel="noopener">5 à 7 musicaux avec la Faculté de musique de l’UdeM</a><span class="meta">Oct 8 – 10 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/apashe-osm" target="_blank" rel="noopener">Apashe x OSM</a><span class="meta">Oct 8 – 10 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14001/" target="_blank" rel="noopener">Beyond the Pedestal: Sculptures in the Collection, from the 1960s to Today</a><span class="meta">Oct 8 – Mar 7<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13640/" target="_blank" rel="noopener">Chiharu Shiota: The Soul Trembles</a><span class="meta">Oct 8 – Feb 14<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/engelbert-humperdinck" target="_blank" rel="noopener">Engelbert Humperdinck | The Celebration Tour</a><span class="meta">Oct 8 – 9 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13516/" target="_blank" rel="noopener">Rising Suns: Art from the Confederacies of the Great Lakes and Rivers</a><span class="meta">Oct 8 – 11<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13638/" target="_blank" rel="noopener">Allison Katz : Jeu d&#x27;esprit</a><span class="meta">Oct 9 – Mar 14<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/renaud-symphonique-50-ans-de-carriere" target="_blank" rel="noopener">Renaud symphonique: 50 ans de carrière!</a><span class="meta">Fri, Oct 9 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/trainspotting-30e-anniversaire/" target="_blank" rel="noopener">Trainspotting: 30th Anniversary [LAST SCREENINGS] (VOSTF)</a><span class="meta">Fri, Oct 9 · 2 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jacquot-de-nantes-coups-de-coeur-de-lequipe/" target="_blank" rel="noopener">Jacquot de Nantes – Staff Picks (VOSTA)</a><span class="meta">Fri, Oct 9 · 4:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Fri, Oct 9 · 6:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/" target="_blank" rel="noopener">The Good, The Bad and The Ugly: 60th Anniversary (VASTF)</a><span class="meta">Fri, Oct 9 · 8:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/edward-scissorhands-concert" target="_blank" rel="noopener">Edward Scissorhands in Concert</a><span class="meta">Sat, Oct 10 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF)</a><span class="meta">Sat, Oct 10 · 9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/" target="_blank" rel="noopener">The Virgin Suicides (VOA)</a><span class="meta">Sat, Oct 10 · 11:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jardin-denfants-cine-rencontre/" target="_blank" rel="noopener">Kindergarten (VOF + Q&amp;A)</a><span class="meta">Sat, Oct 10 · 1:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Sat, Oct 10 · 4:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/" target="_blank" rel="noopener">Ha-Chan, Shake Your Booty! (VOSTA)</a><span class="meta">Sat, Oct 10 · 6:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/hope/" target="_blank" rel="noopener">Hope (VOSTA)</a><span class="meta">Sat, Oct 10 · 9 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/relive-the-music-50s-60s-70s-show" target="_blank" rel="noopener">Relive the Music 50s, 60s &amp; 70s Show</a><span class="meta">Sun, Oct 11<span class="place"> · Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/eclats-du-romantisme" target="_blank" rel="noopener">Éclats du romantisme</a><span class="meta">Sun, Oct 11 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF)</a><span class="meta">Sun, Oct 11 · 9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/clue/" target="_blank" rel="noopener">Clue (VOA)</a><span class="meta">Sun, Oct 11 · 11:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups-de-coeur-de-lequipe/" target="_blank" rel="noopener">Cinema Paradiso – Staff Picks (VOSTA)</a><span class="meta">Sun, Oct 11 · 1:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Sun, Oct 11 · 4:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-cest-par-accident/" target="_blank" rel="noopener">The Best Way is By Accident (VOSTA)</a><span class="meta">Sun, Oct 11 · 6:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-invite/" target="_blank" rel="noopener">The Invite [LAST SCREENING] (VOSTF)</a><span class="meta">Sun, Oct 11 · 9 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/" target="_blank" rel="noopener">Lawrence of Arabia (VOA)</a><span class="meta">Mon, Oct 12 · 1:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/hope/" target="_blank" rel="noopener">Hope (VOSTA)</a><span class="meta">Mon, Oct 12 · 6 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/my-brothers-wedding/" target="_blank" rel="noopener">My Brother’s Wedding (VOA)</a><span class="meta">Mon, Oct 12 · 9:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mamma-mia" target="_blank" rel="noopener">Mamma Mia!</a><span class="meta">Oct 13 – 18 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/" target="_blank" rel="noopener">Ha-Chan, Shake Your Booty! (VOSTA)</a><span class="meta">Tue, Oct 13 · 1:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Tue, Oct 13 · 5 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-cest-par-accident/" target="_blank" rel="noopener">The Best Way is By Accident (VOSTA)</a><span class="meta">Tue, Oct 13 · 8:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/conte-dautomne-2/" target="_blank" rel="noopener">A Tale of Autumn (VOSTA)</a><span class="meta">Wed, Oct 14 · 3:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups-de-coeur-de-lequipe/" target="_blank" rel="noopener">Cinema Paradiso – Staff Picks (VOSTA)</a><span class="meta">Wed, Oct 14 · 6 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761864" target="_blank" rel="noopener">CF Montréal vs Atlanta United FC</a><span class="meta">Wed, Oct 14 · 7:30 pm<span class="place"> · Stade Saputo</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/bashu-the-little-stranger/" target="_blank" rel="noopener">Bashu: The Little Stranger (VOSTA)</a><span class="meta">Wed, Oct 14 · 8:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pas-perdus-documentaires-sceniques" target="_blank" rel="noopener">Pas perdus | documentaires scéniques</a><span class="meta">Oct 15 – 18 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/azrieli-music-prizes" target="_blank" rel="noopener">The Azrieli Music Prizes Gala Concert</a><span class="meta">Thu, Oct 15 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/hope/" target="_blank" rel="noopener">Hope (VOSTA)</a><span class="meta">Thu, Oct 15 · 1:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/" target="_blank" rel="noopener">Lawrence of Arabia (VOA)</a><span class="meta">Thu, Oct 15 · 5 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Thu, Oct 15 · 9:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/ghostly-kisses-orchestre-filmharmonique" target="_blank" rel="noopener">Ghostly Kisses &amp; the FILMharmonique Orchestra</a><span class="meta">Fri, Oct 16 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mossbed" target="_blank" rel="noopener">Mossbed</a><span class="meta">Oct 16 – Feb 21 · Salle d&#x27;exposition<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/late-fame/" target="_blank" rel="noopener">Late Fame (VOA)</a><span class="meta">Fri, Oct 16 · 1:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/" target="_blank" rel="noopener">The Virgin Suicides (VOA)</a><span class="meta">Fri, Oct 16 · 3:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/" target="_blank" rel="noopener">The Good, The Bad and The Ugly: 60th Anniversary (VASTF)</a><span class="meta">Fri, Oct 16 · 6 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/clue/" target="_blank" rel="noopener">Clue (VOA)</a><span class="meta">Fri, Oct 16 · 9:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/louis-jean-cormier-filmharmonique-orchestra" target="_blank" rel="noopener">Louis-Jean Cormier and the FILMharmonique Orchestra</a><span class="meta">Sat, Oct 17 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF)</a><span class="meta">Sat, Oct 17 · 10 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/mariages-coups-de-coeur-de-lequipe/" target="_blank" rel="noopener">Marriages – Coups de coeur de l’équipe (VOF)</a><span class="meta">Sat, Oct 17 · 12 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-cest-par-accident/" target="_blank" rel="noopener">The Best Way is By Accident (VOSTA)</a><span class="meta">Sat, Oct 17 · 2 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/naza/" target="_blank" rel="noopener">Naza (VOSTA)</a><span class="meta">Sat, Oct 17 · 4:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/" target="_blank" rel="noopener">The Good, The Bad and The Ugly: 60th Anniversary (VASTF)</a><span class="meta">Sat, Oct 17 · 6 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/train-to-busan-10e-anniversaire/" target="_blank" rel="noopener">Train to Busan: 10th Anniversary [LAST SCREENING] (VOSTA)</a><span class="meta">Sat, Oct 17 · 9:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/wallace-et-gromit-le-mystere-du-lapin-garou/" target="_blank" rel="noopener">Wallace and Gromit: The Curse of the Were-Rabbit (VF)</a><span class="meta">Sun, Oct 18 · 9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups-de-coeur-de-lequipe/" target="_blank" rel="noopener">Cinema Paradiso – Staff Picks (VOSTA)</a><span class="meta">Sun, Oct 18 · 11:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Sun, Oct 18 · 2 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/chronovisor/" target="_blank" rel="noopener">Chronovisor (VOA)</a><span class="meta">Sun, Oct 18 · 4 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/" target="_blank" rel="noopener">Ha-Chan, Shake Your Booty! (VOSTA)</a><span class="meta">Sun, Oct 18 · 6:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/trainspotting-30e-anniversaire/" target="_blank" rel="noopener">Trainspotting: 30th Anniversary [LAST SCREENINGS] (VOSTF)</a><span class="meta">Sun, Oct 18 · 9 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Mon, Oct 19 · 5:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/naza/" target="_blank" rel="noopener">Naza (VOSTA)</a><span class="meta">Mon, Oct 19 · 9 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/golden-piano-sous-les-petales-dor-et-chandelles" target="_blank" rel="noopener">Golden Piano | Sous les pétales d&#x27;or et chandelles</a><span class="meta">Tue, Oct 20 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/guy-nantel" target="_blank" rel="noopener">Guy Nantel | Bienveillant</a><span class="meta">Tue, Oct 20 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jimmy-carr" target="_blank" rel="noopener">Jimmy Carr | Laughs Funny</a><span class="meta">Oct 20 – 21 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/" target="_blank" rel="noopener">The Good, The Bad and The Ugly: 60th Anniversary (VASTF)</a><span class="meta">Tue, Oct 20 · 3:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/video-club-spectateur-ennemi/" target="_blank" rel="noopener">vidéo-club – Spectateur, Ennemi (VOSTF)</a><span class="meta">Tue, Oct 20 · 7 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/jim-queen/" target="_blank" rel="noopener">Jim Queen (VOF)</a><span class="meta">Tue, Oct 20 · 9 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-world-of-stravinsky" target="_blank" rel="noopener">From Tchaikovsky to The Firebird</a><span class="meta">Oct 21 – 22 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-labeaute" target="_blank" rel="noopener">Louis-José Houde | Et jusqu’à la fin la beauté.</a><span class="meta">Oct 21 – Jan 7 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/naza/" target="_blank" rel="noopener">Naza (VOSTF)</a><span class="meta">Wed, Oct 21 · 5:20 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/chronovisor/" target="_blank" rel="noopener">Chronovisor (VOA)</a><span class="meta">Wed, Oct 21 · 7 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Syracuse Crunch</a><span class="meta">Wed, Oct 21 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-color-of-pomegranates-coups-de-coeur-de-lequipe/" target="_blank" rel="noopener">The Color of Pomegranates – Staff Picks (VOSTA)</a><span class="meta">Wed, Oct 21 · 9:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-conservatoire-de-musique-de-montreal" target="_blank" rel="noopener">5 à 7 musicaux avec Conservatoire de Musique de Montréal​</a><span class="meta">Oct 22 – 24 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/possible-love/" target="_blank" rel="noopener">Possible Love (VOSTA)</a><span class="meta">Fri, Oct 23 · 6:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">Fri, Oct 23 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">Scream: 30th Anniversary (VOA)</a><span class="meta">Fri, Oct 23 · 9:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/legendes-de-lolympia-en-opera" target="_blank" rel="noopener">Légendes de l’Olympia en opéra</a><span class="meta">Sat, Oct 24 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pierre-yves-roy-desmarais" target="_blank" rel="noopener">Pierre-Yves Roy-Desmarais | Une année en un an</a><span class="meta">Sat, Oct 24 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-cest-par-accident/" target="_blank" rel="noopener">The Best Way is By Accident (VOSTA)</a><span class="meta">Sat, Oct 24 · 10 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/clue/" target="_blank" rel="noopener">Clue (VOA)</a><span class="meta">Sat, Oct 24 · 12:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761903" target="_blank" rel="noopener">CF Montréal vs Nashville SC</a><span class="meta">Sat, Oct 24 · 1:30 pm<span class="place"> · Stade Saputo</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-history-of-concrete/" target="_blank" rel="noopener">The History of Concrete (VOA)</a><span class="meta">Sat, Oct 24 · 2:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">Sat, Oct 24 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/faust-100e-anniversaire/" target="_blank" rel="noopener">Faust: 100th Anniversary (VOSTA)</a><span class="meta">Sat, Oct 24 · 4:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/teenage-sex-and-death-at-camp-miasma/" target="_blank" rel="noopener">Teenage Sex and Death at Camp Miasma (VOSTF)</a><span class="meta">Sat, Oct 24 · 7 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">Sleepaway Camp (VOA)</a><span class="meta">Sat, Oct 24 · 9:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jardin-alice-et-theo" target="_blank" rel="noopener">Le jardin d’Alice et Théo</a><span class="meta">Sun, Oct 25 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF)</a><span class="meta">Sun, Oct 25 · 9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/" target="_blank" rel="noopener">The Virgin Suicides (VOA)</a><span class="meta">Sun, Oct 25 · 11:15 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-history-of-concrete/" target="_blank" rel="noopener">The History of Concrete (VOA)</a><span class="meta">Sun, Oct 25 · 4 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/cube-staff-picks/" target="_blank" rel="noopener">Cube – Staff picks (VOA)</a><span class="meta">Sun, Oct 25 · 6:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/a-bay-of-blood/" target="_blank" rel="noopener">A Bay of Blood (VOA)</a><span class="meta">Sun, Oct 25 · 8:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jf-otis" target="_blank" rel="noopener">JF Otis | Avec plaisir!</a><span class="meta">Mon, Oct 26 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-lost-boys-x-drawn-quarterly/" target="_blank" rel="noopener">The Lost Boys x Drawn &amp; Quarterly (VOA)</a><span class="meta">Mon, Oct 26 · 6:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">The Fly: 40th Anniversary (VOA)</a><span class="meta">Mon, Oct 26 · 9:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/chronovisor/" target="_blank" rel="noopener">Chronovisor (VOA)</a><span class="meta">Tue, Oct 27 · 3:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/possible-love/" target="_blank" rel="noopener">Possible Love (VOSTA)</a><span class="meta">Tue, Oct 27 · 6 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/begotten/" target="_blank" rel="noopener">Begotten (VOA)</a><span class="meta">Tue, Oct 27 · 9:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/christos-papadopoulos" target="_blank" rel="noopener">Christos Papadopoulos | My Fierce Ignorant Step</a><span class="meta">Oct 28 – 31 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-fantome-dans-la-machine" target="_blank" rel="noopener">Le fantôme dans la machine</a><span class="meta">Oct 28 – Nov 28 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/naza/" target="_blank" rel="noopener">Naza (VOSTF)</a><span class="meta">Wed, Oct 28 · 4 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-history-of-concrete/" target="_blank" rel="noopener">The History of Concrete (VOA)</a><span class="meta">Wed, Oct 28 · 5:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/midsummer-night-dreams" target="_blank" rel="noopener">Midsummer Night Dreams</a><span class="meta">Oct 29 – Nov 1 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nosferatu-the-vampire-in-cine-concert" target="_blank" rel="noopener">Nosferatu the Vampire in Cine-Concert</a><span class="meta">Thu, Oct 29 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">Henry: Portrait of a Serial Killer (VOA)</a><span class="meta">Thu, Oct 29 · 9 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">The Fly: 40th Anniversary (VOA)</a><span class="meta">Fri, Oct 30 · 7:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">Altered States (VOA)</a><span class="meta">Fri, Oct 30 · 9:45 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/wallace-et-gromit-le-mystere-du-lapin-garou/" target="_blank" rel="noopener">Wallace and Gromit: The Curse of the Were-Rabbit (VF)</a><span class="meta">Sat, Oct 31 · 9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">Kwaidan (VOSTA)</a><span class="meta">Sat, Oct 31 · 3:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/gentle-monster/" target="_blank" rel="noopener">Gentle Monster (VOSTA)</a><span class="meta">Sat, Oct 31 · 7 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/" target="_blank" rel="noopener">Scream: 30th Anniversary (VOA)</a><span class="meta">Sat, Oct 31 · 9:30 pm<span class="place"> · Cinéma Moderne</span></span></li>
-</ul></section>
-<section class="month"><h2>Nov 2026</h2><ul>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13639/" target="_blank" rel="noopener">Anne Kahane: Structures</a><span class="meta">Nov 1 – Apr 30<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/possible-love/" target="_blank" rel="noopener">Possible Love (VOSTA)</a><span class="meta">Sun, Nov 1 · 6 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/the-history-of-concrete/" target="_blank" rel="noopener">The History of Concrete (VOA)</a><span class="meta">Sun, Nov 1 · 9:15 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/gentle-monster/" target="_blank" rel="noopener">Gentle Monster (VOSTA)</a><span class="meta">Mon, Nov 2 · 4 pm<span class="place"> · Cinéma Moderne</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/entre-chiens-et-louves" target="_blank" rel="noopener">Entre chiens et louves</a><span class="meta">Nov 4 – 15 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Lehigh Valley Phantoms</a><span class="meta">Wed, Nov 4 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Cleveland Monsters</a><span class="meta">Fri, Nov 6 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/europe-la-bataille-des-sieges-cine-concert" target="_blank" rel="noopener">Europe : La Bataille des sièges in ciné-concert</a><span class="meta">Sat, Nov 7<span class="place"> · Place des Arts</span></span></li>
-<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/soiree-maude-guerin/" target="_blank" rel="noopener">Soirée Maude Guérin</a><span class="meta">Nov 7 – 8<span class="place"> · Théâtre du Rideau Vert</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Cleveland Monsters</a><span class="meta">Sat, Nov 7 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761934" target="_blank" rel="noopener">CF Montréal vs Vancouver Whitecaps</a><span class="meta">Sat, Nov 7 · 4 pm<span class="place"> · Stade Saputo</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mokatek-etoile-disparue" target="_blank" rel="noopener">Mokatek et l’étoile disparue</a><span class="meta">Sun, Nov 15 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/comico-show" target="_blank" rel="noopener">Comico Show</a><span class="meta">Thu, Nov 19 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nataly-aukar" target="_blank" rel="noopener">Nataly Aukar</a><span class="meta">Fri, Nov 20<span class="place"> · Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-duplex" target="_blank" rel="noopener">Le Duplex</a><span class="meta">Sat, Nov 21<span class="place"> · Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/werther-jules-massenet" target="_blank" rel="noopener">Werther | Jules Massenet</a><span class="meta">Nov 21 – 29 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Calgary Wranglers</a><span class="meta">Sat, Nov 21 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/dans-nos-maisons" target="_blank" rel="noopener">Dans nos maisons</a><span class="meta">Sun, Nov 22 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Calgary Wranglers</a><span class="meta">Sun, Nov 22 · 3 pm · Bell Centre</span></li>
-<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/2026-revue-et-corrigee/" target="_blank" rel="noopener">2026 revue et corrigée</a><span class="meta">Nov 25 – Jan 2<span class="place"> · Théâtre du Rideau Vert</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/ballets-jazz-montreal" target="_blank" rel="noopener">Ballets Jazz Montréal | Dance Me – Music by Leonard Cohen</a><span class="meta">Nov 25 – 29 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-nightmare-before-christmas-in-cine-concert" target="_blank" rel="noopener">Disney Tim Burton’s The Nightmare Before Christmas in Concert Live-to-Film</a><span class="meta">Nov 26 – 27 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pierre-verville" target="_blank" rel="noopener">Pierre Verville | Pour une dernière voix</a><span class="meta">Nov 26 – 27 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/arthur-aventurier-africanimaux" target="_blank" rel="noopener">Arthur L’aventurier | Africanimaux</a><span class="meta">Nov 28 – Apr 3 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/arthur-aventurier" target="_blank" rel="noopener">Arthur L’aventurier | Africanimaux</a><span class="meta">Sun, Nov 29 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-</ul></section>
-<section class="month"><h2>Dec 2026</h2><ul>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Toronto Marlies</a><span class="meta">Wed, Dec 2 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/heredis-spectacle-assassins-creed" target="_blank" rel="noopener">HEREDIS spectacle Assassin&#x27;s Creed</a><span class="meta">Dec 3 – 20 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/janette" target="_blank" rel="noopener">Janette</a><span class="meta">Dec 4 – 17 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Wilkes-Barre/Scranton Penguins</a><span class="meta">Fri, Dec 4 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nutcracker-grands-ballets" target="_blank" rel="noopener">The Nutcracker</a><span class="meta">Dec 5 – 30 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Hamilton</a><span class="meta">Sat, Dec 5 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/grand-bal-de-noel" target="_blank" rel="noopener">Le Grand Bal de Noël</a><span class="meta">Sun, Dec 6 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Utica Comets</a><span class="meta">Wed, Dec 9 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL San Jose</a><span class="meta">Sat, Dec 12 · 2 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/marie-chouinard-henri-michaux" target="_blank" rel="noopener">Marie Chouinard | Henri Michaux : Mouvements + Selected solos and duets</a><span class="meta">Dec 16 – 19<span class="place"> · Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/tadam-les-lutins-magnifiques" target="_blank" rel="noopener">Tadam et les lutins magnifiques</a><span class="meta">Dec 19 – 20 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/gaelle-bien-aime-les-meetings-de-madame-appolon" target="_blank" rel="noopener">Gaëlle Bien-Aimé | Les meetings de Madame Appolon</a><span class="meta">Sat, Dec 26 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Ottawa Charge</a><span class="meta">Sat, Dec 26 · 2 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-petit-prince-antoine-de-saint-exupery" target="_blank" rel="noopener">Le Petit Prince d’Antoine de Saint-Exupéry</a><span class="meta">Dec 27 – 28<span class="place"> · Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nicolas-noel-entre-deux-mondes" target="_blank" rel="noopener">Nicolas Noël | Entre deux mondes</a><span class="meta">Dec 27 – 28 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/o-christmas-tea-a-british-comedy" target="_blank" rel="noopener">O Christmas Tea: A British Comedy</a><span class="meta">Tue, Dec 29 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Hamilton</a><span class="meta">Tue, Dec 29 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">Wed, Dec 30 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-</ul></section>
-<section class="month"><h2>Jan 2027</h2><ul>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hartford Wolf Pack</a><span class="meta">Sat, Jan 2 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hartford Wolf Pack</a><span class="meta">Sun, Jan 3 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Las Vegas</a><span class="meta">Wed, Jan 6 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/avatar-last-airbender-en-concert" target="_blank" rel="noopener">Avatar: The Last Airbender in Concert</a><span class="meta">Thu, Jan 7 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mehdi-bousaidan" target="_blank" rel="noopener">Mehdi Bousaidan | Le garçon et la fenêtre</a><span class="meta">Fri, Jan 8 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/lord-rings-return-king-concert" target="_blank" rel="noopener">The Lord of the Rings: The Return of the King – In Concert</a><span class="meta">Jan 8 – 10 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/architectures-de-la-joie" target="_blank" rel="noopener">Architectures de la joie</a><span class="meta">Sat, Jan 9 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/un-tramway-nomme-desir" target="_blank" rel="noopener">Un tramway nommé Désir</a><span class="meta">Jan 13 – Feb 13 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">Wed, Jan 13 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/simon-delisle" target="_blank" rel="noopener">Simon Delisle | Tache</a><span class="meta">Fri, Jan 15 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Rochester Americans</a><span class="meta">Fri, Jan 15 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Rochester Americans</a><span class="meta">Sat, Jan 16 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/metropolis-in-cine-concert" target="_blank" rel="noopener">Metropolis in Cine-Concert</a><span class="meta">Tue, Jan 19 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/hedda-gabler-2/" target="_blank" rel="noopener">Hedda Gabler</a><span class="meta">Jan 20 – Feb 14<span class="place"> · Théâtre du Rideau Vert</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/feng-hua-xue-yue" target="_blank" rel="noopener">Feng Hua Xue Yue</a><span class="meta">Sat, Jan 23 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Boston Fleet</a><span class="meta">Sat, Jan 23 · 2 pm · TBD</span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Providence Bruins</a><span class="meta">Wed, Jan 27 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/michel-faubert" target="_blank" rel="noopener">30 ans de contes avec Michel Faubert | La nuit des temps</a><span class="meta">Jan 28 – 29 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-vision-diversite" target="_blank" rel="noopener">5 à 7 musicaux avec Vision Diversité</a><span class="meta">Jan 28 – 30 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/der-rosenkavalier" target="_blank" rel="noopener">Der Rosenkavalier I Richard Strauss</a><span class="meta">Jan 28 – 31 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/how-train-your-dragon-2-in-concert" target="_blank" rel="noopener">How to Train Your Dragon 2 in Concert</a><span class="meta">Jan 29 – 30 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/verdi-traviata-concert" target="_blank" rel="noopener">Verdi: La Traviata in Concert</a><span class="meta">Jan 29 – 30 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Providence Bruins</a><span class="meta">Fri, Jan 29 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/chinese-new-year-canada-gala-phoenix" target="_blank" rel="noopener">Canadian Chinese New Year Gala</a><span class="meta">Sun, Jan 31 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/les-ptites-polisses" target="_blank" rel="noopener">Les p’tites polisses</a><span class="meta">Sun, Jan 31 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-</ul></section>
-<section class="month"><h2>Feb 2027</h2><ul>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/morin-leroux-arts-vivants" target="_blank" rel="noopener">Morin/Leroux · Arts vivants | Euphoric Thresholds</a><span class="meta">Feb 2 – 6<span class="place"> · Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">Wed, Feb 3 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-with-udm" target="_blank" rel="noopener">5 à 7 musicaux avec la Faculté de musique de l’UdeM</a><span class="meta">Feb 4 – 6 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/riverdance" target="_blank" rel="noopener">Riverdance</a><span class="meta">Feb 4 – 7 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pietragalla-barbara" target="_blank" rel="noopener">Barbara par Pietragalla</a><span class="meta">Feb 5 – 6 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Utica Comets</a><span class="meta">Fri, Feb 5 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Rochester Americans</a><span class="meta">Sat, Feb 6 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/twilight-saga-new-moon-in-concert" target="_blank" rel="noopener">The Twilight Saga: New Moon in Concert</a><span class="meta">Thu, Feb 11 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/bugs-bunny-at-the-symphony" target="_blank" rel="noopener">Bugs Bunny at the Symphony</a><span class="meta">Feb 12 – 13 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/fred-pellerin" target="_blank" rel="noopener">Fred Pellerin | Au nom du père</a><span class="meta">Feb 12 – May 8 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Boston Fleet</a><span class="meta">Fri, Feb 12 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Toronto Sceptres</a><span class="meta">Wed, Feb 17 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-nuits-afrique" target="_blank" rel="noopener">5 à 7 musicaux avec Nuits d&#x27;Afrique</a><span class="meta">Feb 18 – 20 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/la-florida" target="_blank" rel="noopener">La Florida</a><span class="meta">Fri, Feb 19 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14081/" target="_blank" rel="noopener">MARIE CHOUINARD: BECOMING BREATH</a><span class="meta">Feb 20 – May 9<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/step-afrika-evolution" target="_blank" rel="noopener">Step Afrika! | The Evolution Tour</a><span class="meta">Sat, Feb 20 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/drolement-debrouillards" target="_blank" rel="noopener">Drôlement débrouillards</a><span class="meta">Sun, Feb 21 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/la-recreation-de-mozart" target="_blank" rel="noopener">La récréation de Mozart</a><span class="meta">Sun, Feb 21 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/danza-contemporanea-de-cuba" target="_blank" rel="noopener">Danza Contemporánea de Cuba</a><span class="meta">Feb 23 – 27 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/cendrillon-grands-ballets" target="_blank" rel="noopener">Cinderella</a><span class="meta">Feb 24 – 28 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Toronto Marlies</a><span class="meta">Fri, Feb 26 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Toronto Marlies</a><span class="meta">Sat, Feb 27 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-</ul></section>
-<section class="month"><h2>Mar 2027</h2><ul>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/peter-and-the-wolf-on-the-organ" target="_blank" rel="noopener">Peter and the Wolf on the Organ</a><span class="meta">Tue, Mar 2 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/semaine-relache" target="_blank" rel="noopener">School Break</a><span class="meta">Mar 2 – 6 · Multiple venues<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-book-of-mormon" target="_blank" rel="noopener">The Book of Mormon</a><span class="meta">Mar 2 – 7 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nous-dans-les-plaines-immenses" target="_blank" rel="noopener">Nous, dans les plaines immenses</a><span class="meta">Mar 3 – Apr 3 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Utica Comets</a><span class="meta">Wed, Mar 3 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">Fri, Mar 5 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">Sat, Mar 6 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs New York Sirens</a><span class="meta">Tue, Mar 9 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/le-dieu-du-carnage/" target="_blank" rel="noopener">Le dieu du carnage</a><span class="meta">Mar 10 – Apr 4<span class="place"> · Théâtre du Rideau Vert</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-mcgill" target="_blank" rel="noopener">5 à 7 musicaux avec McGill</a><span class="meta">Mar 11 – 13 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/harry-potter-philosophers-stone-in-concert" target="_blank" rel="noopener">Harry Potter and the Philosopher’s Stone™ In Concert</a><span class="meta">Mar 12 – 13 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Minnesota Frost</a><span class="meta">Fri, Mar 12 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Vancouver Goldeneyes</a><span class="meta">Tue, Mar 16 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/glissant-glissant" target="_blank" rel="noopener">Glissant Glissant</a><span class="meta">Mar 17 – 27 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-with-uqam" target="_blank" rel="noopener">5 à 7 musicaux avec l&#x27;UQAM</a><span class="meta">Mar 18 – 20 · Salon urbain<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/les-choristes" target="_blank" rel="noopener">Les Choristes in Concert</a><span class="meta">Mar 19 – 20 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/cyrano-de-bergerac-comedie-musicale" target="_blank" rel="noopener">Cyrano de Bergerac – La Comédie Musicale</a><span class="meta">Sat, Mar 20 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hershey Bears</a><span class="meta">Sat, Mar 20 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">Sun, Mar 21 · 5 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Seattle Torrent</a><span class="meta">Tue, Mar 23 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/atys-dawe-jasmin" target="_blank" rel="noopener">Atys | Dawe &amp; Jasmin</a><span class="meta">Mar 25 – 27<span class="place"> · Place des Arts</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Springfield Thunderbirds</a><span class="meta">Fri, Mar 26 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Toronto Sceptres</a><span class="meta">Sat, Mar 27 · 2 pm · TBD</span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Springfield Thunderbirds</a><span class="meta">Sat, Mar 27 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">Wed, Mar 31 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-</ul></section>
-<section class="month"><h2>Apr 2027</h2><ul>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Manitoba Moose</a><span class="meta">Fri, Apr 2 · 7 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Manitoba Moose</a><span class="meta">Sat, Apr 3 · 3 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Detroit</a><span class="meta">Sat, Apr 3 · 7 pm · TBD</span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/les-boys-le-spectacle" target="_blank" rel="noopener">Les Boys, le spectacle</a><span class="meta">Wed, Apr 7 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
-<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Ottawa Charge</a><span class="meta">Fri, Apr 9 · 7:30 pm<span class="place"> · Place Bell, Laval</span></span></li>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/a-beautiful-noise" target="_blank" rel="noopener">A Beautiful Noise: The Neil Diamond Musical</a><span class="meta">Apr 13 – 18 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/motel-helene/" target="_blank" rel="noopener">Motel Hélène</a><span class="meta">Apr 28 – May 23<span class="place"> · Théâtre du Rideau Vert</span></span></li>
-</ul></section>
-<section class="month"><h2>May 2027</h2><ul>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/rigoletto-giuseppe-verdi" target="_blank" rel="noopener">Rigoletto | Giuseppe Verdi</a><span class="meta">May 1 – 9 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
-<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14087/" target="_blank" rel="noopener">Keith Haring in 3D</a><span class="meta">May 15 – Sep 12<span class="place"> · Musée des beaux-arts de Montréal</span></span></li>
-</ul></section>
-<section class="month"><h2>Jun 2027</h2><ul>
-<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/la-belle-helene" target="_blank" rel="noopener">La Belle Hélène</a><span class="meta">Jun 10 – 12 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
-</ul></section>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-udm" target="_blank" rel="noopener">5 à 7 musicaux avec la Faculté de musique de l’UdeM</a><span class="meta">until Oct 10 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/apashe-osm" target="_blank" rel="noopener">Apashe x OSM</a><span class="meta">until Oct 10 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/engelbert-humperdinck" target="_blank" rel="noopener">Engelbert Humperdinck | The Celebration Tour</a><span class="meta">until Oct 9 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Oct 9</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13638/" target="_blank" rel="noopener">Opens: Allison Katz : Jeu d&#x27;esprit</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/renaud-symphonique-50-ans-de-carriere" target="_blank" rel="noopener">Renaud symphonique: 50 ans de carrière!</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Oct 10</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/edward-scissorhands-concert" target="_blank" rel="noopener">Edward Scissorhands in Concert</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom (VF)</a><span class="meta">9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Oct 11</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13516/" target="_blank" rel="noopener">Last day: Rising Suns: Art from the Confederacies of the Great Lakes and Rivers</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/relive-the-music-50s-60s-70s-show" target="_blank" rel="noopener">Relive the Music 50s, 60s &amp; 70s Show</a><span class="meta place">Place des Arts</span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/eclats-du-romantisme" target="_blank" rel="noopener">Éclats du romantisme</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom (VF)</a><span class="meta">9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Oct 13</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mamma-mia" target="_blank" rel="noopener">Mamma Mia!</a><span class="meta">until Oct 18 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Oct 14</h3><ul>
+<li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761864" target="_blank" rel="noopener">CF Montréal vs Atlanta United FC</a><span class="meta">7:30 pm<span class="place"> · Stade Saputo</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Oct 15</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pas-perdus-documentaires-sceniques" target="_blank" rel="noopener">Pas perdus | documentaires scéniques</a><span class="meta">until Oct 18 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/azrieli-music-prizes" target="_blank" rel="noopener">The Azrieli Music Prizes Gala Concert</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Oct 16</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/ghostly-kisses-orchestre-filmharmonique" target="_blank" rel="noopener">Ghostly Kisses &amp; the FILMharmonique Orchestra</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mossbed" target="_blank" rel="noopener">Mossbed</a><span class="meta">until Feb 21 · Salle d&#x27;exposition<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Oct 17</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/louis-jean-cormier-filmharmonique-orchestra" target="_blank" rel="noopener">Louis-Jean Cormier and the FILMharmonique Orchestra</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom (VF)</a><span class="meta">10 am<span class="place"> · Cinéma Moderne</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Oct 20</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/golden-piano-sous-les-petales-dor-et-chandelles" target="_blank" rel="noopener">Golden Piano | Sous les pétales d&#x27;or et chandelles</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/guy-nantel" target="_blank" rel="noopener">Guy Nantel | Bienveillant</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jimmy-carr" target="_blank" rel="noopener">Jimmy Carr | Laughs Funny</a><span class="meta">until Oct 21 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Oct 21</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-world-of-stravinsky" target="_blank" rel="noopener">From Tchaikovsky to The Firebird</a><span class="meta">until Oct 22 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-labeaute" target="_blank" rel="noopener">Louis-José Houde | Et jusqu’à la fin la beauté.</a><span class="meta">until Jan 7 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Syracuse Crunch</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Oct 22</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-conservatoire-de-musique-de-montreal" target="_blank" rel="noopener">5 à 7 musicaux avec Conservatoire de Musique de Montréal​</a><span class="meta">until Oct 24 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Oct 23</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Oct 24</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/legendes-de-lolympia-en-opera" target="_blank" rel="noopener">Légendes de l’Olympia en opéra</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pierre-yves-roy-desmarais" target="_blank" rel="noopener">Pierre-Yves Roy-Desmarais | Une année en un an</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761903" target="_blank" rel="noopener">CF Montréal vs Nashville SC</a><span class="meta">1:30 pm<span class="place"> · Stade Saputo</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Oct 25</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jardin-alice-et-theo" target="_blank" rel="noopener">Le jardin d’Alice et Théo</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+<li data-place="cinemamoderne"><a href="https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes/" target="_blank" rel="noopener">Shaun the Sheep: The Beast of Mossy Bottom (VF)</a><span class="meta">9:30 am<span class="place"> · Cinéma Moderne</span></span></li>
+</ul></div>
+<div class="day"><h3>Mon, Oct 26</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/jf-otis" target="_blank" rel="noopener">JF Otis | Avec plaisir!</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Oct 28</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/christos-papadopoulos" target="_blank" rel="noopener">Christos Papadopoulos | My Fierce Ignorant Step</a><span class="meta">until Oct 31 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-fantome-dans-la-machine" target="_blank" rel="noopener">Le fantôme dans la machine</a><span class="meta">until Nov 28 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Oct 29</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/midsummer-night-dreams" target="_blank" rel="noopener">Midsummer Night Dreams</a><span class="meta">until Nov 1 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nosferatu-the-vampire-in-cine-concert" target="_blank" rel="noopener">Nosferatu the Vampire in Cine-Concert</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Nov 2026</h2><div class="days">
+<div class="day"><h3>Wed, Nov 4</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/entre-chiens-et-louves" target="_blank" rel="noopener">Entre chiens et louves</a><span class="meta">until Nov 15 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Lehigh Valley Phantoms</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Nov 6</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Cleveland Monsters</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Nov 7</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/europe-la-bataille-des-sieges-cine-concert" target="_blank" rel="noopener">Europe : La Bataille des sièges in ciné-concert</a><span class="meta place">Place des Arts</span></li>
+<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/soiree-maude-guerin/" target="_blank" rel="noopener">Soirée Maude Guérin</a><span class="meta">until Nov 8<span class="place"> · Théâtre du Rideau Vert</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Cleveland Monsters</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+<li data-place="cfmontreal"><a href="https://www.espn.com/soccer/match/_/gameId/761934" target="_blank" rel="noopener">CF Montréal vs Vancouver Whitecaps</a><span class="meta">4 pm<span class="place"> · Stade Saputo</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Nov 15</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mokatek-etoile-disparue" target="_blank" rel="noopener">Mokatek et l’étoile disparue</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Nov 19</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/comico-show" target="_blank" rel="noopener">Comico Show</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Nov 20</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nataly-aukar" target="_blank" rel="noopener">Nataly Aukar</a><span class="meta place">Place des Arts</span></li>
+</ul></div>
+<div class="day"><h3>Sat, Nov 21</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-duplex" target="_blank" rel="noopener">Le Duplex</a><span class="meta place">Place des Arts</span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/werther-jules-massenet" target="_blank" rel="noopener">Werther | Jules Massenet</a><span class="meta">until Nov 29 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Calgary Wranglers</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Nov 22</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/dans-nos-maisons" target="_blank" rel="noopener">Dans nos maisons</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Calgary Wranglers</a><span class="meta">3 pm · Bell Centre</span></li>
+</ul></div>
+<div class="day"><h3>Wed, Nov 25</h3><ul>
+<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/2026-revue-et-corrigee/" target="_blank" rel="noopener">2026 revue et corrigée</a><span class="meta">until Jan 2<span class="place"> · Théâtre du Rideau Vert</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/ballets-jazz-montreal" target="_blank" rel="noopener">Ballets Jazz Montréal | Dance Me – Music by Leonard Cohen</a><span class="meta">until Nov 29 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Nov 26</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-nightmare-before-christmas-in-cine-concert" target="_blank" rel="noopener">Disney Tim Burton’s The Nightmare Before Christmas in Concert Live-to-Film</a><span class="meta">until Nov 27 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pierre-verville" target="_blank" rel="noopener">Pierre Verville | Pour une dernière voix</a><span class="meta">until Nov 27 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Nov 28</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/arthur-aventurier-africanimaux" target="_blank" rel="noopener">Arthur L’aventurier | Africanimaux</a><span class="meta">until Apr 3 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Nov 29</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/arthur-aventurier" target="_blank" rel="noopener">Arthur L’aventurier | Africanimaux</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Dec 2026</h2><div class="days">
+<div class="day"><h3>Wed, Dec 2</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Toronto Marlies</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Dec 3</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/heredis-spectacle-assassins-creed" target="_blank" rel="noopener">HEREDIS spectacle Assassin&#x27;s Creed</a><span class="meta">until Dec 20 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Dec 4</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/janette" target="_blank" rel="noopener">Janette</a><span class="meta">until Dec 17 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Wilkes-Barre/Scranton Penguins</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Dec 5</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nutcracker-grands-ballets" target="_blank" rel="noopener">The Nutcracker</a><span class="meta">until Dec 30 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Hamilton</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Dec 6</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/grand-bal-de-noel" target="_blank" rel="noopener">Le Grand Bal de Noël</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Dec 9</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Utica Comets</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Dec 12</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL San Jose</a><span class="meta">2 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Dec 16</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/marie-chouinard-henri-michaux" target="_blank" rel="noopener">Marie Chouinard | Henri Michaux : Mouvements + Selected solos and duets</a><span class="meta">until Dec 19<span class="place"> · Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Dec 19</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/tadam-les-lutins-magnifiques" target="_blank" rel="noopener">Tadam et les lutins magnifiques</a><span class="meta">until Dec 20 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Dec 26</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/gaelle-bien-aime-les-meetings-de-madame-appolon" target="_blank" rel="noopener">Gaëlle Bien-Aimé | Les meetings de Madame Appolon</a><span class="meta">Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Ottawa Charge</a><span class="meta">2 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Dec 27</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/le-petit-prince-antoine-de-saint-exupery" target="_blank" rel="noopener">Le Petit Prince d’Antoine de Saint-Exupéry</a><span class="meta">until Dec 28<span class="place"> · Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nicolas-noel-entre-deux-mondes" target="_blank" rel="noopener">Nicolas Noël | Entre deux mondes</a><span class="meta">until Dec 28 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Dec 29</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/o-christmas-tea-a-british-comedy" target="_blank" rel="noopener">O Christmas Tea: A British Comedy</a><span class="meta">Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Hamilton</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Dec 30</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Jan 2027</h2><div class="days">
+<div class="day"><h3>Sat, Jan 2</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hartford Wolf Pack</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Jan 3</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hartford Wolf Pack</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Jan 6</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Las Vegas</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Jan 7</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/avatar-last-airbender-en-concert" target="_blank" rel="noopener">Avatar: The Last Airbender in Concert</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Jan 8</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/mehdi-bousaidan" target="_blank" rel="noopener">Mehdi Bousaidan | Le garçon et la fenêtre</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/lord-rings-return-king-concert" target="_blank" rel="noopener">The Lord of the Rings: The Return of the King – In Concert</a><span class="meta">until Jan 10 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Jan 9</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/architectures-de-la-joie" target="_blank" rel="noopener">Architectures de la joie</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Jan 13</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/un-tramway-nomme-desir" target="_blank" rel="noopener">Un tramway nommé Désir</a><span class="meta">until Feb 13 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Jan 15</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/simon-delisle" target="_blank" rel="noopener">Simon Delisle | Tache</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Rochester Americans</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Jan 16</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Rochester Americans</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Jan 19</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/metropolis-in-cine-concert" target="_blank" rel="noopener">Metropolis in Cine-Concert</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Jan 20</h3><ul>
+<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/hedda-gabler-2/" target="_blank" rel="noopener">Hedda Gabler</a><span class="meta">until Feb 14<span class="place"> · Théâtre du Rideau Vert</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Jan 23</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/feng-hua-xue-yue" target="_blank" rel="noopener">Feng Hua Xue Yue</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Boston Fleet</a><span class="meta">2 pm · TBD</span></li>
+</ul></div>
+<div class="day"><h3>Wed, Jan 27</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Providence Bruins</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Jan 28</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/michel-faubert" target="_blank" rel="noopener">30 ans de contes avec Michel Faubert | La nuit des temps</a><span class="meta">until Jan 29 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-vision-diversite" target="_blank" rel="noopener">5 à 7 musicaux avec Vision Diversité</a><span class="meta">until Jan 30 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/der-rosenkavalier" target="_blank" rel="noopener">Der Rosenkavalier I Richard Strauss</a><span class="meta">until Jan 31 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Jan 29</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/how-train-your-dragon-2-in-concert" target="_blank" rel="noopener">How to Train Your Dragon 2 in Concert</a><span class="meta">until Jan 30 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/verdi-traviata-concert" target="_blank" rel="noopener">Verdi: La Traviata in Concert</a><span class="meta">until Jan 30 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Providence Bruins</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Jan 31</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/chinese-new-year-canada-gala-phoenix" target="_blank" rel="noopener">Canadian Chinese New Year Gala</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/les-ptites-polisses" target="_blank" rel="noopener">Les p’tites polisses</a><span class="meta">Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Feb 2027</h2><div class="days">
+<div class="day"><h3>Tue, Feb 2</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/morin-leroux-arts-vivants" target="_blank" rel="noopener">Morin/Leroux · Arts vivants | Euphoric Thresholds</a><span class="meta">until Feb 6<span class="place"> · Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Feb 3</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Feb 4</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-with-udm" target="_blank" rel="noopener">5 à 7 musicaux avec la Faculté de musique de l’UdeM</a><span class="meta">until Feb 6 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/riverdance" target="_blank" rel="noopener">Riverdance</a><span class="meta">until Feb 7 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Feb 5</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/pietragalla-barbara" target="_blank" rel="noopener">Barbara par Pietragalla</a><span class="meta">until Feb 6 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Utica Comets</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Feb 6</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Rochester Americans</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Feb 11</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/twilight-saga-new-moon-in-concert" target="_blank" rel="noopener">The Twilight Saga: New Moon in Concert</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Feb 12</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/bugs-bunny-at-the-symphony" target="_blank" rel="noopener">Bugs Bunny at the Symphony</a><span class="meta">until Feb 13 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/fred-pellerin" target="_blank" rel="noopener">Fred Pellerin | Au nom du père</a><span class="meta">until May 8 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Boston Fleet</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Feb 14</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13640/" target="_blank" rel="noopener">Last day: Chiharu Shiota: The Soul Trembles</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+</ul></div>
+<div class="day"><h3>Wed, Feb 17</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Toronto Sceptres</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Feb 18</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-nuits-afrique" target="_blank" rel="noopener">5 à 7 musicaux avec Nuits d&#x27;Afrique</a><span class="meta">until Feb 20 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Feb 19</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/la-florida" target="_blank" rel="noopener">La Florida</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Feb 20</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14081/" target="_blank" rel="noopener">Opens: MARIE CHOUINARD: BECOMING BREATH</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/step-afrika-evolution" target="_blank" rel="noopener">Step Afrika! | The Evolution Tour</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Feb 21</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/drolement-debrouillards" target="_blank" rel="noopener">Drôlement débrouillards</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/la-recreation-de-mozart" target="_blank" rel="noopener">La récréation de Mozart</a><span class="meta">Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Feb 23</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/danza-contemporanea-de-cuba" target="_blank" rel="noopener">Danza Contemporánea de Cuba</a><span class="meta">until Feb 27 · Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Feb 24</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/cendrillon-grands-ballets" target="_blank" rel="noopener">Cinderella</a><span class="meta">until Feb 28 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Feb 26</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Toronto Marlies</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Feb 27</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Toronto Marlies</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Mar 2027</h2><div class="days">
+<div class="day"><h3>Tue, Mar 2</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/peter-and-the-wolf-on-the-organ" target="_blank" rel="noopener">Peter and the Wolf on the Organ</a><span class="meta">Maison symphonique<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/semaine-relache" target="_blank" rel="noopener">School Break</a><span class="meta">until Mar 6 · Multiple venues<span class="place">, Place des Arts</span></span></li>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/the-book-of-mormon" target="_blank" rel="noopener">The Book of Mormon</a><span class="meta">until Mar 7 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Mar 3</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/nous-dans-les-plaines-immenses" target="_blank" rel="noopener">Nous, dans les plaines immenses</a><span class="meta">until Apr 3 · Théâtre Jean-Duceppe<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Utica Comets</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Mar 5</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Mar 6</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hamilton Hammers</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Mar 7</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14001/" target="_blank" rel="noopener">Last day: Beyond the Pedestal: Sculptures in the Collection, from the 1960s to Today</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+</ul></div>
+<div class="day"><h3>Tue, Mar 9</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs New York Sirens</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Mar 10</h3><ul>
+<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/le-dieu-du-carnage/" target="_blank" rel="noopener">Le dieu du carnage</a><span class="meta">until Apr 4<span class="place"> · Théâtre du Rideau Vert</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Mar 11</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-a-7-musicaux-avec-mcgill" target="_blank" rel="noopener">5 à 7 musicaux avec McGill</a><span class="meta">until Mar 13 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Mar 12</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/harry-potter-philosophers-stone-in-concert" target="_blank" rel="noopener">Harry Potter and the Philosopher’s Stone™ In Concert</a><span class="meta">until Mar 13 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Minnesota Frost</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Mar 14</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/13638/" target="_blank" rel="noopener">Last day: Allison Katz : Jeu d&#x27;esprit</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+</ul></div>
+<div class="day"><h3>Tue, Mar 16</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Vancouver Goldeneyes</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Mar 17</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/glissant-glissant" target="_blank" rel="noopener">Glissant Glissant</a><span class="meta">until Mar 27 · Cinquième Salle<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Mar 18</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/5-7-musicaux-with-uqam" target="_blank" rel="noopener">5 à 7 musicaux avec l&#x27;UQAM</a><span class="meta">until Mar 20 · Salon urbain<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Mar 19</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/les-choristes" target="_blank" rel="noopener">Les Choristes in Concert</a><span class="meta">until Mar 20 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Mar 20</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/cyrano-de-bergerac-comedie-musicale" target="_blank" rel="noopener">Cyrano de Bergerac – La Comédie Musicale</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Hershey Bears</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, Mar 21</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">5 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Mar 23</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Seattle Torrent</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Thu, Mar 25</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/atys-dawe-jasmin" target="_blank" rel="noopener">Atys | Dawe &amp; Jasmin</a><span class="meta">until Mar 27<span class="place"> · Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Mar 26</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Springfield Thunderbirds</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Mar 27</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Toronto Sceptres</a><span class="meta">2 pm · TBD</span></li>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Springfield Thunderbirds</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Mar 31</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Belleville Senators</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Apr 2027</h2><div class="days">
+<div class="day"><h3>Fri, Apr 2</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Manitoba Moose</a><span class="meta">7 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Sat, Apr 3</h3><ul>
+<li data-place="rocket"><a href="https://www.rocketlaval.com/" target="_blank" rel="noopener">Rocket vs Manitoba Moose</a><span class="meta">3 pm<span class="place"> · Place Bell, Laval</span></span></li>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs PWHL Detroit</a><span class="meta">7 pm · TBD</span></li>
+</ul></div>
+<div class="day"><h3>Wed, Apr 7</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/les-boys-le-spectacle" target="_blank" rel="noopener">Les Boys, le spectacle</a><span class="meta">Théâtre Maisonneuve<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Fri, Apr 9</h3><ul>
+<li data-place="victoire"><a href="https://www.thepwhl.com/en/schedule/" target="_blank" rel="noopener">Victoire vs Ottawa Charge</a><span class="meta">7:30 pm<span class="place"> · Place Bell, Laval</span></span></li>
+</ul></div>
+<div class="day"><h3>Tue, Apr 13</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/a-beautiful-noise" target="_blank" rel="noopener">A Beautiful Noise: The Neil Diamond Musical</a><span class="meta">until Apr 18 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Wed, Apr 28</h3><ul>
+<li data-place="rideauvert"><a href="https://rideauvert.qc.ca/piece/motel-helene/" target="_blank" rel="noopener">Motel Hélène</a><span class="meta">until May 23<span class="place"> · Théâtre du Rideau Vert</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>May 2027</h2><div class="days">
+<div class="day"><h3>Sat, May 1</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/rigoletto-giuseppe-verdi" target="_blank" rel="noopener">Rigoletto | Giuseppe Verdi</a><span class="meta">until May 9 · Salle Wilfrid-Pelletier<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+<div class="day"><h3>Sun, May 9</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14081/" target="_blank" rel="noopener">Last day: MARIE CHOUINARD: BECOMING BREATH</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+</ul></div>
+<div class="day"><h3>Sat, May 15</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14087/" target="_blank" rel="noopener">Opens: Keith Haring in 3D</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Jun 2027</h2><div class="days">
+<div class="day"><h3>Thu, Jun 10</h3><ul>
+<li data-place="placedesarts"><a href="https://www.placedesarts.com/en/event/la-belle-helene" target="_blank" rel="noopener">La Belle Hélène</a><span class="meta">until Jun 12 · Maison symphonique<span class="place">, Place des Arts</span></span></li>
+</ul></div>
+</div></section>
+<section class="month"><h2>Sep 2027</h2><div class="days">
+<div class="day"><h3>Sun, Sep 12</h3><ul>
+<li data-place="mbam"><a href="https://www.mbam.qc.ca/en/exhibitions/14087/" target="_blank" rel="noopener">Last day: Keith Haring in 3D</a><span class="meta place">Musée des beaux-arts de Montréal</span></li>
+</ul></div>
+</div></section>
 </main>
 <footer>Updated Oct 9, 2026</footer>
 <script>
 (function () {
   var pills = document.querySelectorAll(".places button");
   var items = document.querySelectorAll(".month li");
+  var days = document.querySelectorAll(".day");
   var months = document.querySelectorAll(".month");
   function apply(place) {            // "" = no filter, show everything
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
     items.forEach(function (li) { li.hidden = !!place && li.dataset.place !== place; });
+    days.forEach(function (d) { d.hidden = !d.querySelector("li:not([hidden])"); });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
     document.body.classList.toggle("filtered", !!place);
     history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));

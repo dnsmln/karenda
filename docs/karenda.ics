@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:PT12H
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:trv-cyrano@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20261019
 SUMMARY:Cyrano · Rideau Vert
@@ -21,7 +21,7 @@ X-KARENDA-SOURCE:rideauvert
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-adib-alkhalidey@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20270131
 SUMMARY:Adib Alkhalidey | Comme les Mongols à Baghdad · PdA
@@ -34,7 +34,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-5-7-musicaux-udm@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261011
 SUMMARY:5 à 7 musicaux avec la Faculté de musique de l’UdeM · PdA
@@ -46,7 +46,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-apashe-osm@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261011
 SUMMARY:Apashe x OSM · PdA
@@ -58,35 +58,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:mbam-14001@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20270308
-SUMMARY:Beyond the Pedestal: Sculptures in the Collection\, from the 196
- 0s to Today · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/14001/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14001/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13640@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20270215
-SUMMARY:Chiharu Shiota: The Soul Trembles · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/13640/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13640/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-engelbert-humperdinck@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261010
 SUMMARY:Engelbert Humperdinck | The Celebration Tour · PdA
@@ -98,112 +71,22 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-20261008T1700@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261008T210000Z
-DTEND:20261009T004700Z
-SUMMARY:Lawrence of Arabia (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/
-DESCRIPTION:David Lean · United Kingdom · 1962 · 227 minutes · Engli
- sh · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/deta
- ils/lawrence-of-arabia/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13516@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20261012
-SUMMARY:Rising Suns: Art from the Confederacies of the Great Lakes and R
- ivers · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/13516/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13516/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-bridges-of-madison-county-20261008T1400@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261008T180000Z
-DTEND:20261008T201500Z
-SUMMARY:The Bridges of Madison County [LAST SCREENING] (VOSTF) · Modern
- e
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-bridges-of-madiso
- n-county/
-DESCRIPTION:Clint Eastwood · United States · 1995 · 135 minutes · En
- glish · French · DCP\nhttps://www.cinemamoderne.com/en/films/details/
- the-bridges-of-madison-county/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-lequipe-20261008
- T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261009T013000Z
-DTEND:20261009T024800Z
-SUMMARY:The Color of Pomegranates – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-color-of-pomegran
- ates-coups-de-coeur-de-lequipe/
-DESCRIPTION:Sergueï Paradjanov · USSR · 1969 · 78 minutes · Armenia
- n\, Azerbaijani\, Georgian · English · DCP - 4K Restoration\nhttps://
- www.cinemamoderne.com/en/films/details/the-color-of-pomegranates-coups-
- de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13638@karenda
-DTSTAMP:20261009T165922Z
+UID:mbam-13638-opens@karenda
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20270315
-SUMMARY:Allison Katz : Jeu d'esprit · MBAM
+DTEND;VALUE=DATE:20261010
+SUMMARY:Opens: Allison Katz : Jeu d'esprit · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
 URL:https://www.mbam.qc.ca/en/exhibitions/13638/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13638/
+DESCRIPTION:October 9\, 2026 – March 14\, 2027\nhttps://www.mbam.qc.ca
+ /en/exhibitions/13638/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jacquot-de-nantes-coups-de-coeur-de-lequipe-20261009T1615@ka
- renda
-DTSTAMP:20261009T165922Z
-DTSTART:20261009T201500Z
-DTEND:20261009T221500Z
-SUMMARY:Jacquot de Nantes – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jacquot-de-nantes-cou
- ps-de-coeur-de-lequipe/
-DESCRIPTION:Agnès Varda · France · 1991 · 118 · French · English 
- · DCP\nhttps://www.cinemamoderne.com/en/films/details/jacquot-de-nante
- s-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261009T1845@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261009T224500Z
-DTEND:20261010T001000Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-renaud-symphonique-50-ans-de-carriere@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Renaud symphonique: 50 ans de carrière! · PdA
@@ -216,41 +99,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261009T2045
- @karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261010T004500Z
-DTEND:20261010T034400Z
-SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
- the-ugly-60e-anniversaire/
-DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
- minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
- om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-trainspotting-30e-anniversaire-20261009T1400@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261009T180000Z
-DTEND:20261009T193400Z
-SUMMARY:Trainspotting: 30th Anniversary [LAST SCREENINGS] (VOSTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/trainspotting-30e-ann
- iversaire/
-DESCRIPTION:Danny Boyle · United Kingdom · 1996 · 94 minutes · Engli
- sh · French · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
- films/details/trainspotting-30e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-edward-scissorhands-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Edward Scissorhands in Concert · PdA
@@ -262,70 +112,12 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-20261010T1815@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261010T221500Z
-DTEND:20261011T001700Z
-SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
- oty/
-DESCRIPTION:Josef Kubota Wladyka · United States\, Japan · 2026 · 122
-  minutes · Japanese \, English \, Spain · English · DCP\nhttps://www
- .cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-hope-20261010T2100@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261011T010000Z
-DTEND:20261011T033700Z
-SUMMARY:Hope (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/hope/
-DESCRIPTION:Na Hong-jin · South Korea · 2026 · 157 minutes · Korean 
- · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261010T1615@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261010T201500Z
-DTEND:20261010T214000Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jardin-denfants-cine-rencontre-20261010T1345@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261010T174500Z
-DTEND:20261010T190900Z
-SUMMARY:Kindergarten (VOF + Q&A) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jardin-denfants-cine-
- rencontre/
-DESCRIPTION:Jean-François Caissy · Canada (Quebec) · 2025 · 84 minut
- es · French · DCP\nhttps://www.cinemamoderne.com/en/films/details/jar
- din-denfants-cine-rencontre/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  10T0930@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261010T133000Z
 DTEND:20261010T145000Z
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
- ) · Moderne
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
  eete-de-la-ferme-petits-modernes/
@@ -337,66 +129,23 @@ CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-virgin-suicide-20261010T1130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261010T153000Z
-DTEND:20261010T170700Z
-SUMMARY:The Virgin Suicides (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
-DESCRIPTION:Sofia Coppola · United States · 1999 · 97 minutes · Engl
- ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
- ails/the-virgin-suicide/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-lequipe-20261011T1345@kare
- nda
-DTSTAMP:20261009T165922Z
-DTSTART:20261011T174500Z
-DTEND:20261011T194900Z
-SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:Giuseppe Tornatore · Italy\, France · 1988 · 124 minutes 
- · Italian · English · DCP\nhttps://www.cinemamoderne.com/en/films/de
- tails/cinema-paradiso-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-clue-20261011T1130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261011T153000Z
-DTEND:20261011T165700Z
-SUMMARY:Clue (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/clue/
-DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
- ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
- ails/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261011T1630@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261011T203000Z
-DTEND:20261011T215500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
+UID:mbam-13516-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Last day: Rising Suns: Art from the Confederacies of the Great L
+ akes and Rivers · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13516/
+DESCRIPTION:Until October 11\, 2026\nhttps://www.mbam.qc.ca/en/exhibitio
+ ns/13516/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-relive-the-music-50s-60s-70s-show@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Relive the Music 50s\, 60s & 70s Show · PdA
@@ -411,11 +160,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  11T0930@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261011T133000Z
 DTEND:20261011T145000Z
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
- ) · Moderne
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
  eete-de-la-ferme-petits-modernes/
@@ -427,37 +175,8 @@ CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-la-meilleure-facon-cest-par-accident-20261011T1830@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261011T223000Z
-DTEND:20261012T002100Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
- s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
- etails/la-meilleure-facon-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-invite-20261011T2100@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261012T010000Z
-DTEND:20261012T024700Z
-SUMMARY:The Invite [LAST SCREENING] (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-invite/
-DESCRIPTION:Olivia Wilde · United States · 2026 · 107 minutes · Engl
- ish · French · DCP\nhttps://www.cinemamoderne.com/en/films/details/th
- e-invite/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-eclats-du-romantisme@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Éclats du romantisme · PdA
@@ -469,78 +188,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-hope-20261012T1800@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261012T220000Z
-DTEND:20261013T003700Z
-SUMMARY:Hope (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/hope/
-DESCRIPTION:Na Hong-jin · South Korea · 2026 · 157 minutes · Korean 
- · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-20261012T1330@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261012T173000Z
-DTEND:20261012T211700Z
-SUMMARY:Lawrence of Arabia (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/
-DESCRIPTION:David Lean · United Kingdom · 1962 · 227 minutes · Engli
- sh · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/deta
- ils/lawrence-of-arabia/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-my-brothers-wedding-20261012T2115@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261013T011500Z
-DTEND:20261013T023600Z
-SUMMARY:My Brother’s Wedding (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/my-brothers-wedding/
-DESCRIPTION:Charles Burnett · United States · 1983 · 81 minutes · En
- glish · DCP - Restoration 4K\nhttps://www.cinemamoderne.com/en/films/d
- etails/my-brothers-wedding/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-20261013T1330@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261013T173000Z
-DTEND:20261013T193200Z
-SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
- oty/
-DESCRIPTION:Josef Kubota Wladyka · United States\, Japan · 2026 · 122
-  minutes · Japanese \, English \, Spain · English · DCP\nhttps://www
- .cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261013T1700@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261013T210000Z
-DTEND:20261013T222500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-mamma-mia@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261019
 SUMMARY:Mamma Mia! · PdA
@@ -552,52 +201,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-la-meilleure-facon-cest-par-accident-20261013T2030@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261014T003000Z
-DTEND:20261014T022100Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
- s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
- etails/la-meilleure-facon-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-conte-dautomne-2-20261014T1530@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261014T193000Z
-DTEND:20261014T212100Z
-SUMMARY:A Tale of Autumn (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/conte-dautomne-2/
-DESCRIPTION:Éric Rohmer · France · 1998 · 111 minutes · French · E
- nglish · DCP - 2K Restoration\nhttps://www.cinemamoderne.com/en/films/
- details/conte-dautomne-2/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-bashu-the-little-stranger-20261014T2030@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261015T003000Z
-DTEND:20261015T023100Z
-SUMMARY:Bashu: The Little Stranger (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/bashu-the-little-stra
- nger/
-DESCRIPTION:Bahram Beyzaie · Iran · 1989 · 121 minutes · Persian \, 
- Arabic · English · DCP - Restauration 4K\nhttps://www.cinemamoderne.c
- om/en/films/details/bashu-the-little-stranger/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:espn-761864@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261014T233000Z
 DTEND:20261015T013000Z
 SUMMARY:CF Montréal vs Atlanta United FC
@@ -608,65 +213,8 @@ CATEGORIES:Sports,MLS
 X-KARENDA-SOURCE:cfmontreal
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-lequipe-20261014T1800@kare
- nda
-DTSTAMP:20261009T165922Z
-DTSTART:20261014T220000Z
-DTEND:20261015T000400Z
-SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:Giuseppe Tornatore · Italy\, France · 1988 · 124 minutes 
- · Italian · English · DCP\nhttps://www.cinemamoderne.com/en/films/de
- tails/cinema-paradiso-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-hope-20261015T1345@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261015T174500Z
-DTEND:20261015T202200Z
-SUMMARY:Hope (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/hope/
-DESCRIPTION:Na Hong-jin · South Korea · 2026 · 157 minutes · Korean 
- · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/hope/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261015T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261016T013000Z
-DTEND:20261016T025500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-lawrence-of-arabia-20261015T1700@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261015T210000Z
-DTEND:20261016T004700Z
-SUMMARY:Lawrence of Arabia (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/lawrence-of-arabia/
-DESCRIPTION:David Lean · United Kingdom · 1962 · 227 minutes · Engli
- sh · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/deta
- ils/lawrence-of-arabia/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-pas-perdus-documentaires-sceniques@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261019
 SUMMARY:Pas perdus | documentaires scéniques · PdA
@@ -680,7 +228,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-azrieli-music-prizes@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:The Azrieli Music Prizes Gala Concert · PdA
@@ -692,22 +240,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-clue-20261016T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261017T013000Z
-DTEND:20261017T025700Z
-SUMMARY:Clue (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/clue/
-DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
- ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
- ails/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-ghostly-kisses-orchestre-filmharmonique@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Ghostly Kisses & the FILMharmonique Orchestra · PdA
@@ -720,22 +254,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-late-fame-20261016T1330@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261016T173000Z
-DTEND:20261016T190700Z
-SUMMARY:Late Fame (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/late-fame/
-DESCRIPTION:Kent Jones · United States\, France · 2025 · 97 minutes 
- · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/late-
- fame/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-mossbed@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20270222
 SUMMARY:Mossbed · PdA
@@ -746,39 +266,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261016T1800
- @karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261016T220000Z
-DTEND:20261017T005900Z
-SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
- the-ugly-60e-anniversaire/
-DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
- minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
- om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-virgin-suicide-20261016T1545@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261016T194500Z
-DTEND:20261016T212200Z
-SUMMARY:The Virgin Suicides (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
-DESCRIPTION:Sofia Coppola · United States · 1999 · 97 minutes · Engl
- ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
- ails/the-virgin-suicide/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-louis-jean-cormier-filmharmonique-orchestra@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Louis-Jean Cormier and the FILMharmonique Orchestra · PdA
@@ -791,42 +280,12 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-mariages-coups-de-coeur-de-lequipe-20261017T1200@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261017T160000Z
-DTEND:20261017T173500Z
-SUMMARY:Marriages – Coups de coeur de l’équipe (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/mariages-coups-de-coe
- ur-de-lequipe/
-DESCRIPTION:Catherine Martin · Canada (Quebec) · 2001 · 95 minutes ·
-  French · Digital\nhttps://www.cinemamoderne.com/en/films/details/mari
- ages-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-naza-20261017T1615@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261017T201500Z
-DTEND:20261017T213200Z
-SUMMARY:Naza (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/naza/
-DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
- es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
- lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  17T1000@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261017T140000Z
 DTEND:20261017T152000Z
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
- ) · Moderne
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
  eete-de-la-ferme-petits-modernes/
@@ -838,175 +297,8 @@ CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-la-meilleure-facon-cest-par-accident-20261017T1400@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261017T180000Z
-DTEND:20261017T195100Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
- s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
- etails/la-meilleure-facon-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261017T1800
- @karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261017T220000Z
-DTEND:20261018T005900Z
-SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
- the-ugly-60e-anniversaire/
-DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
- minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
- om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-train-to-busan-10e-anniversaire-20261017T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261018T013000Z
-DTEND:20261018T032800Z
-SUMMARY:Train to Busan: 10th Anniversary [LAST SCREENING] (VOSTA) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/train-to-busan-10e-an
- niversaire/
-DESCRIPTION:Yeon Sang-ho · South Korea · 2016 · 118 minutes · Korean
-  · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/trai
- n-to-busan-10e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-chronovisor-20261018T1600@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261018T200000Z
-DTEND:20261018T214000Z
-SUMMARY:Chronovisor (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
-DESCRIPTION:Jack Auen\, Kevin Walker · United States · 2026 · 100 min
- utes · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/
- chronovisor/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cinema-paradiso-coups-de-coeur-de-lequipe-20261018T1130@kare
- nda
-DTSTAMP:20261009T165922Z
-DTSTART:20261018T153000Z
-DTEND:20261018T173400Z
-SUMMARY:Cinema Paradiso – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cinema-paradiso-coups
- -de-coeur-de-lequipe/
-DESCRIPTION:Giuseppe Tornatore · Italy\, France · 1988 · 124 minutes 
- · Italian · English · DCP\nhttps://www.cinemamoderne.com/en/films/de
- tails/cinema-paradiso-coups-de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-ha-chan-shake-your-booty-20261018T1815@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261018T221500Z
-DTEND:20261019T001700Z
-SUMMARY:Ha-Chan\, Shake Your Booty! (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/ha-chan-shake-your-bo
- oty/
-DESCRIPTION:Josef Kubota Wladyka · United States\, Japan · 2026 · 122
-  minutes · Japanese \, English \, Spain · English · DCP\nhttps://www
- .cinemamoderne.com/en/films/details/ha-chan-shake-your-booty/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261018T1400@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261018T180000Z
-DTEND:20261018T192500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-trainspotting-30e-anniversaire-20261018T2100@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261019T010000Z
-DTEND:20261019T023400Z
-SUMMARY:Trainspotting: 30th Anniversary [LAST SCREENINGS] (VOSTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/trainspotting-30e-ann
- iversaire/
-DESCRIPTION:Danny Boyle · United Kingdom · 1996 · 94 minutes · Engli
- sh · French · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
- films/details/trainspotting-30e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-wallace-et-gromit-le-mystere-du-lapin-garou-20261018T0930@ka
- renda
-DTSTAMP:20261009T165922Z
-DTSTART:20261018T133000Z
-DTEND:20261018T145500Z
-SUMMARY:Wallace and Gromit: The Curse of the Were-Rabbit (VF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/wallace-et-gromit-le-
- mystere-du-lapin-garou/
-DESCRIPTION:Steve Box\, Nick Park · United Kingdoms\, United States · 
- 2005 · 85 minutes · French · Blu-Ray\nhttps://www.cinemamoderne.com/
- en/films/details/wallace-et-gromit-le-mystere-du-lapin-garou/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-jim-queen-20261019T1730@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261019T213000Z
-DTEND:20261019T225500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-naza-20261019T2100@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261020T010000Z
-DTEND:20261020T021700Z
-SUMMARY:Naza (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/naza/
-DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
- es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
- lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-golden-piano-sous-les-petales-dor-et-chandelles@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Golden Piano | Sous les pétales d'or et chandelles · PdA
@@ -1020,7 +312,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-guy-nantel@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Guy Nantel | Bienveillant · PdA
@@ -1032,22 +324,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-jim-queen-20261020T2100@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261021T010000Z
-DTEND:20261021T022500Z
-SUMMARY:Jim Queen (VOF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/jim-queen/
-DESCRIPTION:Nicolas Athané\, Marco Nguyen · France\, Belgium · 2026 
- · 85 minutes · French · DCP\nhttps://www.cinemamoderne.com/en/films/
- details/jim-queen/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-jimmy-carr@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261022
 SUMMARY:Jimmy Carr | Laughs Funny · PdA
@@ -1059,53 +337,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-good-the-bad-and-the-ugly-60e-anniversaire-20261020T1530
- @karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261020T193000Z
-DTEND:20261020T222900Z
-SUMMARY:The Good\, The Bad and The Ugly: 60th Anniversary (VASTF) · Mod
- erne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-good-the-bad-and-
- the-ugly-60e-anniversaire/
-DESCRIPTION:Sergio Leone · Italy\, Spain\, West Germany · 1966 · 179 
- minutes · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.c
- om/en/films/details/the-good-the-bad-and-the-ugly-60e-anniversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-video-club-spectateur-ennemi-20261020T1900@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261020T230000Z
-DTEND:20261021T010000Z
-SUMMARY:vidéo-club – Spectateur\, Ennemi (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/video-club-spectateur
- -ennemi/
-DESCRIPTION:Multiple · 47 · English · French · DCP\nhttps://www.cine
- mamoderne.com/en/films/details/video-club-spectateur-ennemi/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-chronovisor-20261021T1900@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261021T230000Z
-DTEND:20261022T004000Z
-SUMMARY:Chronovisor (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
-DESCRIPTION:Jack Auen\, Kevin Walker · United States · 2026 · 100 min
- utes · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/
- chronovisor/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-the-world-of-stravinsky@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261023
 SUMMARY:From Tchaikovsky to The Firebird · PdA
@@ -1118,7 +351,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-louis-jose-houde-jusqua-fin-labeaute@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20270108
 SUMMARY:Louis-José Houde | Et jusqu’à la fin la beauté. · PdA
@@ -1131,22 +364,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-naza-20261021T1720@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261021T212000Z
-DTEND:20261021T223700Z
-SUMMARY:Naza (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/naza/
-DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
- es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
- lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:ahl-1029171@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261021T230000Z
 DTEND:20261022T020000Z
 SUMMARY:Rocket vs Syracuse Crunch
@@ -1157,25 +376,8 @@ CATEGORIES:Sports,AHL
 X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-color-of-pomegranates-coups-de-coeur-de-lequipe-20261021
- T2115@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261022T011500Z
-DTEND:20261022T023300Z
-SUMMARY:The Color of Pomegranates – Staff Picks (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-color-of-pomegran
- ates-coups-de-coeur-de-lequipe/
-DESCRIPTION:Sergueï Paradjanov · USSR · 1969 · 78 minutes · Armenia
- n\, Azerbaijani\, Georgian · English · DCP - 4K Restoration\nhttps://
- www.cinemamoderne.com/en/films/details/the-color-of-pomegranates-coups-
- de-coeur-de-lequipe/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-5-a-7-musicaux-avec-conservatoire-de-musique-de-montreal@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261025
 SUMMARY:5 à 7 musicaux avec Conservatoire de Musique de Montréal​ ·
@@ -1189,22 +391,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-possible-love-20261023T1815@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261023T221500Z
-DTEND:20261024T005900Z
-SUMMARY:Possible Love (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/possible-love/
-DESCRIPTION:Lee Chang-dong · South Korea\, United States · 2026 · 164
-  minutes · Korean · English · DCP\nhttps://www.cinemamoderne.com/en/
- films/details/possible-love/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:ahl-1029182@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261023T230000Z
 DTEND:20261024T020000Z
 SUMMARY:Rocket vs Hamilton Hammers
@@ -1215,21 +403,8 @@ CATEGORIES:Sports,AHL
 X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-scream-30th-anniversary-20261023T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261024T013000Z
-DTEND:20261024T032100Z
-SUMMARY:Scream: 30th Anniversary (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:Wes Craven · United States · 1996 · 111 minutes · Englis
- h · DCP\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:espn-761903@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261024T173000Z
 DTEND:20261024T193000Z
 SUMMARY:CF Montréal vs Nashville SC
@@ -1240,37 +415,8 @@ CATEGORIES:Sports,MLS
 X-KARENDA-SOURCE:cfmontreal
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-clue-20261024T1215@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261024T161500Z
-DTEND:20261024T174200Z
-SUMMARY:Clue (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/clue/
-DESCRIPTION:Jonathan Lynn · United States · 1985 · 87 minutes · Engl
- ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
- ails/clue/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-faust-100e-anniversaire-20261024T1630@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261024T203000Z
-DTEND:20261024T221600Z
-SUMMARY:Faust: 100th Anniversary (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/faust-100e-anniversai
- re/
-DESCRIPTION:F.W. Murnau · Germany · 1926 · 106 minutes · - · Englis
- h · DCP\nhttps://www.cinemamoderne.com/en/films/details/faust-100e-ann
- iversaire/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-legendes-de-lolympia-en-opera@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Légendes de l’Olympia en opéra · PdA
@@ -1283,7 +429,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-pierre-yves-roy-desmarais@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Pierre-Yves Roy-Desmarais | Une année en un an · PdA
@@ -1296,7 +442,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029195@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261024T190000Z
 DTEND:20261024T220000Z
 SUMMARY:Rocket vs Hamilton Hammers
@@ -1307,94 +453,8 @@ CATEGORIES:Sports,AHL
 X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-sleepaway-camp-20261024T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261025T013000Z
-DTEND:20261025T025800Z
-SUMMARY:Sleepaway Camp (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:Robert Hiltzik · United States · 1983 · 88 minutes · Eng
- lish · DCP\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-teenage-sex-and-death-at-camp-miasma-20261024T1900@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261024T230000Z
-DTEND:20261025T004600Z
-SUMMARY:Teenage Sex and Death at Camp Miasma (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/teenage-sex-and-death
- -at-camp-miasma/
-DESCRIPTION:Jane Schoenbrun · United States\, Canada · 2026 · 106 min
- utes · English · French · DCP\nhttps://www.cinemamoderne.com/en/film
- s/details/teenage-sex-and-death-at-camp-miasma/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-la-meilleure-facon-cest-par-accident-20261024T1000@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261024T140000Z
-DTEND:20261024T155100Z
-SUMMARY:The Best Way is By Accident (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/la-meilleure-facon-ce
- st-par-accident/
-DESCRIPTION:Noémie D. Lerclerc · Canada (Quebec) · 2026 · 111 minute
- s · French · English · DCP\nhttps://www.cinemamoderne.com/en/films/d
- etails/la-meilleure-facon-cest-par-accident/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-20261024T1415@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261024T181500Z
-DTEND:20261024T195700Z
-SUMMARY:The History of Concrete (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
- te/
-DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
- sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
- f-concrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-a-bay-of-blood-20261025T2030@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261026T003000Z
-DTEND:20261026T015500Z
-SUMMARY:A Bay of Blood (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/a-bay-of-blood/
-DESCRIPTION:Mario Bava · Italy · 1971 · 85 minutes · English · DCP 
- - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/details/a-bay-
- of-blood/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-cube-staff-picks-20261025T1815@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261025T221500Z
-DTEND:20261025T234500Z
-SUMMARY:Cube – Staff picks (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/cube-staff-picks/
-DESCRIPTION:Vincenzo Natali · Canada · 1997 · 90 minutes · English 
- · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/details
- /cube-staff-picks/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-jardin-alice-et-theo@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Le jardin d’Alice et Théo · PdA
@@ -1408,11 +468,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  25T0930@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261025T133000Z
 DTEND:20261025T145000Z
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom [PETITS MODERNES] (VF
- ) · Moderne
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
  eete-de-la-ferme-petits-modernes/
@@ -1424,37 +483,8 @@ CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-20261025T1600@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261025T200000Z
-DTEND:20261025T214200Z
-SUMMARY:The History of Concrete (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
- te/
-DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
- sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
- f-concrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-virgin-suicide-20261025T1115@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261025T151500Z
-DTEND:20261025T165200Z
-SUMMARY:The Virgin Suicides (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-virgin-suicide/
-DESCRIPTION:Sofia Coppola · United States · 1999 · 97 minutes · Engl
- ish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/det
- ails/the-virgin-suicide/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-jf-otis@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:JF Otis | Avec plaisir! · PdA
@@ -1466,78 +496,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-the-fly-40th-anniversary-20261026T2115@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261027T011500Z
-DTEND:20261027T025100Z
-SUMMARY:The Fly: 40th Anniversary (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:David Cronenberg · United States\, Canada · 1986 · 96 min
- utes · English · DCP\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-lost-boys-x-drawn-quarterly-20261026T1815@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261026T221500Z
-DTEND:20261026T235200Z
-SUMMARY:The Lost Boys x Drawn & Quarterly (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-lost-boys-x-drawn
- -quarterly/
-DESCRIPTION:Joel Schumacher · United States · 1987 · 97 minutes · En
- glish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/films/d
- etails/the-lost-boys-x-drawn-quarterly/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-begotten-20261027T2115@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261028T011500Z
-DTEND:20261028T022700Z
-SUMMARY:Begotten (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/begotten/
-DESCRIPTION:E. Elias Merhige · United States · 1989 · 72 minutes · M
- uet · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/e
- n/films/details/begotten/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-chronovisor-20261027T1545@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261027T194500Z
-DTEND:20261027T212500Z
-SUMMARY:Chronovisor (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/chronovisor/
-DESCRIPTION:Jack Auen\, Kevin Walker · United States · 2026 · 100 min
- utes · English · DCP\nhttps://www.cinemamoderne.com/en/films/details/
- chronovisor/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-possible-love-20261027T1800@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261027T220000Z
-DTEND:20261028T004400Z
-SUMMARY:Possible Love (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/possible-love/
-DESCRIPTION:Lee Chang-dong · South Korea\, United States · 2026 · 164
-  minutes · Korean · English · DCP\nhttps://www.cinemamoderne.com/en/
- films/details/possible-love/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-christos-papadopoulos@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261101
 SUMMARY:Christos Papadopoulos | My Fierce Ignorant Step · PdA
@@ -1550,7 +510,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-le-fantome-dans-la-machine@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261129
 SUMMARY:Le fantôme dans la machine · PdA
@@ -1562,50 +522,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-naza-20261028T1600@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261028T200000Z
-DTEND:20261028T211700Z
-SUMMARY:Naza (VOSTF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/naza/
-DESCRIPTION:Yuval Abraham\, Rachel Szor · United Kingdoms\, United Stat
- es\, Israel · 2026 · 77 minutes · Hebrew \, English · French or Eng
- lish · DCP\nhttps://www.cinemamoderne.com/en/films/details/naza/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-20261028T1745@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261028T214500Z
-DTEND:20261028T232700Z
-SUMMARY:The History of Concrete (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
- te/
-DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
- sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
- f-concrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-henry-portrait-of-a-serial-killer-20261029T2100@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261030T010000Z
-DTEND:20261030T022300Z
-SUMMARY:Henry: Portrait of a Serial Killer (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:John McNaughton · United States · 1984 · 83 minutes · En
- glish · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-midsummer-night-dreams@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261102
 SUMMARY:Midsummer Night Dreams · PdA
@@ -1618,7 +536,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-nosferatu-the-vampire-in-cine-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Nosferatu the Vampire in Cine-Concert · PdA
@@ -1631,146 +549,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:moderne-altered-states-20261030T2145@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261031T014500Z
-DTEND:20261031T032700Z
-SUMMARY:Altered States (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:Ken Russell · United States · 1980 · 102 minutes · Engli
- sh · DCP\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-fly-40th-anniversary-20261030T1930@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261030T233000Z
-DTEND:20261031T010600Z
-SUMMARY:The Fly: 40th Anniversary (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:David Cronenberg · United States\, Canada · 1986 · 96 min
- utes · English · DCP\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-gentle-monster-20261031T1900@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261031T230000Z
-DTEND:20261101T005400Z
-SUMMARY:Gentle Monster (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/gentle-monster/
-DESCRIPTION:Marie Kreutzer · Austria\, Germany\, France\, Sweden · 202
- 6 · 114 minutes · English \, French \, German · English · DCP\nhttp
- s://www.cinemamoderne.com/en/films/details/gentle-monster/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-kwaidan-20261031T1530@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261031T193000Z
-DTEND:20261031T223300Z
-SUMMARY:Kwaidan (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:Masaki Kobayashi · Japan · 1964 · 183 minutes · Japanese
-  · English · DCP - 4K Restoration\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-scream-30th-anniversary-20261031T2130@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261101T013000Z
-DTEND:20261101T032100Z
-SUMMARY:Scream: 30th Anniversary (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/
-DESCRIPTION:Wes Craven · United States · 1996 · 111 minutes · Englis
- h · DCP\nhttps://www.cinemamoderne.com/en/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-wallace-et-gromit-le-mystere-du-lapin-garou-20261031T0930@ka
- renda
-DTSTAMP:20261009T165922Z
-DTSTART:20261031T133000Z
-DTEND:20261031T145500Z
-SUMMARY:Wallace and Gromit: The Curse of the Were-Rabbit (VF) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/wallace-et-gromit-le-
- mystere-du-lapin-garou/
-DESCRIPTION:Steve Box\, Nick Park · United Kingdoms\, United States · 
- 2005 · 85 minutes · French · Blu-Ray\nhttps://www.cinemamoderne.com/
- en/films/details/wallace-et-gromit-le-mystere-du-lapin-garou/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:mbam-13639@karenda
-DTSTAMP:20261009T165922Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20270501
-SUMMARY:Anne Kahane: Structures · MBAM
-LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
- , Montréal
-URL:https://www.mbam.qc.ca/en/exhibitions/13639/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/13639/
-CATEGORIES:Museum,MBAM
-X-KARENDA-SOURCE:mbam
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-possible-love-20261101T1800@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261101T230000Z
-DTEND:20261102T014400Z
-SUMMARY:Possible Love (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/possible-love/
-DESCRIPTION:Lee Chang-dong · South Korea\, United States · 2026 · 164
-  minutes · Korean · English · DCP\nhttps://www.cinemamoderne.com/en/
- films/details/possible-love/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-the-history-of-concrete-20261101T2115@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261102T021500Z
-DTEND:20261102T035700Z
-SUMMARY:The History of Concrete (VOA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/the-history-of-concre
- te/
-DESCRIPTION:John Wilson · United States · 1890 · 102 minutes · Engli
- sh · DCP\nhttps://www.cinemamoderne.com/en/films/details/the-history-o
- f-concrete/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
-UID:moderne-gentle-monster-20261102T1600@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261102T210000Z
-DTEND:20261102T225400Z
-SUMMARY:Gentle Monster (VOSTA) · Moderne
-LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
-URL:https://www.cinemamoderne.com/en/films/details/gentle-monster/
-DESCRIPTION:Marie Kreutzer · Austria\, Germany\, France\, Sweden · 202
- 6 · 114 minutes · English \, French \, German · English · DCP\nhttp
- s://www.cinemamoderne.com/en/films/details/gentle-monster/
-CATEGORIES:Cinema,Cinéma Moderne
-X-KARENDA-SOURCE:cinemamoderne
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-entre-chiens-et-louves@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261116
 SUMMARY:Entre chiens et louves · PdA
@@ -1783,7 +563,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029246@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261105T000000Z
 DTEND:20261105T030000Z
 SUMMARY:Rocket vs Lehigh Valley Phantoms
@@ -1794,20 +574,8 @@ CATEGORIES:Sports,AHL
 X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029257@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261107T000000Z
-DTEND:20261107T030000Z
-SUMMARY:Rocket vs Cleveland Monsters
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:espn-761934@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261107T210000Z
 DTEND:20261107T230000Z
 SUMMARY:CF Montréal vs Vancouver Whitecaps
@@ -1819,7 +587,7 @@ X-KARENDA-SOURCE:cfmontreal
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-europe-la-bataille-des-sieges-cine-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Europe : La Bataille des sièges in ciné-concert · PdA
@@ -1832,8 +600,20 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029257@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20261107T000000Z
+DTEND:20261107T030000Z
+SUMMARY:Rocket vs Cleveland Monsters
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:ahl-1029271@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261107T200000Z
 DTEND:20261107T230000Z
 SUMMARY:Rocket vs Cleveland Monsters
@@ -1845,7 +625,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:trv-soiree-maude-guerin@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261109
 SUMMARY:Soirée Maude Guérin · Rideau Vert
@@ -1857,7 +637,7 @@ X-KARENDA-SOURCE:rideauvert
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-mokatek-etoile-disparue@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Mokatek et l’étoile disparue · PdA
@@ -1870,7 +650,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-comico-show@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Comico Show · PdA
@@ -1883,7 +663,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-nataly-aukar@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Nataly Aukar · PdA
@@ -1896,7 +676,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-le-duplex@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Le Duplex · PdA
@@ -1909,7 +689,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029356@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261121T200000Z
 DTEND:20261121T230000Z
 SUMMARY:Rocket vs Calgary Wranglers
@@ -1921,7 +701,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-werther-jules-massenet@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261130
 SUMMARY:Werther | Jules Massenet · PdA
@@ -1934,7 +714,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-dans-nos-maisons@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Dans nos maisons · PdA
@@ -1947,7 +727,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029368@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261122T200000Z
 DTEND:20261122T230000Z
 SUMMARY:Rocket vs Calgary Wranglers
@@ -1959,7 +739,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:trv-2026-revue-et-corrigee@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20270103
 SUMMARY:2026 revue et corrigée · Rideau Vert
@@ -1971,7 +751,7 @@ X-KARENDA-SOURCE:rideauvert
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-ballets-jazz-montreal@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ballets Jazz Montréal | Dance Me – Music by Leonard Cohen · 
@@ -1985,7 +765,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-the-nightmare-before-christmas-in-cine-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261128
 SUMMARY:Disney Tim Burton’s The Nightmare Before Christmas in Concert 
@@ -2000,7 +780,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-pierre-verville@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261128
 SUMMARY:Pierre Verville | Pour une dernière voix · PdA
@@ -2013,7 +793,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-arthur-aventurier-africanimaux@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20270404
 SUMMARY:Arthur L’aventurier | Africanimaux · PdA
@@ -2026,7 +806,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-arthur-aventurier@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Arthur L’aventurier | Africanimaux · PdA
@@ -2038,20 +818,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029427@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261203T000000Z
-DTEND:20261203T030000Z
-SUMMARY:Rocket vs Toronto Marlies
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-heredis-spectacle-assassins-creed@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261221
 SUMMARY:HEREDIS spectacle Assassin's Creed · PdA
@@ -2064,8 +832,20 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029427@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20261203T000000Z
+DTEND:20261203T030000Z
+SUMMARY:Rocket vs Toronto Marlies
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:pda-janette@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261218
 SUMMARY:Janette · PdA
@@ -2078,7 +858,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029433@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261205T000000Z
 DTEND:20261205T030000Z
 SUMMARY:Rocket vs Wilkes-Barre/Scranton Penguins
@@ -2090,7 +870,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-nutcracker-grands-ballets@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261231
 SUMMARY:The Nutcracker · PdA
@@ -2103,7 +883,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-grand-bal-de-noel@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Le Grand Bal de Noël · PdA
@@ -2116,7 +896,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0366@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261206T000000Z
 DTEND:20261206T030000Z
 SUMMARY:Victoire vs PWHL Hamilton
@@ -2128,7 +908,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029469@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261210T000000Z
 DTEND:20261210T030000Z
 SUMMARY:Rocket vs Utica Comets
@@ -2140,7 +920,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0379@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261212T190000Z
 DTEND:20261212T220000Z
 SUMMARY:Victoire vs PWHL San Jose
@@ -2152,7 +932,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-marie-chouinard-henri-michaux@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261220
 SUMMARY:Marie Chouinard | Henri Michaux : Mouvements + Selected solos an
@@ -2166,7 +946,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-tadam-les-lutins-magnifiques@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261221
 SUMMARY:Tadam et les lutins magnifiques · PdA
@@ -2179,7 +959,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-gaelle-bien-aime-les-meetings-de-madame-appolon@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
 SUMMARY:Gaëlle Bien-Aimé | Les meetings de Madame Appolon · PdA
@@ -2193,7 +973,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0393@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261226T190000Z
 DTEND:20261226T220000Z
 SUMMARY:Victoire vs Ottawa Charge
@@ -2205,7 +985,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-le-petit-prince-antoine-de-saint-exupery@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261229
 SUMMARY:Le Petit Prince d’Antoine de Saint-Exupéry · PdA
@@ -2219,7 +999,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-nicolas-noel-entre-deux-mondes@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261229
 SUMMARY:Nicolas Noël | Entre deux mondes · PdA
@@ -2232,7 +1012,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-o-christmas-tea-a-british-comedy@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20261229
 DTEND;VALUE=DATE:20261230
 SUMMARY:O Christmas Tea: A British Comedy · PdA
@@ -2245,20 +1025,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029578@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20261231T000000Z
-DTEND:20261231T030000Z
-SUMMARY:Rocket vs Belleville Senators
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:74186ac3bdf425cf0399@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20261230T000000Z
 DTEND:20261230T030000Z
 SUMMARY:Victoire vs PWHL Hamilton
@@ -2269,8 +1037,20 @@ CATEGORIES:Sports,PWHL
 X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029578@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20261231T000000Z
+DTEND:20261231T030000Z
+SUMMARY:Rocket vs Belleville Senators
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:ahl-1029598@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270102T200000Z
 DTEND:20270102T230000Z
 SUMMARY:Rocket vs Hartford Wolf Pack
@@ -2282,7 +1062,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029610@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270103T200000Z
 DTEND:20270103T230000Z
 SUMMARY:Rocket vs Hartford Wolf Pack
@@ -2294,7 +1074,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-avatar-last-airbender-en-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270108
 SUMMARY:Avatar: The Last Airbender in Concert · PdA
@@ -2308,7 +1088,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0411@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270107T000000Z
 DTEND:20270107T030000Z
 SUMMARY:Victoire vs PWHL Las Vegas
@@ -2320,7 +1100,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-mehdi-bousaidan@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:Mehdi Bousaidan | Le garçon et la fenêtre · PdA
@@ -2333,7 +1113,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-lord-rings-return-king-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270111
 SUMMARY:The Lord of the Rings: The Return of the King – In Concert · 
@@ -2347,7 +1127,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-architectures-de-la-joie@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Architectures de la joie · PdA
@@ -2359,20 +1139,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029666@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20270114T000000Z
-DTEND:20270114T030000Z
-SUMMARY:Rocket vs Belleville Senators
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-un-tramway-nomme-desir@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270214
 SUMMARY:Un tramway nommé Désir · PdA
@@ -2384,11 +1152,11 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029675@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20270116T000000Z
-DTEND:20270116T030000Z
-SUMMARY:Rocket vs Rochester Americans
+UID:ahl-1029666@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20270114T000000Z
+DTEND:20270114T030000Z
+SUMMARY:Rocket vs Belleville Senators
 LOCATION:Place Bell\, Laval
 URL:https://www.rocketlaval.com/
 DESCRIPTION:https://www.rocketlaval.com/
@@ -2397,7 +1165,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-simon-delisle@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
 SUMMARY:Simon Delisle | Tache · PdA
@@ -2409,8 +1177,20 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029675@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20270116T000000Z
+DTEND:20270116T030000Z
+SUMMARY:Rocket vs Rochester Americans
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:ahl-1029686@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270116T200000Z
 DTEND:20270116T230000Z
 SUMMARY:Rocket vs Rochester Americans
@@ -2422,7 +1202,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-metropolis-in-cine-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Metropolis in Cine-Concert · PdA
@@ -2435,7 +1215,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:trv-hedda-gabler-2@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270215
 SUMMARY:Hedda Gabler · Rideau Vert
@@ -2447,7 +1227,7 @@ X-KARENDA-SOURCE:rideauvert
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-feng-hua-xue-yue@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Feng Hua Xue Yue · PdA
@@ -2460,7 +1240,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0434@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270123T190000Z
 DTEND:20270123T220000Z
 SUMMARY:Victoire vs Boston Fleet
@@ -2471,20 +1251,8 @@ CATEGORIES:Sports,PWHL
 X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029752@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20270128T000000Z
-DTEND:20270128T030000Z
-SUMMARY:Rocket vs Providence Bruins
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-michel-faubert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270130
 SUMMARY:30 ans de contes avec Michel Faubert | La nuit des temps · PdA
@@ -2497,7 +1265,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-5-7-musicaux-vision-diversite@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270131
 SUMMARY:5 à 7 musicaux avec Vision Diversité · PdA
@@ -2510,7 +1278,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-der-rosenkavalier@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270201
 SUMMARY:Der Rosenkavalier I Richard Strauss · PdA
@@ -2522,8 +1290,20 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029752@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20270128T000000Z
+DTEND:20270128T030000Z
+SUMMARY:Rocket vs Providence Bruins
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:pda-how-train-your-dragon-2-in-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270131
 SUMMARY:How to Train Your Dragon 2 in Concert · PdA
@@ -2536,20 +1316,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029760@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20270130T000000Z
-DTEND:20270130T030000Z
-SUMMARY:Rocket vs Providence Bruins
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-verdi-traviata-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270131
 SUMMARY:Verdi: La Traviata in Concert · PdA
@@ -2561,8 +1329,20 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029760@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20270130T000000Z
+DTEND:20270130T030000Z
+SUMMARY:Rocket vs Providence Bruins
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:pda-chinese-new-year-canada-gala-phoenix@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Canadian Chinese New Year Gala · PdA
@@ -2576,7 +1356,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-les-ptites-polisses@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Les p’tites polisses · PdA
@@ -2589,7 +1369,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-morin-leroux-arts-vivants@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270207
 SUMMARY:Morin/Leroux · Arts vivants | Euphoric Thresholds · PdA
@@ -2601,20 +1381,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029794@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20270204T000000Z
-DTEND:20270204T030000Z
-SUMMARY:Rocket vs Belleville Senators
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:pda-5-7-musicaux-with-udm@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270204
 DTEND;VALUE=DATE:20270207
 SUMMARY:5 à 7 musicaux avec la Faculté de musique de l’UdeM · PdA
@@ -2626,7 +1394,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-riverdance@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270204
 DTEND;VALUE=DATE:20270208
 SUMMARY:Riverdance · PdA
@@ -2638,8 +1406,20 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029794@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20270204T000000Z
+DTEND:20270204T030000Z
+SUMMARY:Rocket vs Belleville Senators
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:pda-pietragalla-barbara@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270207
 SUMMARY:Barbara par Pietragalla · PdA
@@ -2651,20 +1431,8 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:ahl-1029807@karenda
-DTSTAMP:20261009T165922Z
-DTSTART:20270206T000000Z
-DTEND:20270206T030000Z
-SUMMARY:Rocket vs Utica Comets
-LOCATION:Place Bell\, Laval
-URL:https://www.rocketlaval.com/
-DESCRIPTION:https://www.rocketlaval.com/
-CATEGORIES:Sports,AHL
-X-KARENDA-SOURCE:rocket
-END:VEVENT
-BEGIN:VEVENT
 UID:ahl-1029822@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270206T200000Z
 DTEND:20270206T230000Z
 SUMMARY:Rocket vs Rochester Americans
@@ -2675,8 +1443,20 @@ CATEGORIES:Sports,AHL
 X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
+UID:ahl-1029807@karenda
+DTSTAMP:20261009T191638Z
+DTSTART:20270206T000000Z
+DTEND:20270206T030000Z
+SUMMARY:Rocket vs Utica Comets
+LOCATION:Place Bell\, Laval
+URL:https://www.rocketlaval.com/
+DESCRIPTION:https://www.rocketlaval.com/
+CATEGORIES:Sports,AHL
+X-KARENDA-SOURCE:rocket
+END:VEVENT
+BEGIN:VEVENT
 UID:pda-twilight-saga-new-moon-in-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270211
 DTEND;VALUE=DATE:20270212
 SUMMARY:The Twilight Saga: New Moon in Concert · PdA
@@ -2690,7 +1470,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-bugs-bunny-at-the-symphony@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270214
 SUMMARY:Bugs Bunny at the Symphony · PdA
@@ -2703,7 +1483,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-fred-pellerin@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270509
 SUMMARY:Fred Pellerin | Au nom du père · PdA
@@ -2716,7 +1496,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0464@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270213T000000Z
 DTEND:20270213T030000Z
 SUMMARY:Victoire vs Boston Fleet
@@ -2727,8 +1507,22 @@ CATEGORIES:Sports,PWHL
 X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
+UID:mbam-13640-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Last day: Chiharu Shiota: The Soul Trembles · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13640/
+DESCRIPTION:Until February 14\, 2027\nhttps://www.mbam.qc.ca/en/exhibiti
+ ons/13640/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
 UID:pda-5-7-musicaux-nuits-afrique@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270221
 SUMMARY:5 à 7 musicaux avec Nuits d'Afrique · PdA
@@ -2741,7 +1535,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0469@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270218T000000Z
 DTEND:20270218T030000Z
 SUMMARY:Victoire vs Toronto Sceptres
@@ -2753,7 +1547,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-la-florida@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270220
 SUMMARY:La Florida · PdA
@@ -2765,21 +1559,22 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:mbam-14081@karenda
-DTSTAMP:20261009T165922Z
+UID:mbam-14081-opens@karenda
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270220
-DTEND;VALUE=DATE:20270510
-SUMMARY:MARIE CHOUINARD: BECOMING BREATH · MBAM
+DTEND;VALUE=DATE:20270221
+SUMMARY:Opens: MARIE CHOUINARD: BECOMING BREATH · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
 URL:https://www.mbam.qc.ca/en/exhibitions/14081/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14081/
+DESCRIPTION:February 20 – May 9\, 2027\nhttps://www.mbam.qc.ca/en/exhi
+ bitions/14081/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-step-afrika-evolution@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Step Afrika! | The Evolution Tour · PdA
@@ -2792,7 +1587,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-drolement-debrouillards@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Drôlement débrouillards · PdA
@@ -2805,7 +1600,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-la-recreation-de-mozart@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:La récréation de Mozart · PdA
@@ -2818,7 +1613,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-danza-contemporanea-de-cuba@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270228
 SUMMARY:Danza Contemporánea de Cuba · PdA
@@ -2831,7 +1626,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-cendrillon-grands-ballets@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270224
 DTEND;VALUE=DATE:20270301
 SUMMARY:Cinderella · PdA
@@ -2844,7 +1639,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029927@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270227T000000Z
 DTEND:20270227T030000Z
 SUMMARY:Rocket vs Toronto Marlies
@@ -2856,7 +1651,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029940@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270227T200000Z
 DTEND:20270227T230000Z
 SUMMARY:Rocket vs Toronto Marlies
@@ -2868,7 +1663,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-peter-and-the-wolf-on-the-organ@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270302
 DTEND;VALUE=DATE:20270303
 SUMMARY:Peter and the Wolf on the Organ · PdA
@@ -2882,7 +1677,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-semaine-relache@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270302
 DTEND;VALUE=DATE:20270307
 SUMMARY:School Break · PdA
@@ -2894,7 +1689,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-the-book-of-mormon@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270302
 DTEND;VALUE=DATE:20270308
 SUMMARY:The Book of Mormon · PdA
@@ -2907,7 +1702,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-nous-dans-les-plaines-immenses@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270404
 SUMMARY:Nous\, dans les plaines immenses · PdA
@@ -2920,7 +1715,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029960@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270304T000000Z
 DTEND:20270304T030000Z
 SUMMARY:Rocket vs Utica Comets
@@ -2932,7 +1727,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029970@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270306T000000Z
 DTEND:20270306T030000Z
 SUMMARY:Rocket vs Hamilton Hammers
@@ -2944,7 +1739,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1029981@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270306T200000Z
 DTEND:20270306T230000Z
 SUMMARY:Rocket vs Hamilton Hammers
@@ -2955,8 +1750,23 @@ CATEGORIES:Sports,AHL
 X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
+UID:mbam-14001-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Last day: Beyond the Pedestal: Sculptures in the Collection\, fr
+ om the 1960s to Today · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14001/
+DESCRIPTION:Until March 7\, 2027\nhttps://www.mbam.qc.ca/en/exhibitions/
+ 14001/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
 UID:trv-le-dieu-du-carnage@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270405
 SUMMARY:Le dieu du carnage · Rideau Vert
@@ -2968,7 +1778,7 @@ X-KARENDA-SOURCE:rideauvert
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0490@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270310T000000Z
 DTEND:20270310T030000Z
 SUMMARY:Victoire vs New York Sirens
@@ -2980,7 +1790,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-5-a-7-musicaux-avec-mcgill@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270311
 DTEND;VALUE=DATE:20270314
 SUMMARY:5 à 7 musicaux avec McGill · PdA
@@ -2993,7 +1803,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-harry-potter-philosophers-stone-in-concert@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270314
 SUMMARY:Harry Potter and the Philosopher’s Stone™ In Concert · PdA
@@ -3007,7 +1817,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0495@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270313T000000Z
 DTEND:20270313T030000Z
 SUMMARY:Victoire vs Minnesota Frost
@@ -3018,8 +1828,22 @@ CATEGORIES:Sports,PWHL
 X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
+UID:mbam-13638-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Last day: Allison Katz : Jeu d'esprit · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/13638/
+DESCRIPTION:October 9\, 2026 – March 14\, 2027\nhttps://www.mbam.qc.ca
+ /en/exhibitions/13638/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
 UID:74186ac3bdf425cf0500@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270316T230000Z
 DTEND:20270317T020000Z
 SUMMARY:Victoire vs Vancouver Goldeneyes
@@ -3031,7 +1855,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-glissant-glissant@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270328
 SUMMARY:Glissant Glissant · PdA
@@ -3044,7 +1868,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-5-7-musicaux-with-uqam@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270318
 DTEND;VALUE=DATE:20270321
 SUMMARY:5 à 7 musicaux avec l'UQAM · PdA
@@ -3056,7 +1880,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-les-choristes@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270321
 SUMMARY:Les Choristes in Concert · PdA
@@ -3069,7 +1893,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-cyrano-de-bergerac-comedie-musicale@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Cyrano de Bergerac – La Comédie Musicale · PdA
@@ -3083,7 +1907,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030072@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270320T190000Z
 DTEND:20270320T220000Z
 SUMMARY:Rocket vs Hershey Bears
@@ -3095,7 +1919,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030081@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270321T210000Z
 DTEND:20270322T000000Z
 SUMMARY:Rocket vs Belleville Senators
@@ -3107,7 +1931,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0508@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270323T230000Z
 DTEND:20270324T020000Z
 SUMMARY:Victoire vs Seattle Torrent
@@ -3119,7 +1943,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-atys-dawe-jasmin@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270328
 SUMMARY:Atys | Dawe & Jasmin · PdA
@@ -3132,7 +1956,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030109@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270326T230000Z
 DTEND:20270327T020000Z
 SUMMARY:Rocket vs Springfield Thunderbirds
@@ -3144,7 +1968,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030124@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270327T190000Z
 DTEND:20270327T220000Z
 SUMMARY:Rocket vs Springfield Thunderbirds
@@ -3156,7 +1980,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0514@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270327T180000Z
 DTEND:20270327T210000Z
 SUMMARY:Victoire vs Toronto Sceptres
@@ -3168,7 +1992,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030135@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270331T230000Z
 DTEND:20270401T020000Z
 SUMMARY:Rocket vs Belleville Senators
@@ -3180,7 +2004,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030149@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270402T230000Z
 DTEND:20270403T020000Z
 SUMMARY:Rocket vs Manitoba Moose
@@ -3192,7 +2016,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:ahl-1030160@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270403T190000Z
 DTEND:20270403T220000Z
 SUMMARY:Rocket vs Manitoba Moose
@@ -3204,7 +2028,7 @@ X-KARENDA-SOURCE:rocket
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0523@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270403T230000Z
 DTEND:20270404T020000Z
 SUMMARY:Victoire vs PWHL Detroit
@@ -3216,7 +2040,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-les-boys-le-spectacle@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270407
 DTEND;VALUE=DATE:20270408
 SUMMARY:Les Boys\, le spectacle · PdA
@@ -3229,7 +2053,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:74186ac3bdf425cf0529@hockeytech.com@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART:20270409T233000Z
 DTEND:20270410T023000Z
 SUMMARY:Victoire vs Ottawa Charge
@@ -3241,7 +2065,7 @@ X-KARENDA-SOURCE:victoire
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-a-beautiful-noise@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270413
 DTEND;VALUE=DATE:20270419
 SUMMARY:A Beautiful Noise: The Neil Diamond Musical · PdA
@@ -3254,7 +2078,7 @@ X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
 UID:trv-motel-helene@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270428
 DTEND;VALUE=DATE:20270524
 SUMMARY:Motel Hélène · Rideau Vert
@@ -3266,7 +2090,7 @@ X-KARENDA-SOURCE:rideauvert
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-rigoletto-giuseppe-verdi@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270510
 SUMMARY:Rigoletto | Giuseppe Verdi · PdA
@@ -3278,21 +2102,36 @@ CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
 END:VEVENT
 BEGIN:VEVENT
-UID:mbam-14087@karenda
-DTSTAMP:20261009T165922Z
+UID:mbam-14081-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Last day: MARIE CHOUINARD: BECOMING BREATH · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14081/
+DESCRIPTION:February 20 – May 9\, 2027\nhttps://www.mbam.qc.ca/en/exhi
+ bitions/14081/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14087-opens@karenda
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270515
-DTEND;VALUE=DATE:20270913
-SUMMARY:Keith Haring in 3D · MBAM
+DTEND;VALUE=DATE:20270516
+SUMMARY:Opens: Keith Haring in 3D · MBAM
 LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
  , Montréal
 URL:https://www.mbam.qc.ca/en/exhibitions/14087/
-DESCRIPTION:https://www.mbam.qc.ca/en/exhibitions/14087/
+DESCRIPTION:May 15 – September 12\, 2027\nhttps://www.mbam.qc.ca/en/ex
+ hibitions/14087/
 CATEGORIES:Museum,MBAM
 X-KARENDA-SOURCE:mbam
 END:VEVENT
 BEGIN:VEVENT
 UID:pda-la-belle-helene@karenda
-DTSTAMP:20261009T165922Z
+DTSTAMP:20261009T191638Z
 DTSTART;VALUE=DATE:20270610
 DTEND;VALUE=DATE:20270613
 SUMMARY:La Belle Hélène · PdA
@@ -3302,5 +2141,19 @@ DESCRIPTION:2 performances\nhttps://www.placedesarts.com/en/event/la-bel
  le-helene
 CATEGORIES:Theatre,Place des Arts
 X-KARENDA-SOURCE:placedesarts
+END:VEVENT
+BEGIN:VEVENT
+UID:mbam-14087-last@karenda
+DTSTAMP:20261009T191638Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:Last day: Keith Haring in 3D · MBAM
+LOCATION:Musée des beaux-arts de Montréal\, 1380 rue Sherbrooke Ouest\
+ , Montréal
+URL:https://www.mbam.qc.ca/en/exhibitions/14087/
+DESCRIPTION:May 15 – September 12\, 2027\nhttps://www.mbam.qc.ca/en/ex
+ hibitions/14087/
+CATEGORIES:Museum,MBAM
+X-KARENDA-SOURCE:mbam
 END:VEVENT
 END:VCALENDAR
