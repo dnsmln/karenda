@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  10T0930@karenda
-DTSTAMP:20261009T191728Z
+DTSTAMP:20261010T155215Z
 DTSTART:20261010T133000Z
 DTEND:20261010T145000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
@@ -27,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  11T0930@karenda
-DTSTAMP:20261009T191728Z
+DTSTAMP:20261010T155215Z
 DTSTART:20261011T133000Z
 DTEND:20261011T145000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
@@ -44,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  17T1000@karenda
-DTSTAMP:20261009T191728Z
+DTSTAMP:20261010T155215Z
 DTSTART:20261017T140000Z
 DTEND:20261017T152000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
@@ -61,7 +61,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  25T0930@karenda
-DTSTAMP:20261009T191728Z
+DTSTAMP:20261010T155215Z
 DTSTART:20261025T133000Z
 DTEND:20261025T145000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
