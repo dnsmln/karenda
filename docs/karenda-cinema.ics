@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  17T1000@karenda
-DTSTAMP:20261013T173534Z
+DTSTAMP:20261014T150656Z
 DTSTART:20261017T140000Z
 DTEND:20261017T152000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
@@ -27,9 +27,26 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  25T0930@karenda
-DTSTAMP:20261013T173534Z
+DTSTAMP:20261014T150656Z
 DTSTART:20261025T133000Z
 DTEND:20261025T145000Z
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
+ eete-de-la-ferme-petits-modernes/
+DESCRIPTION:Steve Cox\, Matthew Walker · France\, United Kingdom\, Unit
+ ed States · 2026 · 80 minutes · French · DCP\nhttps://www.cinemamod
+ erne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-
+ modernes/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202611
+ 01T0930@karenda
+DTSTAMP:20261014T150656Z
+DTSTART:20261101T143000Z
+DTEND:20261101T155000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
 LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
 URL:https://www.cinemamoderne.com/en/films/details/shaun-le-mouton-la-be
