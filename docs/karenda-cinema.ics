@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202610
  25T0930@karenda
-DTSTAMP:20261019T165842Z
+DTSTAMP:20261020T150315Z
 DTSTART:20261025T133000Z
 DTEND:20261025T145000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
@@ -27,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:moderne-shaun-le-mouton-la-beeete-de-la-ferme-petits-modernes-202611
  01T0930@karenda
-DTSTAMP:20261019T165842Z
+DTSTAMP:20261020T150315Z
 DTSTART:20261101T143000Z
 DTEND:20261101T155000Z
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (VF) · Moderne
@@ -38,6 +38,21 @@ DESCRIPTION:Steve Cox\, Matthew Walker · France\, United Kingdom\, Unit
  ed States · 2026 · 80 minutes · French · DCP\nhttps://www.cinemamod
  erne.com/en/films/details/shaun-le-mouton-la-beeete-de-la-ferme-petits-
  modernes/
+CATEGORIES:Cinema,Cinéma Moderne
+X-KARENDA-SOURCE:cinemamoderne
+END:VEVENT
+BEGIN:VEVENT
+UID:moderne-le-petit-prince-petits-modernes-20261114T1000@karenda
+DTSTAMP:20261020T150315Z
+DTSTART:20261114T150000Z
+DTEND:20261114T164600Z
+SUMMARY:The Little Prince (VF) · Moderne
+LOCATION:Cinéma Moderne\, 5150 boul. Saint-Laurent\, Montréal
+URL:https://www.cinemamoderne.com/en/films/details/le-petit-prince-petit
+ s-modernes/
+DESCRIPTION:Mark Osborne · France\, Canada\, China\, United States · 2
+ 015 · 106 minutes · French · Blu-Ray\nhttps://www.cinemamoderne.com/
+ en/films/details/le-petit-prince-petits-modernes/
 CATEGORIES:Cinema,Cinéma Moderne
 X-KARENDA-SOURCE:cinemamoderne
 END:VEVENT
