@@ -9,6 +9,8 @@ Sources
   rocket        AHL schedule feed (HockeyTech) behind theahl.com (home games only)
   cinemamoderne cinemamoderne.com/en/schedule month calendar (Petits Modernes screenings only, timed)
   mbam          mbam.qc.ca/en/exhibitions listing (each exhibition's opening day and last day)
+  tohu          tohu.ca/en/season/shows listing, dates from each show's page
+  maisontheatre maisontheatre.com/programmation-famille (the family programme)
 
 Each source is independent. If one fails, its events from the previous
 karenda.ics are kept so the feed never loses a venue because of one bad day.
@@ -240,6 +242,37 @@ def parse_en_range(text: str) -> tuple[date, date] | None:
     m = re.search(rf"({M}) {D}, {Y}", t, re.I)                           # M D, Y
     if m:
         d = date(int(m[3]), month_num(m[1]), int(m[2]))
+        return d, d
+    return None
+
+
+def parse_fr_range(text: str) -> tuple[date, date] | None:
+    """Parse French date text as used by Maison Théâtre.
+
+    Handles: "3 mai 2026", "13 au 18 octobre 2026", "28 septembre au 11 octobre 2026",
+    "2 décembre 2026 au 3 janvier 2027", "1er novembre 2026".
+    Returns (first_day, last_day) inclusive.
+    """
+    t = re.sub(r"\s+", " ", html.unescape(text).replace("\u2013", "-").replace("\xa0", " ")).strip()
+    sep = r"\s*(?:au|-)\s*"
+    D, M, Y = r"\b(\d{1,2})(?:er)?", r"([^\W\d_]+)", r"(\d{4})"
+    m = re.search(rf"{D} {M} {Y}{sep}{D} {M} {Y}", t, re.I)            # D M Y au D M Y
+    if m and month_num(m[2]) and month_num(m[5]):
+        a = date(int(m[3]), month_num(m[2]), int(m[1])); b = date(int(m[6]), month_num(m[5]), int(m[4]))
+        return (a, b) if b >= a else None
+    m = re.search(rf"{D} {M}{sep}{D} {M} {Y}", t, re.I)                 # D M au D M Y
+    if m and month_num(m[2]) and month_num(m[4]):
+        y = int(m[5]); a = date(y, month_num(m[2]), int(m[1])); b = date(y, month_num(m[4]), int(m[3]))
+        if b < a:
+            a = a.replace(year=y - 1)
+        return a, b
+    m = re.search(rf"{D}{sep}{D} {M} {Y}", t, re.I)                     # D au D M Y
+    if m and month_num(m[3]):
+        y = int(m[4]); mo = month_num(m[3])
+        return date(y, mo, int(m[1])), date(y, mo, int(m[2]))
+    m = re.search(rf"{D} {M} {Y}", t, re.I)                             # D M Y
+    if m and month_num(m[2]):
+        d = date(int(m[3]), month_num(m[2]), int(m[1]))
         return d, d
     return None
 
@@ -763,6 +796,95 @@ def src_mbam() -> list[Event]:
     return list(events.values())
 
 
+TOHU = "https://tohu.ca"
+TOHU_LOC = "TOHU, 2345 rue Jarry Est, Montréal"
+
+
+def _ld_event(page_html: str) -> dict | None:
+    """The schema.org Event in a page's JSON-LD."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    for s in soup.select('script[type="application/ld+json"]'):
+        try:
+            data = json.loads(s.string or "", strict=False)
+        except ValueError:
+            continue
+        if isinstance(data, dict) and data.get("@type") == "Event":
+            return data
+    return None
+
+
+def src_tohu() -> list[Event]:
+    """Circus shows. The listing gives days without years, so each show's dates come from the Event on its own page."""
+    soup = BeautifulSoup(get(TOHU + "/en/season/shows?type=events", "tohu_shows.html").text, "html.parser")
+    tiles = soup.select("article.m-tile-event")
+    if not tiles:
+        raise RuntimeError("no shows listed")
+    events: list[Event] = []
+    tried = 0
+    for tile in tiles:
+        a = tile.select_one("a.m-tile-event__overlay-link[href]")
+        if not a or text_of(tile.select_one(".m-tile-event__status")).lower() == "finished":
+            continue
+        href = a["href"].split("?")[0]
+        if tried:
+            time.sleep(1)
+        tried += 1
+        try:
+            ld = _ld_event(get(href, f"tohu_show_{tried}.html").text)
+        except Exception as e:  # noqa: BLE001
+            print("  tohu: show page failed", href, e)
+            continue
+        try:
+            first = datetime.fromisoformat(ld["startDate"]).date()      # local midnight, e.g. 2026-12-17T00:00:00-05:00
+            last = datetime.fromisoformat(ld.get("endDate") or ld["startDate"]).date()
+        except (TypeError, KeyError, ValueError):
+            print("  tohu: no dates for", href)
+            continue
+        if last < first:
+            continue
+        title = text_of(tile.select_one(".m-tile-event__title")) or html.unescape(ld.get("name", ""))
+        tail = href.rstrip("/").rsplit("/", 1)[-1]
+        events.append(span_event(
+            "tohu", f"tohu-{slug(tail)}@karenda", f"{title} · TOHU", first, last,
+            location=TOHU_LOC, url=href,
+            description=text_of(tile.select_one(".m-tile-event__subtitle")), categories=["Circus", "TOHU"],
+        ))
+    if tried and not events:
+        raise RuntimeError("no show dates parsed")
+    return events
+
+
+MAISON = "https://www.maisontheatre.com"
+MAISON_LOC = "Maison Théâtre, 245 rue Ontario Est, Montréal"
+
+
+def src_maisontheatre() -> list[Event]:
+    """The family programme; the school-only performances are on another page."""
+    soup = BeautifulSoup(get(MAISON + "/programmation-famille/", "maisontheatre.html").text, "html.parser")
+    events: dict[str, Event] = {}
+    parsed = 0
+    for card in soup.select("article.show-preview"):
+        a = card.select_one('a[href*="/spectacle/"]')
+        dates = text_of(card.select_one(".show-preview__date"))         # "2 Décembre 2026 au 3 janvier 2027"
+        rng = parse_fr_range(dates)
+        if not a or not rng:
+            continue
+        parsed += 1
+        first, last = rng
+        href = a["href"].split("?")[0]
+        tail = href.rstrip("/").rsplit("/", 1)[-1]
+        title = text_of(card.select_one(".show-preview__title")) or a.get("title", "")
+        info = [text_of(card.select_one(sel)) for sel in (".show-preview__companyName", ".show-preview__ages", ".show-preview__duration")]
+        events.setdefault(href, span_event(
+            "maisontheatre", f"mt-{slug(tail)}@karenda", f"{title} · Maison Théâtre", first, last,
+            location=MAISON_LOC, url=href, description=" · ".join(x for x in info if x),
+            categories=["Theatre", "Maison Théâtre"],
+        ))
+    if not parsed:
+        raise RuntimeError("no shows parsed")
+    return list(events.values())
+
+
 # --------------------------------------------------------------------------- html page
 MTL = ZoneInfo("America/Toronto")
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -770,6 +892,8 @@ DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 PLACES = {  # source -> pill label on the web page (venue or team), in display order
     "placedesarts": "Place des Arts",
     "rideauvert": "Rideau Vert",
+    "maisontheatre": "Maison Théâtre",
+    "tohu": "TOHU",
     "victoire": "Victoire",
     "cfmontreal": "CF Montréal",
     "rocket": "Rocket",
@@ -779,6 +903,8 @@ PLACES = {  # source -> pill label on the web page (venue or team), in display o
 HOME = {  # source -> venue text hidden while that source's pill is active (it repeats the pill)
     "placedesarts": "Place des Arts",
     "rideauvert": "Théâtre du Rideau Vert",
+    "maisontheatre": "Maison Théâtre",
+    "tohu": "TOHU",
     "victoire": "Place Bell, Laval",
     "cfmontreal": "Stade Saputo",
     "rocket": "Place Bell, Laval",
@@ -788,7 +914,7 @@ HOME = {  # source -> venue text hidden while that source's pill is active (it r
 
 
 def plain_title(e: Event) -> str:
-    return re.sub(r"\s*·\s*(PdA|Rideau Vert|Moderne|MBAM)$", "", e.summary)
+    return re.sub(r"\s*·\s*(PdA|Rideau Vert|Maison Théâtre|TOHU|Moderne|MBAM)$", "", e.summary)
 
 
 def venue_of(e: Event) -> str:
@@ -968,11 +1094,13 @@ SOURCES = {
     "rocket": src_rocket,
     "cinemamoderne": src_cinemamoderne,
     "mbam": src_mbam,
+    "tohu": src_tohu,
+    "maisontheatre": src_maisontheatre,
 }
 GROUPS = {
     "karenda": list(SOURCES),
     "karenda-sports": ["victoire", "cfmontreal", "rocket"],
-    "karenda-theatre": ["placedesarts", "rideauvert"],
+    "karenda-theatre": ["placedesarts", "rideauvert", "maisontheatre", "tohu"],
     "karenda-cinema": ["cinemamoderne"],
     "karenda-museums": ["mbam"],
 }
