@@ -26,6 +26,8 @@ Set auto-refresh to "Every day". On iPhone: Settings → Calendar → Accounts �
 | Laval Rocket (AHL) | home games, timed | AHL schedule feed (HockeyTech) behind theahl.com |
 | Place des Arts | each show as an all-day span over its run, hall in location | `/en/programming` listing |
 | Théâtre du Rideau Vert | each show as an all-day span over its run | `/programmation` |
+| Maison Théâtre | family programme, each show as an all-day span over its run | `/programmation-famille` |
+| TOHU | circus shows, each as an all-day span over its run | `/en/season/shows` listing, dates from each show's page |
 | Cinéma Moderne | Petits Modernes screenings only (the kids' series), timed, runtime from the listing; a film shown in two language versions keeps one | `/en/schedule` month calendar, this month and the next two |
 | Musée des beaux-arts (MBAM) | each exhibition as two one-day events, the day it opens and its last day | `/en/exhibitions` listing |
 
