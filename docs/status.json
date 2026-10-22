@@ -1,50 +1,51 @@
 {
-  "built_at": "2026-10-21T15:13:01+00:00",
+  "built_at": "2026-10-22T15:15:20+00:00",
   "sources": {
     "victoire": {
       "ok": true,
       "events": 15,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "cfmontreal": {
       "ok": true,
       "events": 2,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "placedesarts": {
       "ok": true,
       "events": 95,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "rideauvert": {
-      "ok": true,
-      "events": 5,
+      "ok": false,
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://rideauvert.qc.ca/programmation/",
+      "kept_previous": 5,
       "last_ok": "2026-10-21"
     },
     "rocket": {
       "ok": true,
       "events": 34,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "cinemamoderne": {
       "ok": true,
       "events": 3,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "mbam": {
       "ok": true,
       "events": 7,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "tohu": {
       "ok": true,
       "events": 7,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     },
     "maisontheatre": {
       "ok": true,
       "events": 13,
-      "last_ok": "2026-10-21"
+      "last_ok": "2026-10-22"
     }
   },
   "karenda": 181,
