@@ -1,50 +1,50 @@
 {
-  "built_at": "2026-10-29T16:55:03+00:00",
+  "built_at": "2026-10-30T16:41:19+00:00",
   "sources": {
     "victoire": {
       "ok": true,
       "events": 15,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "cfmontreal": {
       "ok": true,
       "events": 1,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "placedesarts": {
       "ok": true,
       "events": 95,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "rideauvert": {
       "ok": true,
       "events": 6,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "rocket": {
       "ok": true,
       "events": 31,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "cinemamoderne": {
       "ok": true,
       "events": 2,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "mbam": {
       "ok": true,
       "events": 10,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "tohu": {
       "ok": true,
       "events": 7,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     },
     "maisontheatre": {
       "ok": true,
       "events": 13,
-      "last_ok": "2026-10-29"
+      "last_ok": "2026-10-30"
     }
   },
   "karenda": 180,
