@@ -580,23 +580,27 @@ def src_rideauvert() -> list[Event]:
 
 
 AHL_FEED = "https://lscluster.hockeytech.com/feed/index.php"
-AHL_KEYS = ("REDACTED", "REDACTED")
 
 
 def _ahl(view: str, name: str, **params) -> dict:
-    """HockeyTech 'modulekit' JSON behind theahl.com stats. Returns the SiteKit payload."""
+    """HockeyTech 'modulekit' JSON behind theahl.com stats. Returns the SiteKit payload.
+    The feed key comes from the AHL_KEY environment variable (comma-separated to try several)."""
+    keys = [k.strip() for k in os.environ.get("AHL_KEY", "").split(",") if k.strip()]
+    if not keys:
+        raise RuntimeError("AHL_KEY not set (the HockeyTech feed key theahl.com's stats pages use)")
     err: Exception = RuntimeError("no AHL key accepted")
-    for key in AHL_KEYS:
+    for key in keys:
         q = {"feed": "modulekit", "view": view, "key": key, "client_code": "ahl", "lang": "en", "fmt": "json", **params}
         try:
-            text = get(AHL_FEED, name, params=q).text.strip()
+            text = get(AHL_FEED, params=q).text.strip().replace(key, "AHL_KEY")   # the feed echoes the key back
+            save_debug(name, text)
             data = json.loads(text[1:-1] if text.startswith("(") else text)
             kit = data.get("SiteKit") if isinstance(data, dict) else None
             if isinstance(kit, dict) and not kit.get("Error"):
                 return kit
             err = RuntimeError(f"{view}: unexpected payload {text[:160]!r}")
         except Exception as e:  # noqa: BLE001
-            err = e
+            err = RuntimeError(f"{type(e).__name__}: {e}".replace(key, "AHL_KEY"))   # an HTTP error quotes the URL, key included
     raise err
 
 
@@ -1044,6 +1048,17 @@ header nav a { color: var(--muted); font-weight: 400; }
 .month li { margin: 0 0 11px; line-height: 1.45; }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
+header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
+dialog { width: 340px; padding: 0; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); color: var(--ink); }
+dialog::backdrop { background: rgb(0 0 0 / 0.35); }
+dialog > div { padding: 24px; }
+dialog h2 { margin: 0 0 14px; font-size: 14px; font-weight: 500; text-align: center; }
+dialog ol { margin: 0 0 22px; padding-left: 18px; }
+dialog li { margin: 0 0 8px; line-height: 1.5; }
+.actions { display: flex; gap: 8px; }
+.actions > * { flex: 1; padding: 7px 12px; border: 1px solid var(--link); border-radius: 999px; font: inherit; font-size: 12px; font-weight: 500; line-height: 1.5; text-align: center; cursor: pointer; }
+.actions .primary { background: var(--link); color: var(--paper); }
+.actions .secondary { background: var(--paper); color: var(--link); border-color: var(--rule); }
 @media (max-width: 420px) { .month { grid-template-columns: 1fr; gap: 6px; } .month h2 { margin-bottom: 4px; } }
 </style>
 </head>
@@ -1051,7 +1066,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 <header>
   <h1>Karenda</h1>
   <nav>
-    <a href="karenda.ics" title="Subscribe in your calendar app">Subscribe</a>
+    <button type="button" class="build" aria-haspopup="dialog">Build your own</button>
     <a href="https://github.com/dnsmln/karenda">Source</a>
   </nav>
 </header>
@@ -1060,6 +1075,18 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
 {{BODY}}
 </main>
 <footer>Updated {{UPDATED}}</footer>
+<dialog class="build" aria-labelledby="build-title"><div>
+  <h2 id="build-title">Build your own</h2>
+  <ol>
+    <li>Copy the prompt and paste it into a coding agent such as Claude Code.</li>
+    <li>Answer a few questions: your city, the venues and teams you follow, where it should run.</li>
+    <li>The agent writes the scrapers and the daily build. Publish the page and subscribe to its feed.</li>
+  </ol>
+  <div class="actions">
+    <button type="button" class="primary">Copy prompt</button>
+    <a class="secondary" href="https://github.com/dnsmln/karenda" target="_blank" rel="noopener">Open GitHub</a>
+  </div>
+</div></dialog>
 <script>
 (function () {
   var pills = document.querySelectorAll(".places button");
@@ -1079,6 +1106,31 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
   }); });
   var h = location.hash.slice(1);
   apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
+
+  var PROMPT = "Build me my own karenda: a calendar of local events that updates itself every morning. "
+    + "Start from https://github.com/dnsmln/karenda: clone it, then read and follow .claude/skills/build-karenda/SKILL.md. "
+    + "Ask me its questions before changing any code.";
+  var dlg = document.querySelector("dialog.build");
+  var copy = dlg.querySelector(".primary");
+  document.querySelector("header .build").addEventListener("click", function () { dlg.showModal(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });   // a click on the backdrop
+  function copied() {
+    copy.textContent = "Copied";
+    setTimeout(function () { copy.textContent = "Copy prompt"; }, 2000);
+  }
+  function fallback() {              // no Clipboard API outside https
+    var t = document.createElement("textarea");
+    t.value = PROMPT;
+    dlg.appendChild(t);
+    t.select();
+    document.execCommand("copy");
+    t.remove();
+    copied();
+  }
+  copy.addEventListener("click", function () {
+    if (navigator.clipboard) navigator.clipboard.writeText(PROMPT).then(copied, fallback);
+    else fallback();
+  });
 })();
 </script>
 </body>

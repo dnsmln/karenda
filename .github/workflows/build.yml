@@ -37,6 +37,7 @@ jobs:
       - name: Build ICS files
         env:
           KARENDA_DEBUG: ${{ (github.event_name == 'push' || inputs.debug) && '1' || '0' }}
+          AHL_KEY: ${{ secrets.AHL_KEY }}
         run: python build.py
 
       - name: Commit if changed

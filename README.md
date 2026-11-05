@@ -1,48 +1,52 @@
 # karenda
 
-Auto-updating calendar of what's on in Montréal: theatre runs, exhibitions, films and home games.
-A GitHub Action rebuilds the `.ics` files every morning and commits them to `docs/`.
+A calendar of what's on near you that updates itself: shows, games, films, exhibitions. One Python script scrapes the venues and teams you follow and writes calendar feeds plus a one-page listing. A GitHub Action reruns it every morning.
 
-## Subscribe (iCloud / Apple Calendar)
+This repo is set up for Montréal. Copy it and point it at your own city.
 
-Calendar → File → New Calendar Subscription, paste one of:
+## How it works
 
-| Feed | URL |
-|---|---|
-| Everything | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda.ics` |
-| Sports only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-sports.ics` |
-| Theatre only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-theatre.ics` |
-| Cinema only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-cinema.ics` |
-| Museums only | `https://raw.githubusercontent.com/dnsmln/karenda/main/docs/karenda-museums.ics` |
+- `build.py` has one `src_*` function per source. Each returns a list of events: a theatre run is an all-day span, a game or screening has a start time.
+- It writes `docs/`: `karenda.ics` with everything, one `.ics` per group (sports, theatre, ...), `index.html`, and `status.json`.
+- If a source fails, its events from the previous build are kept. `status.json` shows per-source counts and errors; the page footer names any source that failed.
+- `.github/workflows/build.yml` runs the script daily and commits `docs/`.
+- `docs/` is static. Host it anywhere: Vercel (`vercel.json` is ready), GitHub Pages, or straight from raw GitHub URLs.
 
-Set auto-refresh to "Every day". On iPhone: Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar.
+## Build your own
 
-## Sources
+1. Copy this repo into your GitHub account.
+2. Open it with a coding agent such as Claude Code and ask it to build your karenda. It follows `.claude/skills/build-karenda/SKILL.md`: a few questions about your city, the venues and teams you follow, and where it should run, then it writes the scrapers.
+3. Publish `docs/` and subscribe to the feed in your calendar app.
 
-| Source | What | How |
+## Kinds of sources
+
+Most event sites fall into one of these. The Montréal sources in this repo cover each:
+
+| Data | Example source here | Notes |
 |---|---|---|
-| Montréal Victoire (PWHL) | home games, timed | season `.ics` files linked from thepwhl.com |
-| CF Montréal (MLS) | home games, timed | ESPN public schedule API |
-| Laval Rocket (AHL) | home games, timed | AHL schedule feed (HockeyTech) behind theahl.com |
-| Place des Arts | each show as an all-day span over its run, hall in location | `/en/programming` listing |
-| Théâtre du Rideau Vert | each show as an all-day span over its run | `/programmation` |
-| Maison Théâtre | family programme, each show as an all-day span over its run | `/programmation-famille` |
-| TOHU | circus shows, each as an all-day span over its run | `/en/season/shows` listing, dates from each show's page |
-| Cinéma Moderne | Petits Modernes screenings only (the kids' series), timed, runtime from the listing; a film shown in two language versions keeps one | `/en/schedule` month calendar, this month and the next two |
-| Musée des beaux-arts (MBAM) | each exhibition as two one-day events, the day it opens and its last day | `/en/exhibitions` listing |
+| Published season `.ics` | Montréal Victoire (PWHL) | `.ics` files linked from thepwhl.com, home games only |
+| Public JSON API | CF Montréal (MLS) | ESPN schedule API, home games only |
+| JSON API with a key | Laval Rocket (AHL) | HockeyTech feed behind theahl.com; key in the `AHL_KEY` secret |
+| Search index the site queries | Place des Arts | Algolia; app id and key read from the public page, HTML listing as fallback |
+| JSON-LD on detail pages | TOHU | `/en/season/shows` listing, dates from each show's page |
+| HTML listing | Théâtre du Rideau Vert, Maison Théâtre, MBAM | runs as all-day spans; MBAM exhibitions as two one-day events, opening and last day |
+| HTML calendar, filtered | Cinéma Moderne | Petits Modernes screenings only, this month and the next two |
 
-If a source fails on a given day, its events from the previous build are kept.
-`docs/status.json` shows per-source counts and errors from the last run.
+## Subscribe
+
+Use your host's URL, e.g. `https://<your-site>/karenda.ics`.
+
+- Apple Calendar: File → New Calendar Subscription, auto-refresh every day. iPhone: Settings → Calendar → Accounts → Add Account → Other → Add Subscribed Calendar.
+- Google Calendar (web): Other calendars → + → From URL.
+- Outlook: Add calendar → Subscribe from web.
 
 ## Run locally
 
 ```
 pip install -r requirements.txt
-python build.py            # writes docs/*.ics and docs/status.json
+python build.py                   # writes docs/*.ics, docs/index.html, docs/status.json
+python build.py --render-only     # rebuilds docs/index.html from the existing feed, no network
 KARENDA_DEBUG=1 python build.py   # also saves raw source pages to debug/
 ```
 
-## Web page
-
-`docs/index.html` is regenerated with the feeds: events by day, runs already under way first in the month, title linked to the venue page, pills at the top (they stay in view while scrolling) to filter by venue or team (labels in `PLACES` in `build.py`). The footer names any source whose last fetch failed and when it last succeeded.
-On Vercel, set the project's Output Directory to `docs` (no build command).
+Sources that need a key read it from the environment (`AHL_KEY=... python build.py`). In GitHub, add it under Settings → Secrets and variables → Actions.
