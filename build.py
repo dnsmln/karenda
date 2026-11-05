@@ -1033,7 +1033,6 @@ a { color: var(--link); font-weight: 450; text-decoration: none; }
 header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin: 0 0 28px; }
 header h1 { margin: 0; font-size: 14px; font-weight: 500; letter-spacing: -0.2px; line-height: 1.4; }
 header nav { display: flex; gap: 20px; font-size: 12px; }
-header nav a { color: var(--muted); font-weight: 400; }
 .places { position: sticky; top: 0; z-index: 1; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 32px; padding: 8px 0 10px; background: var(--paper); }
 .places button { appearance: none; background: none; border: 1px solid var(--rule); border-radius: 999px;
   padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
@@ -1067,7 +1066,6 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   <h1>Karenda</h1>
   <nav>
     <button type="button" class="build" aria-haspopup="dialog">Build your own</button>
-    <a href="https://github.com/dnsmln/karenda">Source</a>
   </nav>
 </header>
 {{PLACES}}
@@ -1076,7 +1074,7 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
 </main>
 <footer>Updated {{UPDATED}}</footer>
 <dialog class="build" aria-labelledby="build-title"><div>
-  <h2 id="build-title">How to build your own</h2>
+  <h2 id="build-title">Build your own</h2>
   <ol>
     <li>Copy the prompt and paste it into your coding agent.</li>
     <li>The agent asks you a few questions to customize the feed to your liking.</li>

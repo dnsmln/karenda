@@ -48,7 +48,7 @@ Keys: never commit one. Read it from an environment variable and pass it in the 
 - Add each new source to `SOURCES`, `GROUPS`, `PLACES`, and `HOME` if it has a usual venue. Theatre-style sources get a venue suffix in the summary and in the `plain_title` regex.
 - Timezone: `MTL` in the html-page section, `X-WR-TIMEZONE` in `write_ics`, and `HOME_AREA` if they keep team sources.
 - Names: the calendar names in `main()`, `PRODID` in `write_ics`, `<title>` and the meta description in `HTML_TEMPLATE`, and the module docstring.
-- Links: replace `https://github.com/dnsmln/karenda` with their repo in `HTML_TEMPLATE` (the Source link, the dialog's GitHub button, and its prompt).
+- Links: replace `https://github.com/dnsmln/karenda` with their repo in `HTML_TEMPLATE` (the dialog's View Source button and its prompt).
 - Workflow: the cron in `.github/workflows/build.yml` is UTC; convert their build time. Add any secrets to the Build step's `env`.
 - README: the sources table and the feed URLs.
 
