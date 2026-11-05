@@ -34,15 +34,15 @@ header nav a { color: var(--muted); font-weight: 400; }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
-dialog { width: 340px; padding: 0; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); color: var(--ink); }
+dialog { width: 340px; padding: 0; border: 1px solid var(--rule); border-radius: 0; background: var(--paper); color: var(--ink); }
 dialog::backdrop { background: rgb(0 0 0 / 0.35); }
 dialog > div { padding: 24px; }
 dialog h2 { margin: 0 0 14px; font-size: 14px; font-weight: 500; text-align: center; }
 dialog ol { margin: 0 0 22px; padding-left: 18px; }
 dialog li { margin: 0 0 8px; line-height: 1.5; }
-.actions { display: flex; gap: 8px; }
-.actions > * { flex: 1; padding: 7px 12px; border: 1px solid var(--link); border-radius: 999px; font: inherit; font-size: 12px; font-weight: 500; line-height: 1.5; text-align: center; cursor: pointer; }
-.actions .primary { background: var(--link); color: var(--paper); }
+.actions { display: flex; flex-direction: column; gap: 8px; }
+.actions > * { padding: 7px 12px; border: 1px solid var(--link); border-radius: 0; font: inherit; font-size: 12px; font-weight: 500; line-height: 1.5; text-align: center; cursor: pointer; }
+.actions .primary { padding-block: 8px; background: var(--link); color: var(--paper); }
 .actions .secondary { background: var(--paper); color: var(--link); border-color: var(--rule); }
 @media (max-width: 420px) { .month { grid-template-columns: 1fr; gap: 6px; } .month h2 { margin-bottom: 4px; } }
 </style>
@@ -502,15 +502,15 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
 </main>
 <footer>Updated Nov 5, 2026 · Rocket last fetched Nov 5</footer>
 <dialog class="build" aria-labelledby="build-title"><div>
-  <h2 id="build-title">Build your own</h2>
+  <h2 id="build-title">How to build your own</h2>
   <ol>
-    <li>Copy the prompt and paste it into a coding agent such as Claude Code.</li>
-    <li>Answer a few questions: your city, the venues and teams you follow, where it should run.</li>
-    <li>The agent writes the scrapers and the daily build. Publish the page and subscribe to its feed.</li>
+    <li>Copy the prompt and paste it into your coding agent.</li>
+    <li>The agent asks you a few questions to customize the feed to your liking.</li>
+    <li>The agent walks you through the steps to publish it where you want it live.</li>
   </ol>
   <div class="actions">
     <button type="button" class="primary">Copy prompt</button>
-    <a class="secondary" href="https://github.com/dnsmln/karenda" target="_blank" rel="noopener">Open GitHub</a>
+    <a class="secondary" href="https://github.com/dnsmln/karenda" target="_blank" rel="noopener">View Source</a>
   </div>
 </div></dialog>
 <script>
