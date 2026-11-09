@@ -1,56 +1,56 @@
 {
-  "built_at": "2026-11-08T16:38:58+00:00",
+  "built_at": "2026-11-09T20:41:53+00:00",
   "sources": {
     "victoire": {
       "ok": true,
       "events": 15,
-      "last_ok": "2026-11-08"
+      "last_ok": "2026-11-09"
     },
     "cfmontreal": {
       "ok": true,
-      "events": 8,
-      "last_ok": "2026-11-08"
+      "events": 7,
+      "last_ok": "2026-11-09"
     },
     "placedesarts": {
       "ok": true,
-      "events": 93,
-      "last_ok": "2026-11-08"
+      "events": 92,
+      "last_ok": "2026-11-09"
     },
     "rideauvert": {
       "ok": true,
       "events": 6,
-      "last_ok": "2026-11-08"
+      "last_ok": "2026-11-09"
     },
     "rocket": {
       "ok": false,
       "error": "RuntimeError: AHL_KEY not set (the HockeyTech feed key theahl.com's stats pages use)",
-      "kept_previous": 30,
+      "kept_previous": 28,
       "last_ok": "2026-11-05"
     },
     "cinemamoderne": {
       "ok": true,
       "events": 2,
-      "last_ok": "2026-11-08"
+      "last_ok": "2026-11-09"
     },
     "mbam": {
       "ok": true,
       "events": 10,
-      "last_ok": "2026-11-08"
+      "last_ok": "2026-11-09"
     },
     "tohu": {
       "ok": true,
       "events": 7,
-      "last_ok": "2026-11-08"
+      "last_ok": "2026-11-09"
     },
     "maisontheatre": {
       "ok": true,
       "events": 12,
-      "last_ok": "2026-11-08"
+      "last_ok": "2026-11-09"
     }
   },
-  "karenda": 183,
-  "karenda-sports": 53,
-  "karenda-theatre": 118,
+  "karenda": 179,
+  "karenda-sports": 50,
+  "karenda-theatre": 117,
   "karenda-cinema": 2,
   "karenda-museums": 10
 }
