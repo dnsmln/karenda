@@ -996,7 +996,7 @@ def render_html(events: list[Event], status: dict | None = None) -> str:
                     meta = f'<span class="meta place">{html.escape(place)}</span>'   # hidden with the pill's venue while filtering
                 else:
                     meta = f'<span class="meta">{parts}</span>' if parts else ""
-                out.append(f'<li data-place="{html.escape(e.source)}">{link}{meta}</li>')
+                out.append(f'<li data-place="{html.escape(e.source)}" data-uid="{html.escape(e.uid)}">{link}{meta}</li>')
             out.append("</ul></div>")
         out.append("</div></section>")
     body = "\n".join(out)
@@ -1022,8 +1022,8 @@ HTML_TEMPLATE = """<!doctype html>
 <title>Karenda</title>
 <meta name="description" content="What's on in Montréal: theatre runs and home games, by month.">
 <style>
-:root { color-scheme: light; --paper:#fdfdfc; --ink:#292824; --link:#080808; --muted:#77746d; --rule:#e5e2db; }
-@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --paper:#121213; --ink:#deddd8; --link:#ffffff; --muted:#9d9b96; --rule:#303030; } }
+:root { color-scheme: light; --paper:#fdfdfc; --ink:#292824; --link:#080808; --muted:#77746d; --rule:#e5e2db; --star:#a33a2a; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --paper:#121213; --ink:#deddd8; --link:#ffffff; --muted:#9d9b96; --rule:#303030; --star:#d0705e; } }
 * { box-sizing: border-box; }
 html { background: var(--paper); }
 body { max-width: 480px; margin: 0 auto; padding: 72px 24px 60px; color: var(--ink);
@@ -1044,7 +1044,13 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .day { margin: 0 0 22px; }
 .day h3 { font-size: 12px; font-weight: 500; margin: 0 0 7px; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
-.month li { margin: 0 0 11px; line-height: 1.45; }
+.month li { position: relative; margin: 0 0 11px; line-height: 1.45; }
+.star { position: absolute; left: -18px; top: 4px; appearance: none; background: none; border: 0; padding: 0;
+  width: 12px; height: 12px; color: var(--star); cursor: pointer; opacity: 0; pointer-events: none; }
+.star svg { display: block; width: 10px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.4; }
+.star[aria-pressed="true"] { opacity: 1; }
+.star[aria-pressed="true"] svg { fill: currentColor; }
+@media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 1; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
@@ -1102,6 +1108,24 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   pills.forEach(function (b) { b.addEventListener("click", function () {
     apply(b.getAttribute("aria-pressed") === "true" ? "" : b.dataset.place);
   }); });
+  var starred = {};
+  try { starred = JSON.parse(localStorage.getItem("karenda-stars")) || {}; } catch (e) {}
+  var ICON = '<svg viewBox="0 0 10 12" aria-hidden="true"><path d="M1 1h8v10L5 8 1 11z"/></svg>';
+  items.forEach(function (li) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "star";
+    b.setAttribute("aria-label", "Star");
+    b.setAttribute("aria-pressed", String(!!starred[li.dataset.uid]));
+    b.innerHTML = ICON;
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") !== "true";
+      b.setAttribute("aria-pressed", String(on));
+      if (on) starred[li.dataset.uid] = 1; else delete starred[li.dataset.uid];
+      try { localStorage.setItem("karenda-stars", JSON.stringify(starred)); } catch (e) {}
+    });
+    li.prepend(b);
+  });
   var h = location.hash.slice(1);
   apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
 
