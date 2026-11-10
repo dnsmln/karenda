@@ -1003,6 +1003,7 @@ def render_html(events: list[Event], status: dict | None = None) -> str:
     present = {e.source for days in months.values() for l in days.values() for e in l}
     pills = [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
               for src, label in PLACES.items() if src in present]
+    pills.insert(0, '<button type="button" data-place="starred" aria-pressed="false" hidden>Starred</button>')   # shown by the script once something is starred
     places = '<nav class="places" aria-label="Filter">' + "".join(pills) + "</nav>"
     updated = datetime.now(MTL).strftime("%b %-d, %Y")
     for src, s in (status or {}).get("sources", {}).items():   # a failed source keeps its old events; say so
@@ -1051,7 +1052,7 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 @media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 0.33; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
 .star[aria-pressed="true"] { opacity: 1; }
 @media (hover: none) { .month li { padding-right: 32px; }
-  .star { left: auto; right: -10px; top: 50%; width: 40px; height: 40px; margin-top: -20px; opacity: 0.33; pointer-events: auto; }
+  .star { left: auto; right: -10px; top: 50%; width: 40px; height: 40px; margin-top: -20px; opacity: 0.15; pointer-events: auto; }
   .star svg { margin: auto; } .star[aria-pressed="true"] { opacity: 1; } .star:focus:not(:focus-visible) { outline: none; } }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
@@ -1099,12 +1100,16 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   var items = document.querySelectorAll(".month li");
   var days = document.querySelectorAll(".day");
   var months = document.querySelectorAll(".month");
-  function apply(place) {            // "" = no filter, show everything
+  var current = "";
+  function apply(place) {            // "" = no filter, show everything; "starred" = starred items only
+    current = place;
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
-    items.forEach(function (li) { li.hidden = !!place && li.dataset.place !== place; });
+    items.forEach(function (li) {
+      li.hidden = !!place && (place === "starred" ? !starred[li.dataset.uid] : li.dataset.place !== place);
+    });
     days.forEach(function (d) { d.hidden = !d.querySelector("li:not([hidden])"); });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
-    document.body.classList.toggle("filtered", !!place);
+    document.body.classList.toggle("filtered", !!place && place !== "starred");
     history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
   }
   pills.forEach(function (b) { b.addEventListener("click", function () {
@@ -1112,6 +1117,11 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   }); });
   var starred = {};
   try { starred = JSON.parse(localStorage.getItem("karenda-stars")) || {}; } catch (e) {}
+  var starPill = document.querySelector('.places button[data-place="starred"]');
+  function showStarPill() {          // only when a listed item is starred
+    starPill.hidden = !document.querySelector('.star[aria-pressed="true"]');
+    if (starPill.hidden && current === "starred") apply("");
+  }
   var ICON = '<svg viewBox="0 0 10 12" aria-hidden="true"><path d="M1 1h8v10L5 8 1 11z"/></svg>';
   items.forEach(function (li) {
     var b = document.createElement("button");
@@ -1125,11 +1135,13 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
       b.setAttribute("aria-pressed", String(on));
       if (on) starred[li.dataset.uid] = 1; else delete starred[li.dataset.uid];
       try { localStorage.setItem("karenda-stars", JSON.stringify(starred)); } catch (e) {}
+      showStarPill();
     });
     li.prepend(b);
   });
+  showStarPill();
   var h = location.hash.slice(1);
-  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
+  apply(document.querySelector('.places button[data-place="' + h + '"]:not([hidden])') ? h : "");
 
   var PROMPT = "Build me my own karenda: a calendar of local events that updates itself every morning. "
     + "Start from https://github.com/dnsmln/karenda: clone it, then read and follow .claude/skills/build-karenda/SKILL.md. "
