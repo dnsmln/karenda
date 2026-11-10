@@ -1022,8 +1022,8 @@ HTML_TEMPLATE = """<!doctype html>
 <title>Karenda</title>
 <meta name="description" content="What's on in Montréal: theatre runs and home games, by month.">
 <style>
-:root { color-scheme: light; --paper:#fdfdfc; --ink:#292824; --link:#080808; --muted:#77746d; --rule:#e5e2db; --star:#a33a2a; }
-@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --paper:#121213; --ink:#deddd8; --link:#ffffff; --muted:#9d9b96; --rule:#303030; --star:#d0705e; } }
+:root { color-scheme: light; --paper:#fdfdfc; --ink:#292824; --link:#080808; --muted:#77746d; --rule:#e5e2db; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; --paper:#121213; --ink:#deddd8; --link:#ffffff; --muted:#9d9b96; --rule:#303030; } }
 * { box-sizing: border-box; }
 html { background: var(--paper); }
 body { max-width: 480px; margin: 0 auto; padding: 72px 24px 60px; color: var(--ink);
@@ -1046,11 +1046,10 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .month ul { list-style: none; margin: 0; padding: 0; }
 .month li { position: relative; margin: 0 0 11px; line-height: 1.45; }
 .star { position: absolute; left: -18px; top: 4px; appearance: none; background: none; border: 0; padding: 0;
-  width: 12px; height: 12px; color: var(--star); cursor: pointer; opacity: 0; pointer-events: none; }
-.star svg { display: block; width: 10px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.4; }
+  width: 12px; height: 12px; color: var(--link); cursor: pointer; opacity: 0; pointer-events: none; }
+.star svg { display: block; width: 10px; height: 12px; fill: currentColor; }
+@media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 0.33; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
 .star[aria-pressed="true"] { opacity: 1; }
-.star[aria-pressed="true"] svg { fill: currentColor; }
-@media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 1; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
