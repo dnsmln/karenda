@@ -31,10 +31,13 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .month ul { list-style: none; margin: 0; padding: 0; }
 .month li { position: relative; margin: 0 0 11px; line-height: 1.45; }
 .star { position: absolute; left: -18px; top: 4px; appearance: none; background: none; border: 0; padding: 0;
-  width: 12px; height: 12px; color: var(--link); cursor: pointer; opacity: 0; pointer-events: none; }
+  width: 12px; height: 12px; color: var(--link); cursor: pointer; -webkit-tap-highlight-color: transparent; opacity: 0; pointer-events: none; }
 .star svg { display: block; width: 10px; height: 12px; fill: currentColor; }
 @media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 0.33; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
 .star[aria-pressed="true"] { opacity: 1; }
+@media (hover: none) { .month li { padding-right: 32px; }
+  .star { left: auto; right: -10px; top: 50%; width: 40px; height: 40px; margin-top: -20px; opacity: 0.33; pointer-events: auto; }
+  .star svg { margin: auto; } .star[aria-pressed="true"] { opacity: 1; } .star:focus:not(:focus-visible) { outline: none; } }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
