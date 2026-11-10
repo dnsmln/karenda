@@ -22,6 +22,9 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .places button { appearance: none; background: none; border: 1px solid var(--rule); border-radius: 999px;
   padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
 .places button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
+.places .starred svg { display: inline-block; width: 10px; height: 12px; vertical-align: -1px; fill: var(--link); opacity: 0.33; }
+.places .starred[aria-pressed="true"] svg { opacity: 1; }
+.empty { margin: 0; color: var(--muted); font-size: 12px; }
 [hidden] { display: none !important; }
 .filtered .place { display: none; }
 .month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
@@ -30,13 +33,13 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .day h3 { font-size: 12px; font-weight: 500; margin: 0 0 7px; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
 .month li { position: relative; margin: 0 0 11px; padding-right: 32px; line-height: 1.45; }
-.star { position: absolute; right: -10px; top: 50%; width: 40px; height: 40px; margin-top: -20px; appearance: none; background: none; border: 0; padding: 0;
+.star { position: absolute; right: -10px; top: -10px; width: 40px; height: 40px; appearance: none; background: none; border: 0; padding: 0;
   color: var(--link); cursor: pointer; -webkit-tap-highlight-color: transparent; opacity: 0; pointer-events: none; }
 .star svg { display: block; width: 10px; height: 12px; margin: auto; fill: currentColor; }
 .star:focus:not(:focus-visible) { outline: none; }
 @media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 0.33; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
-@media (hover: none) { .star { opacity: 0.15; pointer-events: auto; } }
-.star[aria-pressed="true"] { opacity: 1; }
+@media (hover: none) { .star, .places .starred svg { opacity: 0.15; pointer-events: auto; } }
+.star[aria-pressed="true"], li:hover > .star[aria-pressed="true"] { opacity: 1; }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
@@ -60,8 +63,9 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
     <button type="button" class="build" aria-haspopup="dialog">Build your own</button>
   </nav>
 </header>
-<nav class="places" aria-label="Filter"><button type="button" data-place="starred" aria-pressed="false" hidden>Starred</button><button type="button" data-place="placedesarts" aria-pressed="false">Place des Arts</button><button type="button" data-place="rideauvert" aria-pressed="false">Rideau Vert</button><button type="button" data-place="maisontheatre" aria-pressed="false">Maison Théâtre</button><button type="button" data-place="tohu" aria-pressed="false">TOHU</button><button type="button" data-place="victoire" aria-pressed="false">Victoire</button><button type="button" data-place="cfmontreal" aria-pressed="false">CF Montréal</button><button type="button" data-place="rocket" aria-pressed="false">Rocket</button><button type="button" data-place="cinemamoderne" aria-pressed="false">Petits Modernes</button><button type="button" data-place="mbam" aria-pressed="false">MBAM</button></nav>
+<nav class="places" aria-label="Filter"><button type="button" class="starred" data-place="starred" aria-pressed="false" aria-label="Starred" title="Starred"><svg viewBox="0 0 10 12" aria-hidden="true"><path d="M1 1h8v10L5 8 1 11z"/></svg></button><button type="button" data-place="placedesarts" aria-pressed="false">Place des Arts</button><button type="button" data-place="rideauvert" aria-pressed="false">Rideau Vert</button><button type="button" data-place="maisontheatre" aria-pressed="false">Maison Théâtre</button><button type="button" data-place="tohu" aria-pressed="false">TOHU</button><button type="button" data-place="victoire" aria-pressed="false">Victoire</button><button type="button" data-place="cfmontreal" aria-pressed="false">CF Montréal</button><button type="button" data-place="rocket" aria-pressed="false">Rocket</button><button type="button" data-place="cinemamoderne" aria-pressed="false">Petits Modernes</button><button type="button" data-place="mbam" aria-pressed="false">MBAM</button></nav>
 <main>
+<p class="empty" hidden>Nothing starred yet. Star anything listed to keep it here.</p>
 <section class="month"><h2>Nov 2026</h2><div class="days">
 <div class="day"><h3>On now</h3><ul>
 <li data-place="placedesarts" data-uid="pda-mossbed@karenda"><a href="https://www.placedesarts.com/en/event/mossbed" target="_blank" rel="noopener">Mossbed</a><span class="meta">until Feb 21 · Salle d&#x27;exposition<span class="place">, Place des Arts</span></span></li>
@@ -510,15 +514,15 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   var items = document.querySelectorAll(".month li");
   var days = document.querySelectorAll(".day");
   var months = document.querySelectorAll(".month");
-  var current = "";
+  var empty = document.querySelector(".empty");
   function apply(place) {            // "" = no filter, show everything; "starred" = starred items only
-    current = place;
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
     items.forEach(function (li) {
       li.hidden = !!place && (place === "starred" ? !starred[li.dataset.uid] : li.dataset.place !== place);
     });
     days.forEach(function (d) { d.hidden = !d.querySelector("li:not([hidden])"); });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
+    empty.hidden = place !== "starred" || !!document.querySelector(".month li:not([hidden])");
     document.body.classList.toggle("filtered", !!place && place !== "starred");
     history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
   }
@@ -527,12 +531,7 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   }); });
   var starred = {};
   try { starred = JSON.parse(localStorage.getItem("karenda-stars")) || {}; } catch (e) {}
-  var starPill = document.querySelector('.places button[data-place="starred"]');
-  function showStarPill() {          // only when a listed item is starred
-    starPill.hidden = !document.querySelector('.star[aria-pressed="true"]');
-    if (starPill.hidden && current === "starred") apply("");
-  }
-  var ICON = '<svg viewBox="0 0 10 12" aria-hidden="true"><path d="M1 1h8v10L5 8 1 11z"/></svg>';
+  var ICON = document.querySelector(".places .starred").innerHTML;
   items.forEach(function (li) {
     var b = document.createElement("button");
     b.type = "button";
@@ -545,13 +544,11 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
       b.setAttribute("aria-pressed", String(on));
       if (on) starred[li.dataset.uid] = 1; else delete starred[li.dataset.uid];
       try { localStorage.setItem("karenda-stars", JSON.stringify(starred)); } catch (e) {}
-      showStarPill();
     });
     li.prepend(b);
   });
-  showStarPill();
   var h = location.hash.slice(1);
-  apply(document.querySelector('.places button[data-place="' + h + '"]:not([hidden])') ? h : "");
+  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
 
   var PROMPT = "Build me my own karenda: a calendar of local events that updates itself every morning. "
     + "Start from https://github.com/dnsmln/karenda: clone it, then read and follow .claude/skills/build-karenda/SKILL.md. "

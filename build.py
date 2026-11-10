@@ -1003,7 +1003,8 @@ def render_html(events: list[Event], status: dict | None = None) -> str:
     present = {e.source for days in months.values() for l in days.values() for e in l}
     pills = [f'<button type="button" data-place="{src}" aria-pressed="false">{html.escape(label)}</button>'
               for src, label in PLACES.items() if src in present]
-    pills.insert(0, '<button type="button" data-place="starred" aria-pressed="false" hidden>Starred</button>')   # shown by the script once something is starred
+    pills.insert(0, '<button type="button" class="starred" data-place="starred" aria-pressed="false" aria-label="Starred" title="Starred">'
+                    '<svg viewBox="0 0 10 12" aria-hidden="true"><path d="M1 1h8v10L5 8 1 11z"/></svg></button>')
     places = '<nav class="places" aria-label="Filter">' + "".join(pills) + "</nav>"
     updated = datetime.now(MTL).strftime("%b %-d, %Y")
     for src, s in (status or {}).get("sources", {}).items():   # a failed source keeps its old events; say so
@@ -1038,6 +1039,9 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .places button { appearance: none; background: none; border: 1px solid var(--rule); border-radius: 999px;
   padding: 2px 10px; color: var(--muted); font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
 .places button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
+.places .starred svg { display: inline-block; width: 10px; height: 12px; vertical-align: -1px; fill: var(--link); opacity: 0.33; }
+.places .starred[aria-pressed="true"] svg { opacity: 1; }
+.empty { margin: 0; color: var(--muted); font-size: 12px; }
 [hidden] { display: none !important; }
 .filtered .place { display: none; }
 .month { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 22px; margin: 0 0 25px; }
@@ -1046,13 +1050,13 @@ header nav { display: flex; gap: 20px; font-size: 12px; }
 .day h3 { font-size: 12px; font-weight: 500; margin: 0 0 7px; line-height: 1.5; }
 .month ul { list-style: none; margin: 0; padding: 0; }
 .month li { position: relative; margin: 0 0 11px; padding-right: 32px; line-height: 1.45; }
-.star { position: absolute; right: -10px; top: 50%; width: 40px; height: 40px; margin-top: -20px; appearance: none; background: none; border: 0; padding: 0;
+.star { position: absolute; right: -10px; top: -10px; width: 40px; height: 40px; appearance: none; background: none; border: 0; padding: 0;
   color: var(--link); cursor: pointer; -webkit-tap-highlight-color: transparent; opacity: 0; pointer-events: none; }
 .star svg { display: block; width: 10px; height: 12px; margin: auto; fill: currentColor; }
 .star:focus:not(:focus-visible) { outline: none; }
 @media (hover: hover) { li:hover > .star, .star:focus-visible { opacity: 0.33; pointer-events: auto; } .star[aria-pressed="true"] { pointer-events: auto; } }
-@media (hover: none) { .star { opacity: 0.15; pointer-events: auto; } }
-.star[aria-pressed="true"] { opacity: 1; }
+@media (hover: none) { .star, .places .starred svg { opacity: 0.15; pointer-events: auto; } }
+.star[aria-pressed="true"], li:hover > .star[aria-pressed="true"] { opacity: 1; }
 .meta { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; }
 header nav button { appearance: none; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; cursor: pointer; }
@@ -1078,6 +1082,7 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
 </header>
 {{PLACES}}
 <main>
+<p class="empty" hidden>Nothing starred yet. Star anything listed to keep it here.</p>
 {{BODY}}
 </main>
 <footer>Updated {{UPDATED}}</footer>
@@ -1099,15 +1104,15 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   var items = document.querySelectorAll(".month li");
   var days = document.querySelectorAll(".day");
   var months = document.querySelectorAll(".month");
-  var current = "";
+  var empty = document.querySelector(".empty");
   function apply(place) {            // "" = no filter, show everything; "starred" = starred items only
-    current = place;
     pills.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.place === place)); });
     items.forEach(function (li) {
       li.hidden = !!place && (place === "starred" ? !starred[li.dataset.uid] : li.dataset.place !== place);
     });
     days.forEach(function (d) { d.hidden = !d.querySelector("li:not([hidden])"); });
     months.forEach(function (m) { m.hidden = !m.querySelector("li:not([hidden])"); });
+    empty.hidden = place !== "starred" || !!document.querySelector(".month li:not([hidden])");
     document.body.classList.toggle("filtered", !!place && place !== "starred");
     history.replaceState(null, "", location.pathname + location.search + (place ? "#" + place : ""));
   }
@@ -1116,12 +1121,7 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
   }); });
   var starred = {};
   try { starred = JSON.parse(localStorage.getItem("karenda-stars")) || {}; } catch (e) {}
-  var starPill = document.querySelector('.places button[data-place="starred"]');
-  function showStarPill() {          // only when a listed item is starred
-    starPill.hidden = !document.querySelector('.star[aria-pressed="true"]');
-    if (starPill.hidden && current === "starred") apply("");
-  }
-  var ICON = '<svg viewBox="0 0 10 12" aria-hidden="true"><path d="M1 1h8v10L5 8 1 11z"/></svg>';
+  var ICON = document.querySelector(".places .starred").innerHTML;
   items.forEach(function (li) {
     var b = document.createElement("button");
     b.type = "button";
@@ -1134,13 +1134,11 @@ dialog li { margin: 0 0 8px; line-height: 1.5; }
       b.setAttribute("aria-pressed", String(on));
       if (on) starred[li.dataset.uid] = 1; else delete starred[li.dataset.uid];
       try { localStorage.setItem("karenda-stars", JSON.stringify(starred)); } catch (e) {}
-      showStarPill();
     });
     li.prepend(b);
   });
-  showStarPill();
   var h = location.hash.slice(1);
-  apply(document.querySelector('.places button[data-place="' + h + '"]:not([hidden])') ? h : "");
+  apply(document.querySelector('.places button[data-place="' + h + '"]') ? h : "");
 
   var PROMPT = "Build me my own karenda: a calendar of local events that updates itself every morning. "
     + "Start from https://github.com/dnsmln/karenda: clone it, then read and follow .claude/skills/build-karenda/SKILL.md. "
