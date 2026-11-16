@@ -1,25 +1,25 @@
 {
-  "built_at": "2026-11-15T17:05:27+00:00",
+  "built_at": "2026-11-16T20:26:21+00:00",
   "sources": {
     "victoire": {
       "ok": true,
       "events": 15,
-      "last_ok": "2026-11-15"
+      "last_ok": "2026-11-16"
     },
     "cfmontreal": {
       "ok": true,
       "events": 7,
-      "last_ok": "2026-11-15"
+      "last_ok": "2026-11-16"
     },
     "placedesarts": {
       "ok": true,
-      "events": 93,
-      "last_ok": "2026-11-15"
+      "events": 97,
+      "last_ok": "2026-11-16"
     },
     "rideauvert": {
       "ok": true,
       "events": 5,
-      "last_ok": "2026-11-15"
+      "last_ok": "2026-11-16"
     },
     "rocket": {
       "ok": false,
@@ -29,28 +29,28 @@
     },
     "cinemamoderne": {
       "ok": true,
-      "events": 2,
-      "last_ok": "2026-11-15"
+      "events": 1,
+      "last_ok": "2026-11-16"
     },
     "mbam": {
       "ok": true,
       "events": 10,
-      "last_ok": "2026-11-15"
+      "last_ok": "2026-11-16"
     },
     "tohu": {
       "ok": true,
-      "events": 7,
-      "last_ok": "2026-11-15"
+      "events": 6,
+      "last_ok": "2026-11-16"
     },
     "maisontheatre": {
       "ok": true,
       "events": 12,
-      "last_ok": "2026-11-15"
+      "last_ok": "2026-11-16"
     }
   },
-  "karenda": 179,
+  "karenda": 181,
   "karenda-sports": 50,
-  "karenda-theatre": 117,
-  "karenda-cinema": 2,
+  "karenda-theatre": 120,
+  "karenda-cinema": 1,
   "karenda-museums": 10
 }
