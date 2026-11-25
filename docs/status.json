@@ -1,20 +1,20 @@
 {
-  "built_at": "2026-11-24T20:38:30+00:00",
+  "built_at": "2026-11-25T19:55:50+00:00",
   "sources": {
     "victoire": {
       "ok": true,
       "events": 15,
-      "last_ok": "2026-11-24"
+      "last_ok": "2026-11-25"
     },
     "cfmontreal": {
       "ok": true,
       "events": 7,
-      "last_ok": "2026-11-24"
+      "last_ok": "2026-11-25"
     },
     "placedesarts": {
       "ok": true,
       "events": 91,
-      "last_ok": "2026-11-24"
+      "last_ok": "2026-11-25"
     },
     "rideauvert": {
       "ok": false,
@@ -29,24 +29,25 @@
       "last_ok": "2026-11-05"
     },
     "cinemamoderne": {
-      "ok": true,
-      "events": 0,
+      "ok": false,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cinemamoderne.com', port=443): Max retries exceeded with url: /en/schedule/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.cinemamoderne.com', port=443) at 0x71da4f20c860>, 'Connection to www.cinemamoderne.com timed out. (connect timeout=40)'))",
+      "kept_previous": 0,
       "last_ok": "2026-11-24"
     },
     "mbam": {
       "ok": true,
       "events": 9,
-      "last_ok": "2026-11-24"
+      "last_ok": "2026-11-25"
     },
     "tohu": {
       "ok": true,
       "events": 6,
-      "last_ok": "2026-11-24"
+      "last_ok": "2026-11-25"
     },
     "maisontheatre": {
       "ok": true,
       "events": 12,
-      "last_ok": "2026-11-24"
+      "last_ok": "2026-11-25"
     }
   },
   "karenda": 171,
